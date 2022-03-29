@@ -1,0 +1,383 @@
+.main .section1 {
+  width: 100%;
+  height: 663px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: -webkit-image-set(url("/public/assets/main/section1.png") 1x, url("/public/assets/main/section1@2x.png") 2x, url("/public/assets/main/section1@3x.png") 3x);
+  background-image: image-set(url("/public/assets/main/section1.png") 1x, url("/public/assets/main/section1@2x.png") 2x, url("/public/assets/main/section1@3x.png") 3x);
+}
+
+.main .section1 > .pack {
+  font-size: 39px;
+  color: var(--navy);
+  padding-top: 244px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  line-height: 1.31;
+}
+
+.main .section2 {
+  width: 100%;
+  height: 864px;
+  padding-top: 206px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.main .section2 > .pack {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 388px 663px;
+      grid-template-columns: 388px 663px;
+  -webkit-column-gap: 139px;
+          column-gap: 139px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .section2 > .pack > .left {
+  white-space: nowrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main .section2 > .pack > .left > .title {
+  color: var(--navy);
+  font-size: 45px;
+  font-family: 'gmarket';
+  font-weight: bold;
+  line-height: 1.33;
+}
+
+.main .section2 > .pack > .left > .sub {
+  font-size: 16px;
+  line-height: 1.63;
+  margin: 37px 0;
+}
+
+.main .section2 > .pack > .left > button {
+  width: 180px;
+  height: 47px;
+  background-color: var(--navy);
+  color: white;
+  font-size: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0 17px 0 19px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.main .section2 > .pack > .left > button > img {
+  width: 38px;
+}
+
+.main .section2 > .pack > .right {
+  width: 653px;
+  height: 410px;
+}
+
+.main .section3 {
+  height: 1188px;
+  width: 100%;
+  background-color: var(--white);
+  padding-top: 113px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.main .section3 > .pack > .title {
+  color: var(--navy);
+  font-size: 34px;
+  line-height: 1.29;
+}
+
+.main .section3 > .pack > .wrapper {
+  margin-top: 40px;
+  display: -ms-grid;
+  display: grid;
+  row-gap: 19px;
+}
+
+.main .section3 > .pack > .wrapper > .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+}
+
+.main .section3 > .pack > .wrapper > .card > img {
+  width: 357px;
+  height: 100%;
+}
+
+.main .section3 > .pack > .wrapper > .card > .content {
+  position: relative;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 34px 21px 27px 40px;
+}
+
+.main .section3 > .pack > .wrapper > .card > .content > .title {
+  font-size: 22px;
+}
+
+.main .section3 > .pack > .wrapper > .card > .content > .sub {
+  font-size: 14px;
+  white-space: pre-line;
+  line-height: 1.5;
+  margin-top: 3px;
+  margin-bottom: 45.8px;
+}
+
+.main .section3 > .pack > .wrapper > .card > .content > .category {
+  display: -ms-grid;
+  display: grid;
+  -webkit-column-gap: 15px;
+          column-gap: 15px;
+}
+
+.main .section3 > .pack > .wrapper > .card > .content > .category > div {
+  font-size: 14px;
+  color: var(--dark-sky-blue);
+  font-weight: 500;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  white-space: nowrap;
+}
+
+.main .section3 > .pack > .wrapper > .card > .content > .category > div > img {
+  height: 31px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-bottom: 6px;
+}
+
+.main .section3 > .pack > .wrapper > .card > .content > .btn {
+  position: absolute;
+  right: 21px;
+  bottom: 27px;
+  width: 180px;
+  height: 47px;
+  background-color: var(--navy);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 17px 0 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main .section3 > .pack > .wrapper > .card > .content > .btn > span {
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+}
+
+.main .section3 > .pack > .wrapper > .card > .content > .btn > img {
+  width: 38px;
+}
+
+.main .section4 {
+  background-color: white;
+  height: 1533px;
+  width: 100%;
+  padding-top: 201px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.main .section4 > .pack {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main .section4 > .pack > .title {
+  font-size: 37px;
+  line-height: 1.24;
+  color: var(--navy);
+}
+
+.main .section4 > .pack > .sub {
+  color: #7e7a7a;
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 12px;
+  margin-bottom: 30px;
+}
+
+.main .section4 > .pack > .nav-wrapper {
+  margin-top: 58px;
+  display: -ms-grid;
+  display: grid;
+}
+
+.main .section4 > .pack > .nav-wrapper > .card {
+  padding: 26px 0 39px 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.main .section4 > .pack > .nav-wrapper > .card > .title {
+  font-size: 26px;
+  color: var(--navy);
+}
+
+.main .section4 > .pack > .nav-wrapper > .card > .sub {
+  color: #7e7a7a;
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: 7px;
+  margin-bottom: 24px;
+}
+
+.main .section4 > .pack > .nav-wrapper > .card > .btn-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .section4 > .pack > .nav-wrapper > .card > .btn-wrapper > a {
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--navy);
+  background-color: #b2e3ec;
+  border-radius: 50px;
+  white-space: nowrap;
+  height: 52px;
+}
+
+.main .section4 > .pack > .nav-wrapper > .card > .btn-wrapper > a:hover {
+  background-color: var(--navy);
+  color: white;
+}
+
+.main .section5 {
+  padding: 54px 0 184px 20vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main .section5 > .content {
+  height: 485px;
+  background-color: #f8f8f8;
+  width: 80vw;
+  padding: 88px 0 0 483px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+  white-space: nowrap;
+}
+
+.main .section5 > .content > .main-img {
+  width: 601px;
+  height: 384px;
+  position: absolute;
+  left: -180px;
+  top: -54px;
+}
+
+.main .section5 > .content > .title {
+  font-size: 34px;
+  line-height: 1.35;
+  color: var(--navy);
+}
+
+.main .section5 > .content > .sub {
+  font-size: 17px;
+  line-height: 1.47;
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+.main .section5 > .content > .btn {
+  width: 257px;
+  height: 47px;
+  background-color: var(--navy);
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 0 17px 0 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.main .section5 > .content > .btn > img {
+  width: 38px;
+}
+/*# sourceMappingURL=index.css.map */

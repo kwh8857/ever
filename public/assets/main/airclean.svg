@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="22.717" height="31.85" viewBox="0 0 22.717 31.85">
+    <defs>
+        <clipPath id="zfd79g69ea">
+            <path data-name="사각형 3598" style="fill:none" d="M0 0h22.717v31.85H0z"/>
+        </clipPath>
+    </defs>
+    <g data-name="그룹 5527">
+        <g data-name="그룹 5526" style="clip-path:url(#zfd79g69ea)">
+            <path data-name="패스 7691" d="M20.624 31.85H2.093A2.1 2.1 0 0 1 0 29.757V2.093A2.1 2.1 0 0 1 2.093 0h18.53a2.1 2.1 0 0 1 2.093 2.093v27.664a2.1 2.1 0 0 1-2.093 2.093M2.093 1.142a.952.952 0 0 0-.951.951v27.664a.952.952 0 0 0 .951.951h18.53a.952.952 0 0 0 .951-.951V2.093a.952.952 0 0 0-.951-.951z" style="fill:#46bad1"/>
+            <path data-name="패스 7692" d="M33.567 95.994H21.051a1.874 1.874 0 0 1-1.872-1.872V82.159a1.874 1.874 0 0 1 1.872-1.871h12.516a1.874 1.874 0 0 1 1.871 1.871v11.963a1.874 1.874 0 0 1-1.871 1.872M21.051 81.1a1.057 1.057 0 0 0-1.056 1.056v11.966a1.057 1.057 0 0 0 1.056 1.056h12.516a1.057 1.057 0 0 0 1.056-1.056V82.159a1.057 1.057 0 0 0-1.056-1.059z" transform="translate(-16.05 -67.189)" style="fill:#46bad1"/>
+            <path data-name="사각형 3593" transform="translate(3.63 15.833)" style="fill:#46bad1" d="M0 0h15.55v.816H0z"/>
+            <path data-name="사각형 3594" transform="translate(3.63 18.188)" style="fill:#46bad1" d="M0 0h15.55v.816H0z"/>
+            <path data-name="사각형 3595" transform="translate(3.63 20.544)" style="fill:#46bad1" d="M0 0h15.55v.816H0z"/>
+            <path data-name="사각형 3596" transform="translate(3.63 22.9)" style="fill:#46bad1" d="M0 0h15.55v.816H0z"/>
+            <path data-name="사각형 3597" transform="translate(3.63 25.256)" style="fill:#46bad1" d="M0 0h15.55v.816H0z"/>
+            <path data-name="패스 7693" d="M61.488 30.47a1.585 1.585 0 1 1 1.585-1.585 1.587 1.587 0 0 1-1.585 1.585m0-2.518a.933.933 0 1 0 .933.933.934.934 0 0 0-.933-.933" transform="translate(-50.13 -22.845)" style="fill:#46bad1"/>
+            <path data-name="패스 7694" d="M53.354 9.76h-3.418a1.8 1.8 0 0 1-1.8-1.8V.055h7.014v7.91a1.8 1.8 0 0 1-1.8 1.8m-4.4-8.89v7.09a.981.981 0 0 0 .98.98h3.418a.981.981 0 0 0 .98-.98V.871z" transform="translate(-40.287 -.046)" style="fill:#46bad1"/>
+        </g>
+    </g>
+</svg>

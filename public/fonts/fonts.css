@@ -1,0 +1,22 @@
+@font-face {
+  font-family: "gmarket";
+  src: local(GmarketSansMedium), url(GmarketSansMedium.otf) format("OpenType");
+  font-style: normal;
+  font-weight: normal;
+  unicode-range: U+0-10FFFF;
+}
+
+@font-face {
+  font-family: "gmarket";
+  src: local(GmarketSansBold), url(GmarketSansBold.otf) format("OpenType");
+  font-style: normal;
+  font-weight: bold;
+  unicode-range: U+0-10FFFF;
+}
+@font-face {
+  font-family: "gmarket";
+  src: local(GmarketSansLight), url(GmarketSansLight.otf) format("OpenType");
+  font-style: normal;
+  font-weight: lighter;
+  unicode-range: U+0-10FFFF;
+}
