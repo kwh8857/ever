@@ -1,0 +1,51 @@
+.nav {
+  padding-top: 117px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-bottom: solid 1px #cbcbcb;
+}
+
+.nav > .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  height: 42px;
+}
+
+.nav > .wrapper > button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 140px;
+  background-color: unset;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  color: var(--brownish-grey);
+}
+
+.nav > .wrapper > .bar {
+  width: 140px;
+  height: 3px;
+  background-color: var(--dark-sky-blue);
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  -webkit-transition: left 0.2s ease-in-out;
+  transition: left 0.2s ease-in-out;
+}
+
+.nav > .wrapper .on {
+  color: black;
+  font-weight: bold;
+}
+/*# sourceMappingURL=index.css.map */

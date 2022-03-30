@@ -1,0 +1,56 @@
+footer {
+  height: 522px;
+  width: 100%;
+  background-color: #3c3c3c;
+  font-size: 13px;
+  color: white;
+}
+
+footer > .pack {
+  padding-top: 73px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+footer > .pack > .left {
+  margin-right: 46px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer > .pack > .left > img {
+  width: 129px;
+}
+
+footer > .pack > .left > span {
+  line-height: 1.54;
+}
+
+footer > .pack > .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer > .pack > .right > .box > .list {
+  margin-top: 14px;
+  display: -ms-grid;
+  display: grid;
+  row-gap: 7px;
+}
+
+footer > .pack > .right > .box > .list > a {
+  color: white;
+}
+/*# sourceMappingURL=index.css.map */

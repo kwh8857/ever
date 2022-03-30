@@ -1,0 +1,72 @@
+.store {
+  width: 100%;
+  height: 610px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: -webkit-image-set(url("/public/assets/common/storebackground.png") 1x, url("/public/assets/common/storebackground@2x.png") 2x, url("/public/assets/common/storebackground@3x.png") 3x);
+  background-image: image-set(url("/public/assets/common/storebackground.png") 1x, url("/public/assets/common/storebackground@2x.png") 2x, url("/public/assets/common/storebackground@3x.png") 3x);
+}
+
+.store > .pack {
+  padding-top: 210px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  line-height: 1.34;
+  color: white;
+  font-size: 35px;
+}
+
+.store > .pack > .button-wrapper {
+  margin-top: 37px;
+  display: -ms-grid;
+  display: grid;
+  row-gap: 17px;
+}
+
+.store > .pack > .button-wrapper > button {
+  cursor: pointer;
+  width: 436px;
+  height: 63px;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 23px;
+  padding-right: 16px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 21px;
+}
+
+.store > .pack > .button-wrapper > button > .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.store > .pack > .button-wrapper > button > .left > .img-wrapper {
+  width: 48px;
+  text-align: center;
+  margin-right: 16.7px;
+}
+
+.store > .pack > .button-wrapper > button > .left > .img-wrapper > img {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.store > .pack > .button-wrapper > button > img {
+  width: 50.6px;
+}
+/*# sourceMappingURL=index.css.map */

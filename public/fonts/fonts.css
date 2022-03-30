@@ -2,7 +2,7 @@
   font-family: "gmarket";
   src: local(GmarketSansMedium), url(GmarketSansMedium.otf) format("OpenType");
   font-style: normal;
-  font-weight: normal;
+  font-weight: 500;
   unicode-range: U+0-10FFFF;
 }
 
@@ -17,6 +17,6 @@
   font-family: "gmarket";
   src: local(GmarketSansLight), url(GmarketSansLight.otf) format("OpenType");
   font-style: normal;
-  font-weight: lighter;
+  font-weight: normal;
   unicode-range: U+0-10FFFF;
 }

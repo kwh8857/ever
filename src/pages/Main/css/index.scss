@@ -216,12 +216,13 @@ justify-content: center;
     }
   }
   .section5{
-    padding: 54px 0 184px 20vw;
+    padding: 54px 0 184px 0;
     display: flex;
-    &>.content{
+    &>.pack{
+      &>.content{
         height: 485px;
       background-color: #f8f8f8;
-      width: 80vw;
+      width: 100vw;
       padding: 88px 0 0 483px;
       box-sizing: border-box;
       position: relative;
@@ -261,6 +262,162 @@ justify-content: center;
            width: 38px;
            
          }
+      }
+    }
+    }
+  }
+  .section6{
+    width: 100%;
+    height: 1028px;
+    background-color: rgb(224, 243, 247);
+    padding-top: 113px;
+    box-sizing: border-box;
+    &>.pack{
+      padding: 0 62px;
+      box-sizing: border-box;
+     &>.title{
+           font-size: 34px;
+        line-height: 1.38;
+        color: var(--navy);
+     }
+     & >.content{
+       margin-top: 81.7px;
+       display: grid;
+       grid-template-columns: repeat(2,425.3px);
+       column-gap: 17.7px;
+       row-gap: 102.7px;
+       &>.card{
+         position: relative;
+         display: flex;
+         justify-content: center;
+         &>.icon{
+           position: absolute;
+           width: fit-content;
+           top: -63px;
+           right: 50px;
+           z-index: 1;
+           opacity: 0.4;
+         }
+         &>.medi{
+           top: -72px;
+           right: 40px;
+         }
+         &>.school{
+           top: -65px;
+           right: 24px;
+         }
+         &>.title{
+           width: 160px;
+           height: 47px;
+           border-radius: 23px;
+           background-color: var(--seafoam-blue);
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           color: white;
+           font-size: 20px;
+           position: absolute;
+           top: -25px;
+           z-index: 150;
+         }
+         &>.content-wrapper{
+           z-index: 100;
+                    border-radius: 10px;
+           width: 100%;
+           height: 100%;
+           background-color: white;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           flex-direction: column;
+           &>img{
+             width: fit-content;
+           }
+           &>.line{
+               width: 353px;
+  height: 1px;
+  background-color: var(--very-light-pink);
+  margin-bottom: 11.5px;
+           }
+           &>span{
+               font-size: 15px;
+  font-weight: 500;
+    line-height: 1.6;
+    text-align: center;
+           }
+         }
+       }
+       &>.first{
+  height: 290.5px;
+       }
+       &>.two{
+         height: 203.7px;
+       }
+     }
+    }
+  }
+  .section7{
+    width: 100%;
+    height: 709px;
+    position: relative;
+    
+     &>.pack{
+       display: flex;
+       justify-content: flex-end;
+       padding-top: 139px;
+       box-sizing: border-box;
+       & > img{
+      width: 463px;
+
+    }
+     }
+    &>.bottom{
+      overflow: hidden;
+      width: 100%;
+      height: 493px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background-color: rgb(164, 221, 230);
+      color: var(--navy);
+      &>.pack{
+        height: 100%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        padding-top: 93px;
+        box-sizing: border-box;
+        &>.title{
+          font-size: 35px;
+        }
+        &>.call-wrapper{
+          margin-top: 96px;
+           align-self: flex-end;
+          &>.tel-wrapper{
+            display: flex;
+            align-items: center;
+            &>img{
+              width: 85px;
+              margin-right: 18px;
+            }
+            &>.tel{
+              font-weight: 500;
+              font-size: 74px;
+              font-family: 'gmarket';
+            }
+          }
+          &>.address{
+            font-size: 21px;
+            font-weight: 500;
+            margin-top: 14px;
+          }
+        }
+        &>.background{
+          width: 554px;
+          position: absolute;
+          bottom: -50px;
+          left: -250px;
+        }
       }
     }
   }

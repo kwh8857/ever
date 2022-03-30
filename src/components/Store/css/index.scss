@@ -1,0 +1,48 @@
+.store{
+ width: 100%;
+ height: 610px;
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+      background-image: image-set(url('/public/assets/common/storebackground.png')1x,url('/public/assets/common/storebackground@2x.png')2x,url('/public/assets/common/storebackground@3x.png')3x );
+  &>.pack{
+    padding-top: 210px;
+    box-sizing: border-box;
+      line-height: 1.34;
+      color: white;
+      font-size: 35px;
+      &>.button-wrapper{
+        margin-top: 37px;
+        display: grid;
+        row-gap: 17px;
+        &>button{
+          cursor: pointer;
+            width: 436px;
+  height: 63px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 23px;
+  padding-right: 16px;
+  box-sizing: border-box;
+  font-size: 21px;
+    &>.left{
+      display: flex;
+      align-items: center;
+       &>.img-wrapper{
+     width: 48px;
+     text-align: center;
+     margin-right: 16.7px;
+       &>img{
+    width: fit-content;
+  }
+   }
+    }
+    &>img{
+      width: 50.6px;
+    }
+        }
+      }
+  }
+}

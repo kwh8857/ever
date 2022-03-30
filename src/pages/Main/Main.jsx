@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Store from "../../components/Store/Store";
 import "./css/index.css";
 function Main() {
   return (
@@ -140,27 +141,146 @@ function Main() {
         </div>
       </div>
       <div className="section5">
-        <div className="content">
-          <img
-            className="main-img"
-            src="/assets/main/section5.png"
-            srcSet="/assets/main/section5@2x.png 2x , /assets/main/section5@3x.png 3x"
-            alt=""
-          />
-          <div className="title">
-            에버퓨리는 <br /> <b>케어 전문가를 양성합니다</b>
+        <div className="pack">
+          <div className="content">
+            <img
+              className="main-img"
+              src="/assets/main/section5.png"
+              srcSet="/assets/main/section5@2x.png 2x , /assets/main/section5@3x.png 3x"
+              alt=""
+            />
+            <div className="title">
+              에버퓨리는 <br /> <b>케어 전문가를 양성합니다</b>
+            </div>
+            <div className="sub">
+              에버퓨리는 직영 교육장을 통해 ‘케어 전문가’를 양성합니다. <br />{" "}
+              체계적인 교육을 통해 에버퓨리만의 친환경 청소와 시공 기술을
+              전수합니다.
+            </div>
+            <button className="btn">
+              <span>창업교육 및 파트너 제휴</span>
+              <img src="/assets/common/rightarrow.svg" alt="이동" />
+            </button>
           </div>
-          <div className="sub">
-            에버퓨리는 직영 교육장을 통해 ‘케어 전문가’를 양성합니다. <br />{" "}
-            체계적인 교육을 통해 에버퓨리만의 친환경 청소와 시공 기술을
-            전수합니다.
-          </div>
-          <button className="btn">
-            <span>창업교육 및 파트너 제휴</span>
-            <img src="/assets/common/rightarrow.svg" alt="이동" />
-          </button>
         </div>
       </div>
+      <div className="section6">
+        <div className="pack">
+          <span className="title">
+            에버퓨리는 <br />
+            <b> 다양한 기업들과 함께합니다</b>
+          </span>
+          <div className="content">
+            <div className="card first">
+              <img
+                className="icon"
+                src="/assets/main/section6-1icon.svg"
+                alt=""
+              />
+              <div className="title">
+                <b>공공기관</b>
+              </div>
+              <div className="content-wrapper">
+                <img
+                  src="/assets/main/section6-1.png"
+                  srcSet="/assets/main/section6-1@2x.png 2x , /assets/main/section6-1@3x.png 3x"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div className="card first">
+              <img
+                className="icon medi"
+                src="/assets/main/section6-2icon.svg"
+                alt=""
+              />
+              <div className="title" style={{ width: "190px" }}>
+                <b>의료·복지기관</b>
+              </div>
+              <div className="content-wrapper">
+                <img
+                  src="/assets/main/section6-2.png"
+                  srcSet="/assets/main/section6-2@2x.png 2x , /assets/main/section6-2@3x.png 3x"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div className="card two">
+              <img
+                className="icon school"
+                src="/assets/main/section6-3icon.svg"
+                alt=""
+              />
+              <div className="title">
+                <b>학교</b>
+              </div>
+              <div className="content-wrapper">
+                <img
+                  src="/assets/main/section6-3.png"
+                  srcSet="/assets/main/section6-3@2x.png 2x , /assets/main/section6-3@3x.png 3x"
+                  alt=""
+                />
+                <div className="line" />
+                <span>
+                  현풍중·현풍고·경북 기계금속고·영천고·구미 석적고 <br /> 대구
+                  상원중·영천여자중·경산 자인중·경산 서부초 <br /> 금청초·영천
+                  단포초·옥곡초·경산 명산초·칠곡 학림초
+                </span>
+              </div>
+            </div>
+            <div className="card two">
+              <img
+                style={{ opacity: 1 }}
+                className="icon"
+                src="/assets/main/section6-4icon.svg"
+                alt=""
+              />
+              <div className="title">
+                <b>은행·상점</b>
+              </div>
+              <div className="content-wrapper">
+                <img
+                  src="/assets/main/section6-4.png"
+                  srcSet="/assets/main/section6-4@2x.png 2x , /assets/main/section6-4@3x.png 3x"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="section7">
+        <div className="pack">
+          <img
+            src="/assets/main/everpuri.png"
+            srcSet="/assets/main/everpuri@2x.png 2x , /assets/main/everpuri@3x.png 3x"
+            alt=""
+          />
+        </div>
+        <div className="bottom">
+          <div className="pack">
+            <div className="title">
+              <b>깨끗한 환경</b>으로 <b>건강한 내일</b>을 약속하는 <br />{" "}
+              에버퓨리가 여러분의 건강을 지켜드립니다
+            </div>
+            <div className="call-wrapper">
+              <div className="tel-wrapper">
+                <img src="/assets/main/tel.svg" alt="전화" />
+                <div className="tel">1522-4396</div>
+              </div>
+              <div className="address">
+                대구광역시 동구 동내로 76 한국메디벤처센터 210호, 211호
+              </div>
+            </div>
+            <img
+              className="background"
+              src="/assets/main/section7.svg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <Store />
     </main>
   );
 }
