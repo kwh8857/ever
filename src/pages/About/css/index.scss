@@ -164,11 +164,28 @@
     &>.pack{
       height: 100%;
       position: relative;
+      padding-left: 162px;
+      padding-top: 154px;
+      box-sizing: border-box;
       &>.background{
         position: absolute;
         left: 0;
         top: 0;
         width: 456px;
+        z-index: -1;
+      }
+      &>.title-wrapper{
+        &>.cat{
+          font-size: 15px;
+          font-family: 'gmarket';
+          color: var(--dark-sky-blue);
+          margin-bottom: 8px;
+        }
+        &>.title{
+          font-size: 35px;
+            line-height: 1.34;
+            color: var(--navy);
+        }
       }
     }
     }

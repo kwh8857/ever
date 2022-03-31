@@ -157,6 +157,29 @@ function About() {
                 srcSet="/assets/about/company@2x.png 2x ,/assets/about/company@3x.png 3x"
                 alt=""
               />
+              <div className="title-wrapper">
+                <b className="cat">VISION</b>
+                <div className="title">
+                  에버퓨리는 고객님의
+                  <b>
+                    삶의 질을 <br /> 높이기 위해 존재
+                  </b>
+                  합니다
+                </div>
+              </div>
+              <div className="list">
+                {layout.map(({ number, bold, sub }, idx) => {
+                  return (
+                    <div key={idx} className="wrapper">
+                      <span className="number">{number}</span>
+                      <span className="content">
+                        <b>{bold}</b>
+                        {sub}
+                      </span>
+                    </div>
+                  );
+                })}
+              </div>
             </div>
           </div>
         </div>
@@ -168,3 +191,25 @@ function About() {
 export default About;
 
 const navArr = ["CEO 인사말", "회사소개"];
+const layout = [
+  {
+    number: "01",
+    bold: "전문 홈케어 매니저로 ",
+    sub: "믿을 수 있는 서비스",
+  },
+  {
+    number: "02",
+    bold: "서비스 만족을 최우선",
+    sub: "으로 생각하는 기업",
+  },
+  {
+    number: "03",
+    bold: "전문장비를 이용한 ",
+    sub: "철저한 살균과 소독",
+  },
+  {
+    number: "04",
+    bold: "수년간의 축적된 노하우로 ",
+    sub: "차별화된 서비스",
+  },
+];
