@@ -1,5 +1,6 @@
 .about {
   width: 100%;
+  padding-top: 95px;
 }
 
 .about > .ceo > .section1 {
@@ -254,5 +255,204 @@
   font-size: 35px;
   line-height: 1.34;
   color: var(--navy);
+}
+
+.about > .company > .section2 > .pack > .list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 100%;
+  margin-top: 93px;
+}
+
+.about > .company > .section2 > .pack > .list > .wrapper {
+  width: 489px;
+  color: var(--dark-sky-blue);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 91.5px;
+  border-bottom: solid 1px var(--dark-sky-blue);
+}
+
+.about > .company > .section2 > .pack > .list > .wrapper > .number {
+  font-size: 50px;
+  font-family: 'gmarket';
+  margin-right: 15px;
+  font-weight: 300;
+  width: 67px;
+  height: 50px;
+}
+
+.about > .company > .section2 > .pack > .list > .wrapper > .content {
+  font-size: 23px;
+  color: black;
+  font-weight: 500;
+}
+
+.about > .company > .section2 > .pack > .list > .wrapper > .content > b {
+  color: var(--dark-sky-blue);
+}
+
+.about > .company > .section3 {
+  height: 1493px;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-top: 185px;
+}
+
+.about > .company > .section3 > .pack > .title-wrapper > .category {
+  font-size: 15px;
+  font-family: 'gmarket';
+  font-weight: bold;
+  color: var(--dark-sky-blue);
+  margin-bottom: 8px;
+}
+
+.about > .company > .section3 > .pack > .title-wrapper > .title {
+  line-height: 1.34;
+  font-size: 35px;
+  color: var(--navy);
+}
+
+.about > .company > .section3 > .pack > .list {
+  margin-top: 54px;
+  display: -ms-grid;
+  display: grid;
+  row-gap: 17px;
+}
+
+.about > .company > .section3 > .pack > .list > .card {
+  width: 100%;
+  height: 185px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 10px;
+  padding-left: 37px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.about > .company > .section3 > .pack > .list > .card > img {
+  width: 120px;
+  height: 120px;
+  margin-right: 35px;
+}
+
+.about > .company > .section3 > .pack > .list > .card > .content {
+  color: var(--navy);
+}
+
+.about > .company > .section3 > .pack > .list > .card > .content > .title {
+  font-size: 23px;
+  font-weight: bold;
+}
+
+.about > .company > .section3 > .pack > .list > .card > .content > .line {
+  width: 16px;
+  height: 2px;
+  background-color: var(--navy);
+  margin: 10px 0;
+}
+
+.about > .company > .section3 > .pack > .list > .card > .content > .content {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.64;
+  white-space: pre-wrap;
+}
+
+.about > .company > .section3 > .pack > .list > .card:nth-child(even) {
+  background-color: var(--dark-sky-blue);
+}
+
+.about > .company > .section3 > .pack > .list > .card:nth-child(odd) {
+  background-color: #dff2f7;
+}
+
+.about > .company > .section4 {
+  height: 900px;
+  width: 100%;
+  position: relative;
+}
+
+.about > .company > .section4 > .back {
+  width: 100%;
+  height: 505px;
+  background-color: #dff2f7;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.about > .company > .section4 > .pack {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.about > .company > .section4 > .pack > .category {
+  font-size: 15px;
+  font-family: 'gmarket';
+  color: var(--dark-sky-blue);
+}
+
+.about > .company > .section4 > .pack > .title {
+  font-size: 35px;
+  line-height: 1.31;
+  color: var(--navy);
+  margin: 23px 0;
+}
+
+.about > .company > .section4 > .pack > .sub {
+  font-size: 16px;
+  line-height: 1.63;
+}
+
+.about > .company > .section4 > .pack > .list {
+  margin-top: 74px;
+  -ms-flex-item-align: center;
+      align-self: center;
+  width: 900px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  gap: 35px 23px;
+}
+
+.about > .company > .section4 > .pack > .list > .doc {
+  width: 144px;
+}
+
+.about > .company > .section4 > .pack > .list > .doc > .name {
+  font-size: 12px;
+  font-weight: 500;
+  white-space: nowrap;
 }
 /*# sourceMappingURL=index.css.map */

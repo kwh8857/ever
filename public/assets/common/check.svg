@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="33.84" height="30.374" viewBox="0 0 33.84 30.374">
+    <g data-name="구성 요소 67 – 1">
+        <g data-name="사각형 3223" transform="translate(3.536 6.374)" style="stroke-linecap:round;stroke-linejoin:round;stroke:#7d7a7a;fill:none">
+            <rect width="24" height="24" rx="4" style="stroke:none"/>
+            <rect x=".5" y=".5" width="23" height="23" rx="3.5" style="fill:none"/>
+        </g>
+        <path data-name="Icon feather-check" d="m32.769 9-18.4 18.4L6 19.038" transform="translate(-2.464 -5.464)" style="stroke:#76c7d3;stroke-width:5px;stroke-linecap:round;stroke-linejoin:round;fill:none"/>
+    </g>
+</svg>

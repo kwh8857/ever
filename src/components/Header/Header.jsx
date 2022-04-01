@@ -1,15 +1,10 @@
 import React from "react";
+import { useLocation } from "react-router-dom";
 import "./css/index.css";
 
-const LinkArr = [
-  { title: "ABOUT US", link: "/about" },
-  { title: "가전제품케어", link: "/about" },
-  { title: "홈클리닝", link: "/about" },
-  { title: "비즈니스케어", link: "/about" },
-  { title: "창업 교육 및 파트너 제휴", link: "/about" },
-];
-
 function Header() {
+  const loaction = useLocation().pathname;
+  console.log(loaction);
   return (
     <header className="header">
       <a href="/">
@@ -23,7 +18,17 @@ function Header() {
       <nav className="link-wrapper">
         {LinkArr.map(({ title, link }, idx) => {
           return (
-            <a href={link} key={idx}>
+            <a
+              href={link}
+              key={idx}
+              style={
+                loaction !== "/about" && loaction !== "/"
+                  ? {
+                      color: "white",
+                    }
+                  : undefined
+              }
+            >
               {title}
             </a>
           );
@@ -34,3 +39,10 @@ function Header() {
 }
 
 export default Header;
+const LinkArr = [
+  { title: "ABOUT US", link: "/about" },
+  { title: "가전제품케어", link: "/product" },
+  { title: "홈클리닝", link: "/home" },
+  { title: "비즈니스케어", link: "/about" },
+  { title: "창업 교육 및 파트너 제휴", link: "/about" },
+];

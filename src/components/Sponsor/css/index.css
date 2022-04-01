@@ -1,0 +1,133 @@
+.sponsor {
+  width: 100%;
+  height: 1028px;
+  background-color: #e0f3f7;
+  padding-top: 113px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.sponsor > .pack {
+  padding: 0 62px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.sponsor > .pack > .title {
+  font-size: 34px;
+  line-height: 1.38;
+  color: var(--navy);
+}
+
+.sponsor > .pack > .content {
+  margin-top: 81.7px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (425.3px)[2];
+      grid-template-columns: repeat(2, 425.3px);
+  -webkit-column-gap: 17.7px;
+          column-gap: 17.7px;
+  row-gap: 102.7px;
+}
+
+.sponsor > .pack > .content > .card {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.sponsor > .pack > .content > .card > .icon {
+  position: absolute;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  top: -63px;
+  right: 50px;
+  z-index: 1;
+  opacity: 0.4;
+}
+
+.sponsor > .pack > .content > .card > .medi {
+  top: -72px;
+  right: 40px;
+}
+
+.sponsor > .pack > .content > .card > .school {
+  top: -65px;
+  right: 24px;
+}
+
+.sponsor > .pack > .content > .card > .title {
+  width: 160px;
+  height: 47px;
+  border-radius: 23px;
+  background-color: var(--seafoam-blue);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: -25px;
+  z-index: 150;
+}
+
+.sponsor > .pack > .content > .card > .content-wrapper {
+  z-index: 100;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.sponsor > .pack > .content > .card > .content-wrapper > img {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.sponsor > .pack > .content > .card > .content-wrapper > .line {
+  width: 353px;
+  height: 1px;
+  background-color: var(--very-light-pink);
+  margin-bottom: 11.5px;
+}
+
+.sponsor > .pack > .content > .card > .content-wrapper > span {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.sponsor > .pack > .content > .first {
+  height: 290.5px;
+}
+
+.sponsor > .pack > .content > .two {
+  height: 203.7px;
+}
+/*# sourceMappingURL=index.css.map */

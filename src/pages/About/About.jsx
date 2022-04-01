@@ -1,5 +1,7 @@
 import React, { useState } from "react";
+import Map from "../../components/Map/Map";
 import Nav from "../../components/Nav/Nav";
+import Sponsor from "../../components/Sponsor/Sponsor";
 import "./css/index.css";
 function About() {
   const [now, setnow] = useState(0);
@@ -171,7 +173,7 @@ function About() {
                 {layout.map(({ number, bold, sub }, idx) => {
                   return (
                     <div key={idx} className="wrapper">
-                      <span className="number">{number}</span>
+                      <div className="number">{number}</div>
                       <span className="content">
                         <b>{bold}</b>
                         {sub}
@@ -182,6 +184,62 @@ function About() {
               </div>
             </div>
           </div>
+          <div className="section3">
+            <div className="pack">
+              <div className="title-wrapper">
+                <div className="category">SERVICE</div>
+                <div className="title">
+                  더이상 비교할 필요가 없습니다 <br />
+                  <b>에버퓨리만의 특별한 서비스</b>
+                </div>
+              </div>
+              <div className="list">
+                {serviceLayout.map(({ img, title, content }, idx) => {
+                  return (
+                    <div className="card" key={idx}>
+                      <img src={img} alt="" />
+                      <div className="content">
+                        <div className="title">{title}</div>
+                        <div className="line" />
+                        <div className="content">{content}</div>
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          </div>
+          <div className="section4">
+            <div className="pack">
+              <b className="category">PROFESSIONAL</b>
+              <b className="title">
+                에버퓨리는 <br /> 인증된 전문 서비스를 제공합니다
+              </b>
+              <div className="sub">
+                흉내만 내는 단순 청소업체와 달리, 사후관리와 책임시공이라는
+                책임감을 갖고 서비스를 제공합니다. <br /> 에버퓨리에서 제공하는
+                서비스는 기술, 만족입니다. 철저한 기술연마와 서비스정신으로
+                최선을 다하겠습니다.
+              </div>
+              <div className="list">
+                {docLayout.map(({ img, name }, idx) => {
+                  return (
+                    <div key={idx} className="doc">
+                      <img
+                        src={`/assets/about/${img}.png`}
+                        srcSet={`/assets/about/${img}@2x.png 2x, /assets/about/${img}@3x.png 3x`}
+                        alt={name}
+                      />
+                      <div className="name">{name}</div>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+            <div className="back" />
+          </div>
+          <Sponsor type="about" />
+          <Map />
         </div>
       )}
     </main>
@@ -211,5 +269,73 @@ const layout = [
     number: "04",
     bold: "수년간의 축적된 노하우로 ",
     sub: "차별화된 서비스",
+  },
+];
+const serviceLayout = [
+  {
+    img: "/assets/about/service-1.svg",
+    title: "케어 전문가",
+    content: `에버퓨리는 직영 교육장을 통해 양성한 케어전문가가 고객님을 찾아갑니다.
+철저한 교육을 통해 최상의 서비스를 제공합니다.
+또한 지속적인 재교육으로 서비스 품질 유지에 힘쓰고있습니다.`,
+  },
+  {
+    img: "/assets/about/service-2.svg",
+    title: "정직한 서비스",
+    content: `에버퓨리는 직영 시스템으로 운영됩니다.
+철저한 검증을 거친 케어전문가들로 구성되어있어 안심하고 댁에서 서비스를 받으실 수 있습니다.
+오직 고객의 건강만을 생각하며 까다로운 단계별 공정을 지키고 인체에 무해한 친환경 약품과 장비만을 사용합니다.`,
+  },
+  {
+    img: "/assets/about/service-3.svg",
+    title: "완벽한 사후관리",
+    content: `에버퓨리 제공 서비스가 만족스럽지 못할 경우 3개월 무상 A/S서비스를 받으실 수 있습니다.
+케어 전문가가 재방문하여 놓쳤던 부분을 꼼꼼하게 살펴드립니다.
+당사는 1억원 배상 손해보험에 가입되어있습니다.`,
+  },
+  {
+    img: "/assets/about/service-4.svg",
+    title: "끊임없는 기술 혁신",
+    content: `에버퓨리는 기술 연구부서를 운영하여 보다 발전된 건강 케어 서비스를 제공합니다.
+기술연구부는 친환경 청소와 시공, 다양한 장비와 친환경 약품 개발에 매진하고 있습니다.
+앞서가는 친환경 기술과 고객 맞춤형 서비스를 제공합니다.`,
+  },
+];
+const docLayout = [
+  {
+    img: "doc1",
+    name: "경쟁입찰참가자격등록증",
+  },
+  {
+    img: "doc2",
+    name: "직접생산확인증명서",
+  },
+  {
+    img: "doc3",
+    name: "소독업 신고증",
+  },
+  {
+    img: "doc4",
+    name: "영업신고증",
+  },
+  {
+    img: "doc5",
+    name: "통신판매업신고증",
+  },
+  {
+    img: "doc6",
+    name: "건강기능식품 영업신고증",
+  },
+  {
+    img: "doc7",
+    name: "여성기업 확인서",
+  },
+  {
+    img: "doc8",
+    name: "시스템에어컨종합세척관리사",
+  },
+  {
+    img: "doc9",
+    name: "사업자등록증",
   },
 ];

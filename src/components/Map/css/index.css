@@ -1,0 +1,103 @@
+.map {
+  height: 1225px;
+  padding-top: 168px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+
+.map > .pack {
+  padding-right: 73px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-top: 72px;
+  position: relative;
+}
+
+.map > .pack > .back {
+  -webkit-transform: translateX(224px);
+          transform: translateX(224px);
+  top: 0;
+  position: absolute;
+  width: 100vw;
+  height: 329px;
+  background-color: var(--navy);
+}
+
+.map > .pack > .content {
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+
+.map > .pack > .content > .category {
+  font-family: 'gmarket';
+  font-weight: bold;
+  font-size: 15px;
+  color: var(--dark-sky-blue);
+}
+
+.map > .pack > .content > .title {
+  font-size: 35px;
+  font-weight: 900;
+  color: white;
+  margin-top: 6px;
+  margin-bottom: 23px;
+}
+
+.map > .pack > .content > .main {
+  width: 766px;
+  height: 470.4px;
+}
+
+.map > .pack > .content > .list {
+  padding-left: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-top: 25px;
+  display: -ms-grid;
+  display: grid;
+  row-gap: 25px;
+}
+
+.map > .pack > .content > .list > .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.map > .pack > .content > .list > .wrapper > .icon {
+  width: 64px;
+  height: 64px;
+  margin-right: 15px;
+}
+
+.map > .pack > .content > .list > .wrapper > .content-wrapper > .category {
+  font-family: 'gmarket';
+  color: var(--brown-grey);
+  margin-bottom: 5px;
+}
+
+.map > .pack > .content > .list > .wrapper > .content-wrapper > .content {
+  font-size: 19px;
+  font-weight: 500;
+  color: var(--navy);
+}
+
+.map > .pack > .content > .list > .wrapper > .copy {
+  width: 116px;
+  height: 34px;
+  border-radius: 17px;
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-left: 22px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  background-color: var(--dark-sky-blue);
+}
+/*# sourceMappingURL=index.css.map */

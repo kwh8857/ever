@@ -1,13 +1,13 @@
 .nav{
- padding-top: 117px;
+height: 72px;
  width: 100%;
  display: flex;
  justify-content: center;
  border-bottom: solid 1px #cbcbcb;
  &>.wrapper{
+   height: 100%;
    display: flex;
    position: relative;
-   height: 42px;
    &>button{
      display: flex;
      justify-content: center;
@@ -17,6 +17,7 @@
      font-weight: 500;
      cursor: pointer;
      color: var(--brownish-grey);
+     align-items: center;
    }
    &>.bar{
      width: 140px;
