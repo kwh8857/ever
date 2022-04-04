@@ -1,0 +1,32 @@
+<svg data-name="구성 요소 73 – 1" xmlns="http://www.w3.org/2000/svg" width="100.742" height="100.742" viewBox="0 0 100.742 100.742">
+    <defs>
+        <clipPath id="4awy6p96za">
+            <path data-name="사각형 3567" style="fill:none" d="M0 0h52.525v58.274H0z"/>
+        </clipPath>
+        <clipPath id="tz19ntkw1b">
+            <path data-name="사각형 3568" style="fill:none" d="M0 0h25.96v21.9H0z"/>
+        </clipPath>
+    </defs>
+    <g data-name="그룹 5131" transform="translate(-294.629 -3681.879)">
+        <circle data-name="타원 129" cx="50.371" cy="50.371" r="50.371" transform="translate(294.629 3681.879)" style="fill:#76c7d3"/>
+    </g>
+    <g data-name="그룹 5487">
+        <g data-name="그룹 5482">
+            <g data-name="그룹 5481" style="clip-path:url(#4awy6p96za)" transform="translate(24.108 19.234)">
+                <path data-name="패스 7562" d="M81.424 106.711a.951.951 0 0 1-.931-1.144l3.116-15.044h-5.92a.951.951 0 0 1-.741-1.548l14.652-18.2a.951.951 0 0 1 1.672.793L90.26 85.842h6.106a.952.952 0 0 1 .748 1.54l-14.943 18.967a.952.952 0 0 1-.748.362M79.676 88.62h5.1a.951.951 0 0 1 .932 1.144L83.174 102l11.232-14.255h-5.319a.952.952 0 0 1-.931-1.148l2.436-11.532z" transform="translate(-60.512 -55.531)" style="fill:#061a3b"/>
+                <path data-name="패스 7563" d="M26.094 174.748A26.124 26.124 0 0 1 0 148.653a.951.951 0 1 1 1.9 0 24.191 24.191 0 1 0 48.383 0 .951.951 0 1 1 1.9 0 26.124 26.124 0 0 1-26.094 26.095" transform="translate(0 -116.474)" style="fill:#061a3b"/>
+                <path data-name="패스 7564" d="M1.678 54.784a.952.952 0 0 1-.951-.951 26.124 26.124 0 0 1 26.094-26.095.951.951 0 1 1 0 1.9A24.219 24.219 0 0 0 2.63 53.833a.951.951 0 0 1-.951.951" transform="translate(-.573 -21.873)" style="fill:#061a3b"/>
+            </g>
+        </g>
+        <g data-name="그룹 5484">
+            <g data-name="그룹 5483" style="clip-path:url(#tz19ntkw1b)" transform="translate(47.159 19.234)">
+                <path data-name="패스 7565" d="M146.6 54.784a.951.951 0 0 1-.951-.951 24.219 24.219 0 0 0-24.192-24.192.951.951 0 1 1 0-1.9 26.124 26.124 0 0 1 26.095 26.095.952.952 0 0 1-.951.951" transform="translate(-118.08 -21.874)" style="fill:#061a3b"/>
+            </g>
+        </g>
+        <g data-name="그룹 5486">
+            <g data-name="그룹 5485" style="clip-path:url(#4awy6p96za)" transform="translate(24.108 19.234)">
+                <path data-name="패스 7566" d="M200.49 67.492a.935.935 0 0 1-.2-.022l-7.834-1.69a.951.951 0 0 1 .4-1.86l6.817 1.47.871-7.031a.951.951 0 0 1 1.888.234l-1 8.064a.952.952 0 0 1-.944.835" transform="translate(-151.173 -45.362)" style="fill:#061a3b"/>
+            </g>
+        </g>
+    </g>
+</svg>

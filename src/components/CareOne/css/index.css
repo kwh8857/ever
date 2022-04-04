@@ -1,0 +1,125 @@
+.careone {
+  height: 1482px;
+  width: 100%;
+  padding-top: 140px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.careone > .pack > .category {
+  background-color: var(--navy);
+  width: 162px;
+  height: 33px;
+  font-family: 'gmarket';
+  font-size: 11px;
+  font-weight: bold;
+  color: white;
+  border-radius: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.careone > .pack > .title {
+  font-size: 30px;
+  font-weight: 500;
+  white-space: nowrap;
+  line-height: 1.33;
+  color: var(--navy);
+}
+
+.careone > .pack > .title > .circle {
+  font-size: 30px;
+  text-emphasis-style: dot;
+  text-emphasis-position: over left;
+  -webkit-text-emphasis-style: dot;
+  -webkit-text-emphasis-position: over;
+  -webkit-text-emphasis-color: #76c7d3;
+          text-emphasis-color: #76c7d3;
+  position: relative;
+}
+
+.careone > .pack > .title > .circle > .circle-wrapper {
+  position: absolute;
+  top: 0;
+}
+
+.careone > .pack > .sub {
+  font-size: 20px;
+  margin-top: 17px;
+}
+
+.careone > .pack > .list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (237px)[4];
+      grid-template-columns: repeat(4, 237px);
+  -webkit-column-gap: 15px;
+          column-gap: 15px;
+  margin-top: 47px;
+  row-gap: 53px;
+}
+
+.careone > .pack > .list > .card {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.careone > .pack > .list > .card > .number {
+  position: absolute;
+  top: -19px;
+  width: 38px;
+  height: 38px;
+  border-radius: 38px;
+  background-color: var(--navy);
+  color: white;
+  font-family: 'gmarket';
+  font-weight: bold;
+  font-size: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.careone > .pack > .list > .card > .title {
+  margin-top: 8.2px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.washclean {
+  height: 1153px;
+}
+
+.washclean > .pack {
+  padding: 0 125px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.washclean > .pack > .list {
+  -ms-grid-columns: (237px)[3];
+      grid-template-columns: repeat(3, 237px);
+}
+/*# sourceMappingURL=index.css.map */

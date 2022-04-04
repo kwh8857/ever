@@ -1,0 +1,98 @@
+.point {
+  height: 1430px;
+  width: 100%;
+  position: relative;
+  padding-top: 182px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.point > .back {
+  width: 100%;
+  height: 533px;
+  background-color: var(--navy);
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+
+.point > .back > .pack {
+  text-align: right;
+}
+
+.point > .back > .pack > img {
+  width: 513px;
+}
+
+.point > .pack {
+  padding: 0 82.8px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.point > .pack > .category {
+  width: 142px;
+  height: 33px;
+  background-color: #76c7d3;
+  border-radius: 16.5px;
+  color: #08174a;
+  font-family: 'gmarket';
+  font-weight: bold;
+  font-size: 11px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.point > .pack > .title {
+  color: white;
+  line-height: 1.31;
+  font-size: 35px;
+  margin-top: 10px;
+  margin-bottom: 53px;
+}
+
+.point > .pack > .list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (405px)[2];
+      grid-template-columns: repeat(2, 405px);
+  -webkit-column-gap: 15px;
+          column-gap: 15px;
+  row-gap: 40px;
+}
+
+.point > .pack > .list > .card {
+  height: 392px;
+  border-radius: 13px;
+  background-color: white;
+  -webkit-box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.13);
+          box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.13);
+  text-align: center;
+}
+
+.point > .pack > .list > .card > .title {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.point > .pack > .list > .card > .title > b {
+  color: var(--dark-sky-blue);
+}
+
+.point > .pack > .list > .card > .content {
+  white-space: pre-line;
+  height: 46px;
+  font-size: 16px;
+  line-height: 1.38;
+  margin-top: 9px;
+}
+/*# sourceMappingURL=index.css.map */

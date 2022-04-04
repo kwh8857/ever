@@ -1,0 +1,54 @@
+.slogan {
+  width: 100%;
+  height: 240px;
+  background-color: var(--navy);
+}
+
+.slogan > .pack {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+  padding-top: 29px;
+  padding-bottom: 38px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.slogan > .pack > img {
+  width: 94px;
+  height: 91px;
+}
+
+.slogan > .pack > .left {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+
+.slogan > .pack > .title {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1.43;
+  margin-left: 25px;
+  margin-right: 17px;
+  color: white;
+}
+
+.slogan > .pack > .title > b {
+  color: var(--dark-sky-blue);
+}
+
+.slogan > .pack > .right {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+/*# sourceMappingURL=index.css.map */

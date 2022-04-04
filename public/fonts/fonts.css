@@ -20,3 +20,25 @@
   font-weight: 300;
   unicode-range: U+0-10FFFF;
 }
+@font-face {
+  font-family: "nexon";
+  src: local(Nexon), url(Nexon.otf) format("OpenType");
+  font-style: normal;
+  font-weight: 500;
+  unicode-range: U+0-10FFFF;
+}
+
+@font-face {
+  font-family: "nexon";
+  src: local(Nexon), url(NexonBold.otf) format("OpenType");
+  font-style: normal;
+  font-weight: bold;
+  unicode-range: U+0-10FFFF;
+}
+@font-face {
+  font-family: "nexon";
+  src: local(Nexon), url(NexonLight.otf) format("OpenType");
+  font-style: normal;
+  font-weight: 300;
+  unicode-range: U+0-10FFFF;
+}

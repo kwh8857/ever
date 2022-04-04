@@ -1,0 +1,75 @@
+.point{
+
+      height: 1430px;
+      width: 100%;
+      position: relative;
+      padding-top: 182px;
+      box-sizing: border-box;
+      &>.back{
+      width: 100%;
+      height: 533px;
+      background-color: var(--navy);
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      &>.pack{
+        text-align: right;
+         &>img{
+        width: 513px;
+      }
+      }
+      }
+      &>.pack{
+        padding: 0 82.8px;
+        box-sizing: border-box;
+         &>.category{
+             width: 142px;
+  height: 33px;
+  background-color: #76c7d3;
+    border-radius: 16.5px;
+    color: #08174a;
+    font-family: 'gmarket';
+    font-weight: bold;
+    font-size: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+         }
+         &>.title{
+           color: white;
+           line-height: 1.31;
+           font-size: 35px;
+           margin-top: 10px;
+           margin-bottom: 53px;
+         }
+         &>.list{
+           display: grid;
+           grid-template-columns: repeat(2,405px);
+           column-gap: 15px;
+           row-gap: 40px;
+           &>.card{
+             height:392px;
+              border-radius: 13px;
+              background-color: white;
+                box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.13);
+              text-align: center;
+              &>.title{
+                margin-top: 20px;
+                font-size: 20px;
+                font-weight: bold;
+                &>b{
+                  color: var(--dark-sky-blue);
+                }
+              }
+              &>.content{
+                white-space: pre-line;
+                height: 46px;
+                font-size: 16px;
+                line-height: 1.38;
+                margin-top: 9px;
+              }
+            }
+         }
+      }
+}

@@ -1,0 +1,22 @@
+<svg data-name="구성 요소 99 – 1" xmlns="http://www.w3.org/2000/svg" width="100.742" height="100.742" viewBox="0 0 100.742 100.742">
+    <defs>
+        <clipPath id="rblv9mv3ra">
+            <path data-name="사각형 4071" style="fill:none" d="M0 0h64v64H0z"/>
+        </clipPath>
+    </defs>
+    <g data-name="그룹 5131" transform="translate(-294.629 -3681.879)">
+        <circle data-name="타원 129" cx="50.371" cy="50.371" r="50.371" transform="translate(294.629 3681.879)" style="fill:#76c7d3"/>
+    </g>
+    <g data-name="그룹 6014">
+        <g data-name="그룹 6013" style="clip-path:url(#rblv9mv3ra)" transform="translate(18.371 18.056)">
+            <path data-name="패스 7827" d="M22.736 17.648s-9.521 6.552-1.248 14.117" style="stroke:#08174a;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;fill:none"/>
+            <path data-name="패스 7828" d="M21.488 31.766s8.3 7.315-1.248 14.117" style="stroke:#08174a;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;fill:none"/>
+            <path data-name="패스 7829" d="M33.762 17.648s-9.521 6.552-1.248 14.117" style="stroke:#08174a;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;fill:none"/>
+            <path data-name="패스 7830" d="M32.514 31.766s8.3 7.315-1.248 14.117" style="stroke:#08174a;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;fill:none"/>
+            <path data-name="패스 7831" d="M44.787 17.648s-9.521 6.552-1.248 14.117" style="stroke:#08174a;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;fill:none"/>
+            <path data-name="패스 7832" d="M43.54 31.766s8.3 7.315-1.248 14.117" style="stroke:#08174a;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;fill:none"/>
+            <circle data-name="타원 534" cx="26.187" cy="26.187" r="26.187" transform="translate(6.309 5.579)" style="stroke:#08174a;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;fill:none"/>
+            <path data-name="선 293" transform="translate(11.94 15.606)" style="stroke:#08174a;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;fill:none" d="M41.112 0 0 32.318"/>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,60 @@
+.summary {
+  height: 741px;
+  width: 100%;
+}
+
+.summary > .pack {
+  height: 100%;
+  position: relative;
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+
+.summary > .pack > .back {
+  left: 400px;
+  top: 305px;
+  position: absolute;
+  height: 306px;
+  width: 100vw;
+  background-color: var(--navy);
+  z-index: -1;
+}
+
+.summary > .pack > .backimg {
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+  position: absolute;
+  width: 683px;
+  height: 454px;
+  top: 93px;
+  z-index: -2;
+  left: -200px;
+}
+
+.summary > .pack > .content-wrapper {
+  color: white;
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+  padding-left: 52.8px;
+  padding-top: 346px;
+}
+
+.summary > .pack > .content-wrapper > .title {
+  font-size: 35px;
+  font-weight: 500;
+  line-height: 1.26;
+}
+
+.summary > .pack > .content-wrapper > .line {
+  width: 24px;
+  height: 4px;
+  background-color: white;
+  margin-top: 18px;
+  margin-bottom: 9px;
+}
+
+.summary > .pack > .content-wrapper > .sub {
+  line-height: 1.59;
+  font-size: 17px;
+}
+/*# sourceMappingURL=index.css.map */

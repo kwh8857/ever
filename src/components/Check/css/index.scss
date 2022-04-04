@@ -1,0 +1,109 @@
+.check-section{
+    height: 1145px;
+    width: 100%;
+    position: relative;
+     &>.back{
+       position: absolute;
+       z-index: -1;
+         height: 942px;
+         width: 100%;
+         background-color: #f8f8f8;
+         bottom: 0;
+         left: 0;
+     }
+     &>.pack{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       &>.title{
+         text-align: center;
+          line-height: 1.43;
+          font-size: 30px;
+          color: var(--navy);
+       }
+       &>.circle-wrapper{
+         margin-top: 41px;
+         display: grid;
+         column-gap: 31px;
+         &>.circle{
+           text-align: center;
+           &>.title{
+             margin-top: 28px;
+             font-size: 18px;
+             font-weight: bold;
+             color: var(--navy);
+           }
+         }
+       }
+       &>.content{
+         font-size: 32px;
+         font-weight: 500;
+         color: var(--navy);
+         margin-top: 192px;
+         text-align: center;
+           line-height: 1.34;
+       
+       }
+       &>.check-box{
+         margin-top: 48px;
+           width: 522px;
+  height: 335px;
+         background-color: white;
+         position: relative;
+         display: flex;
+         align-items: center;
+           box-shadow: 0 3px 6px 0 rgba(0, 26, 61, 0.13);
+           border-radius: 11px;
+            justify-content: center;
+         &>.title{
+             width: 180px;
+  height: 45px;
+           background-color: var(--navy);
+           font-size: 18px;
+           font-family: 'gmarket';
+           font-weight: bold;
+           color: var(--dark-sky-blue);
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           border-radius: 23px;
+           align-self: center;
+           top: -22px;
+           position: absolute;
+         }
+         &>.check{
+           margin-right: 14.2px;
+           display: grid;
+           row-gap: 20px;
+           &>img{
+               width: 34px;
+           }
+         }
+         &>.content{
+           line-height: 2.2;
+           font-size: 23px;
+           &>b{
+             position: relative;
+             z-index: 1;
+             &>span{
+               z-index: 10;
+               position: relative;
+             }
+             &>.back{
+               left: 0;
+               bottom: 0;
+               width: 100%;
+               position: absolute;
+               height: 17px;
+             z-index: 1;
+                   background-color: rgb(173, 221, 228);
+             }
+           }
+         }
+       }
+       &>.wash{
+           width: 596px;
+  height: 230px;
+       }
+     }
+}

@@ -1,0 +1,149 @@
+.check-section {
+  height: 1145px;
+  width: 100%;
+  position: relative;
+}
+
+.check-section > .back {
+  position: absolute;
+  z-index: -1;
+  height: 942px;
+  width: 100%;
+  background-color: #f8f8f8;
+  bottom: 0;
+  left: 0;
+}
+
+.check-section > .pack {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.check-section > .pack > .title {
+  text-align: center;
+  line-height: 1.43;
+  font-size: 30px;
+  color: var(--navy);
+}
+
+.check-section > .pack > .circle-wrapper {
+  margin-top: 41px;
+  display: -ms-grid;
+  display: grid;
+  -webkit-column-gap: 31px;
+          column-gap: 31px;
+}
+
+.check-section > .pack > .circle-wrapper > .circle {
+  text-align: center;
+}
+
+.check-section > .pack > .circle-wrapper > .circle > .title {
+  margin-top: 28px;
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--navy);
+}
+
+.check-section > .pack > .content {
+  font-size: 32px;
+  font-weight: 500;
+  color: var(--navy);
+  margin-top: 192px;
+  text-align: center;
+  line-height: 1.34;
+}
+
+.check-section > .pack > .check-box {
+  margin-top: 48px;
+  width: 522px;
+  height: 335px;
+  background-color: white;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0 3px 6px 0 rgba(0, 26, 61, 0.13);
+          box-shadow: 0 3px 6px 0 rgba(0, 26, 61, 0.13);
+  border-radius: 11px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.check-section > .pack > .check-box > .title {
+  width: 180px;
+  height: 45px;
+  background-color: var(--navy);
+  font-size: 18px;
+  font-family: 'gmarket';
+  font-weight: bold;
+  color: var(--dark-sky-blue);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 23px;
+  -ms-flex-item-align: center;
+      align-self: center;
+  top: -22px;
+  position: absolute;
+}
+
+.check-section > .pack > .check-box > .check {
+  margin-right: 14.2px;
+  display: -ms-grid;
+  display: grid;
+  row-gap: 20px;
+}
+
+.check-section > .pack > .check-box > .check > img {
+  width: 34px;
+}
+
+.check-section > .pack > .check-box > .content {
+  line-height: 2.2;
+  font-size: 23px;
+}
+
+.check-section > .pack > .check-box > .content > b {
+  position: relative;
+  z-index: 1;
+}
+
+.check-section > .pack > .check-box > .content > b > span {
+  z-index: 10;
+  position: relative;
+}
+
+.check-section > .pack > .check-box > .content > b > .back {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  position: absolute;
+  height: 17px;
+  z-index: 1;
+  background-color: #addde4;
+}
+
+.check-section > .pack > .wash {
+  width: 596px;
+  height: 230px;
+}
+/*# sourceMappingURL=index.css.map */

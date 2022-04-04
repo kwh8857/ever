@@ -1,0 +1,38 @@
+.slogan{
+
+      width: 100%;
+      height: 240px;
+      background-color: var(--navy);
+      &>.pack{
+        display: flex;
+        justify-content: center;
+        height: 100%;
+        padding-top: 29px;
+        padding-bottom: 38px;
+        box-sizing: border-box;
+        &>img{
+          width: 94px;
+          height: 91px;
+        }
+        &>.left{
+          align-self: flex-end;
+           transform: scaleX(-1);
+        }
+        &>.title{
+          align-self: center;
+          text-align: center;
+          font-size: 28px;
+          font-weight: 500;
+          line-height: 1.43;
+          margin-left: 25px;
+          margin-right: 17px;
+          color: white;
+          &>b{
+            color: var(--dark-sky-blue);
+          }
+        }
+        &>.right{
+          align-self: flex-start;
+        }
+      }
+}

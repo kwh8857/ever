@@ -1,0 +1,101 @@
+.caretwo {
+  width: 100%;
+  height: 948px;
+  background-color: #d6f0f4;
+}
+
+.caretwo > .pack {
+  padding-top: 159px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.caretwo > .pack > .category {
+  width: 162px;
+  height: 33px;
+  border-radius: 16.5px;
+  background-color: var(--navy);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+  font-size: 11px;
+  font-family: 'gmarket';
+  font-weight: bold;
+}
+
+.caretwo > .pack > .title {
+  font-size: 36px;
+  color: var(--navy);
+  font-weight: 500;
+  margin: 6px 0;
+}
+
+.caretwo > .pack > .sub {
+  font-size: 20px;
+}
+
+.caretwo > .pack > .list {
+  margin-top: 83.8px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (318px)[3];
+      grid-template-columns: repeat(3, 318px);
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+}
+
+.caretwo > .pack > .list > .card {
+  width: 100%;
+  height: 343px;
+  background-color: white;
+  border-radius: 22px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding-top: 82.5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  white-space: pre-line;
+}
+
+.caretwo > .pack > .list > .card > img {
+  position: absolute;
+  width: 100px;
+  top: -50px;
+}
+
+.caretwo > .pack > .list > .card > .title {
+  font-size: 27px;
+  line-height: 1.3;
+  color: var(--navy);
+}
+
+.caretwo > .pack > .list > .card > .line {
+  width: 239px;
+  height: 1px;
+  background-color: #b5b5b5;
+  margin-top: 14.5px;
+  margin-bottom: 19.2px;
+}
+
+.caretwo > .pack > .list > .card > .sub {
+  font-size: 14px;
+  line-height: 1.64;
+}
+/*# sourceMappingURL=index.css.map */
