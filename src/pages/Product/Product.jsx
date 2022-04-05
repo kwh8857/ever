@@ -5,6 +5,7 @@ import Check from "../../components/Check/Check";
 import Nav from "../../components/Nav/Nav";
 import Point from "../../components/Point/Point";
 import Reviews from "../../components/Review/Reviews";
+import Service from "../../components/Service/Service";
 import Slogan from "../../components/Slogan/Slogan";
 import Store from "../../components/Store/Store";
 import Summary from "../../components/Summary/Summary";
@@ -29,56 +30,7 @@ function Product() {
           <Slogan type="aircon" />
           <CareTwo type="aircon" arr={care02Arr} />
           <Point type="aircon" arr={pointArr} />
-          <div className="section7">
-            <div className="pack">
-              <div className="category">EVERPURI SERVICE</div>
-              <div className="title">
-                서비스에 대해 인정받고
-                <b>
-                  끝까지 책임지는 <br /> 청소·시공전문업체
-                </b>
-                는 에버퓨리
-              </div>
-              <div className="list">
-                <div className="card">
-                  <span className="number">01</span>
-                  <span className="title">
-                    <b>완전분해를 원칙</b>으로 합니다
-                  </span>
-                </div>
-                <div className="line" />
-                <div className="card">
-                  <span className="number">02</span>
-                  <span className="title">
-                    <b>검증된 핀세척제 웰존</b> (환경부 고시 안전검사 완료제품,
-                    냉동협회 공인약품)만을 사용합니다
-                  </span>
-                </div>
-                <div className="line" />
-                <div className="card">
-                  <span className="number">03</span>
-                  <span className="title">
-                    핀코팅을 통해 <b>제품의 수명을 늘려줍니다</b>
-                  </span>
-                </div>
-                <div className="line" />
-                <div className="card">
-                  <span className="number">04</span>
-                  <span className="title">
-                    <b>무상 A/S기간은 3개월</b>입니다
-                  </span>
-                </div>
-                <div className="line" />
-                <div className="card">
-                  <span className="number">05</span>
-                  <span className="title">
-                    <b>고압세척·고온스팀1차 살균·UV자외선 2차 살균</b>{" "}
-                    시스템으로 진행됩니다.
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
+          <Service type="aircon" />
           <div className="section8">
             <div className="pack">
               <div className="title">
@@ -166,7 +118,8 @@ function Product() {
             title="에어컨 분해세척은 에버퓨리에 믿고 맡기세요!"
             sub={`완벽한 홈케어로 입소문 타고 평판만으로 
 여기까지 왔습니다.`}
-            arr={reviewArr}
+            arr={[0, 0, 0, 0, 0, 0, 0, 0]}
+            type="aircon"
           />
           <Store />
         </div>
@@ -177,8 +130,36 @@ function Product() {
           <CareOne type="wash" cleanArr={washClean} />
           <Slogan type="wash" />
           <CareTwo type="wash" arr={washCare02} />
-          <Point type="wash" arr={pointArr} />
+          <Point type="wash" arr={pointArr2} />
+          <Service type="wash" />
+          <div className="kind">
+            <div className="pack">
+              <div className="title">
+                <b>다양한 형태의 세탁기 분해세척</b>이 가능합니다
+              </div>
+              <div className="list">
+                {kindArr.map(({ title }, idx) => {
+                  return (
+                    <div key={idx} className="card">
+                      <div className="circle" />
+                      <div className="title">{title}</div>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          </div>
+          <Reviews
+            title="세탁기 분해세척은 에버퓨리에 믿고 맡기세요!"
+            sub={`완벽한 홈케어로 입소문 타고 평판만으로 
+여기까지 왔습니다.`}
+            arr={[0, 0, 0, 0, 0, 0, 0, 0]}
+            type="wash"
+          />
+          <Store />
         </div>
+      ) : now === 2 ? (
+        <div className="hood"></div>
       ) : undefined}
     </div>
   );
@@ -383,13 +364,53 @@ CS마스터 팀장이 직접 방문 및 케어`,
 양질의 CS마스터 팀장을 양성`,
   },
 ];
-const reviewArr = [
-  "aircon-review1",
-  "aircon-review2",
-  "aircon-review3",
-  "aircon-review4",
-  "aircon-review5",
-  "aircon-review6",
-  "aircon-review7",
-  "aircon-review8",
+const pointArr2 = [
+  {
+    img: "point-1",
+    title: "에버퓨리 소속",
+    bold: "CS마스터 운영",
+    content: `전문 교육을 이수받은 에버퓨리
+CS마스터 팀장이 직접 방문 및 케어`,
+  },
+  {
+    img: "point-2",
+    title: "연구개발 전담부서 인증과",
+    bold: "다수의 특허",
+    content: `연구개발 전담부서 인증을 획득하고 
+검증된 친환경세정제와 장비만을 사용`,
+  },
+
+  {
+    img: "point-5",
+    title: "서비스",
+    bold: "소독ㆍ살균",
+    content: `고온스팀살균`,
+  },
+  {
+    img: "point-4",
+    title: "서비스 품질",
+    bold: "혼을 담은",
+    content: `매월 1회 CS교육과 친절한 교육을 통한 
+양질의 CS마스터 팀장을 양성`,
+  },
+];
+const kindArr = [
+  {
+    title: "통돌이세탁기",
+  },
+  {
+    title: "드럼세탁기",
+  },
+  {
+    title: "빌트인세탁기",
+  },
+  {
+    title: "아기용세탁기",
+  },
+  {
+    title: "트윈워시세탁기",
+  },
+  {
+    title: "플렉스워시",
+  },
 ];

@@ -1,6 +1,6 @@
 import React from "react";
 import "./css/index.css";
-function Reviews({ title, sub, arr }) {
+function Reviews({ title, sub, arr, type }) {
   return (
     <div className="review">
       <div className="back" />
@@ -18,8 +18,10 @@ function Reviews({ title, sub, arr }) {
           {arr.map((item, idx) => {
             return (
               <img
-                src={`/assets/product/${item}.png`}
-                srcSet={`/assets/product/${item}@2x.png 2x,/assets/product/${item}@3x.png 3x`}
+                src={`/assets/product/${type}-review${idx + 1}.png`}
+                srcSet={`/assets/product/${type}-review${
+                  idx + 1
+                }@2x.png 2x,/assets/product/${type}-review${idx + 1}@3x.png 3x`}
                 key={idx}
                 alt=""
               />

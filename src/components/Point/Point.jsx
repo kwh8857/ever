@@ -26,10 +26,19 @@ function Point({ type, arr }) {
                   srcSet={`/assets/product/${img}@2x.png 2x,/assets/product/${img}@3x.png 3x`}
                   alt=""
                 />
-                <div className="title">
+                <div
+                  className="title"
+                  style={
+                    type === "wash" && idx === 2
+                      ? {
+                          marginTop: "44px",
+                        }
+                      : undefined
+                  }
+                >
                   {idx > 1 ? (
                     <b>
-                      {bold} <br />
+                      {bold} {type === "wash" && idx === 2 ? undefined : <br />}
                     </b>
                   ) : undefined}
                   {title}
