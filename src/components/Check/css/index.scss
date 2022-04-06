@@ -32,6 +32,7 @@
              font-size: 18px;
              font-weight: bold;
              color: var(--navy);
+             white-space: nowrap;
            }
          }
        }
@@ -106,4 +107,56 @@
   height: 230px;
        }
      }
+}
+.hoodcheck,.aircheck{
+  height: 651px;
+  &>.back{
+    height: 100%;
+  }
+  &>.pack{
+    &>.content{
+      margin-top: 92px;
+    }
+  }
+}
+.filtercheck{
+  height: 697px;
+  &>.back{
+    height: 100%;
+
+  }
+  &>.pack{
+    &>.content{
+      margin-top: 120px;
+    }
+    &>.check-box{
+        width: 640px;
+  height: 329px;
+    }
+  }
+}
+.homecleancheck{
+  &>.pack{
+    &>.check-box{
+      &>.title{
+   background-color: var(--shamrock);
+   color: white;
+      }
+      &>.content{
+        &>b{
+          &>.back{
+            background-color: rgb(205, 243, 224);
+          }
+        }
+      }
+    }
+  }
+}
+.matcheck{
+  &>.pack{
+    &>.check-box{
+      width: 553px;
+      height: 380px;
+    }
+  }
 }

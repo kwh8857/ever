@@ -3,6 +3,7 @@ import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import "./css/core.css";
 import About from "./pages/About/About";
+import HomeClean from "./pages/HomeClean/HomeClean";
 import Main from "./pages/Main/Main";
 import Product from "./pages/Product/Product";
 function App() {
@@ -13,6 +14,7 @@ function App() {
         <Route path="/" exact element={<Main />} />
         <Route path="/about" exact element={<About />} />
         <Route path="/product" exact element={<Product />} />
+        <Route path="/homeclean" exact element={<HomeClean />} />
       </Routes>
       <Footer />
     </Router>

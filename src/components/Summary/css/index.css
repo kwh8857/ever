@@ -24,8 +24,9 @@
   -webkit-transform: scaleX(-1);
           transform: scaleX(-1);
   position: absolute;
-  width: 683px;
-  height: 454px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   top: 93px;
   z-index: -2;
   left: -200px;
@@ -56,5 +57,58 @@
 .summary > .pack > .content-wrapper > .sub {
   line-height: 1.59;
   font-size: 17px;
+}
+
+.hoodsummary {
+  height: 747px;
+}
+
+.hoodsummary > .pack > .back {
+  height: 267px;
+  top: 328px;
+}
+
+.hoodsummary > .pack > .backimg {
+  top: 73px;
+}
+
+.hoodsummary > .pack > .content-wrapper {
+  padding-top: 369px;
+}
+
+.airsummary {
+  height: 715px;
+}
+
+.airsummary > .pack > .back {
+  height: 270px;
+}
+
+.airsummary > .pack > .backimg {
+  top: 83px;
+}
+
+.filtersummary {
+  height: 715px;
+}
+
+.filtersummary > .pack > .back {
+  height: 287px;
+}
+
+.filtersummary > .pack > .backimg {
+  top: 88px;
+}
+
+.matsummary {
+  height: 741px;
+}
+
+.matsummary > .pack > .back {
+  height: 342px;
+}
+
+.homecleansummary > .pack > .back {
+  background-color: var(--shamrock);
 }
 /*# sourceMappingURL=index.css.map */

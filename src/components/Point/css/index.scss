@@ -73,3 +73,26 @@
          }
       }
 }
+.hoodpoint,.homepoint{
+  height: 1032px;
+  &>.pack{
+    padding: unset;
+    &>.list{
+      grid-template-columns: repeat(3,321px);
+      &>.card{
+        height: 360px;
+        &>.title{
+          font-size: 19px;
+          margin-top: 25px;
+        }
+        &>.content{
+          font-size: 13px;
+          margin-top: 13px;
+        }
+      }
+    }
+  }
+}
+.homepoint{
+  height: 897px;
+}

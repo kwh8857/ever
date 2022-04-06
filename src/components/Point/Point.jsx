@@ -2,7 +2,7 @@ import React from "react";
 import "./css/index.css";
 function Point({ type, arr }) {
   return (
-    <div className="point">
+    <div className={`point ${type}point`}>
       <div className="back">
         <div className="pack">
           <img

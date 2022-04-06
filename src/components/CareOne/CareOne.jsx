@@ -1,8 +1,8 @@
 import React from "react";
 import "./css/index.css";
-function CareOne({ type, cleanArr }) {
+function CareOne({ type, cleanArr, nav }) {
   return (
-    <div className={`careone ${type}clean`}>
+    <div className={`careone ${type}clean ${nav}care`}>
       <div className="pack">
         <div className="category">EVERPURI CARE 01</div>
         <div className="title">
@@ -13,7 +13,17 @@ function CareOne({ type, cleanArr }) {
             <b> 16단계 완전분해케어</b>
           ) : type === "wash" ? (
             <b> 6단계 완전분해케어</b>
-          ) : undefined}
+          ) : type === "hood" ? (
+            <b>주방후드 분해세척</b>
+          ) : type === "air" ? (
+            <b>공기청정기 분해케어</b>
+          ) : type === "filter" ? (
+            <b>공기정화장치 필터 교체</b>
+          ) : type === "mat" ? (
+            <b>4중 완벽 소독ㆍ살균 서비스</b>
+          ) : (
+            <></>
+          )}
         </div>
         <div className="sub">
           {type === "aircon" ? (
@@ -23,6 +33,8 @@ function CareOne({ type, cleanArr }) {
             </>
           ) : type === "wash" ? (
             <>6단계로 진행되는 완전 분해 케어로 완벽하게 케어합니다</>
+          ) : type === "air" ? (
+            "6단계로 진행되는 완전 분해 케어로 완벽하게 케어합니다"
           ) : undefined}
         </div>
         <div className="list">

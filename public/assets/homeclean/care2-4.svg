@@ -1,0 +1,26 @@
+<svg data-name="구성 요소 226 – 1" xmlns="http://www.w3.org/2000/svg" width="84" height="84" viewBox="0 0 84 84">
+    <defs>
+        <clipPath id="t2korxmcka">
+            <path data-name="사각형 4083" style="fill:none" d="M0 0h64v64H0z"/>
+        </clipPath>
+    </defs>
+    <g data-name="그룹 5706">
+        <g data-name="그룹 5130">
+            <circle data-name="타원 129" cx="42" cy="42" r="42" style="fill:#00bb68"/>
+        </g>
+    </g>
+    <g data-name="그룹 6040">
+        <g data-name="그룹 6039" style="clip-path:url(#t2korxmcka)" transform="translate(9.798 9.935)">
+            <ellipse data-name="타원 537" cx="10.41" cy="12.347" rx="10.41" ry="12.347" transform="translate(21.682 22.062)" style="stroke:#08174a;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;fill:none"/>
+            <path data-name="선 338" transform="translate(16.526 27.789)" style="stroke:#08174a;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;fill:none" d="M0 0h6.023"/>
+            <path data-name="선 339" transform="translate(41.114 27.789)" style="stroke:#08174a;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;fill:none" d="M0 0h6.023"/>
+            <path data-name="선 340" transform="translate(16.526 35.153)" style="stroke:#08174a;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;fill:none" d="M0 0h5.156"/>
+            <path data-name="선 341" transform="translate(19.449 42.022)" style="stroke:#08174a;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;fill:none" d="M0 2.578 4.465 0"/>
+            <path data-name="선 342" transform="translate(40.269 42.022)" style="stroke:#08174a;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;fill:none" d="M4.465 2.578 0 0"/>
+            <path data-name="선 343" transform="translate(42.502 35.153)" style="stroke:#08174a;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;fill:none" d="M0 0h5.156"/>
+            <path data-name="패스 7859" d="M32.092 22.062a9.005 9.005 0 0 1 4.271 1.1 4.822 4.822 0 0 0 .61-2.317 4.881 4.881 0 1 0-9.762 0 4.822 4.822 0 0 0 .61 2.317 9.005 9.005 0 0 1 4.271-1.1z" style="stroke:#08174a;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;fill:none"/>
+            <circle data-name="타원 538" cx="26.187" cy="26.187" r="26.187" transform="translate(5.813 5.606)" style="stroke:#08174a;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;fill:none"/>
+            <path data-name="선 344" transform="translate(13.512 13.265)" style="stroke:#08174a;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;fill:none" d="M36.977 0 0 36.977"/>
+        </g>
+    </g>
+</svg>

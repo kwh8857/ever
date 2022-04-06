@@ -87,3 +87,48 @@
     }
   }
 }
+.hoodclean,.filterclean,.matclean{
+  height: 1072px;
+  padding-top: 183px;
+  &>.pack{
+    padding: 0 125px;
+    box-sizing: border-box;
+    &>.list{
+      grid-template-columns: repeat(3,237px);
+    }
+  }
+}
+.airclean{
+  height: 1195px;
+  padding-top: 177px;
+  &>.pack{
+    box-sizing: border-box;
+    padding: 0 125px;
+    &>.list{
+            grid-template-columns: repeat(3,237px);
+    }
+  }
+}
+.homecleancare{
+  &>.pack{
+     &>.category{
+       background-color: var(--shamrock);
+     }
+    &>.title{
+        &>.circle{
+          text-emphasis-color: rgb(121,218,170);
+        }
+       &>b{
+           color: var(--shamrock);
+          
+       }
+    }
+    &>.list{
+      &>.card{
+        &>.number{
+           background-color: var(--shamrock);
+        }
+      }
+    }
+  }
+}

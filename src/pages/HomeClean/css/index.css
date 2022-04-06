@@ -1,0 +1,240 @@
+.homeclean > .banner {
+  height: 370px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: -webkit-image-set(url("/public/assets/homeclean/banner.png") 1x, url("/public/assets/homeclean/banner@2x.png") 2x, url("/public/assets/homeclean/banner@3x.png") 3x);
+  background-image: image-set(url("/public/assets/homeclean/banner.png") 1x, url("/public/assets/homeclean/banner@2x.png") 2x, url("/public/assets/homeclean/banner@3x.png") 3x);
+  text-align: center;
+  padding-top: 234px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.homeclean > .banner > .title {
+  font-size: 39px;
+  font-weight: bold;
+  color: white;
+}
+
+.homeclean > .homecare {
+  width: 100%;
+  height: 1054px;
+  position: relative;
+}
+
+.homeclean > .homecare > .pack {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 115px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.homeclean > .homecare > .pack > .category {
+  width: 109px;
+  height: 33px;
+  background-color: var(--shamrock);
+  border-radius: 16.5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: 'gmarket';
+  color: #f8f8f8;
+  font-size: 11px;
+}
+
+.homeclean > .homecare > .pack > .title {
+  text-align: center;
+  font-size: 35px;
+  font-weight: 500;
+  line-height: 1.31;
+  color: var(--navy);
+  margin-top: 11px;
+}
+
+.homeclean > .homecare > .pack > .list {
+  margin-top: 68px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (450px)[2];
+      grid-template-columns: repeat(2, 450px);
+  -webkit-column-gap: 15px;
+          column-gap: 15px;
+  row-gap: 51px;
+}
+
+.homeclean > .homecare > .pack > .list > .card {
+  height: 240px;
+  width: 100%;
+  -webkit-box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.16);
+          box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.16);
+  border-radius: 20px;
+  background-color: white;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 97px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.homeclean > .homecare > .pack > .list > .card > img {
+  width: 111px;
+  height: 111px;
+  position: absolute;
+  top: -30px;
+}
+
+.homeclean > .homecare > .pack > .list > .card > .title {
+  font-size: 23px;
+}
+
+.homeclean > .homecare > .pack > .list > .card > .line {
+  width: 256px;
+  height: 1px;
+  background-color: #e0e0e0;
+  margin-top: 8px;
+  margin-bottom: 14px;
+}
+
+.homeclean > .homecare > .pack > .list > .card > .content {
+  font-size: 13px;
+  line-height: 1.46;
+  white-space: pre-line;
+}
+
+.homeclean > .homecare > .back {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 609px;
+  background-color: #e6f9ef;
+  z-index: -1;
+}
+
+.homeclean > .matservice {
+  background-color: #f8f8f8;
+  width: 100%;
+  height: 883px;
+  padding-top: 173px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.homeclean > .matservice > .pack {
+  width: 825px;
+}
+
+.homeclean > .matservice > .pack > .title-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.homeclean > .matservice > .pack > .title-wrapper > .right {
+  width: 153px;
+}
+
+.homeclean > .matservice > .pack > .title-wrapper > .left > .category {
+  margin-bottom: 15px;
+  width: 155px;
+  height: 33px;
+  background-color: var(--shamrock);
+  border-radius: 16.5px;
+  color: white;
+  font-size: 11px;
+  font-family: 'gmarket';
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.homeclean > .matservice > .pack > .title-wrapper > .left > .title {
+  font-size: 33px;
+  line-height: 1.39;
+  color: var(--navy);
+}
+
+.homeclean > .matservice > .pack > .content {
+  margin-top: 48px;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (53px)[7];
+      grid-template-rows: repeat(7, 53px);
+  row-gap: 1px;
+}
+
+.homeclean > .matservice > .pack > .content > .content-head {
+  background-color: var(--shamrock);
+  font-size: 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+}
+
+.homeclean > .matservice > .pack > .content > .card {
+  width: 100%;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 253px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.homeclean > .matservice > .pack > .content > .card > .title {
+  width: 120px;
+  margin-right: 69px;
+}
+/*# sourceMappingURL=index.css.map */

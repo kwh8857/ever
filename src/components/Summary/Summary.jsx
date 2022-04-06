@@ -1,14 +1,14 @@
 import React from "react";
 import "./css/index.css";
-function Summary({ type }) {
+function Summary({ type, nav }) {
   return (
-    <div className="summary">
+    <div className={`summary ${type}summary ${nav}summary`}>
       <div className="pack">
-        <div className="back" />
+        <div className={`back `} />
         <img
           className="backimg"
-          src={`/assets/product/${type}.png`}
-          srcSet={`/assets/product/${type}@2x.png 2x , /assets/product/${type}@3x.png 3x`}
+          src={`/assets/${nav}/${type}.png`}
+          srcSet={`/assets/${nav}/${type}@2x.png 2x , /assets/${nav}/${type}@3x.png 3x`}
           alt=""
         />
         <div className="content-wrapper">
@@ -30,7 +30,33 @@ function Summary({ type }) {
                 </b>{" "}
                 하고 계신가요?
               </>
-            ) : undefined}
+            ) : type === "hood" ? (
+              <>
+                주방후드
+                <b>
+                  분해세척이 <br /> 꼭 필요한
+                </b>{" "}
+                이유
+              </>
+            ) : type === "air" ? (
+              <>
+                우리집
+                <b>
+                  공기청정기 케어 <br /> 어떻게
+                </b>{" "}
+                하고 계신가요?
+              </>
+            ) : type === "filter" ? (
+              <>
+                <b>공기정화장치 필터 교체</b>를 <br /> 왜 해야할까요?
+              </>
+            ) : type === "mat" ? (
+              <>
+                잠깐! <br /> <b>매트리스 청소</b> 하셨나요?
+              </>
+            ) : (
+              <></>
+            )}
           </div>
           <div className="line" />
           <div className="sub">
@@ -57,7 +83,46 @@ function Summary({ type }) {
                 </b>
                 이 됩니다.
               </>
-            ) : undefined}
+            ) : type === "hood" ? (
+              <>
+                후드에 누적된 기름 및 음식찌꺼기를
+                <b> 청소해줌으로써 악취를 제거</b>하고, <br /> 해충의 서식지가
+                되는 것을 방지하며 <b>환기능력을 향상시키는 서비스</b>입니다
+              </>
+            ) : type === "air" ? (
+              <>
+                공기청정기{" "}
+                <b>내부에 존재하는 세균과 곰팡이를 제거하는 서비스</b>로 <br />
+                청결하고 위생적인 공기청정기 사용을 위해 꼭 해야하는
+                서비스입니다.
+              </>
+            ) : type === "filter" ? (
+              <>
+                전열교환기(공기정화장치)의 내장된 필터로 오염물질을 제거 후{" "}
+                <br />
+                깨끗한 실외공기를 실내공기로 유입을 시키는 역할을 합니다. <br />
+                <b> 필터교체를 통해 실내 공기질 개선효과를 극대화</b>시켜주는
+                서비스입니다.
+              </>
+            ) : type === "mat" ? (
+              <>
+                잠을 잘 때 우리 몸의 모공에서는 많은 노폐물이 배출이 됩니다.{" "}
+                <br />
+                매트리스에 조금씩 스며든 노폐물은{" "}
+                <b>
+                  박테리아 및 각종 세균과 <br /> 집먼지 진드기가 번식하기 좋은
+                  환경
+                </b>{" "}
+                이 됩니다. 특히나 위험한 <br /> 집먼지{" "}
+                <b>
+                  진드기의 배설물과 사체잔해가 아토피,천식,비염과 같은 <br />{" "}
+                  각종 알르레기성 질환을 유발
+                </b>
+                하게 됩니다.
+              </>
+            ) : (
+              <></>
+            )}
           </div>
         </div>
       </div>

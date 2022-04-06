@@ -1,0 +1,167 @@
+.homeclean{
+    &>.banner{
+    height: 370px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: image-set(url('/public/assets/homeclean/banner.png') 1x ,url('/public/assets/homeclean/banner@2x.png') 2x ,url('/public/assets/homeclean/banner@3x.png') 3x);
+    text-align: center;
+    padding-top: 234px;
+    box-sizing: border-box;
+    &>.title{
+      font-size: 39px;
+      font-weight: bold;
+      color: white;
+    }
+  }
+  &>.homecare{
+    width: 100%;
+    height: 1054px;
+    position: relative;
+    &>.pack{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 115px;
+      box-sizing: border-box;
+      &>.category{
+          width: 109px;
+  height: 33px;
+  background-color: var(--shamrock);
+   border-radius: 16.5px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-family: 'gmarket';
+   color: #f8f8f8;
+   font-size: 11px;
+      }
+      &>.title{
+        text-align: center;
+        font-size: 35px;
+        font-weight: 500;
+        line-height: 1.31;
+        color: var(--navy);
+        margin-top: 11px;
+      }
+      &>.list{
+        margin-top: 68px;
+        display: grid;
+        grid-template-columns: repeat(2,450px);
+        column-gap: 15px;
+        row-gap: 51px;
+        &>.card{
+          height: 240px;
+          width: 100%;
+            box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.16);
+              border-radius: 20px;
+              background-color: white;
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding-top: 97px;
+          box-sizing: border-box;
+          &>img{
+            width: 111px;
+            height: 111px;
+            position: absolute;
+            top: -30px;
+          }
+          &>.title{
+            font-size: 23px;
+          }
+          &>.line{
+            width: 256px;
+            height: 1px;
+            background-color: #e0e0e0;
+            margin-top: 8px;
+            margin-bottom: 14px;
+          }
+          &>.content{
+            font-size: 13px;
+            line-height: 1.46;
+            white-space: pre-line;
+          }
+        }
+      }
+    }
+    &>.back{
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 609px;
+          background-color: rgb(230, 249, 239);
+          z-index: -1;
+    }
+  }
+  &>.matservice{
+    background-color: #f8f8f8;
+    width: 100%;
+    height: 883px;
+    padding-top: 173px;
+    box-sizing: border-box;
+    &>.pack{
+      width: 825px;
+      &>.title-wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &>.right{
+          width: 153px;
+        }
+        &>.left{
+          &>.category{
+            margin-bottom: 15px;
+              width: 155px;
+  height: 33px;
+  background-color: var(--shamrock);
+    border-radius: 16.5px;
+    color: white;
+    font-size: 11px;
+    font-family: 'gmarket';
+   display: flex;
+   align-items: center;
+   justify-content: center;
+          }
+          &>.title{
+            font-size: 33px;
+            line-height: 1.39;
+            color: var(--navy);
+          }
+        }
+      }
+      &>.content{
+        margin-top: 48px;
+        width: 100%;
+        display: grid;
+        grid-template-rows: repeat(7,53px);
+        row-gap: 1px;
+        &>.content-head{
+            background-color: var(--shamrock);
+            font-size: 22px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+        &>.card{
+         width: 100%;
+         background-color: white;
+         display: flex;
+         align-items: center;
+         padding-left: 253px;
+         box-sizing: border-box;
+         font-size: 18px;
+         font-weight: 500;
+         &>.title{
+           width: 120px;
+           margin-right: 69px;
+         }
+        }
+      }
+    }
+  }
+}

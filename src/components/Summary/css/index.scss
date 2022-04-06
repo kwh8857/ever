@@ -17,8 +17,7 @@
          &>.backimg{
                     transform: scaleX(-1);
            position: absolute;
-            width: 683px;
-           height: 454px;
+           width: fit-content;
            top: 93px;
            z-index: -2;
            left: -200px;
@@ -47,4 +46,56 @@
           }
          }
       }
+}
+.hoodsummary{
+  height: 747px;
+  &>.pack{
+    &>.back{
+      height: 267px;
+      top: 328px;
+    }
+    &>.backimg{
+      top: 73px;
+    }
+    &>.content-wrapper{
+      padding-top: 369px;
+    }
+  }
+}
+.airsummary{
+  height: 715px;
+  &>.pack{
+    &>.back{
+      height: 270px;
+    }
+    &>.backimg{
+      top: 83px;
+    }
+  }
+}
+.filtersummary{
+  height: 715px;
+  &>.pack{
+    &>.back{
+      height: 287px;
+    }
+    &>.backimg{
+      top: 88px;
+    }
+  }
+}
+.matsummary{
+  height: 741px;
+  &>.pack{
+    &>.back{
+      height: 342px;
+    }
+  }
+}
+.homecleansummary{
+   &>.pack{
+     &>.back{
+        background-color: var(--shamrock);
+     }
+   }
 }

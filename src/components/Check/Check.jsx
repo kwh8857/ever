@@ -1,31 +1,45 @@
 import React from "react";
 import "./css/index.css";
-function Check({ type, circleArr, checkArr }) {
+function Check({ type, circleArr, checkArr, nav }) {
   return (
-    <div className="check-section">
+    <div className={`check-section ${type}check ${nav}check`}>
       <div className="back" />
       <div className="pack">
-        <div className="title">
-          에어컨 관리를 하지 않았을 때 <br />
-          <b>이런 문제가 발생합니다!</b>
-        </div>
-        <div
-          className="circle-wrapper"
-          style={{ gridTemplateColumns: `repeat(${circleArr.length},148px)` }}
-        >
-          {circleArr.map(({ img, title }, idx) => {
-            return (
-              <div key={idx} className="circle">
-                <img
-                  src={`/assets/product/${img}.png`}
-                  srcSet={`/assets/product/${img}@2x.png 2x,/assets/product/${img}@3x.png 3x`}
-                  alt=""
-                />
-                <div className="title">{title}</div>
-              </div>
-            );
-          })}
-        </div>
+        {type === "hood" || type === "air" || type === "filter" ? (
+          <></>
+        ) : (
+          <>
+            {" "}
+            <div className="title">
+              {type === "aircon"
+                ? "에어컨 관리"
+                : type === "mat"
+                ? "매트리스 관리"
+                : ""}
+              를 하지 않았을 때 <br />
+              <b>이런 문제가 발생합니다!</b>
+            </div>
+            <div
+              className="circle-wrapper"
+              style={{
+                gridTemplateColumns: `repeat(${circleArr.length},148px)`,
+              }}
+            >
+              {circleArr.map(({ img, title }, idx) => {
+                return (
+                  <div key={idx} className="circle">
+                    <img
+                      src={`/assets/product/${img}.png`}
+                      srcSet={`/assets/product/${img}@2x.png 2x,/assets/product/${img}@3x.png 3x`}
+                      alt=""
+                    />
+                    <div className="title">{title}</div>
+                  </div>
+                );
+              })}
+            </div>
+          </>
+        )}
         <div className="content">
           {type === "aircon" ? (
             <>
@@ -35,15 +49,42 @@ function Check({ type, circleArr, checkArr }) {
             <>
               <b>집에서 관리해도 해결되지 않는 세탁기</b>
             </>
-          ) : undefined}{" "}
-          <br /> 아래 내용을 체크해 보세요!
+          ) : type === "hood" ? (
+            <>
+              <b>집에서 관리해도 해결되지 않는 주방후드</b>
+            </>
+          ) : type === "air" ? (
+            <>
+              <b>집에서 관리해도 해결되지 않는 공기청정기</b>
+            </>
+          ) : type === "filter" ? (
+            <>
+              <b>
+                공기정화장치 필터 교체의 <br /> 시기
+              </b>
+              를 체크해 보세요!
+            </>
+          ) : type === "mat" ? (
+            <>
+              <b>청소 스프레이로만 해결되지 않는 </b> 매트리스
+            </>
+          ) : (
+            <></>
+          )}{" "}
+          <br /> {type !== "filter" ? "아래 내용을 체크해 보세요!" : undefined}
         </div>
         <div className={`check-box ${type}`}>
           <div className="title">Check Point</div>
           <div className="check">
             {checkArr.map((item, idx) => {
               return (
-                <img src="/assets/common/check.svg" alt="check" key={idx} />
+                <img
+                  src={`/assets/common/${
+                    nav === "homeclean" ? "green" : ""
+                  }check.svg`}
+                  alt="check"
+                  key={idx}
+                />
               );
             })}
           </div>
@@ -97,7 +138,136 @@ function Check({ type, circleArr, checkArr }) {
                   <span className="back" />
                 </b>
               </>
-            ) : undefined}
+            ) : type === "hood" ? (
+              <>
+                후드에
+                <b>
+                  <span> 기름때 및 찌든때</span>
+                  <span className="back" />
+                </b>
+                를 발견했을 때 <br /> 주방에서
+                <b>
+                  <span> 악취가 느껴졌을 때</span>
+                  <span className="back" />
+                </b>
+                <br />
+                주방에서
+                <b>
+                  <span> 벌레를 발견했을 때</span>
+                  <span className="back" />
+                </b>
+                <br /> 후드
+                <b>
+                  <span> 환기배출 기능이 저하</span>
+                  <span className="back" />
+                </b>
+                되었을 때 <br /> 청소한지
+                <b>
+                  <span> 최소 6개월이 경과</span>
+                  <span className="back" />
+                </b>
+                했을 때
+              </>
+            ) : type === "air" ? (
+              <>
+                <b>
+                  <span>공기 정화 기능이 저하</span>
+                  <span className="back" />
+                </b>
+                되었을 때<br /> 공기청정기 사용시
+                <b>
+                  <span> 냄새가 날 때</span>
+                  <span className="back" />
+                </b>
+                <br />
+                <b>
+                  <span>1년 이상 세척케어를 진행하지 않았을 때</span>
+                  <span className="back" />
+                </b>
+                <br />
+                <b>
+                  <span>유아, 청소년 자녀</span>
+                  <span className="back" />
+                </b>
+                를 둔 가정
+                <br />
+                <b>
+                  <span>반려동물이 있는 </span>
+                  <span className="back" />
+                </b>
+                가정
+              </>
+            ) : type === "filter" ? (
+              <>
+                <b>
+                  <span>6개월~1년에 한번씩 교체해주는 것</span>
+                  <span className="back" />
+                </b>
+                이 제일 좋습니다
+                <br />
+                <b>
+                  <span>이사를 왔을 때</span>
+                  <span className="back" />
+                </b>
+                <br />
+                <b>
+                  <span>공기 정화 기능이 저하</span>
+                  <span className="back" />
+                </b>
+                되었을 때
+                <br />
+                <b>
+                  <span>유아, 청소년 자녀</span>
+                  <span className="back" />
+                </b>
+                를 둔 가정
+                <br />
+                <b>
+                  <span>반려동물이 있는 </span>
+                  <span className="back" />
+                </b>
+                가정
+              </>
+            ) : type === "mat" ? (
+              <>
+                매트리스에
+                <b>
+                  <span> 노폐물로 인한 얼룩이 생긴 경우</span>
+                  <span className="back" />
+                </b>
+                <br />
+                매트리스에
+                <b>
+                  <span> 냄새가 나는 경우</span>
+                  <span className="back" />
+                </b>
+                <br />
+                <b>
+                  <span>반려동물이 매트리스에 용변</span>
+                  <span className="back" />
+                </b>
+                을 본 경우
+                <br />
+                소변으로 인한
+                <b>
+                  <span> 자국이 생긴 경우</span>
+                  <span className="back" />
+                </b>
+                <br />
+                <b>
+                  <span>면연력이 약한 유아, 청소년</span>
+                  <span className="back" />
+                </b>
+                이 있는 가정 <br />
+                <b>
+                  <span>호흡기, 피부 질환 환자</span>
+                  <span className="back" />
+                </b>
+                가 있는 가정
+              </>
+            ) : (
+              <></>
+            )}
           </div>
         </div>
       </div>

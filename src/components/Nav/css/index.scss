@@ -28,6 +28,12 @@ height: 72px;
      left: 0;
      transition: left 0.2s ease-in-out;
    }
+   &>.productcolor{
+          background-color: var(--dark-sky-blue);
+   }
+   &>.homecolor{
+     background-color: #00bb68;
+   }
    .on{
      color: black;
      font-weight: bold;

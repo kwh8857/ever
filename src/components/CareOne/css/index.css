@@ -122,4 +122,53 @@
   -ms-grid-columns: (237px)[3];
       grid-template-columns: repeat(3, 237px);
 }
+
+.hoodclean, .filterclean, .matclean {
+  height: 1072px;
+  padding-top: 183px;
+}
+
+.hoodclean > .pack, .filterclean > .pack, .matclean > .pack {
+  padding: 0 125px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.hoodclean > .pack > .list, .filterclean > .pack > .list, .matclean > .pack > .list {
+  -ms-grid-columns: (237px)[3];
+      grid-template-columns: repeat(3, 237px);
+}
+
+.airclean {
+  height: 1195px;
+  padding-top: 177px;
+}
+
+.airclean > .pack {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0 125px;
+}
+
+.airclean > .pack > .list {
+  -ms-grid-columns: (237px)[3];
+      grid-template-columns: repeat(3, 237px);
+}
+
+.homecleancare > .pack > .category {
+  background-color: var(--shamrock);
+}
+
+.homecleancare > .pack > .title > .circle {
+  -webkit-text-emphasis-color: #79daaa;
+          text-emphasis-color: #79daaa;
+}
+
+.homecleancare > .pack > .title > b {
+  color: var(--shamrock);
+}
+
+.homecleancare > .pack > .list > .card > .number {
+  background-color: var(--shamrock);
+}
 /*# sourceMappingURL=index.css.map */

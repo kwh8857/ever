@@ -1,0 +1,69 @@
+.kind{
+
+      background-color: #f8f8f8;
+      width: 100%;
+        height: 1086px;
+        padding-top: 154.5px;
+        box-sizing: border-box;
+        &>.pack{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          &>.title{
+             text-align: center;
+             color: var(--navy);
+             font-size: 35px;
+          }
+          &>.list{
+            margin-top: 53px;
+            display: grid;
+            grid-template-columns: repeat(3,223px);
+            column-gap: 78px;
+            row-gap: 57px;
+            &>.card{
+              &>.circle{
+                width: 215px;
+                height: 215px;
+                border-radius: 215px;
+                background-color: white;
+              }
+              &>.title{
+                width: 100%;
+                height: 53px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: white;
+                background-color:var(--dark-sky-blue) ;
+                font-size: 22px;
+                font-weight: bold;
+                margin-top: 18px;
+              }
+            }
+          }
+        }
+}
+.hoodkind,.filterkind{
+  height: 748px;
+  padding-top: 120px;
+  &>.pack{
+    &>.category{
+      margin-bottom: 20px;
+        width: 155px;
+  height: 33px;
+  background-color: var(--navy);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 11px;
+  font-family: 'gmarket';
+  border-radius: 16.5px;
+    }
+    &>.list{
+      grid-template-columns: repeat(2,215px);
+      column-gap: 99px;
+      margin-top: 45px;
+    }
+  }
+}

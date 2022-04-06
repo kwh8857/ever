@@ -47,6 +47,14 @@
   transition: left 0.2s ease-in-out;
 }
 
+.nav > .wrapper > .productcolor {
+  background-color: var(--dark-sky-blue);
+}
+
+.nav > .wrapper > .homecolor {
+  background-color: #00bb68;
+}
+
 .nav > .wrapper .on {
   color: black;
   font-weight: bold;

@@ -46,3 +46,19 @@
     z-index: -1;
   }
 }
+.homecleannv{
+  padding-top: 0;
+  height: 1082px;
+  & >.back{
+    background-color: rgb(230, 249, 239);
+  }
+  &>.pack{
+        &>.list{
+      margin-top: 52px;
+    }
+  }
+}
+.matre{
+  height: 935px;
+  padding-top: 134px;
+}

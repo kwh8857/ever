@@ -1,6 +1,6 @@
 import React from "react";
 import "./css/index.css";
-function Nav({ now, setnow, navArr }) {
+function Nav({ now, setnow, navArr, type }) {
   return (
     <div className="nav">
       <div className="wrapper">
@@ -17,7 +17,10 @@ function Nav({ now, setnow, navArr }) {
             </button>
           );
         })}
-        <div className="bar" style={{ left: `${now * 140}px` }} />
+        <div
+          className={`bar ${type}color`}
+          style={{ left: `${now * 140}px` }}
+        />
       </div>
     </div>
   );

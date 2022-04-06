@@ -1,0 +1,16 @@
+<svg data-name="구성 요소 141 – 1" xmlns="http://www.w3.org/2000/svg" width="100.742" height="100.742" viewBox="0 0 100.742 100.742">
+    <defs>
+        <clipPath id="v8g0b6y1wa">
+            <path data-name="사각형 4077" style="fill:none" d="M0 0h64v64H0z"/>
+        </clipPath>
+    </defs>
+    <g data-name="그룹 5131" transform="translate(-294.629 -3681.879)">
+        <circle data-name="타원 129" cx="50.371" cy="50.371" r="50.371" transform="translate(294.629 3681.879)" style="fill:#76c7d3"/>
+    </g>
+    <g data-name="그룹 6028">
+        <g data-name="그룹 6027" style="clip-path:url(#v8g0b6y1wa)" transform="translate(18.371 18.056)">
+            <path data-name="패스 7848" d="M58.673 44.36a12.022 12.022 0 0 1-12.46-12.46 12.021 12.021 0 0 1-12.459 12.46 12.021 12.021 0 0 1 12.459 12.46 12.022 12.022 0 0 1 12.46-12.46z" style="stroke:#08174a;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;fill:none"/>
+            <path data-name="패스 7849" d="M70.866 50.457c-10.791 0-18.557-7.765-18.557-18.557 0 10.791-7.764 18.557-18.555 18.557 10.791 0 18.555 7.765 18.555 18.557 0-10.792 7.765-18.557 18.557-18.557z" transform="translate(-28.165 -26.173)" style="stroke:#08174a;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;fill:none"/>
+        </g>
+    </g>
+</svg>

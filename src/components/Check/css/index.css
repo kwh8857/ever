@@ -51,6 +51,7 @@
   font-size: 18px;
   font-weight: bold;
   color: var(--navy);
+  white-space: nowrap;
 }
 
 .check-section > .pack > .content {
@@ -145,5 +146,48 @@
 .check-section > .pack > .wash {
   width: 596px;
   height: 230px;
+}
+
+.hoodcheck, .aircheck {
+  height: 651px;
+}
+
+.hoodcheck > .back, .aircheck > .back {
+  height: 100%;
+}
+
+.hoodcheck > .pack > .content, .aircheck > .pack > .content {
+  margin-top: 92px;
+}
+
+.filtercheck {
+  height: 697px;
+}
+
+.filtercheck > .back {
+  height: 100%;
+}
+
+.filtercheck > .pack > .content {
+  margin-top: 120px;
+}
+
+.filtercheck > .pack > .check-box {
+  width: 640px;
+  height: 329px;
+}
+
+.homecleancheck > .pack > .check-box > .title {
+  background-color: var(--shamrock);
+  color: white;
+}
+
+.homecleancheck > .pack > .check-box > .content > b > .back {
+  background-color: #cdf3e0;
+}
+
+.matcheck > .pack > .check-box {
+  width: 553px;
+  height: 380px;
 }
 /*# sourceMappingURL=index.css.map */

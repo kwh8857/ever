@@ -36,3 +36,38 @@
         }
       }
 }
+.airslogan{
+  &>.pack{
+      &>.title{
+        margin: 0 50px;
+      }
+  }
+}
+.homecleanslogan{
+background-color: var(--shamrock);
+&>.pack{
+  &>img{
+    width: 62.8px;
+  height: 59.5px;
+  }
+  &>.title{
+    &>b{
+      color: white;
+    }
+  }
+}
+}
+.matslogan{
+  &>.pack{
+    &>.title{
+      margin: 0 35px;
+    }
+  }
+}
+.filterslogan{
+  &>.pack{
+    &>.title{
+      margin: 0 65px;
+    }
+  }
+}
