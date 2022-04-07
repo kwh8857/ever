@@ -8,7 +8,7 @@ function Reviews({ title, sub, arr, type, nav }) {
         <div className="title">
           <img
             src={`/assets/common/${
-              nav === "product" ? "mint" : "green"
+              nav === "product" ? "mint" : nav === "business" ? "aqua" : "green"
             }-quotes.svg`}
             alt=""
             className="left"
@@ -16,7 +16,7 @@ function Reviews({ title, sub, arr, type, nav }) {
           <b>{title}</b>
           <img
             src={`/assets/common/${
-              nav === "product" ? "mint" : "green"
+              nav === "product" ? "mint" : nav === "business" ? "aqua" : "green"
             }-quotes.svg`}
             alt=""
             className="right"
@@ -31,6 +31,11 @@ function Reviews({ title, sub, arr, type, nav }) {
           ) : type === "home" ? (
             <>
               신축입주청소·이사청소·인테리어 청소·외창/외벽청소 등 <br />
+              <b>오랫동안 깨끗하게 유지할 수 있는 전문 클리닝</b>입니다
+            </>
+          ) : type === "building" ? (
+            <>
+              관공서·병원·학교·공장·회사·사무실·매장 청소 등 <br />{" "}
               <b>오랫동안 깨끗하게 유지할 수 있는 전문 클리닝</b>입니다
             </>
           ) : undefined}

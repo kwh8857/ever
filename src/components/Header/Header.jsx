@@ -43,6 +43,6 @@ const LinkArr = [
   { title: "ABOUT US", link: "/about" },
   { title: "가전제품케어", link: "/product" },
   { title: "홈클리닝", link: "/homeclean" },
-  { title: "비즈니스케어", link: "/about" },
+  { title: "비즈니스케어", link: "/business" },
   { title: "창업 교육 및 파트너 제휴", link: "/about" },
 ];

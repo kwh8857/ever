@@ -67,3 +67,17 @@
     }
   }
 }
+.businesskind{
+  &>.pack{
+    &>.category{
+      background-color: #40ccc7;
+    }
+    &>.list{
+      &>.card{
+        &>.title{
+          background-color: #40ccc7;
+        }
+      }
+    }
+  }
+}

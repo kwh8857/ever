@@ -152,11 +152,76 @@
     }
   }
 }
+.businesscheck{
+  &>.pack{
+    &>.check-box{
+      &>.title{
+        background-color: #40ccc7;
+        color: white;
+      }
+      &>.content{
+        &>b{
+          &>.back{
+            background-color: rgb(193, 239, 245);
+          }
+        }
+      }
+    }
+  }
+}
 .matcheck{
   &>.pack{
     &>.check-box{
       width: 553px;
       height: 380px;
+    }
+  }
+}
+.jointcheck{
+  &>.pack{
+    &>.check-box{
+        width: 553px;
+  height: 337px;
+    }
+  }
+}
+.birdcheck{
+  &>.pack{
+    &>.check-box{
+        width: 437px;
+  height: 185px;
+    }
+  }
+}
+.bugcheck{
+  height: 958px;
+  &>.back{
+    height: 755px;
+  }
+  &>.pack{
+    padding-bottom: 118px;
+    box-sizing: border-box;
+    &>.content{
+      margin-top: 148px;
+    }
+    &>.check-box{
+        width: 563px;
+  height: 229px;
+    }
+  }
+}
+.airfiltercheck{
+  height: 618px;
+  &>.back{
+    height: 100%;
+  }
+  &>.pack{
+    &>.content{
+      margin-top: 114px;
+    }
+    &>.check-box{
+        width: 634px;
+  height: 234px;
     }
   }
 }

@@ -69,11 +69,33 @@
   color: white;
 }
 
+.businessslogan {
+  background-color: #40ccc7;
+}
+
+.businessslogan > .pack > img {
+  width: 62.8px;
+  height: 59.5px;
+}
+
+.businessslogan > .pack > .title {
+  color: var(--navy);
+  margin-right: 33px;
+}
+
+.businessslogan > .pack > .title > b {
+  color: var(--navy);
+}
+
 .matslogan > .pack > .title {
   margin: 0 35px;
 }
 
 .filterslogan > .pack > .title {
   margin: 0 65px;
+}
+
+.airfilterslogan > .pack > .title {
+  margin: 0 72.2px 0 34px;
 }
 /*# sourceMappingURL=index.css.map */

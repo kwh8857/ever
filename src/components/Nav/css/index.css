@@ -55,6 +55,10 @@
   background-color: #00bb68;
 }
 
+.nav > .wrapper .business {
+  background-color: #00bab3;
+}
+
 .nav > .wrapper .on {
   color: black;
   font-weight: bold;

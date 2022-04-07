@@ -1,0 +1,137 @@
+.business{
+      &>.banner{
+    height: 370px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: image-set(url('/public/assets/business/banner.png') 1x ,url('/public/assets/business/banner@2x.png') 2x ,url('/public/assets/business/banner@3x.png') 3x);
+    text-align: center;
+    padding-top: 234px;
+    box-sizing: border-box;
+    &>.title{
+      font-size: 39px;
+      font-weight: bold;
+      color: white;
+    }
+  }
+  &>.building-care{
+    width: 100%;
+    height: 1093px;
+    background-color: #f8f8f8;
+    &>.pack{
+      display: flex;
+      padding-top: 97px;
+      box-sizing: border-box;
+      justify-content: space-between;
+      &>.left{
+        &>.category{
+            width: 147px;
+  height: 33px;
+  background-color: #40ccc7;
+  font-weight: bold;
+    border-radius: 16.5px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    font-family: 'gmarket';
+        }
+        &>.title{
+          margin-top: 19px;
+          font-size: 35px;
+          font-weight: 500;
+          line-height: 1.26;
+          color: var(--navy);
+        }
+      }
+      &>.right{
+        display: grid;
+        row-gap: 20px;
+        &>.card{
+          width: 524px;
+          height: 198px;
+          background-color: white;
+          display: flex;
+          align-items: center;
+          border-radius: 20px;
+          padding-left: 51px;
+          box-sizing: border-box;
+          &>img{
+            width: 120px;
+            height: 120px;
+          }
+          &>.content{
+            margin-left: 43px;
+            &>.title{
+              font-size: 25px;
+              position: relative;
+              &>.tl{
+                z-index: 10;
+                position: relative;
+              }
+              &>.back{
+                position: absolute;
+                width: 110%;
+                height: 21px;
+                background-color: rgb(165, 230, 226);
+                left: -5%;
+                bottom: -3px;
+                z-index: 5;
+              }
+            }
+            &>.sub{
+              margin-top: 12px;
+              font-size: 13px;
+              font-weight: 500;
+              line-height: 1.54;
+              white-space: pre-line;
+            }
+          }
+        }
+      }
+    }
+  }
+  &>.purify-one{
+    width: 100%;
+    height: 1596px;
+    background-color: #f8f8f8;
+    padding-top: 162px;
+    box-sizing: border-box;
+    &>.pack{
+      &>.top{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &>.left{
+          &>.category{
+              width: 162px;
+  height: 33px;
+            border-radius: 16.5px;
+            color: white;
+            background-color: #40ccc7;
+            font-size: 11px;
+            font-weight: bold;
+            font-family: 'gmarket';
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+          &>.title{
+            font-size: 36px;
+            color: var(--navy);
+            margin: 9px 0;
+          }
+          &>.sub{
+            font-size: 20px;
+          }
+        }
+        &>img{
+            width: 167px;
+  height: 167px;
+        }
+      }
+    }
+  }
+}

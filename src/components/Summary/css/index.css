@@ -111,4 +111,163 @@
 .homecleansummary > .pack > .back {
   background-color: var(--shamrock);
 }
+
+.businesssummary > .pack > .back {
+  background-color: #40ccc7;
+}
+
+.businesssummary > .pack > .content-wrapper {
+  color: var(--navy);
+}
+
+.businesssummary > .pack > .content-wrapper > .line {
+  background-color: var(--navy);
+}
+
+.birdsummary > .pack > .back {
+  height: 319px;
+}
+
+.birdsummary > .pack > .backimg {
+  top: 106px;
+}
+
+.bugsummary {
+  height: 879px;
+}
+
+.bugsummary > .pack > .back {
+  height: 328px;
+}
+
+.bugsummary > .pack > .backimg {
+  top: 91px;
+}
+
+.bugsummary > .pack > .content-wrapper {
+  padding-top: 365px;
+}
+
+.buildingsummary > .pack > .back {
+  height: 495px;
+  top: 172px;
+}
+
+.buildingsummary > .pack > .backimg {
+  top: 66px;
+}
+
+.buildingsummary > .pack > .content-wrapper {
+  padding-top: 231px;
+}
+
+.buildingsummary > .pack > .content-wrapper > .category-wrapper {
+  margin-top: 38px;
+}
+
+.buildingsummary > .pack > .content-wrapper > .category-wrapper > div {
+  -webkit-column-gap: 12px;
+          column-gap: 12px;
+}
+
+.buildingsummary > .pack > .content-wrapper > .category-wrapper > div > div {
+  height: 41px;
+  background-color: white;
+  border-radius: 20.5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--navy);
+}
+
+.buildingsummary > .pack > .content-wrapper > .category-wrapper > .one {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (102px)[3];
+      grid-template-columns: repeat(3, 102px);
+  margin-bottom: 12px;
+}
+
+.buildingsummary > .pack > .content-wrapper > .category-wrapper > .two {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (102px)[4];
+      grid-template-columns: repeat(4, 102px);
+}
+
+.aircaresummary {
+  height: 706px;
+}
+
+.aircaresummary > .pack > .back {
+  top: 204px;
+  height: 287px;
+}
+
+.aircaresummary > .pack > .content-wrapper {
+  padding-top: 263px;
+  padding-left: 0;
+}
+
+.aircaresummary > .pack > .content-wrapper > .sub {
+  font-size: 16px;
+}
+
+.aircaresummary > .pack > .content-wrapper > .line {
+  margin-top: 20.5px;
+  margin-bottom: 17.5px;
+}
+
+.aircaresummary > .pack > .backimg {
+  top: 83px;
+}
+
+.airfiltersummary {
+  height: 763px;
+}
+
+.airfiltersummary > .pack > .back {
+  height: 299px;
+  top: 188px;
+}
+
+.airfiltersummary > .pack > .backimg {
+  top: 69px;
+}
+
+.airfiltersummary > .pack > .content-wrapper {
+  padding-top: 236px;
+  padding-left: 0;
+}
+
+.airfiltersummary > .pack > .content-wrapper > .line {
+  margin-top: 17.5px;
+  margin-bottom: 20.5px;
+}
+
+.purifysummary {
+  height: 744px;
+}
+
+.purifysummary > .pack > .back {
+  height: 187px;
+  top: 291px;
+}
+
+.purifysummary > .pack > .backimg {
+  top: 83px;
+}
+
+.purifysummary > .pack > .content-wrapper {
+  padding-left: 0;
+  padding-top: 339px;
+}
 /*# sourceMappingURL=index.css.map */

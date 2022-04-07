@@ -132,3 +132,66 @@
     }
   }
 }
+.businesscare{
+  &>.pack{
+    &>.category{
+      background-color: #40ccc7;
+    }
+    &>.title{
+      &>.circle{
+        text-emphasis-color: #40ccc7;;
+      }
+      &>b{
+        color: #40ccc7;;
+      }
+    }
+    &>.list{
+      &>.card{
+        &>.number{
+          background-color: #40ccc7;;
+        }
+      }
+    }
+  }
+}
+.aircareclean{
+  padding-top: 0;
+  height: 661px;
+}
+.jointclean{
+  height: 1100px;
+  &>.pack{
+    width: 771px;
+    &>.sub{
+     white-space: nowrap;
+    }
+    &>.list{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+}
+.birdclean,.bugclean{
+  height: 804px;
+  &>.pack{
+    &>.title{
+      margin-top: 13px;
+    }
+    &>.list{
+      margin-top: 62px;
+    }
+  }
+}
+.airfilterclean{
+  height: 1073px;
+  padding-top: 190px;
+  &>.pack{
+    &>.list{
+      row-gap: 14px;
+      &>.card{
+        height: 238px;
+      }
+    }
+  }
+}

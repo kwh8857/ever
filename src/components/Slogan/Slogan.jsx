@@ -5,7 +5,13 @@ function Slogan({ type, nav }) {
     <div className={`slogan ${type}slogan ${nav}slogan`}>
       <div className="pack">
         <img
-          src={`/assets/common/${nav === "homeclean" ? "home-" : ""}quotes.svg`}
+          src={`/assets/common/${
+            nav === "homeclean"
+              ? "home-"
+              : nav === "business"
+              ? "business-"
+              : ""
+          }quotes.svg`}
           alt=""
           className="left"
         />
@@ -80,12 +86,71 @@ function Slogan({ type, nav }) {
               </b>{" "}
               꼭 해야하는 서비스입니다!
             </>
+          ) : type === "joint" ? (
+            <>
+              백시멘트에 존재하는{" "}
+              <b>
+                세균과 곰팡이를 <br /> 제거
+              </b>
+              하는 서비스로{" "}
+              <b>
+                각종 질병 예방 및 <br /> 건강을 위해
+              </b>{" "}
+              꼭 해야하는 서비스입니다!
+            </>
+          ) : type === "bird" ? (
+            <>
+              비둘기 퇴치는 여러{" "}
+              <b>
+                바이러스와 박테리아를 <br /> 제거
+              </b>{" "}
+              하는 서비스로{" "}
+              <b>
+                각종 질병 예방 및 <br /> 건강
+              </b>
+              을 위해 꼭 해야하는 서비스입니다!
+            </>
+          ) : type === "bug" ? (
+            <>
+              해충·방역 서비스는 지속적인 예방을 통하여 <br />{" "}
+              <b>
+                쾌적하고 안전한 생활환경을 유지 및 <br /> 건강을 위해
+              </b>{" "}
+              꼭 해야하는 서비스입니다!
+            </>
+          ) : type === "aircare" ? (
+            <>
+              공기질케어는 필터 내부에 있는{" "}
+              <b>
+                세균과 곰팡이를 <br /> 제거
+              </b>
+              하는 서비스로{" "}
+              <b>
+                각종 질병 예방 및 <br /> 건강을 위해
+              </b>{" "}
+              꼭 해야하는 서비스입니다!
+            </>
+          ) : type === "airfilter" ? (
+            <>
+              공기정화장치 필터 교체는 실내 공기질 개선효과를 <br />{" "}
+              극대화시켜주는 서비스로{" "}
+              <b>
+                각종 질병 예방 및 <br /> 건강을 위해
+              </b>{" "}
+              꼭 해야하는 서비스입니다!
+            </>
           ) : (
             ""
           )}
         </div>
         <img
-          src={`/assets/common/${nav === "homeclean" ? "home-" : ""}quotes.svg`}
+          src={`/assets/common/${
+            nav === "homeclean"
+              ? "home-"
+              : nav === "business"
+              ? "business-"
+              : ""
+          }quotes.svg`}
           alt=""
           className="right"
         />

@@ -5,18 +5,27 @@ function Check({ type, circleArr, checkArr, nav }) {
     <div className={`check-section ${type}check ${nav}check`}>
       <div className="back" />
       <div className="pack">
-        {type === "hood" || type === "air" || type === "filter" ? (
+        {type === "hood" ||
+        type === "air" ||
+        type === "filter" ||
+        type === "airfilter" ? (
           <></>
         ) : (
           <>
             {" "}
             <div className="title">
               {type === "aircon"
-                ? "에어컨 관리"
+                ? "에어컨 관리를 하지 않았을 때"
                 : type === "mat"
-                ? "매트리스 관리"
+                ? "매트리스 관리를 하지 않았을 때"
+                : type === "joint"
+                ? "백시멘트 관리를 하지 않았을 때"
+                : type === "bird"
+                ? "실외기비둘기 퇴치를 하지 않으면"
+                : type === "bug"
+                ? "해충ㆍ방역 서비스를 하지 않으면"
                 : ""}
-              를 하지 않았을 때 <br />
+              <br />
               <b>이런 문제가 발생합니다!</b>
             </div>
             <div
@@ -57,7 +66,7 @@ function Check({ type, circleArr, checkArr, nav }) {
             <>
               <b>집에서 관리해도 해결되지 않는 공기청정기</b>
             </>
-          ) : type === "filter" ? (
+          ) : type === "filter" || type === "airfilter" ? (
             <>
               <b>
                 공기정화장치 필터 교체의 <br /> 시기
@@ -68,10 +77,29 @@ function Check({ type, circleArr, checkArr, nav }) {
             <>
               <b>청소 스프레이로만 해결되지 않는 </b> 매트리스
             </>
+          ) : type === "joint" ? (
+            <>
+              <b>청소로만 해결되지 않는</b> 줄눈 곰팡이
+            </>
+          ) : type === "bird" ? (
+            "실외기 비둘기 퇴치의 적절한 시기는"
+          ) : type === "bug" ? (
+            <>
+              <b>해충·방역 서비스의 적절한 시기</b>를
+            </>
           ) : (
             <></>
           )}{" "}
-          <br /> {type !== "filter" ? "아래 내용을 체크해 보세요!" : undefined}
+          <br />{" "}
+          {type === "bird" ? (
+            <>
+              <b>발견 초기에 이루어지는게</b> 제일 좋습니다!
+            </>
+          ) : type === "bug" ? (
+            "체크해 보세요!"
+          ) : type !== "filter" && type !== "airfilter" ? (
+            "아래 내용을 체크해 보세요!"
+          ) : undefined}
         </div>
         <div className={`check-box ${type}`}>
           <div className="title">Check Point</div>
@@ -80,7 +108,11 @@ function Check({ type, circleArr, checkArr, nav }) {
               return (
                 <img
                   src={`/assets/common/${
-                    nav === "homeclean" ? "green" : ""
+                    nav === "homeclean"
+                      ? "green"
+                      : nav === "business"
+                      ? "aqua"
+                      : ""
                   }check.svg`}
                   alt="check"
                   key={idx}
@@ -264,6 +296,91 @@ function Check({ type, circleArr, checkArr, nav }) {
                   <span className="back" />
                 </b>
                 가 있는 가정
+              </>
+            ) : type === "joint" ? (
+              <>
+                <b>
+                  <span>면연력이 약한 유아, 청소년이 있는</span>
+                  <span className="back" />
+                </b>
+                가정
+                <br />
+                <b>
+                  <span>천식과 같은 호흡기 질환 </span>
+                  <span className="back" />
+                </b>
+                환자가 있는 가정
+                <br />
+                <b>
+                  <span>피부염과 같은 피부 질환 </span>
+                  <span className="back" />
+                </b>
+                환자가 있는 가정
+                <br />
+                <b>
+                  <span>물때와 곰팡이가 증식</span>
+                  <span className="back" />
+                </b>
+                한 줄눈
+                <br />
+                <b>
+                  <span>기존 백시멘트가 시공 </span>
+                  <span className="back" />
+                </b>
+                되어있는 가정
+              </>
+            ) : type === "bird" ? (
+              <>
+                <b>
+                  <span>비둘기 둥지가 발견 </span>
+                  <span className="back" />
+                </b>
+                되었을 때
+                <br />
+                <b>
+                  <span>비둘기 분변이 발견 </span>
+                  <span className="back" />
+                </b>
+                되었을 때
+              </>
+            ) : type === "bug" ? (
+              <>
+                <b>
+                  <span>해충이 발견</span>
+                  <span className="back" />
+                </b>
+                되었을시
+                <br />
+                <b>
+                  <span>신축 아파트, 빌라, 단독주택에 입주 전</span>
+                  <span className="back" />
+                </b>
+                <br />
+                해충ㆍ방역 서비스 후
+                <b>
+                  <span> 월 1회의 정기적 서비스</span>
+                  <span className="back" />
+                </b>
+              </>
+            ) : type === "airfilter" ? (
+              <>
+                <b>
+                  <span>6개월~1년에 한번씩 </span>
+                  <span className="back" />
+                </b>
+                교체해주는 것이 제일 좋습니다
+                <br />
+                <b>
+                  <span>사무실 이전</span>
+                  <span className="back" />
+                </b>
+                을 했을 때
+                <br />
+                <b>
+                  <span>공기 정화 기능이 저하</span>
+                  <span className="back" />
+                </b>
+                되었을 때
               </>
             ) : (
               <></>

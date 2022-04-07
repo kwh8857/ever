@@ -92,10 +92,148 @@
     }
   }
 }
+
 .homecleansummary{
    &>.pack{
      &>.back{
         background-color: var(--shamrock);
      }
    }
+}
+.businesssummary{
+  &>.pack{
+    &>.back{
+      background-color: #40ccc7;
+    }
+    &>.content-wrapper{
+            color: var(--navy);
+                  &>.line{
+        background-color: var(--navy);
+      }
+    }
+  }
+}
+.birdsummary{
+  &>.pack{
+    &>.back{
+      height: 319px;
+    }
+    &>.backimg{
+      top: 106px;
+    }
+  }
+}
+.bugsummary{
+  height: 879px;
+   &>.pack{
+     &>.back{
+       height: 328px;
+     }
+     &>.backimg{
+       top: 91px;
+     }
+     &>.content-wrapper{
+       padding-top: 365px;
+     }
+   }
+}
+.buildingsummary{
+  &>.pack{
+    &>.back{
+      height: 495px;
+      top: 172px;
+    }
+    &>.backimg{
+      top: 66px;
+    }
+    &>.content-wrapper{
+      padding-top: 231px;
+          &>.category-wrapper{
+            margin-top: 38px;
+      &>div{
+        column-gap: 12px;
+        &>div{
+          height: 41px;
+          background-color: white;
+          border-radius: 20.5px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 16px;
+          font-weight: bold;
+          color: var(--navy);
+        }
+      }
+      &>.one{
+        display: grid;
+        grid-template-columns: repeat(3,102px);
+        margin-bottom: 12px;
+      }
+           &>.two{
+        display: grid;
+        grid-template-columns: repeat(4,102px);
+      }
+    }
+    }
+
+  }
+}
+.aircaresummary{
+  height: 706px;
+  &>.pack{
+    &>.back{
+      top: 204px;
+      height: 287px;
+    }
+    &>.content-wrapper{
+      padding-top: 263px;
+      padding-left: 0;
+      &>.sub{
+        font-size: 16px;
+      }
+      &>.line{
+        margin-top: 20.5px;
+        margin-bottom: 17.5px;
+      }
+    }
+    &>.backimg{
+      top: 83px;
+    }
+  }
+}
+.airfiltersummary{
+  height: 763px;
+  &>.pack{
+    &>.back{
+      height: 299px;
+      top: 188px;
+    }
+    &>.backimg{
+      top: 69px;
+    }
+    &>.content-wrapper{
+      padding-top: 236px;
+      padding-left: 0;
+      &>.line{
+        margin-top: 17.5px;
+        margin-bottom: 20.5px;
+      }
+    }
+  }
+}
+.purifysummary{
+  height: 744px;
+  &>.pack{
+    &>.back{
+      height: 187px;
+      top: 291px;
+    }
+    &>.backimg{
+      top: 83px;
+    }
+    &>.content-wrapper{
+      padding-left: 0;
+      padding-top: 339px;
+    }
+  }
 }

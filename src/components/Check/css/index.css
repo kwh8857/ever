@@ -186,8 +186,67 @@
   background-color: #cdf3e0;
 }
 
+.businesscheck > .pack > .check-box > .title {
+  background-color: #40ccc7;
+  color: white;
+}
+
+.businesscheck > .pack > .check-box > .content > b > .back {
+  background-color: #c1eff5;
+}
+
 .matcheck > .pack > .check-box {
   width: 553px;
   height: 380px;
+}
+
+.jointcheck > .pack > .check-box {
+  width: 553px;
+  height: 337px;
+}
+
+.birdcheck > .pack > .check-box {
+  width: 437px;
+  height: 185px;
+}
+
+.bugcheck {
+  height: 958px;
+}
+
+.bugcheck > .back {
+  height: 755px;
+}
+
+.bugcheck > .pack {
+  padding-bottom: 118px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.bugcheck > .pack > .content {
+  margin-top: 148px;
+}
+
+.bugcheck > .pack > .check-box {
+  width: 563px;
+  height: 229px;
+}
+
+.airfiltercheck {
+  height: 618px;
+}
+
+.airfiltercheck > .back {
+  height: 100%;
+}
+
+.airfiltercheck > .pack > .content {
+  margin-top: 114px;
+}
+
+.airfiltercheck > .pack > .check-box {
+  width: 634px;
+  height: 234px;
 }
 /*# sourceMappingURL=index.css.map */

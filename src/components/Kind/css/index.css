@@ -95,4 +95,12 @@
           column-gap: 99px;
   margin-top: 45px;
 }
+
+.businesskind > .pack > .category {
+  background-color: #40ccc7;
+}
+
+.businesskind > .pack > .list > .card > .title {
+  background-color: #40ccc7;
+}
 /*# sourceMappingURL=index.css.map */

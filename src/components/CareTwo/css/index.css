@@ -147,7 +147,7 @@
   line-height: 1.4;
 }
 
-.filtertwo > .pack {
+.filtertwo > .pack, .jointtwo > .pack {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -166,6 +166,14 @@
 
 .homecleantwo > .pack > .category {
   background-color: var(--shamrock);
+}
+
+.businesstwo {
+  background-color: #e3f8f7;
+}
+
+.businesstwo > .pack > .category {
+  background-color: #40ccc7;
 }
 
 .mattwo {
@@ -191,5 +199,42 @@
 
 .mattwo > .pack > .list > .card > .line {
   width: 158px;
+}
+
+.jointtwo > .pack {
+  text-align: center;
+}
+
+.jointtwo > .pack > .title {
+  margin: 6px 0 19px 0;
+}
+
+.jointtwo > .pack > .list {
+  -ms-grid-columns: (318px)[2];
+      grid-template-columns: repeat(2, 318px);
+}
+
+.jointtwo > .pack > .list > .card {
+  padding-top: 114px;
+}
+
+.birdtwo > .pack > .list > .card {
+  padding-top: 109px;
+}
+
+.birdtwo > .pack > .list > .card > .title {
+  font-size: 25px;
+}
+
+.bugtwo > .pack > .list {
+  margin-top: 88.8px;
+}
+
+.bugtwo > .pack > .list > .card {
+  padding-top: 99.6px;
+}
+
+.bugtwo > .pack > .list > .card > .title {
+  font-size: 25px;
 }
 /*# sourceMappingURL=index.css.map */

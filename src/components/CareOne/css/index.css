@@ -171,4 +171,74 @@
 .homecleancare > .pack > .list > .card > .number {
   background-color: var(--shamrock);
 }
+
+.businesscare > .pack > .category {
+  background-color: #40ccc7;
+}
+
+.businesscare > .pack > .title > .circle {
+  -webkit-text-emphasis-color: #40ccc7;
+          text-emphasis-color: #40ccc7;
+}
+
+.businesscare > .pack > .title > b {
+  color: #40ccc7;
+}
+
+.businesscare > .pack > .list > .card > .number {
+  background-color: #40ccc7;
+}
+
+.aircareclean {
+  padding-top: 0;
+  height: 661px;
+}
+
+.jointclean {
+  height: 1100px;
+}
+
+.jointclean > .pack {
+  width: 771px;
+}
+
+.jointclean > .pack > .sub {
+  white-space: nowrap;
+}
+
+.jointclean > .pack > .list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.birdclean, .bugclean {
+  height: 804px;
+}
+
+.birdclean > .pack > .title, .bugclean > .pack > .title {
+  margin-top: 13px;
+}
+
+.birdclean > .pack > .list, .bugclean > .pack > .list {
+  margin-top: 62px;
+}
+
+.airfilterclean {
+  height: 1073px;
+  padding-top: 190px;
+}
+
+.airfilterclean > .pack > .list {
+  row-gap: 14px;
+}
+
+.airfilterclean > .pack > .list > .card {
+  height: 238px;
+}
 /*# sourceMappingURL=index.css.map */

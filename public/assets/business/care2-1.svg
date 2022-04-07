@@ -1,0 +1,30 @@
+<svg data-name="구성 요소 277 – 1" xmlns="http://www.w3.org/2000/svg" width="100.742" height="100.742" viewBox="0 0 100.742 100.742">
+    <defs>
+        <clipPath id="ycu587qqaa">
+            <path data-name="사각형 4075" style="fill:none" d="M0 0h64v64H0z"/>
+        </clipPath>
+    </defs>
+    <g data-name="그룹 6107" transform="translate(-294.629 -3681.879)">
+        <circle data-name="타원 129" cx="50.371" cy="50.371" r="50.371" transform="translate(294.629 3681.879)" style="fill:#40ccc7"/>
+    </g>
+    <g data-name="그룹 6109">
+        <g data-name="그룹 6023">
+            <g data-name="그룹 6022" style="clip-path:url(#ycu587qqaa)" transform="translate(18.371 18.056)">
+                <g data-name="구성 요소 276 – 1">
+                    <path data-name="패스 7842" d="m4.031 23.126 14.037-9.511L32.106 4.1l14.037 9.511 14.038 9.511" style="stroke:#08174a;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;fill:none"/>
+                </g>
+            </g>
+        </g>
+        <path data-name="패스 7843" d="M54.493 19.364v37.58H9.718v-37.58" style="stroke:#08174a;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;fill:none" transform="translate(18.371 18.056)"/>
+        <g data-name="그룹 6025">
+            <g data-name="그룹 6024" style="clip-path:url(#ycu587qqaa)" transform="translate(18.371 18.056)">
+                <circle data-name="타원 535" cx="2.699" cy="2.699" r="2.699" transform="translate(16.428 24.705)" style="stroke:#08174a;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;fill:none"/>
+                <circle data-name="타원 536" cx="2.699" cy="2.699" r="2.699" transform="translate(43.217 31.793)" style="stroke:#08174a;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;fill:none"/>
+                <path data-name="패스 7844" d="M42.024 24.4a.721.721 0 1 1-.721-.721.721.721 0 0 1 .721.721z" style="stroke:#08174a;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;fill:none"/>
+                <path data-name="패스 7845" d="M39.649 49.524a.721.721 0 1 1-.721-.721.721.721 0 0 1 .721.721z" style="stroke:#08174a;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;fill:none"/>
+                <path data-name="패스 7846" d="M33.548 32.721a.722.722 0 1 1-.721-.721.721.721 0 0 1 .721.721z" style="stroke:#08174a;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;fill:none"/>
+                <path data-name="패스 7847" d="M28.837 39.348a4.856 4.856 0 1 1-4.855-4.855 4.855 4.855 0 0 1 4.855 4.855z" style="stroke:#08174a;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;fill:none"/>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,8 +1,8 @@
 import React from "react";
 import "./css/index.css";
-function Kind({ type, arr }) {
+function Kind({ type, arr, nav }) {
   return (
-    <div className={`kind ${type}kind`}>
+    <div className={`kind ${type}kind ${nav}kind`}>
       <div className="pack">
         {type === "hood" || type === "filter" ? (
           <b className="category">EVERPURI SERVICE</b>
@@ -13,7 +13,7 @@ function Kind({ type, arr }) {
               <b>다양한 형태의 주방후드 분해세척</b>이 가능하며 <br />
               <b>완전분해를 원칙</b>으로 합니다
             </>
-          ) : type === "filter" ? (
+          ) : type === "filter" || type === "airfilter" ? (
             <b>에버퓨리가 제공하는 서비스</b>
           ) : (
             <>

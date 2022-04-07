@@ -108,7 +108,7 @@
     }
   }
 }
-.filtertwo{
+.filtertwo,.jointtwo{
   &>.pack{
     display: flex;
     flex-direction: column;
@@ -122,6 +122,14 @@
       background-color: var(--shamrock);
     }
     
+  }
+}
+.businesstwo{
+  background-color: #e3f8f7;
+  &>.pack{
+    &>.category{
+      background-color: #40ccc7;
+    }
   }
 }
 .mattwo{
@@ -141,6 +149,45 @@
             width: 158px;
           }
          }
+    }
+  }
+}
+.jointtwo{
+  &>.pack{
+    text-align: center;
+    &>.title{
+      margin: 6px 0 19px 0;
+    }
+    &>.list{
+        grid-template-columns: repeat(2,318px);
+        &>.card{
+          padding-top: 114px;
+        }
+    }
+  }
+}
+.birdtwo{
+  &>.pack{
+     &>.list{
+       &>.card{
+         padding-top: 109px;
+         &>.title{
+           font-size: 25px;
+         }
+       }
+     }
+  }
+}
+.bugtwo{
+  &>.pack{
+    &>.list{
+      margin-top: 88.8px;
+      &>.card{
+        padding-top: 99.6px;
+        &>.title{
+          font-size: 25px;
+        }
+      }
     }
   }
 }
