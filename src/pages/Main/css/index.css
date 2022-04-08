@@ -381,94 +381,146 @@
   width: 38px;
 }
 
-.main .section6 {
-  width: 100%;
-  height: 709px;
-  position: relative;
-}
-
-.main .section6 > .pack {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  padding-top: 139px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-.main .section6 > .pack > img {
-  width: 463px;
-}
-
-.main .section6 > .bottom {
-  overflow: hidden;
-  width: 100%;
-  height: 493px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  background-color: #a4dde6;
-  color: var(--navy);
-}
-
-.main .section6 > .bottom > .pack {
-  height: 100%;
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding-top: 93px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-.main .section6 > .bottom > .pack > .title {
-  font-size: 35px;
-}
-
-.main .section6 > .bottom > .pack > .call-wrapper {
-  margin-top: 96px;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
-}
-
-.main .section6 > .bottom > .pack > .call-wrapper > .tel-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.main .section6 > .bottom > .pack > .call-wrapper > .tel-wrapper > img {
-  width: 85px;
-  margin-right: 18px;
-}
-
-.main .section6 > .bottom > .pack > .call-wrapper > .tel-wrapper > .tel {
-  font-weight: 500;
-  font-size: 74px;
-  font-family: 'gmarket';
-}
-
-.main .section6 > .bottom > .pack > .call-wrapper > .address {
-  font-size: 21px;
-  font-weight: 500;
-  margin-top: 14px;
-}
-
-.main .section6 > .bottom > .pack > .background {
-  width: 554px;
-  position: absolute;
-  bottom: -50px;
-  left: -250px;
+@media screen and (max-width: 1024px) {
+  .main > .section1 {
+    height: 373px;
+  }
+  .main > .section1 > .pack {
+    font-size: 28px;
+    padding-top: 137px;
+  }
+  .main > .section2 {
+    height: 466px;
+    padding-top: 91px;
+  }
+  .main > .section2 > .pack {
+    -ms-grid-columns: 241px 392px;
+        grid-template-columns: 241px 392px;
+    -webkit-column-gap: 64px;
+            column-gap: 64px;
+  }
+  .main > .section2 > .pack > .left > .title {
+    font-size: 28px;
+  }
+  .main > .section2 > .pack > .left > .sub {
+    font-size: 13px;
+    margin: 13px 0  39px 0;
+  }
+  .main > .section2 > .pack > .left > button {
+    width: 168px;
+    height: 44px;
+    font-size: 14px;
+  }
+  .main > .section2 > .pack > .right {
+    width: 100%;
+    height: 243px;
+  }
+  .main > .section3 {
+    height: 856px;
+    padding-top: 69px;
+  }
+  .main > .section3 > .pack > .title {
+    font-size: 27px;
+  }
+  .main > .section3 > .pack > .wrapper {
+    margin-top: 24px;
+    row-gap: 31px;
+  }
+  .main > .section3 > .pack > .wrapper > .card {
+    height: 187px;
+  }
+  .main > .section3 > .pack > .wrapper > .card > img {
+    width: 211px;
+  }
+  .main > .section3 > .pack > .wrapper > .card > .content {
+    padding: 21px 19px 20px 28px;
+  }
+  .main > .section3 > .pack > .wrapper > .card > .content > .title {
+    font-size: 15px;
+  }
+  .main > .section3 > .pack > .wrapper > .card > .content > .sub {
+    font-size: 13px;
+    line-height: 1.38;
+    margin-bottom: 38px;
+    margin-top: 6px;
+  }
+  .main > .section3 > .pack > .wrapper > .card > .content > .category {
+    -webkit-column-gap: 24px;
+            column-gap: 24px;
+  }
+  .main > .section3 > .pack > .wrapper > .card > .content > .category > div {
+    font-size: 10px;
+  }
+  .main > .section3 > .pack > .wrapper > .card > .content > .category > div > img {
+    height: 22px;
+  }
+  .main > .section3 > .pack > .wrapper > .card > .content > .btn {
+    right: 19px;
+    bottom: 20px;
+    width: 148px;
+    height: 44px;
+  }
+  .main > .section3 > .pack > .wrapper > .card > .content > .btn > span {
+    font-size: 13px;
+  }
+  .main > .section3 > .pack > .wrapper > .card > .content > .btn > img {
+    width: 31px;
+  }
+  .main > .section4 {
+    height: 1184px;
+    padding-top: 165px;
+  }
+  .main > .section4 > .pack > .title {
+    font-size: 27px;
+  }
+  .main > .section4 > .pack > .sub {
+    font-size: 13px;
+    margin-top: 7px;
+    margin-bottom: 16px;
+  }
+  .main > .section4 > .pack > .nav-wrapper {
+    margin-top: 45px;
+  }
+  .main > .section4 > .pack > .nav-wrapper > .card {
+    padding: 25px 0 28px 0;
+  }
+  .main > .section4 > .pack > .nav-wrapper > .card > .title {
+    font-size: 22px;
+  }
+  .main > .section4 > .pack > .nav-wrapper > .card > .btn-wrapper > a {
+    height: 43px;
+    font-size: 13px;
+  }
+  .main > .section5 > .pack {
+    padding-left: 95px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .main > .section5 > .pack > .content {
+    height: 324px;
+    padding: 50px 0 0 241px;
+  }
+  .main > .section5 > .pack > .content > .main-img {
+    width: 315px;
+    height: 202px;
+    left: -95px;
+  }
+  .main > .section5 > .pack > .content > .title {
+    font-size: 25px;
+  }
+  .main > .section5 > .pack > .content > .sub {
+    font-size: 13px;
+    margin-top: 9px;
+    margin-bottom: 47px;
+  }
+  .main > .section5 > .pack > .content > .btn {
+    width: 230px;
+    height: 44px;
+    font-size: 13px;
+    padding: 0 18px 0 17px;
+  }
+  .main > .section5 > .pack > .content > .btn > img {
+    width: 31px;
+  }
 }
 /*# sourceMappingURL=index.css.map */

@@ -266,69 +266,157 @@ justify-content: center;
     }
     }
   }
-  .section6{
-    width: 100%;
-    height: 709px;
-    position: relative;
-    
-     &>.pack{
-       display: flex;
-       justify-content: flex-end;
-       padding-top: 139px;
-       box-sizing: border-box;
-       & > img{
-      width: 463px;
 
+}
+@media screen and (max-width : 1024px) {
+.main{
+  &>.section1{
+    height: 373px;
+    &>.pack{
+      font-size: 28px;
+      padding-top: 137px;
     }
-     }
-    &>.bottom{
-      overflow: hidden;
-      width: 100%;
-      height: 493px;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      background-color: rgb(164, 221, 230);
-      color: var(--navy);
-      &>.pack{
-        height: 100%;
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        padding-top: 93px;
-        box-sizing: border-box;
+  }
+  &>.section2{
+    height: 466px;
+    padding-top: 91px;
+    &>.pack{
+      grid-template-columns: 241px 392px;
+      column-gap: 64px;
+      &>.left{
         &>.title{
-          font-size: 35px;
+          font-size: 28px;
         }
-        &>.call-wrapper{
-          margin-top: 96px;
-           align-self: flex-end;
-          &>.tel-wrapper{
-            display: flex;
-            align-items: center;
-            &>img{
-              width: 85px;
-              margin-right: 18px;
-            }
-            &>.tel{
-              font-weight: 500;
-              font-size: 74px;
-              font-family: 'gmarket';
+        &>.sub{
+          font-size: 13px;
+          margin: 13px 0  39px 0;
+        }
+        &>button{
+            width: 168px;
+  height: 44px;
+  font-size: 14px;
+        }
+      }
+      &>.right{
+        width: 100%;
+        height: 243px;
+      }
+    }
+  }
+  &>.section3{
+    height: 856px;
+    padding-top: 69px;
+    &>.pack{
+     &>.title{
+       font-size: 27px;
+     }
+     &>.wrapper{
+       margin-top: 24px;
+       row-gap: 31px;
+       &>.card{
+         height: 187px;
+         &>img{
+         width: 211px;
+       }
+        &>.content{
+          padding: 21px 19px 20px 28px;
+          &>.title{
+            font-size: 15px;
+          }
+          &>.sub{
+            font-size: 13px;
+            line-height: 1.38;
+            margin-bottom: 38px;
+            margin-top: 6px;
+          }
+          &>.category{
+            column-gap: 24px;
+            &>div{
+              font-size: 10px;
+              &>img{
+                height: 22px;
+              }
             }
           }
-          &>.address{
-            font-size: 21px;
-            font-weight: 500;
-            margin-top: 14px;
+          &>.btn{
+            right: 19px;
+            bottom: 20px;
+             width: 148px;
+  height: 44px;
+           &>span{
+             font-size: 13px;
+           }
+           &>img{
+             width: 31px;
+           }
           }
         }
-        &>.background{
-          width: 554px;
-          position: absolute;
-          bottom: -50px;
-          left: -250px;
+       }
+     }
+    }
+  }
+  &>.section4{
+    height: 1184px;
+    padding-top: 165px;
+    &>.pack{
+      &>.title{
+        font-size: 27px;
+      }
+      &>.sub{
+        font-size: 13px;
+        margin-top: 7px;
+        margin-bottom: 16px;
+      }
+      &>.nav-wrapper{
+        margin-top: 45px;
+        &>.card{
+          padding: 25px 0 28px 0;
+          &>.title{
+            font-size: 22px;
+          }
+           &>.btn-wrapper{
+             &>a{
+               height: 43px;
+               font-size: 13px;
+
+             }
+           }
         }
       }
     }
   }
+  &>.section5{
+    &>.pack{
+      padding-left: 95px;
+      box-sizing: border-box;
+      &>.content{
+        height: 324px;
+        padding: 50px 0 0 241px;
+        &>.main-img{
+            width: 315px;
+  height: 202px;
+        left: -95px;
+        }
+        &>.title{
+          font-size: 25px;
+        }
+        &>.sub{
+          font-size: 13px;
+          margin-top: 9px;
+          margin-bottom: 47px;
+        }
+        &>.btn{
+            width: 230px;
+  height: 44px;
+  font-size: 13px;
+        padding: 0 18px 0 17px;
+        &>img{
+          width: 31px;
+        }
+        }
+      }
+    }
+  }
+}
+
 }

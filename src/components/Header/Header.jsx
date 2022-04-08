@@ -1,12 +1,40 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import "./css/index.css";
 
-function Header() {
+function Header({ agent }) {
   const loaction = useLocation().pathname;
-  console.log(loaction);
+  const [isback, setIsback] = useState(false);
+  useEffect(() => {
+    const root = document.getElementById("root");
+    function change() {
+      if (root.scrollTop > 110) {
+        if (!isback) {
+          setIsback(true);
+        }
+      } else {
+        if (isback) {
+          setIsback(false);
+        }
+      }
+    }
+    root.addEventListener("scroll", change);
+    return () => {
+      root.removeEventListener("scroll", change);
+    };
+  }, [isback]);
+
   return (
-    <header className="header">
+    <header
+      className="header"
+      style={
+        isback
+          ? {
+              backgroundColor: "white",
+            }
+          : undefined
+      }
+    >
       <a href="/">
         <img
           className="logo"
@@ -22,7 +50,7 @@ function Header() {
               href={link}
               key={idx}
               style={
-                loaction !== "/about" && loaction !== "/"
+                loaction !== "/about" && loaction !== "/" && !isback
                   ? {
                       color: "white",
                     }
@@ -44,5 +72,5 @@ const LinkArr = [
   { title: "가전제품케어", link: "/product" },
   { title: "홈클리닝", link: "/homeclean" },
   { title: "비즈니스케어", link: "/business" },
-  { title: "창업 교육 및 파트너 제휴", link: "/about" },
+  { title: "창업 교육 및 파트너 제휴", link: "/partner" },
 ];

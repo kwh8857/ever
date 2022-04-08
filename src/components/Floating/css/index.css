@@ -1,0 +1,43 @@
+.floating {
+  position: fixed;
+  right: 45px;
+  bottom: 54px;
+  display: -ms-grid;
+  display: grid;
+  row-gap: 20px;
+  z-index: 1000;
+}
+
+.floating > a {
+  width: 157px;
+  height: 61px;
+  border-radius: 30.5px;
+  -webkit-box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.16);
+          box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.16);
+  background-color: white;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-left: 14px;
+  padding-right: 26px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.floating > a > .title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.floating > a > img {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+/*# sourceMappingURL=index.css.map */

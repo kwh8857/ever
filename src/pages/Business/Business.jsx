@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
 import CareOne from "../../components/CareOne/CareOne";
 import CareTwo from "../../components/CareTwo/CareTwo";
 import Check from "../../components/Check/Check";
@@ -12,7 +13,16 @@ import Store from "../../components/Store/Store";
 import Summary from "../../components/Summary/Summary";
 import "./css/index.css";
 function Business() {
+  const location = useLocation();
   const [now, setNow] = useState(0);
+  useEffect(() => {
+    if (location.state) {
+      setNow(location.state - 1);
+      document.getElementById("root").scrollTo(0, 0);
+    }
+
+    return () => {};
+  }, [location]);
   return (
     <main className="business">
       <div className="banner">
@@ -122,9 +132,180 @@ function Business() {
                     </div>
                   </div>
                 </div>
+                <div className="bottom-body">
+                  <div className="body-first">
+                    <div className="left">
+                      <div className="box">
+                        호텔 및 여관 (객실수 20실이상) 관광진흥법에 의한
+                        관광숙박업소
+                      </div>
+                      <div className="box">
+                        식품접객업소 (연면적 300㎡ 이상)
+                      </div>
+                      <div className="box">
+                        고속버스·시내버스·시외버스·전세버스· 장의자동차 <br />{" "}
+                        항공법에 의한 항공기 <br /> 해운법에 의한 영객선 및
+                        대합실 (연면적 300㎡ 이상의대합실에 한한다) <br /> 및
+                        철도법에 의한 여객운차량 및 여객대합실
+                      </div>
+                      <div className="box">
+                        유통산업발전법에 의한 시장·대형점·백화점·쇼핑센터 및
+                        도매센터
+                      </div>
+                      <div className="box">
+                        종합병원·병원·치과병원 및 한방병원
+                      </div>
+                    </div>
+                    <div className="right">
+                      <div className="box">
+                        <b>1회 이상 / 1월</b>
+                        매월 1회
+                      </div>
+                      <div className="box">
+                        <b>1회 이상 / 2월</b>
+                        2개월에 1회
+                      </div>
+                    </div>
+                  </div>
+                  <div className="body-second">
+                    <div className="left">
+                      <div className="box">
+                        1회 100인이상에게 계속적으로 식사를 제공하는 집단급식소
+                      </div>
+                      <div className="box">
+                        50인 이상을 수용할 수 있는 기숙사 및 합숙소
+                      </div>
+                      <div className="box">공연장 (300석 이상)</div>
+                      <div className="box">
+                        {
+                          "<초.중등 교육법>제2조 <고등교육법>제2조의 규정에 의한 학교"
+                        }
+                      </div>
+                      <div className="box">
+                        학원의 설립·운영 및 과외교습소에 의한 학원(연면적1,000㎡
+                        이상)
+                      </div>
+                      <div className="box">
+                        연면적 2,000㎡ 이상의 사무실용 건축물 및 복합용도의
+                        건축물
+                      </div>
+                      <div className="box">
+                        &lt;영.유아보육법 &gt;에 의한 영·유아보육시설 및 <br />
+                        &lt;유아교육법&gt;에 의한 유치원 <br />
+                        (50인 이상을 수용하는 영.유아보육시설 및 유치원의 경우에
+                        한한다)
+                      </div>
+                    </div>
+                    <div className="right">
+                      <div className="box">
+                        <b>1회 이상 / 2월</b>
+                        2개월에 1회
+                      </div>
+                      <div className="box">
+                        <b>1회 이상 / 3월</b>
+                        3개월에 1회
+                      </div>
+                    </div>
+                  </div>
+                  <div className="body-last">
+                    <div className="left">
+                      <div className="box">공동주택 (300세대이상)</div>
+                    </div>
+                    <div className="right">
+                      <div className="box">
+                        <b>1회 이상 / 2월</b>
+                        2개월에 1회
+                      </div>
+                      <div className="box">
+                        <b>1회 이상 / 3월</b>
+                        3개월에 1회
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
+          <Slogan type="purify" nav="business" />
+          <div className="purify-two">
+            <div className="pack">
+              <b className="category">EVERPURI CARE 02</b>
+              <b className="title">에버퓨리는 검증된 약품을 사용합니다</b>
+              <div className="sub">
+                에버퓨리에서 사용하는 오라클워터는 식약처에서 식품첨가물로{" "}
+                <br /> 승인 받은 안전한 물질이며 오존 특유의 냄새가 나지 않는
+                유일한 물질입니다.
+              </div>
+              <img
+                className="system"
+                src="/assets/business/purify-two.png"
+                srcSet="/assets/business/purify-two@2x.png 2x , /assets/business/pruify-two@3x.png 3x"
+                alt=""
+              />
+              <div className="content-wrapper">
+                <div className="category-wrapper">
+                  <div className="head center">구분</div>
+                  <div className="box center">살균시간</div>
+                  <div className="box center">살균력</div>
+                  <div className="box center">유해성</div>
+                  <div className="box center">특징</div>
+                </div>
+                <div className="water-wrapper">
+                  <div className="head center">오라클워터</div>
+                  <div className="box center">
+                    <b className="first mint">30초 이내</b>
+                  </div>
+                  <div className="box center col">
+                    코로나19 바이러스 살균력 테스트 <br />
+                    <b>30초 이내 98% 박멸</b> <br /> 대장균 포도상구균 폐렴균
+                    녹농균 등 <br />
+                    <b> 1분 이내 99.999% 살균</b>
+                  </div>
+                  <div className="box center">
+                    <div>
+                      안구, 피부자극성 테스트 결과 <b className="mint">무해</b>
+                      <br /> 경구투여 테스트 결과 <b className="mint">무해</b>
+                      <br />
+                      피부패치자극 테스트 결과 <b className="mint">무해</b>
+                    </div>
+                  </div>
+                  <div className="box center">
+                    <div>
+                      방제 작업 시 살균 작용 후 수분내에 <br />{" "}
+                      <b>분해되어 물과 산소로 변환</b> <br /> <br />
+                      저비용으로 대량생산하여{" "}
+                      <b>
+                        광범위한 <br /> 지역 방제 가능
+                      </b>
+                    </div>
+                  </div>
+                </div>
+                <div className="lax-wrapper">
+                  <div className="head center">락스 (차아염소산나트륨)</div>
+                  <div className="first center">5분 이내</div>
+                  <div className="box center">
+                    미생물, 바이러스 살균에 효과적(1000ppm) <br /> 코로나19
+                    바이러스 살균에 대한 정보는 없음
+                  </div>
+                  <div className="box center">
+                    강한 염기성으로 사람 및 동물 신체에 부식
+                  </div>
+                  <div className="box center">
+                    염산 등 산성물질과 접촉시 염소가스 발생 <br /> 가정에서 쉽게
+                    사용하는 살균제품
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <Point type="airfilter" arr={pointArr} />
+          <Reviews
+            title="방역·소독 서비스는 에버퓨리에 믿고 맡기세요!"
+            arr={[0, 0, 0, 0, 0, 0, 0, 0]}
+            type="purify"
+            nav="business"
+          />
+          <Store />
         </>
       )}
     </main>

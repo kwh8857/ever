@@ -1,0 +1,66 @@
+.tel{
+
+    width: 100%;
+    height: 709px;
+    position: relative;
+    
+     &>.pack{
+       display: flex;
+       justify-content: flex-end;
+       padding-top: 139px;
+       box-sizing: border-box;
+       & > img{
+      width: 463px;
+
+    }
+     }
+    &>.bottom{
+      overflow: hidden;
+      width: 100%;
+      height: 493px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background-color: rgb(164, 221, 230);
+      color: var(--navy);
+      &>.pack{
+        height: 100%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        padding-top: 93px;
+        box-sizing: border-box;
+        &>.title{
+          font-size: 35px;
+        }
+        &>.call-wrapper{
+          margin-top: 96px;
+           align-self: flex-end;
+          &>.tel-wrapper{
+            display: flex;
+            align-items: center;
+            &>img{
+              width: 85px;
+              margin-right: 18px;
+            }
+            &>.tel{
+              font-weight: 500;
+              font-size: 74px;
+              font-family: 'gmarket';
+            }
+          }
+          &>.address{
+            font-size: 21px;
+            font-weight: 500;
+            margin-top: 14px;
+          }
+        }
+        &>.background{
+          width: 554px;
+          position: absolute;
+          bottom: -50px;
+          left: -250px;
+        }
+      }
+    }
+}

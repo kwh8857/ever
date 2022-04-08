@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
 import CareOne from "../../components/CareOne/CareOne";
 import CareTwo from "../../components/CareTwo/CareTwo";
 import Check from "../../components/Check/Check";
@@ -12,7 +13,17 @@ import Store from "../../components/Store/Store";
 import Summary from "../../components/Summary/Summary";
 import "./css/index.css";
 function Product() {
+  const location = useLocation();
   const [now, setNow] = useState(0);
+  useEffect(() => {
+    if (location.state) {
+      setNow(location.state - 1);
+      document.getElementById("root").scrollTo(0, 0);
+    }
+
+    return () => {};
+  }, [location]);
+
   return (
     <main className="product">
       <div className="banner">

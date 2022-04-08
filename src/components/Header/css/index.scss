@@ -6,11 +6,12 @@
   left: 0;
   width: 100%;
   height: 80px;
-  padding: 44px 187px 0 187px;
+  padding: 44px 100px 44px 100px;
       display: flex;
     align-items: center;
     box-sizing: border-box;
     justify-content: space-between;
+   transition:background-color 0.3s ease-in-out;
 &>a {
    &> .logo {
    width: 168px;
@@ -28,4 +29,21 @@
     font-weight: bold;
    }
  }
+}
+@media screen and (max-width : 1024px) {
+  .header{
+    padding: 36px 32px 36px 32px;
+    &>a{
+      &>.logo{
+        width: 127px;
+      }
+    }
+    &>.link-wrapper{
+      column-gap: 27px;
+      &>a{
+        font-size: 13px;
+      }
+    }
+  }
+
 }

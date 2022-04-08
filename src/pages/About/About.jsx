@@ -1,10 +1,20 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
 import Map from "../../components/Map/Map";
 import Nav from "../../components/Nav/Nav";
 import Sponsor from "../../components/Sponsor/Sponsor";
 import "./css/index.css";
 function About() {
+  const location = useLocation();
   const [now, setnow] = useState(0);
+  useEffect(() => {
+    if (location.state) {
+      document.getElementById("root").scrollTo(0, 0);
+      setnow(location.state);
+    }
+    return () => {};
+  }, [location]);
+
   return (
     <main className="about">
       <Nav now={now} setnow={setnow} navArr={navArr} />

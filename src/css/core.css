@@ -132,4 +132,10 @@ textarea:focus {
   width: 993px;
   margin: 0 auto;
 }
+
+@media screen and (max-width: 1024px) {
+  .pack {
+    width: 704px;
+  }
+}
 /*# sourceMappingURL=core.css.map */
