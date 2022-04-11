@@ -1,6 +1,6 @@
 import React from "react";
 import "./css/index.css";
-function CareOne({ type, cleanArr, nav }) {
+function CareOne({ type, cleanArr, nav, agent }) {
   return (
     <div className={`careone ${type}clean ${nav}care`}>
       <div className="pack">
@@ -15,10 +15,11 @@ function CareOne({ type, cleanArr, nav }) {
             <>
               {" "}
               보이지 않는 곳까지
+              {agent === "mb" ? <br /> : undefined}
               <b className="circle"> 완벽 케어</b>
-              하는 <br />
+              하는 {agent !== "mb" ? <br /> : undefined}
               {type === "aircon" ? (
-                <b> 16단계 완전분해케어</b>
+                <b> 16단계{agent === "mb" ? <br /> : undefined} 완전분해케어</b>
               ) : type === "wash" ? (
                 <b> 6단계 완전분해케어</b>
               ) : type === "hood" ? (
@@ -38,6 +39,16 @@ function CareOne({ type, cleanArr, nav }) {
               )}
             </>
           )}
+          <div className="circle-wrapper">
+            <div className="left">
+              <div />
+              <div />
+            </div>
+            <div className="right">
+              <div />
+              <div />
+            </div>
+          </div>
         </div>
         <div className="sub">
           {type === "aircon" ? (

@@ -5,6 +5,7 @@ import "./css/index.css";
 function Header({ agent }) {
   const loaction = useLocation().pathname;
   const [isback, setIsback] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
   useEffect(() => {
     const root = document.getElementById("root");
     function change() {
@@ -28,7 +29,7 @@ function Header({ agent }) {
     <header
       className="header"
       style={
-        isback
+        isback || isOpen
           ? {
               backgroundColor: "white",
             }
@@ -43,25 +44,48 @@ function Header({ agent }) {
           alt="로고"
         />
       </a>
-      <nav className="link-wrapper">
-        {LinkArr.map(({ title, link }, idx) => {
-          return (
-            <a
-              href={link}
-              key={idx}
-              style={
-                loaction !== "/about" && loaction !== "/" && !isback
-                  ? {
-                      color: "white",
-                    }
-                  : undefined
-              }
-            >
-              {title}
-            </a>
-          );
-        })}
-      </nav>
+      {agent !== "mb" ? (
+        <nav className="link-wrapper">
+          {LinkArr.map(({ title, link }, idx) => {
+            return (
+              <a
+                href={link}
+                key={idx}
+                style={
+                  loaction !== "/about" && loaction !== "/" && !isback
+                    ? {
+                        color: "white",
+                      }
+                    : undefined
+                }
+              >
+                {title}
+              </a>
+            );
+          })}
+        </nav>
+      ) : (
+        <img
+          src={`/assets/main/${isOpen ? "close" : "menu"}.svg`}
+          alt="메뉴"
+          className="menu"
+          onClick={() => {
+            setIsOpen(!isOpen);
+          }}
+        />
+      )}
+      {agent === "mb" ? (
+        <div className="mb-menu" style={{ height: isOpen ? "100%" : "0" }}>
+          {LinkArr.map(({ title, link }, idx) => {
+            return (
+              <a href={link} key={idx}>
+                {title}
+                {idx !== 4 ? <div className="line" /> : undefined}
+              </a>
+            );
+          })}
+        </div>
+      ) : undefined}
     </header>
   );
 }

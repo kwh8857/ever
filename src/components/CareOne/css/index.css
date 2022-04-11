@@ -32,22 +32,34 @@
   white-space: nowrap;
   line-height: 1.33;
   color: var(--navy);
-}
-
-.careone > .pack > .title > .circle {
-  font-size: 30px;
-  text-emphasis-style: dot;
-  text-emphasis-position: over left;
-  -webkit-text-emphasis-style: dot;
-  -webkit-text-emphasis-position: over;
-  -webkit-text-emphasis-color: #76c7d3;
-          text-emphasis-color: #76c7d3;
+  margin-top: 13px;
   position: relative;
 }
 
-.careone > .pack > .title > .circle > .circle-wrapper {
+.careone > .pack > .title > .circle-wrapper {
   position: absolute;
-  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 28px;
+          column-gap: 28px;
+  top: -7px;
+  left: 250px;
+}
+
+.careone > .pack > .title > .circle-wrapper > div {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (7px)[2];
+      grid-template-columns: repeat(2, 7px);
+  -webkit-column-gap: 21px;
+          column-gap: 21px;
+}
+
+.careone > .pack > .title > .circle-wrapper > div > div {
+  height: 7px;
+  background-color: #76c7d3;
+  border-radius: 7px;
 }
 
 .careone > .pack > .sub {
@@ -240,5 +252,115 @@
 
 .airfilterclean > .pack > .list > .card {
   height: 238px;
+}
+
+@media screen and (max-width: 1024px) {
+  .careone {
+    height: 1204px;
+    padding-top: 125px;
+  }
+  .careone > .pack > .category {
+    width: 155px;
+  }
+  .careone > .pack > .title {
+    font-size: 25px;
+    margin-top: 13px;
+  }
+  .careone > .pack > .title > .circle-wrapper {
+    left: 210px;
+    top: -3px;
+    -webkit-column-gap: 22px;
+            column-gap: 22px;
+  }
+  .careone > .pack > .title > .circle-wrapper > div {
+    -ms-grid-columns: (5px)[2];
+        grid-template-columns: repeat(2, 5px);
+    -webkit-column-gap: 19px;
+            column-gap: 19px;
+  }
+  .careone > .pack > .title > .circle-wrapper > div > div {
+    height: 5px;
+  }
+  .careone > .pack > .sub {
+    font-size: 15px;
+    margin-top: 11px;
+  }
+  .careone > .pack > .list {
+    -ms-grid-columns: (168px)[4];
+        grid-template-columns: repeat(4, 168px);
+    -webkit-column-gap: 10px;
+            column-gap: 10px;
+    margin-top: 45px;
+    row-gap: 39px;
+  }
+  .careone > .pack > .list > .card > .number {
+    width: 27px;
+    height: 27px;
+    font-size: 11px;
+    top: -15px;
+  }
+  .careone > .pack > .list > .card > .title {
+    font-size: 12px;
+    margin-top: 5px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .careone {
+    height: 1272px;
+    padding-top: 76px;
+  }
+  .careone > .pack {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .careone > .pack > .category {
+    height: 30px;
+    width: 154px;
+  }
+  .careone > .pack > .title {
+    margin-top: 10px;
+    line-height: 1.48;
+  }
+  .careone > .pack > .title > .circle-wrapper {
+    top: 36px;
+    left: 10px;
+    -webkit-column-gap: 25px;
+            column-gap: 25px;
+  }
+  .careone > .pack > .title > .circle-wrapper > div {
+    -ms-grid-columns: (4px)[2];
+        grid-template-columns: repeat(2, 4px);
+    -webkit-column-gap: 19px;
+            column-gap: 19px;
+  }
+  .careone > .pack > .title > .circle-wrapper > div > div {
+    height: 4px;
+  }
+  .careone > .pack > .sub {
+    margin-top: 14px;
+    font-size: 13px;
+  }
+  .careone > .pack > .list {
+    -ms-grid-columns: (102px)[3];
+        grid-template-columns: repeat(3, 102px);
+    -webkit-column-gap: 7px;
+            column-gap: 7px;
+    row-gap: 47px;
+  }
+  .careone > .pack > .list > .card > .number {
+    width: 26px;
+    height: 26px;
+    top: -12px;
+  }
 }
 /*# sourceMappingURL=index.css.map */

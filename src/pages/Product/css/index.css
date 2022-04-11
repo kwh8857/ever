@@ -161,4 +161,14 @@
 .product > .aircon > .section8 > .pack > .list > .card > .content > .third > div:nth-child(n+2) {
   border-left: solid 1px #e0e0e0;
 }
+
+@media screen and (max-width: 1024px) {
+  .product > .banner {
+    height: 298px;
+    padding-top: 210px;
+  }
+  .product > .banner > .title {
+    font-size: 30px;
+  }
+}
 /*# sourceMappingURL=index.css.map */

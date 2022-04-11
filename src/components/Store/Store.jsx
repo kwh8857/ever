@@ -1,17 +1,22 @@
 import React from "react";
 import "./css/index.css";
-function Store() {
+function Store({ agent }) {
   return (
     <div className="store">
       <div className="pack">
         <div className="title">
-          <b> 간편하게 서비스를 이용하고 싶다면</b> <br /> 지금 바로 에버퓨리를
+          <b>
+            {" "}
+            간편하게 서비스를{agent === "mb" ? <br /> : undefined} 이용하고
+            싶다면
+          </b>{" "}
+          <br /> 지금 바로 에버퓨리를{agent === "mb" ? <br /> : undefined}
           만나보세요
         </div>
         <div className="button-wrapper">
           <button>
             <div className="left">
-              <div className="img-wrapper">
+              <div className="img-wrapper naver">
                 <img src="/assets/common/smartstore.svg" alt="" />
               </div>
               <span>

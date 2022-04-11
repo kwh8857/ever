@@ -1,6 +1,6 @@
 import React from "react";
 import "./css/index.css";
-function Summary({ type, nav }) {
+function Summary({ type, nav, agent }) {
   return (
     <div className={`summary ${type}summary ${nav}summary`}>
       <div className="pack">
@@ -97,12 +97,25 @@ function Summary({ type, nav }) {
           {type !== "purify" ? <div className="line" /> : undefined}
           <div className="sub">
             {type === "aircon" ? (
-              <>
-                에어컨 작동시 냉각판은 습도가 높고 먼지 및 오염물질이 있는
-                상태로 <br /> 작동이 멈추면 온도가 상승되어
-                <b>세균이 더욱 왕성하게 증식</b>됩니다. <br /> 이로 인해,
-                <b>악취 및 냉방병, 폐렴 등 각종 호흡기질환</b>에 영향을 줍니다.
-              </>
+              agent !== "mb" ? (
+                <>
+                  에어컨 작동시 냉각판은 습도가 높고 먼지 및 오염물질이 있는
+                  상태로 <br /> 작동이 멈추면 온도가 상승되어
+                  <b>세균이 더욱 왕성하게 증식</b>됩니다. <br /> 이로 인해,
+                  <b>악취 및 냉방병, 폐렴 등 각종 호흡기질환</b>에 영향을
+                  줍니다.
+                </>
+              ) : (
+                <>
+                  에어컨 작동시 냉각판은 습도가 높고 먼지 및 오염 <br /> 물질이
+                  있는 상태로 작동이 멈추면 온도가 상승되어 <br />
+                  <b>세균이 더욱 왕성하게 증식</b>됩니다. <br /> 이로 인해,
+                  <b>
+                    악취 및 냉방병, 폐렴 등 각종 <br /> 호흡기질환
+                  </b>
+                  에 영향을 줍니다.
+                </>
+              )
             ) : type === "wash" ? (
               <>
                 세탁기 구입 후 2~3년의 지나면{" "}

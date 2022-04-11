@@ -4,7 +4,7 @@
  background-position: center;
  background-repeat: no-repeat;
  background-size: cover;
-      background-image: image-set(url('/public/assets/common/storebackground.png')1x,url('/public/assets/common/storebackground@2x.png')2x,url('/public/assets/common/storebackground@3x.png')3x );
+      background-image: image-set(url('/public/assets/common/storebackground.png') 1x,url('/public/assets/common/storebackground@2x.png') 2x ,url('/public/assets/common/storebackground@3x.png') 3x );
   &>.pack{
     padding-top: 210px;
     box-sizing: border-box;
@@ -44,5 +44,64 @@
     }
         }
       }
+  }
+}
+@media screen and (max-width : 1024px) {
+  .store{
+    &>.pack{
+      font-size: 30px;
+      &>.button-wrapper{
+        &>button{
+           width: 391px;
+  height: 55px;
+         font-size: 20px;
+          &>.left{
+            &>.naver{
+              &>.img-wrapper{
+                &>img{
+                  width: 33.3px;
+                }
+              }
+            }
+            &>.img-wrapper{
+              margin-right: 20px;
+              &>img{
+                width: 36px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width : 767px) {
+  .store{
+    height: 587px;
+    &>.pack{
+           &>.title{
+             font-size: 25px;
+             line-height: 1.32;
+           }
+        &>.button-wrapper{
+          margin-top: 33px;
+          row-gap: 25px;
+          &>button{
+            width: 100%;
+            height: 55px;
+            font-size: 18px;
+            white-space: nowrap;
+            &>.left{
+              &>.img-wrapper{
+                width: 36px;
+                margin-right: 13px;
+              }
+            }
+            &>img{
+              width: 40px;
+            }
+          }
+        }
+    }
   }
 }

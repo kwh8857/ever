@@ -40,4 +40,40 @@
   width: -moz-fit-content;
   width: fit-content;
 }
+
+@media screen and (max-width: 1024px) {
+  .floating {
+    right: 20px;
+    bottom: 66px;
+    row-gap: 8px;
+  }
+  .floating > a {
+    overflow: hidden;
+    width: 47px;
+    height: 47px;
+    border-radius: 47px;
+    padding: unset;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .floating > a > .coupang {
+    width: 31.3px;
+  }
+  .floating > a > .naver {
+    width: 24.4px;
+  }
+  .floating > a > .kakao {
+    width: 28px;
+  }
+  .floating > a > .bot {
+    width: 27px;
+  }
+}
 /*# sourceMappingURL=index.css.map */

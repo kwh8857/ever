@@ -12,7 +12,7 @@ import Slogan from "../../components/Slogan/Slogan";
 import Store from "../../components/Store/Store";
 import Summary from "../../components/Summary/Summary";
 import "./css/index.css";
-function Product() {
+function Product({ agent }) {
   const location = useLocation();
   const [now, setNow] = useState(0);
   useEffect(() => {
@@ -29,19 +29,31 @@ function Product() {
       <div className="banner">
         <div className="title">가전제품케어</div>
       </div>
-      <Nav now={now} setnow={setNow} navArr={navArr} type="product" />
+      <Nav
+        now={now}
+        setnow={setNow}
+        navArr={navArr}
+        type="product"
+        agent={agent}
+      />
       {now === 0 ? (
         <div className="aircon">
-          <Summary type="aircon" nav="product" />
+          <Summary type="aircon" nav="product" agent={agent} />
           <Check
             type="aircon"
             circleArr={airconArr}
             checkArr={[0, 0, 0, 0, 0]}
             nav="product"
+            agent={agent}
           />
-          <CareOne type="aircon" cleanArr={cleanArr} nav="product" />
+          <CareOne
+            type="aircon"
+            cleanArr={cleanArr}
+            nav="product"
+            agent={agent}
+          />
           <Slogan type="aircon" nav="product" />
-          <CareTwo type="aircon" arr={care02Arr} nav="product" />
+          <CareTwo type="aircon" arr={care02Arr} nav="product" agent={agent} />
           <Point type="aircon" arr={pointArr} />
           <Service type="aircon" />
           <div className="section8">
@@ -139,16 +151,22 @@ function Product() {
         </div>
       ) : now === 1 ? (
         <div className="washing">
-          <Summary type="wash" nav="product" />
+          <Summary type="wash" nav="product" agent={agent} />
           <Check
             type="wash"
             circleArr={washArr}
             checkArr={[0, 0, 0]}
             nav="product"
+            agent={agent}
           />
-          <CareOne type="wash" cleanArr={washClean} nav="product" />
+          <CareOne
+            type="wash"
+            cleanArr={washClean}
+            nav="product"
+            agent={agent}
+          />
           <Slogan type="wash" nav="product" />
-          <CareTwo type="wash" arr={washCare02} nav="product" />
+          <CareTwo type="wash" arr={washCare02} nav="product" agent={agent} />
           <Point type="wash" arr={pointArr2} />
           <Service type="wash" />
           <Kind type="wash" arr={kindArr} />
@@ -164,11 +182,21 @@ function Product() {
         </div>
       ) : now === 2 ? (
         <div className="hood">
-          <Summary type="hood" nav="product" />
-          <Check type="hood" checkArr={[0, 0, 0, 0, 0]} nav="product" />
-          <CareOne type="hood" cleanArr={hoodClean} nav="product" />
+          <Summary type="hood" nav="product" agent={agent} />
+          <Check
+            type="hood"
+            checkArr={[0, 0, 0, 0, 0]}
+            nav="product"
+            agent={agent}
+          />
+          <CareOne
+            type="hood"
+            cleanArr={hoodClean}
+            nav="product"
+            agent={agent}
+          />
           <Slogan type="hood" nav="product" />
-          <CareTwo type="hood" arr={hoodCare02} nav="product" />
+          <CareTwo type="hood" arr={hoodCare02} nav="product" agent={agent} />
           <Point type="hood" arr={pointArr3} />
           <Kind type="hood" arr={["슬림형 후드", "디럭스형 후드"]} />
           <Reviews
@@ -183,11 +211,21 @@ function Product() {
         </div>
       ) : now === 3 ? (
         <div className="air">
-          <Summary type="air" nav="product" />
-          <Check type="air" checkArr={[0, 0, 0, 0, 0]} nav="product" />
-          <CareOne type="air" cleanArr={hoodClean} nav="product" />
+          <Summary type="air" nav="product" agent={agent} />
+          <Check
+            type="air"
+            checkArr={[0, 0, 0, 0, 0]}
+            nav="product"
+            agent={agent}
+          />
+          <CareOne
+            type="air"
+            cleanArr={hoodClean}
+            nav="product"
+            agent={agent}
+          />
           <Slogan type="air" nav="product" />
-          <CareTwo type="air" arr={airCare02} nav="product" />
+          <CareTwo type="air" arr={airCare02} nav="product" agent={agent} />
           <Point type="hood" arr={pointArr3} />
           <Reviews
             title="공기청정기 분해세척은 에버퓨리에 믿고 맡기세요!"
@@ -201,11 +239,26 @@ function Product() {
         </div>
       ) : (
         <div className="filter">
-          <Summary type="filter" nav="product" />
-          <Check type="filter" checkArr={[0, 0, 0, 0, 0]} nav="product" />
-          <CareOne type="filter" cleanArr={filterClean} nav="product" />
+          <Summary type="filter" nav="product" agent={agent} />
+          <Check
+            type="filter"
+            checkArr={[0, 0, 0, 0, 0]}
+            nav="product"
+            agent={agent}
+          />
+          <CareOne
+            type="filter"
+            cleanArr={filterClean}
+            nav="product"
+            agent={agent}
+          />
           <Slogan type="filter" nav="product" />
-          <CareTwo type="filter" arr={filterCare02} nav="product" />
+          <CareTwo
+            type="filter"
+            arr={filterCare02}
+            nav="product"
+            agent={agent}
+          />
           <Point type="hood" arr={pointArr3} />
           <Kind type="filter" arr={["공기정화장치", "디퓨저"]} />
           <Reviews
@@ -397,6 +450,11 @@ const care02Arr = [
 인체에 해로운 균들을 박멸하여
 공기의 품질을 향상시켜 쾌적하고
 맑은 공기 제공`,
+    tabletsub: `각종 세균들이 서식하고 있는 
+에어컨에 친환경 약품과 고압세척, 
+스팀살균으로 인체에 해로운 균들을 
+박멸하여 공기의 품질을 향상시켜 
+쾌적하고 맑은 공기 제공`,
   },
   {
     img: "/assets/product/care02-2.svg",
@@ -406,6 +464,10 @@ const care02Arr = [
 따르면 세척을 한 에어컨의 경우
 하지 않는 에어컨에 비해 약 27%의 
 전기요금 절감 가능`,
+    tabletsub: `미국 NU-CALGON의 실험 
+보고서에 따르면 세척을 한 
+에어컨의 경우 하지 않는 에어컨에 
+비해 약 27%의 전기요금 절감 가능`,
   },
   {
     img: "/assets/product/care02-3.svg",
@@ -416,6 +478,11 @@ const care02Arr = [
 세균을 제거함으로써 공기의 흐름이 
 원활하게 되고 가동시 기기에 무리를 
 주지않아 수명을 연장`,
+    tabletsub: `고장과 기기의 부식을 초래하는 
+열교환기에 붙어있던 먼지 및 
+이물질들과 세균을 제거함으로써 
+공기의 흐름이 원활하게 되고 가동시 
+기기에 무리를 주지않아 수명을 연장`,
   },
 ];
 const washCare02 = [

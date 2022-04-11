@@ -1,6 +1,6 @@
 import React from "react";
 import "./css/index.css";
-function Sponsor({ type }) {
+function Sponsor({ type, agent }) {
   return (
     <div
       className="sponsor"
@@ -8,7 +8,7 @@ function Sponsor({ type }) {
     >
       <div className="pack">
         <span className="title">
-          에버퓨리는 <br />
+          에버퓨리는 {agent !== "mb" ? <br /> : undefined}
           <b> 다양한 기업들과 함께합니다</b>
         </span>
         <div className="content">
@@ -35,7 +35,7 @@ function Sponsor({ type }) {
               src="/assets/sponsor/sponsor2icon.svg"
               alt=""
             />
-            <div className="title" style={{ width: "190px" }}>
+            <div className="title">
               <b>의료·복지기관</b>
             </div>
             <div className="content-wrapper">
@@ -63,9 +63,21 @@ function Sponsor({ type }) {
               />
               <div className="line" />
               <span>
-                현풍중·현풍고·경북 기계금속고·영천고·구미 석적고 <br /> 대구
-                상원중·영천여자중·경산 자인중·경산 서부초 <br /> 금청초·영천
-                단포초·옥곡초·경산 명산초·칠곡 학림초
+                {agent !== "mb" ? (
+                  <>
+                    {" "}
+                    현풍중·현풍고·경북 기계금속고·영천고·구미 석적고 <br /> 대구
+                    상원중·영천여자중·경산 자인중·경산 서부초 <br /> 금청초·영천
+                    단포초·옥곡초·경산 명산초·칠곡 학림초
+                  </>
+                ) : (
+                  <>
+                    현풍중·현풍고·경북 기계금속고·영천고
+                    <br /> 구미 석적고 대구 상원중·영천여자중 <br /> 경산
+                    자인중·경산 서부초 금청초·영천 단포초
+                    <br /> 옥곡초·경산 명산초·칠곡 학림초
+                  </>
+                )}
               </span>
             </div>
           </div>
@@ -81,8 +93,14 @@ function Sponsor({ type }) {
             </div>
             <div className="content-wrapper">
               <img
-                src="/assets/sponsor/sponsor4.png"
-                srcSet="/assets/sponsor/sponsor4@2x.png 2x , /assets/sponsor/sponsor4@3x.png 3x"
+                src={`/assets/sponsor/sponsor4${
+                  agent === "tablet" ? "tablet" : ""
+                }.png`}
+                srcSet={`/assets/sponsor/sponsor4${
+                  agent === "tablet" ? "tablet" : ""
+                }@2x.png 2x , /assets/sponsor/sponsor4${
+                  agent === "tablet" ? "tablet" : ""
+                }@3x.png 3x`}
                 alt=""
               />
             </div>

@@ -378,7 +378,7 @@
 }
 
 .about > .company > .section3 > .pack > .list > .card:nth-child(even) {
-  background-color: var(--dark-sky-blue);
+  background-color: #aae0ea;
 }
 
 .about > .company > .section3 > .pack > .list > .card:nth-child(odd) {
@@ -454,5 +454,424 @@
   font-size: 12px;
   font-weight: 500;
   white-space: nowrap;
+}
+
+@media screen and (max-width: 1024px) {
+  .about > .ceo > .section1 {
+    height: 275px;
+  }
+  .about > .ceo > .section1 > .bottom {
+    height: 153px;
+  }
+  .about > .ceo > .section1 > .bottom > .pack {
+    padding-top: 30px;
+  }
+  .about > .ceo > .section1 > .bottom > .pack > .content > .title {
+    font-size: 25px;
+    margin-top: 4px;
+  }
+  .about > .ceo > .section1 > .bottom > .pack > .content > .subject {
+    font-size: 13px;
+  }
+  .about > .ceo > .section1 > .bottom > .pack > img {
+    width: 284px;
+  }
+  .about > .ceo > .section2 {
+    height: 1055px;
+    padding-top: 66px;
+  }
+  .about > .ceo > .section2 > .pack > .list > .box > img {
+    width: 123px;
+    margin-right: 34px;
+  }
+  .about > .ceo > .section2 > .pack > .list > .box > .content > .title {
+    font-size: 18px;
+  }
+  .about > .ceo > .section2 > .pack > .list > .box > .content > .subject {
+    font-size: 14px;
+  }
+  .about > .ceo > .section2 > .pack > .list > .line {
+    width: 100%;
+  }
+  .about > .ceo > .section2 > .pack > .name {
+    margin-top: 111px;
+  }
+  .about > .ceo > .section2 > .pack > img {
+    width: 534px;
+  }
+  .about > .company > .section1 {
+    height: 649px;
+  }
+  .about > .company > .section1 > .pack {
+    padding-top: 96px;
+  }
+  .about > .company > .section1 > .pack > .subject {
+    font-size: 13px;
+  }
+  .about > .company > .section1 > .pack > .title {
+    font-size: 25px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+  }
+  .about > .company > .section1 > .pack > .content {
+    font-size: 14px;
+  }
+  .about > .company > .section1 > .pack > .circle-wrapper {
+    margin-top: 38px;
+  }
+  .about > .company > .section1 > .pack > .circle-wrapper > .circle {
+    width: 210px;
+    height: 210px;
+    padding-top: 50px;
+  }
+  .about > .company > .section1 > .pack > .circle-wrapper > .circle > .title {
+    font-size: 19px;
+  }
+  .about > .company > .section1 > .pack > .circle-wrapper > .circle > .content {
+    font-size: 14px;
+  }
+  .about > .company > .section1 > .pack > .circle-wrapper > .first {
+    -webkit-transform: translateX(15px);
+            transform: translateX(15px);
+  }
+  .about > .company > .section1 > .pack > .circle-wrapper > .third {
+    -webkit-transform: translateX(-15px);
+            transform: translateX(-15px);
+  }
+  .about > .company > .section2 {
+    height: 533px;
+  }
+  .about > .company > .section2 > .pack {
+    padding-left: 155px;
+    padding-top: 85px;
+  }
+  .about > .company > .section2 > .pack > .background {
+    width: 310px;
+  }
+  .about > .company > .section2 > .pack > .title-wrapper > .cat {
+    font-size: 13px;
+    margin-bottom: 6px;
+  }
+  .about > .company > .section2 > .pack > .title-wrapper > .title {
+    font-size: 29px;
+  }
+  .about > .company > .section2 > .pack > .list {
+    margin-top: 70px;
+  }
+  .about > .company > .section2 > .pack > .list > .wrapper {
+    width: 344px;
+    height: 64px;
+  }
+  .about > .company > .section2 > .pack > .list > .wrapper > .number {
+    font-size: 35px;
+    margin-right: 13px;
+    width: 47px;
+    height: 35px;
+  }
+  .about > .company > .section2 > .pack > .list > .wrapper > .content {
+    font-size: 16px;
+    white-space: nowrap;
+  }
+  .about > .company > .section3 {
+    height: 1416px;
+    padding-top: 158px;
+  }
+  .about > .company > .section3 > .pack > .title-wrapper > .category {
+    font-size: 13px;
+    margin-bottom: 5px;
+  }
+  .about > .company > .section3 > .pack > .title-wrapper > .title {
+    font-size: 25px;
+  }
+  .about > .company > .section3 > .pack > .list {
+    margin-top: 44px;
+  }
+  .about > .company > .section3 > .pack > .list > .card > img {
+    width: 102px;
+    height: 102px;
+    margin-right: 27px;
+  }
+  .about > .company > .section3 > .pack > .list > .card > .content > .title {
+    font-size: 20px;
+  }
+  .about > .company > .section4 {
+    height: 780px;
+  }
+  .about > .company > .section4 > .back {
+    height: 457px;
+  }
+  .about > .company > .section4 > .pack > .category {
+    font-size: 13px;
+  }
+  .about > .company > .section4 > .pack > .title {
+    font-size: 25px;
+    margin: 15px 0;
+  }
+  .about > .company > .section4 > .pack > .sub {
+    font-size: 14px;
+  }
+  .about > .company > .section4 > .pack > .list {
+    width: 100%;
+    margin-top: 68px;
+    gap: 30px 22px;
+  }
+  .about > .company > .section4 > .pack > .list > .doc {
+    width: 121px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .about > .company > .section4 > .pack > .list > .doc > .name {
+    margin-top: 9px;
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .about > .ceo > .section1 {
+    height: 395px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .about > .ceo > .section1 > .pack {
+    height: 285px;
+  }
+  .about > .ceo > .section1 > .pack > .title {
+    font-size: 30px;
+    line-height: 1.23;
+    color: var(--navy);
+    padding-top: 63px;
+  }
+  .about > .ceo > .section1 > .bottom {
+    height: 109px;
+  }
+  .about > .ceo > .section1 > .bottom > .pack {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .about > .ceo > .section1 > .bottom > .pack > img {
+    width: 271px;
+    right: unset;
+  }
+  .about > .ceo > .section2 {
+    height: 1831px;
+  }
+  .about > .ceo > .section2 > .pack > .list > .line {
+    margin: 60px 0;
+  }
+  .about > .ceo > .section2 > .pack > .list > .box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .about > .ceo > .section2 > .pack > .list > .box > img {
+    margin-right: unset;
+  }
+  .about > .ceo > .section2 > .pack > .list > .box > .content > .title {
+    font-size: 25px;
+    margin-top: 16px;
+    margin-bottom: 9px;
+  }
+  .about > .ceo > .section2 > .pack > .list > .box > .content > .subject {
+    font-size: 13px;
+  }
+  .about > .ceo > .section2 > .pack > .name {
+    text-align: center;
+    margin-top: 101px;
+  }
+  .about > .ceo > .section2 > .pack > img {
+    width: 380px;
+    right: -100px;
+  }
+  .about > .company > .section1 {
+    height: 1155px;
+  }
+  .about > .company > .section1 > .pack {
+    padding-top: 79px;
+  }
+  .about > .company > .section1 > .pack > .subject {
+    font-size: 15px;
+  }
+  .about > .company > .section1 > .pack > .title {
+    font-size: 30px;
+  }
+  .about > .company > .section1 > .pack > .content {
+    font-size: 13px;
+    margin-top: 26px;
+  }
+  .about > .company > .section1 > .pack > .circle-wrapper {
+    margin-top: 76px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .about > .company > .section1 > .pack > .circle-wrapper > .circle {
+    width: 197px;
+    height: 197px;
+    padding-top: 53px;
+  }
+  .about > .company > .section1 > .pack > .circle-wrapper > .circle > .title {
+    margin-bottom: 5px;
+    font-size: 20px;
+  }
+  .about > .company > .section1 > .pack > .circle-wrapper > .circle > .content {
+    font-size: 13px;
+  }
+  .about > .company > .section1 > .pack > .circle-wrapper > .first {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+  .about > .company > .section1 > .pack > .circle-wrapper > .third {
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+  }
+  .about > .company > .section2 {
+    height: 755px;
+  }
+  .about > .company > .section2 > .pack {
+    padding-left: unset;
+    padding-top: 65px;
+  }
+  .about > .company > .section2 > .pack > .background {
+    width: 227px;
+    height: 452.2px;
+  }
+  .about > .company > .section2 > .pack > .title-wrapper {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding-left: 20px;
+  }
+  .about > .company > .section2 > .pack > .title-wrapper > .cat {
+    font-size: 15px;
+    margin-bottom: 8px;
+  }
+  .about > .company > .section2 > .pack > .title-wrapper > .title {
+    font-size: 30px;
+  }
+  .about > .company > .section2 > .pack > .list {
+    margin-top: 306px;
+  }
+  .about > .company > .section2 > .pack > .list > .wrapper {
+    width: 100%;
+    height: 59px;
+  }
+  .about > .company > .section2 > .pack > .list > .wrapper > .number {
+    font-size: 32px;
+    width: 43px;
+    height: 32px;
+  }
+  .about > .company > .section2 > .pack > .list > .wrapper > .content {
+    font-size: 15px;
+  }
+  .about > .company > .section3 {
+    height: 1807px;
+    padding-top: 180px;
+  }
+  .about > .company > .section3 > .pack > .title-wrapper > .category {
+    margin-bottom: 8px;
+    font-size: 15px;
+  }
+  .about > .company > .section3 > .pack > .title-wrapper > .title {
+    font-size: 30px;
+  }
+  .about > .company > .section3 > .pack > .list {
+    margin-top: 37px;
+  }
+  .about > .company > .section3 > .pack > .list > .card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding-top: 25px;
+    padding-left: 18px;
+  }
+  .about > .company > .section3 > .pack > .list > .card > img {
+    width: 82px;
+    height: 82px;
+  }
+  .about > .company > .section3 > .pack > .list > .card > .content > .title {
+    font-size: 20px;
+    margin-top: 25px;
+    margin-bottom: 9px;
+  }
+  .about > .company > .section3 > .pack > .list > .card > .content > .content {
+    font-size: 13px;
+  }
+  .about > .company > .section3 > .pack > .list > .card:nth-child(1) {
+    height: 273.5px;
+  }
+  .about > .company > .section3 > .pack > .list > .card:nth-child(2) {
+    height: 323.5px;
+  }
+  .about > .company > .section3 > .pack > .list > .card:nth-child(3) {
+    height: 270px;
+  }
+  .about > .company > .section3 > .pack > .list > .card:nth-child(4) {
+    height: 300px;
+  }
+  .about > .company > .section4 {
+    height: 980px;
+  }
+  .about > .company > .section4 > .pack {
+    position: relative;
+  }
+  .about > .company > .section4 > .pack > .category {
+    font-size: 15px;
+  }
+  .about > .company > .section4 > .pack > .title {
+    font-size: 30px;
+  }
+  .about > .company > .section4 > .pack > .sub {
+    font-size: 13px;
+  }
+  .about > .company > .section4 > .pack > .list {
+    gap: 69px 16px;
+  }
+  .about > .company > .section4 > .pack > .list > .doc {
+    width: 96px;
+  }
+  .about > .company > .section4 > .pack > .list > .doc > .name {
+    white-space: pre-line;
+    font-size: 12px;
+    width: 100px;
+  }
+  .about > .company > .section4 > .back-list {
+    width: 100%;
+    z-index: -1;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: (119px)[3];
+        grid-template-rows: repeat(3, 119px);
+    row-gap: 123px;
+  }
+  .about > .company > .section4 > .back-list > .back {
+    width: 100%;
+    background-color: #dff2f7;
+  }
 }
 /*# sourceMappingURL=index.css.map */

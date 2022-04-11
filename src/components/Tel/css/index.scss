@@ -43,7 +43,7 @@
               width: 85px;
               margin-right: 18px;
             }
-            &>.tel{
+            &>.tel-content{
               font-weight: 500;
               font-size: 74px;
               font-family: 'gmarket';
@@ -63,4 +63,89 @@
         }
       }
     }
+}
+
+@media screen and (max-width : 1024px) {
+   .tel{
+     &>.pack{
+       padding-top: 155px;
+    &>img{
+      width: 344px;
+    }
+  }
+   &>.bottom{
+     &>.pack{
+      &>.title{
+        font-size: 30px;
+      } 
+      &>.background{
+        left: -330px;
+      } 
+      &>.call-wrapper{
+        &>.tel-wrapper{
+          &>img{
+            width: 69px;
+            margin-right: 12px;
+          }
+          &>.tel-content{
+            font-size: 60px;
+          }
+        }
+        &>.address{
+          font-size: 20px;
+          line-height: 1.45;
+          padding-left: 80px;
+        }
+      }
+     }
+   }
+   }
+}
+@media screen and (max-width : 767px) {
+  .tel{
+    height: 661px;
+    &>.pack{
+     padding-top: 167px;
+     &>img{
+       width: 178px;
+     }
+    }
+    &>.bottom{
+     height: 463px;
+     &>.pack{
+       padding-top: 99px;
+       &>.title{
+         font-size: 23px;
+         text-align: center;
+         position: relative;
+         z-index: 100;
+       }
+       &>.background{
+         width: 300px;
+         top: -40px;
+         left: -100px;
+       }
+       &>.call-wrapper{
+         margin-top: 58px;
+         width: 100%;
+         &>.tel-wrapper{
+           flex-direction: column;
+           &>img{
+             width: 55px;
+             margin-right: unset;
+             margin-bottom: 13px;
+           }
+           &>.tel-content{
+             font-size: 44px;
+           }
+         }
+         &>.address{
+           font-size: 14px;
+           text-align: center;
+           padding: unset;
+         }
+       }
+     }
+    }
+  }
 }

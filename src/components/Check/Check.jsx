@@ -1,6 +1,6 @@
 import React from "react";
 import "./css/index.css";
-function Check({ type, circleArr, checkArr, nav }) {
+function Check({ type, circleArr, checkArr, nav, agent }) {
   return (
     <div className={`check-section ${type}check ${nav}check`}>
       <div className="back" />
@@ -31,7 +31,13 @@ function Check({ type, circleArr, checkArr, nav }) {
             <div
               className="circle-wrapper"
               style={{
-                gridTemplateColumns: `repeat(${circleArr.length},148px)`,
+                gridTemplateColumns: `repeat(${
+                  agent === "mb"
+                    ? type === "aircon"
+                      ? 2
+                      : circleArr.length
+                    : circleArr.length
+                },${agent === "pc" ? 148 : 102}px)`,
               }}
             >
               {circleArr.map(({ img, title }, idx) => {
@@ -52,7 +58,8 @@ function Check({ type, circleArr, checkArr, nav }) {
         <div className="content">
           {type === "aircon" ? (
             <>
-              <b>필터 청소로만 해결되지 않는 </b>에어컨
+              <b>필터 청소로만{agent === "mb" ? <br /> : ""} 해결되지 않는 </b>
+              에어컨
             </>
           ) : type === "wash" ? (
             <>

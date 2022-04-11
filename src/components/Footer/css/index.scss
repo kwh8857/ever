@@ -9,6 +9,7 @@ footer{
       box-sizing: border-box;
       display: flex;
       align-items: flex-start;
+          white-space: nowrap;
       &>.left{
         margin-right: 46px;
         display: flex;
@@ -34,4 +35,20 @@ footer{
         }
       }
     }
+}
+@media screen and (max-width : 1024px) {
+  footer{
+    height: 310px;
+    &>.pack{
+      padding-top: 65.2px;
+      line-height: 1.77;
+    }
+  }
+}
+@media screen and (max-width : 767px) {
+footer{
+  height: 243px;
+
+}
+
 }

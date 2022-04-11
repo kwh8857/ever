@@ -102,4 +102,50 @@
 .purifyslogan > .pack > .title {
   margin: 0 46.2px 0 31px;
 }
+
+@media screen and (max-width: 1024px) {
+  .slogan {
+    height: 252px;
+  }
+  .slogan > .pack {
+    padding: 55.5px 0;
+  }
+  .slogan > .pack > img {
+    width: 55px;
+    height: 50px;
+  }
+  .slogan > .pack > .title {
+    font-size: 25px;
+    margin: 0 27px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .slogan {
+    height: 220px;
+  }
+  .slogan > .pack {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+    padding: 33px 0 23px 0;
+  }
+  .slogan > .pack > .left {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    -webkit-transform: scale(-1);
+            transform: scale(-1);
+  }
+  .slogan > .pack > .title {
+    font-size: 16px;
+  }
+  .slogan > .pack > .right {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+}
 /*# sourceMappingURL=index.css.map */

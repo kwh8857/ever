@@ -237,4 +237,56 @@
 .bugtwo > .pack > .list > .card > .title {
   font-size: 25px;
 }
+
+@media screen and (max-width: 1024px) {
+  .caretwo {
+    height: 761px;
+  }
+  .caretwo > .pack {
+    padding-top: 113px;
+  }
+  .caretwo > .pack > .category {
+    width: 155px;
+  }
+  .caretwo > .pack > .title {
+    font-size: 25px;
+    margin: 11px 0;
+  }
+  .caretwo > .pack > .sub {
+    font-size: 15px;
+  }
+  .caretwo > .pack > .list {
+    margin-top: 67px;
+    -ms-grid-columns: (224px)[3];
+        grid-template-columns: repeat(3, 224px);
+    -webkit-column-gap: 16px;
+            column-gap: 16px;
+  }
+  .caretwo > .pack > .list > .card {
+    height: 279px;
+    border-radius: 16px;
+    padding-top: 60px;
+  }
+  .caretwo > .pack > .list > .card > img {
+    width: 71px;
+    top: -30px;
+  }
+  .caretwo > .pack > .list > .card > .title {
+    font-size: 19px;
+  }
+  .caretwo > .pack > .list > .card > .line {
+    width: 168px;
+    margin-top: 13px;
+    margin-bottom: 15.5px;
+  }
+  .caretwo > .pack > .list > .card > .sub {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .caretwo {
+    height: 1376px;
+  }
+}
 /*# sourceMappingURL=index.css.map */

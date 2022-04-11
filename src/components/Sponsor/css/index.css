@@ -123,11 +123,147 @@
   text-align: center;
 }
 
+.sponsor > .pack > .content > .card:nth-child(2) > .title {
+  width: 190px;
+}
+
 .sponsor > .pack > .content > .first {
   height: 290.5px;
 }
 
 .sponsor > .pack > .content > .two {
   height: 203.7px;
+}
+
+@media screen and (max-width: 1024px) {
+  .sponsor {
+    padding-top: 125px;
+  }
+  .sponsor > .pack {
+    padding: unset;
+  }
+  .sponsor > .pack > .title {
+    font-size: 27px;
+  }
+  .sponsor > .pack > .content {
+    margin-top: 72px;
+    -ms-grid-columns: (344px)[2];
+        grid-template-columns: repeat(2, 344px);
+  }
+  .sponsor > .pack > .content > .card {
+    height: 171px;
+  }
+  .sponsor > .pack > .content > .card > .icon {
+    width: 45px;
+    top: -50px;
+    right: 30px;
+  }
+  .sponsor > .pack > .content > .card > .title {
+    width: 130px;
+    height: 38px;
+    font-size: 15px;
+  }
+  .sponsor > .pack > .content > .card > .medi {
+    width: 52px;
+    top: -62px;
+    right: 20px;
+  }
+  .sponsor > .pack > .content > .card > .school {
+    width: 77px;
+    top: -55px;
+    right: 20px;
+  }
+  .sponsor > .pack > .content > .card > .content-wrapper > .line {
+    width: 285.5px;
+  }
+  .sponsor > .pack > .content > .card > .content-wrapper > span {
+    font-size: 13px;
+  }
+  .sponsor > .pack > .content > .card > .content-wrapper > img {
+    width: 100%;
+  }
+  .sponsor > .pack > .content > .card:nth-child(2) > .title {
+    width: 154px;
+  }
+  .sponsor > .pack > .content > .card:nth-child(4) > .icon {
+    width: 53px;
+  }
+  .sponsor > .pack > .content > .first {
+    height: 235px;
+  }
+  .sponsor > .pack > .content > .first > .content-wrapper > img {
+    width: 286px;
+  }
+  .sponsor > .pack > .content > .two {
+    height: 171px;
+  }
+  .sponsor > .pack > .content > .two > .content-wrapper > img {
+    width: 279px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .sponsor {
+    height: 1669px;
+    padding-top: 146px;
+  }
+  .sponsor > .pack > .title {
+    font-size: 25px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .sponsor > .pack > .content {
+    -ms-grid-columns: unset;
+        grid-template-columns: unset;
+  }
+  .sponsor > .pack > .content > .card > .title {
+    font-size: 20px;
+    width: 160.5px;
+    height: 45px;
+  }
+  .sponsor > .pack > .content > .card:nth-child(1) {
+    height: 245px;
+  }
+  .sponsor > .pack > .content > .card:nth-child(1) > .icon {
+    right: 15px;
+  }
+  .sponsor > .pack > .content > .card:nth-child(1) > .content-wrapper {
+    height: 245px;
+  }
+  .sponsor > .pack > .content > .card:nth-child(2) {
+    height: 204px;
+  }
+  .sponsor > .pack > .content > .card:nth-child(2) > .title {
+    width: 172px;
+  }
+  .sponsor > .pack > .content > .card:nth-child(3) {
+    height: 225px;
+  }
+  .sponsor > .pack > .content > .card:nth-child(3) > .content-wrapper {
+    height: 224px;
+  }
+  .sponsor > .pack > .content > .card:nth-child(4) {
+    height: 198px;
+  }
+  .sponsor > .pack > .content > .card:nth-child(4) > .icon {
+    right: 15px;
+  }
+  .sponsor > .pack > .content > .card:nth-child(4) > .content-wrapper {
+    padding-top: 37px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    height: 200px;
+  }
+  .sponsor > .pack > .content > .card:nth-child(4) > .content-wrapper > img {
+    width: 236px;
+  }
 }
 /*# sourceMappingURL=index.css.map */

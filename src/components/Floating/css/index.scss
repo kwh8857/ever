@@ -26,3 +26,32 @@
   }
   }
 }
+@media screen and (max-width : 1024px) {
+  .floating{
+    right: 20px;
+    bottom: 66px;
+    row-gap: 8px;
+    &>a{
+      overflow: hidden;
+      width: 47px;
+      height: 47px;
+      border-radius: 47px;
+      padding: unset;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &>.coupang{
+         width: 31.3px;
+      }
+      &>.naver{
+        width: 24.4px;
+      }
+      &>.kakao{
+        width: 28px;
+      }
+      &>.bot{
+        width: 27px;
+      }
+    }
+  }
+}

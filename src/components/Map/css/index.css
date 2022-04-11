@@ -22,7 +22,7 @@
   position: absolute;
   width: 100vw;
   height: 329px;
-  background-color: var(--navy);
+  background-color: #161d35;
 }
 
 .map > .pack > .content {
@@ -69,19 +69,28 @@
           align-items: center;
 }
 
-.map > .pack > .content > .list > .wrapper > .icon {
+.map > .pack > .content > .list > .wrapper > .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.map > .pack > .content > .list > .wrapper > .left > .icon {
   width: 64px;
   height: 64px;
   margin-right: 15px;
 }
 
-.map > .pack > .content > .list > .wrapper > .content-wrapper > .category {
+.map > .pack > .content > .list > .wrapper > .left > .content-wrapper > .category {
   font-family: 'gmarket';
   color: var(--brown-grey);
   margin-bottom: 5px;
 }
 
-.map > .pack > .content > .list > .wrapper > .content-wrapper > .content {
+.map > .pack > .content > .list > .wrapper > .left > .content-wrapper > .content {
   font-size: 19px;
   font-weight: 500;
   color: var(--navy);
@@ -99,5 +108,101 @@
   -ms-flex-item-align: end;
       align-self: flex-end;
   background-color: var(--dark-sky-blue);
+}
+
+@media screen and (max-width: 1024px) {
+  .map {
+    height: 977px;
+    padding-top: 151px;
+  }
+  .map > .pack > .back {
+    -webkit-transform: translateX(170px);
+            transform: translateX(170px);
+    height: 215px;
+  }
+  .map > .pack > .content > .title {
+    font-size: 22px;
+    margin-top: 3px;
+    margin-bottom: 16px;
+  }
+  .map > .pack > .content > .main {
+    width: 512.9px;
+    height: 315px;
+  }
+  .map > .pack > .content > .list {
+    margin-top: 27.6px;
+    row-gap: 16px;
+  }
+  .map > .pack > .content > .list > .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .map > .pack > .content > .list > .wrapper > .left > .icon {
+    width: 41px;
+    height: 41px;
+    margin-right: 14px;
+  }
+  .map > .pack > .content > .list > .wrapper > .left > .content-wrapper > .category {
+    font-size: 11px;
+  }
+  .map > .pack > .content > .list > .wrapper > .left > .content-wrapper > .content {
+    font-size: 15px;
+  }
+  .map > .pack > .content > .list > .wrapper > .copy {
+    margin-left: 50px;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    width: 212px;
+    height: 44px;
+    border-radius: 22px;
+    margin-top: 12px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .map {
+    height: 922px;
+    padding-top: 119px;
+  }
+  .map > .pack {
+    padding-right: 0;
+    padding-top: 53px;
+  }
+  .map > .pack > .back {
+    -webkit-transform: translateX(60px);
+            transform: translateX(60px);
+    height: 165px;
+  }
+  .map > .pack > .content > .title {
+    font-size: 30px;
+    margin-top: 8px;
+  }
+  .map > .pack > .content > .main {
+    width: 320px;
+    height: 197px;
+  }
+  .map > .pack > .content > .list {
+    padding: unset;
+    margin-top: 42px;
+  }
+  .map > .pack > .content > .list > .wrapper > .left > .icon {
+    width: 36px;
+    height: 36px;
+  }
+  .map > .pack > .content > .list > .wrapper > .left > .content-wrapper > .category {
+    margin-bottom: 6px;
+  }
+  .map > .pack > .content > .list > .wrapper > .left > .content-wrapper > .content {
+    font-size: 23px;
+    white-space: pre-line;
+  }
+  .map > .pack > .content > .list > .wrapper:nth-child(1) > .left > .content-wrapper > .content {
+    font-size: 18px;
+  }
 }
 /*# sourceMappingURL=index.css.map */

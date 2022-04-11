@@ -1,5 +1,5 @@
 .header {
-  z-index: 1000;
+  z-index: 1700;
   position: fixed;
   top: 0;
   left: 0;
@@ -17,8 +17,8 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-transition: background-color 0.3s ease-in-out;
-  transition: background-color 0.3s ease-in-out;
+  -webkit-transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
 }
 
 .header > a > .logo {
@@ -55,6 +55,55 @@
   }
   .header > .link-wrapper > a {
     font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header {
+    padding: 32px 20px 32px 20px;
+  }
+  .header > .menu {
+    cursor: pointer;
+    width: 28px;
+  }
+  .header > .mb-menu {
+    overflow: hidden;
+    -webkit-transition: height 0.4s ease-in-out;
+    transition: height 0.4s ease-in-out;
+    left: 0;
+    top: 74px;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-grid-rows: (72px)[5];
+        grid-template-rows: repeat(5, 72px);
+  }
+  .header > .mb-menu > a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+  }
+  .header > .mb-menu > a > .line {
+    width: 72px;
+    height: 1px;
+    position: absolute;
+    bottom: 0;
+    background-color: #dbdbdb;
   }
 }
 /*# sourceMappingURL=index.css.map */

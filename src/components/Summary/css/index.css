@@ -270,4 +270,66 @@
   padding-left: 0;
   padding-top: 339px;
 }
+
+@media screen and (max-width: 1024px) {
+  .summary {
+    height: 471px;
+  }
+  .summary > .pack > .back {
+    height: 216px;
+    left: 200px;
+    top: 175px;
+  }
+  .summary > .pack > .backimg {
+    width: 384px;
+    height: 255px;
+    top: 28px;
+    left: -63px;
+  }
+  .summary > .pack > .content-wrapper {
+    padding-top: 209px;
+    padding-left: 20px;
+  }
+  .summary > .pack > .content-wrapper > .title {
+    font-size: 23px;
+  }
+  .summary > .pack > .content-wrapper > .line {
+    width: 13.2px;
+    margin: 9px 0;
+  }
+  .summary > .pack > .content-wrapper > .sub {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .summary {
+    height: 613px;
+  }
+  .summary > .pack > .backimg {
+    width: 319px;
+    height: 212px;
+    top: 55px;
+    left: -40px;
+  }
+  .summary > .pack > .back {
+    top: 231px;
+    height: 241px;
+    left: 35px;
+  }
+  .summary > .pack > .content-wrapper {
+    padding-top: 267px;
+    padding-left: 0;
+  }
+  .summary > .pack > .content-wrapper > .title {
+    font-size: 18px;
+  }
+  .summary > .pack > .content-wrapper > .line {
+    width: 12.5px;
+    margin: 11px 0;
+  }
+  .summary > .pack > .content-wrapper > .sub {
+    font-size: 13px;
+  }
+}
 /*# sourceMappingURL=index.css.map */

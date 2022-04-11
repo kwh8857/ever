@@ -1,6 +1,6 @@
 import React from "react";
 import "./css/index.css";
-function CareTwo({ type, arr, nav }) {
+function CareTwo({ type, arr, nav, agent }) {
   return (
     <div className={`caretwo ${type}two ${nav}two`}>
       <div className="pack">
@@ -63,13 +63,15 @@ function CareTwo({ type, arr, nav }) {
           ) : undefined}
         </div>
         <div className="list">
-          {arr.map(({ img, title, sub }, idx) => {
+          {arr.map(({ img, title, sub, tabletsub }, idx) => {
             return (
               <div key={idx} className="card">
                 <img src={img} alt="" />
                 <b className="title">{title}</b>
                 <div className="line" />
-                <div className="sub">{sub}</div>
+                <div className="sub">
+                  {agent === "tablet" && tabletsub ? tabletsub : sub}
+                </div>
               </div>
             );
           })}

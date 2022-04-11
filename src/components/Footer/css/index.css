@@ -16,6 +16,7 @@ footer > .pack {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  white-space: nowrap;
 }
 
 footer > .pack > .left {
@@ -52,5 +53,21 @@ footer > .pack > .right > .box > .list {
 
 footer > .pack > .right > .box > .list > a {
   color: white;
+}
+
+@media screen and (max-width: 1024px) {
+  footer {
+    height: 310px;
+  }
+  footer > .pack {
+    padding-top: 65.2px;
+    line-height: 1.77;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  footer {
+    height: 243px;
+  }
 }
 /*# sourceMappingURL=index.css.map */

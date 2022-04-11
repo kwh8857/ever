@@ -7,10 +7,9 @@ import Tel from "../../components/Tel/Tel";
 import "./css/index.css";
 function Main({ agent }) {
   const navigate = useNavigate();
-  console.log(agent);
   return (
     <main className="main">
-      <Floating />
+      <Floating agent={agent} />
       <div className="section1">
         <div className="pack">
           <b>고객의 환경과 건강을</b> <br /> 생각하는 마음으로 <br />
@@ -20,6 +19,14 @@ function Main({ agent }) {
       </div>
       <div className="section2">
         <div className="pack">
+          {agent === "mb" ? (
+            <img
+              className="right"
+              src="/assets/main/section2.png"
+              srcSet="/assets/main/section2@2x.png 2x , /assets/main/section2@3x.png 3x"
+              alt=""
+            />
+          ) : undefined}
           <div className="left">
             <span className="title">
               <b>
@@ -34,25 +41,28 @@ function Main({ agent }) {
             </span>
             <button
               onClick={() => {
-                navigate("/about", { state: 1 });
+                navigate("/about", { state: 2 });
               }}
             >
               <span>회사소개</span>
               <img src="/assets/common/rightarrow.svg" alt="바로가기" />
             </button>
           </div>
-          <img
-            className="right"
-            src="/assets/main/section2.png"
-            srcSet="/assets/main/section2@2x.png 2x , /assets/main/section2@3x.png 3x"
-            alt=""
-          />
+          {agent !== "mb" ? (
+            <img
+              className="right"
+              src="/assets/main/section2.png"
+              srcSet="/assets/main/section2@2x.png 2x , /assets/main/section2@3x.png 3x"
+              alt=""
+            />
+          ) : undefined}
         </div>
       </div>
       <div className="section3">
         <div className="pack">
           <span className="title">
-            <b>다양한 환경에 맞는</b> <br /> 에버퓨리를 만나보세요
+            <b>다양한 환경에 맞는</b> {agent !== "mb" ? <br /> : undefined}{" "}
+            에버퓨리를 만나보세요
           </span>
           <section className="wrapper">
             {section3_layout.map(({ title, sub, img, link, category }, idx) => {
@@ -76,14 +86,61 @@ function Main({ agent }) {
                         }px)`,
                       }}
                     >
-                      {category.map(({ type, title }, idx) => {
-                        return (
-                          <div key={idx}>
-                            <img src={`/assets/main/${type}.svg`} alt={type} />
-                            <span>{title}</span>
+                      {agent === "mb" && idx === 1 ? (
+                        <>
+                          <div className="top">
+                            <div>
+                              <img
+                                src={`/assets/main/${category[0].type}.svg`}
+                                alt={category[0].type}
+                              />
+                              <div>{category[0].title}</div>
+                            </div>
+                            <div>
+                              <img
+                                src={`/assets/main/${category[1].type}.svg`}
+                                alt={category[1].type}
+                              />
+                              <div>{category[1].title}</div>
+                            </div>
                           </div>
-                        );
-                      })}
+                          <div className="bottom">
+                            <div>
+                              <img
+                                src={`/assets/main/${category[2].type}.svg`}
+                                alt={category[2].type}
+                              />
+                              <div>{category[2].title}</div>
+                            </div>{" "}
+                            <div>
+                              <img
+                                src={`/assets/main/${category[3].type}.svg`}
+                                alt={category[3].type}
+                              />
+                              <div>{category[3].title}</div>
+                            </div>{" "}
+                            <div>
+                              <img
+                                src={`/assets/main/${category[4].type}.svg`}
+                                alt={category[4].type}
+                              />
+                              <div>{category[4].title}</div>
+                            </div>
+                          </div>
+                        </>
+                      ) : (
+                        category.map(({ type, title }, idx) => {
+                          return (
+                            <div key={idx}>
+                              <img
+                                src={`/assets/main/${type}.svg`}
+                                alt={type}
+                              />
+                              <span>{title}</span>
+                            </div>
+                          );
+                        })
+                      )}
                     </div>
                     <a href={link} className="btn">
                       <span>자세히보기</span>
@@ -97,19 +154,33 @@ function Main({ agent }) {
         </div>
       </div>
       <div className="section4">
+        {agent === "mb" ? (
+          <img
+            src={`/assets/main/section4${agent === "mb" ? agent : ""}.png`}
+            srcSet={`/assets/main/section4${
+              agent === "mb" ? agent : ""
+            }@2x.png 2x , /assets/main/section4${
+              agent === "mb" ? agent : ""
+            }@3x.png 3x`}
+            alt=""
+          />
+        ) : undefined}
         <div className="pack">
           <span className="title">
             <b>어떤 케어가 필요하신가요?</b> <br /> 필요한 케어를 바로
+            {agent === "mb" ? <br /> : ""}
             확인해보세요
           </span>
           <span className="sub">
             아래 키워드를 클릭하면 자세한 내용을 확인할 수 있습니다
           </span>
-          <img
-            src="/assets/main/section4.png"
-            srcSet="/assets/main/section4@2x.png 2x , /assets/main/section4@3x.png 3x"
-            alt=""
-          />
+          {agent !== "mb" ? (
+            <img
+              src="/assets/main/section4.png"
+              srcSet="/assets/main/section4@2x.png 2x , /assets/main/section4@3x.png 3x"
+              alt=""
+            />
+          ) : undefined}
           <section className="nav-wrapper">
             {section4_layout.map(({ title, sub, btn }, idx) => {
               return (
@@ -173,18 +244,31 @@ function Main({ agent }) {
       <div className="section5">
         <div className="pack">
           <div className="content">
-            <img
-              className="main-img"
-              src="/assets/main/section5.png"
-              srcSet="/assets/main/section5@2x.png 2x , /assets/main/section5@3x.png 3x"
-              alt=""
-            />
+            {agent !== "mb" ? (
+              <img
+                className="main-img"
+                src="/assets/main/section5.png"
+                srcSet="/assets/main/section5@2x.png 2x , /assets/main/section5@3x.png 3x"
+                alt=""
+              />
+            ) : undefined}
             <div className="title">
               에버퓨리는 <br /> <b>케어 전문가를 양성합니다</b>
             </div>
+
+            {agent === "mb" ? (
+              <img
+                className="main-img"
+                src="/assets/main/section5.png"
+                srcSet="/assets/main/section5@2x.png 2x , /assets/main/section5@3x.png 3x"
+                alt=""
+              />
+            ) : undefined}
             <div className="sub">
-              에버퓨리는 직영 교육장을 통해 ‘케어 전문가’를 양성합니다. <br />{" "}
-              체계적인 교육을 통해 에버퓨리만의 친환경 청소와 시공 기술을
+              에버퓨리는 직영 교육장을 통해{" "}
+              {agent === "mb" ? <br /> : undefined} ‘케어 전문가’를 양성합니다.{" "}
+              <br /> 체계적인 교육을 통해 에버퓨리만의{" "}
+              {agent === "mb" ? <br /> : undefined} 친환경 청소와 시공 기술을
               전수합니다.
             </div>
             <button
@@ -199,9 +283,9 @@ function Main({ agent }) {
           </div>
         </div>
       </div>
-      <Sponsor type="main" />
-      <Tel />
-      <Store />
+      <Sponsor type="main" agent={agent} />
+      <Tel agent={agent} />
+      <Store agent={agent} />
     </main>
   );
 }

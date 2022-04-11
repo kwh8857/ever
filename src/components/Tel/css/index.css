@@ -70,7 +70,7 @@
   margin-right: 18px;
 }
 
-.tel > .bottom > .pack > .call-wrapper > .tel-wrapper > .tel {
+.tel > .bottom > .pack > .call-wrapper > .tel-wrapper > .tel-content {
   font-weight: 500;
   font-size: 74px;
   font-family: 'gmarket';
@@ -87,5 +87,84 @@
   position: absolute;
   bottom: -50px;
   left: -250px;
+}
+
+@media screen and (max-width: 1024px) {
+  .tel > .pack {
+    padding-top: 155px;
+  }
+  .tel > .pack > img {
+    width: 344px;
+  }
+  .tel > .bottom > .pack > .title {
+    font-size: 30px;
+  }
+  .tel > .bottom > .pack > .background {
+    left: -330px;
+  }
+  .tel > .bottom > .pack > .call-wrapper > .tel-wrapper > img {
+    width: 69px;
+    margin-right: 12px;
+  }
+  .tel > .bottom > .pack > .call-wrapper > .tel-wrapper > .tel-content {
+    font-size: 60px;
+  }
+  .tel > .bottom > .pack > .call-wrapper > .address {
+    font-size: 20px;
+    line-height: 1.45;
+    padding-left: 80px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .tel {
+    height: 661px;
+  }
+  .tel > .pack {
+    padding-top: 167px;
+  }
+  .tel > .pack > img {
+    width: 178px;
+  }
+  .tel > .bottom {
+    height: 463px;
+  }
+  .tel > .bottom > .pack {
+    padding-top: 99px;
+  }
+  .tel > .bottom > .pack > .title {
+    font-size: 23px;
+    text-align: center;
+    position: relative;
+    z-index: 100;
+  }
+  .tel > .bottom > .pack > .background {
+    width: 300px;
+    top: -40px;
+    left: -100px;
+  }
+  .tel > .bottom > .pack > .call-wrapper {
+    margin-top: 58px;
+    width: 100%;
+  }
+  .tel > .bottom > .pack > .call-wrapper > .tel-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .tel > .bottom > .pack > .call-wrapper > .tel-wrapper > img {
+    width: 55px;
+    margin-right: unset;
+    margin-bottom: 13px;
+  }
+  .tel > .bottom > .pack > .call-wrapper > .tel-wrapper > .tel-content {
+    font-size: 44px;
+  }
+  .tel > .bottom > .pack > .call-wrapper > .address {
+    font-size: 14px;
+    text-align: center;
+    padding: unset;
+  }
 }
 /*# sourceMappingURL=index.css.map */

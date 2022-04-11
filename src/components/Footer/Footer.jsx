@@ -1,6 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./css/index.css";
-function Footer() {
+function Footer({ agent }) {
   return (
     <footer>
       <div className="pack">
@@ -15,24 +16,26 @@ function Footer() {
             동구 동내로 76 한국메디벤처센터 210호, 211호
           </span>
         </div>
-        <div className="right">
-          {layout.map(({ title, list, right }, idx) => {
-            return (
-              <div key={idx} className="box" style={{ marginRight: right }}>
-                <b className="category">{title}</b>
-                <div className="list">
-                  {list.map(({ link, title }, idx) => {
-                    return (
-                      <a href={link} key={idx}>
-                        {title}
-                      </a>
-                    );
-                  })}
+        {agent === "pc" ? (
+          <div className="right">
+            {layout.map(({ title, list, right }, idx) => {
+              return (
+                <div key={idx} className="box" style={{ marginRight: right }}>
+                  <b className="category">{title}</b>
+                  <div className="list">
+                    {list.map(({ link, title }, idx) => {
+                      return (
+                        <Link to={{ pathname: link }} state={idx + 1} key={idx}>
+                          {title}
+                        </Link>
+                      );
+                    })}
+                  </div>
                 </div>
-              </div>
-            );
-          })}
-        </div>
+              );
+            })}
+          </div>
+        ) : undefined}
       </div>
     </footer>
   );
@@ -47,11 +50,11 @@ const layout = [
     list: [
       {
         title: "CEO 인사말",
-        link: "/",
+        link: "/about",
       },
       {
         title: "회사소개",
-        link: "/",
+        link: "/about",
       },
     ],
   },
@@ -61,23 +64,23 @@ const layout = [
     list: [
       {
         title: "에어컨 분해청소",
-        link: "/",
+        link: "/product",
       },
       {
         title: "세탁기 분해청소",
-        link: "/",
+        link: "/product",
       },
       {
         title: "주방후드 분해세척",
-        link: "/",
+        link: "/product",
       },
       {
         title: "공기청정기 케어",
-        link: "/",
+        link: "/product",
       },
       {
         title: "공기정화장치 필터 교체",
-        link: "/",
+        link: "/product",
       },
     ],
   },
@@ -87,23 +90,23 @@ const layout = [
     list: [
       {
         title: "주거공간청소",
-        link: "/",
+        link: "/homeclean",
       },
       {
         title: "매트리스 케어",
-        link: "/",
+        link: "/homeclean",
       },
       {
         title: "줄눈 시공",
-        link: "/",
+        link: "/homeclean",
       },
       {
         title: "실외기 비둘기 퇴치",
-        link: "/",
+        link: "/homeclean",
       },
       {
         title: "해충·방역 서비스",
-        link: "/",
+        link: "/homeclean",
       },
     ],
   },
@@ -113,19 +116,19 @@ const layout = [
     list: [
       {
         title: "건물관리",
-        link: "/",
+        link: "/business",
       },
       {
         title: "공기질케어",
-        link: "/",
+        link: "/business",
       },
       {
         title: "공기정화장치 필터 교체",
-        link: "/",
+        link: "/business",
       },
       {
         title: "방역·소독 서비스",
-        link: "/",
+        link: "/business",
       },
     ],
   },
@@ -135,11 +138,11 @@ const layout = [
     list: [
       {
         title: "창업 교육",
-        link: "/",
+        link: "/partner",
       },
       {
         title: "파트너 제휴",
-        link: "/",
+        link: "/partner",
       },
     ],
   },

@@ -191,3 +191,53 @@
     }
   }
 }
+@media screen and (max-width : 1024px) {
+  .caretwo{
+    height: 761px;
+    &>.pack{
+      padding-top: 113px;
+      &>.category{
+        width: 155px;
+
+      }
+      &>.title{
+        font-size: 25px;
+        margin: 11px 0;
+      }
+      &>.sub{
+        font-size: 15px;
+      }
+      &>.list{
+        margin-top: 67px;
+        grid-template-columns: repeat(3,224px);
+        column-gap: 16px;
+        &>.card{
+          height: 279px;
+          border-radius: 16px;
+          padding-top: 60px;
+          &>img{
+            width: 71px;
+            top: -30px;
+          }
+          &>.title{
+            font-size: 19px;
+          }
+          &>.line{
+            width: 168px;
+            margin-top: 13px;
+            margin-bottom: 15.5px;
+          }
+          &>.sub{
+            font-size: 13px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width : 767px) {
+ .caretwo{
+   height: 1376px;
+ }
+
+}

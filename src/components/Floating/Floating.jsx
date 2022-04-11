@@ -1,6 +1,6 @@
 import React from "react";
 import "./css/index.css";
-function Floating() {
+function Floating({ agent }) {
   return (
     <div className="floating">
       {arr.map(({ img, title, link }, idx) => {
@@ -8,14 +8,15 @@ function Floating() {
           <a href={link} key={idx}>
             {img === "coupang" || img === "bot" ? (
               <img
+                className={img}
                 src={`/assets/main/${img}.png`}
                 srcSet={`/assets/main/${img}@2x.png 2x , /assets/main/${img}@3x.png 3x`}
                 alt=""
               />
             ) : (
-              <img src={`/assets/main/${img}.svg`} alt="" />
+              <img src={`/assets/main/${img}.svg`} alt="" className={img} />
             )}
-            <div className="title">{title}</div>
+            {agent === "pc" ? <div className="title">{title}</div> : undefined}
           </a>
         );
       })}
