@@ -490,4 +490,326 @@
 .business > .purify-two > .pack > .content-wrapper > div > .box {
   background-color: white;
 }
+
+@media screen and (max-width: 1024px) {
+  .business > .banner {
+    height: 298px;
+    padding-top: 210px;
+  }
+  .business > .banner > .title {
+    font-size: 30px;
+  }
+  .business > .building-care {
+    height: 930px;
+  }
+  .business > .building-care > .pack {
+    padding-top: 109px;
+  }
+  .business > .building-care > .pack > .left > .title {
+    font-size: 25px;
+    margin-top: 14px;
+  }
+  .business > .building-care > .pack > .right {
+    row-gap: 23px;
+  }
+  .business > .building-care > .pack > .right > .card {
+    width: 401px;
+    height: 159px;
+    padding-left: 33px;
+  }
+  .business > .building-care > .pack > .right > .card > img {
+    width: 87px;
+    height: 87px;
+  }
+  .business > .building-care > .pack > .right > .card > .content {
+    margin-left: 22px;
+  }
+  .business > .building-care > .pack > .right > .card > .content > .title {
+    font-size: 16px;
+  }
+  .business > .building-care > .pack > .right > .card > .content > .title > .back {
+    height: 14px;
+  }
+  .business > .building-care > .pack > .right > .card > .content > .sub {
+    margin-top: 8px;
+  }
+  .business > .purify-one {
+    height: 1242px;
+  }
+  .business > .purify-one > .pack > .top {
+    width: 100%;
+  }
+  .business > .purify-one > .pack > .top > .left {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .business > .purify-one > .pack > .top > .left > .title {
+    font-size: 25px;
+  }
+  .business > .purify-one > .pack > .top > .left > .sub {
+    font-size: 15px;
+  }
+  .business > .purify-one > .pack > .bottom {
+    margin-top: 34px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .business > .purify-one > .pack > .bottom > .bottom-head {
+    -ms-grid-columns: 411px 293px;
+        grid-template-columns: 411px 293px;
+    height: 79px;
+    font-size: 14px;
+  }
+  .business > .purify-one > .pack > .bottom > .bottom-body {
+    height: 651px;
+    font-size: 13px;
+  }
+  .business > .purify-one > .pack > .bottom > .bottom-body > div {
+    -ms-grid-columns: 411px 293px;
+        grid-template-columns: 411px 293px;
+  }
+  .business > .purify-one > .pack > .bottom > .bottom-body > .body-first > .left {
+    -ms-grid-rows: 37px 38px 111px 38px 38px;
+        grid-template-rows: 37px 38px 111px 38px 38px;
+  }
+  .business > .purify-one > .pack > .bottom > .bottom-body > .body-second > .left {
+    -ms-grid-rows: 38px 38px 38px 39px 39px 39px 80px;
+        grid-template-rows: 38px 38px 38px 39px 39px 39px 80px;
+  }
+  .business > .purify-one > .pack > .bottom > .bottom-body > .body-last {
+    height: 66px;
+  }
+  .business > .purify-two {
+    height: 1094px;
+    padding-top: 170px;
+  }
+  .business > .purify-two > .pack > .title {
+    font-size: 25px;
+    margin: 12px 0;
+  }
+  .business > .purify-two > .pack > .sub {
+    font-size: 15px;
+  }
+  .business > .purify-two > .pack > .system {
+    width: 302px;
+    margin-top: 48px;
+    margin-bottom: 60px;
+  }
+  .business > .purify-two > .pack > .content-wrapper {
+    height: 456px;
+    -ms-grid-columns: 109px 247px 344px;
+        grid-template-columns: 109px 247px 344px;
+  }
+  .business > .purify-two > .pack > .content-wrapper .col {
+    padding-left: 0;
+  }
+  .business > .purify-two > .pack > .content-wrapper .first {
+    font-size: 14px;
+  }
+  .business > .purify-two > .pack > .content-wrapper > .category-wrapper > .box {
+    font-size: 14px;
+  }
+  .business > .purify-two > .pack > .content-wrapper > .water-wrapper > .box {
+    font-size: 13px;
+    text-align: center;
+  }
+  .business > .purify-two > .pack > .content-wrapper > .lax-wrapper > .box {
+    font-size: 13px;
+    text-align: center;
+  }
+  .business > .purify-two > .pack > .content-wrapper > div {
+    -ms-grid-rows: 49px 42px 130px 99px 130px;
+        grid-template-rows: 49px 42px 130px 99px 130px;
+  }
+  .business > .purify-two > .pack > .content-wrapper > div > .head {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .business > .banner {
+    height: 209px;
+    padding-top: 117px;
+  }
+  .business > .banner > .title {
+    font-size: 23px;
+  }
+  .business > .building-care {
+    height: 1093px;
+  }
+  .business > .building-care > .pack {
+    padding-top: 87px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+  }
+  .business > .building-care > .pack > .left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .business > .building-care > .pack > .left > .title {
+    text-align: center;
+  }
+  .business > .building-care > .pack > .right {
+    margin-top: 54px;
+    row-gap: 20px;
+    width: 100%;
+  }
+  .business > .building-care > .pack > .right > .card {
+    width: 100%;
+    height: 153px;
+    padding-left: 14px;
+  }
+  .business > .building-care > .pack > .right > .card > img {
+    width: 71px;
+    height: 71px;
+  }
+  .business > .building-care > .pack > .right > .card > .content {
+    margin-left: 15px;
+  }
+  .business > .building-care > .pack > .right > .card > .content > .title {
+    font-size: 15px;
+  }
+  .business > .building-care > .pack > .right > .card > .content > .sub {
+    font-size: 11px;
+    margin-top: 13px;
+  }
+  .business > .purify-one {
+    height: 2053px;
+    padding-top: 149px;
+  }
+  .business > .purify-one > .pack > .top > .left > .title {
+    margin: 17px 0;
+  }
+  .business > .purify-one > .pack > .top > .left > .sub {
+    font-size: 13px;
+    line-height: 1.62;
+  }
+  .business > .purify-one > .pack > .bottom > .mb-wrapper {
+    display: -ms-grid;
+    display: grid;
+    row-gap: 57px;
+  }
+  .business > .purify-one > .pack > .bottom > .mb-wrapper > .box {
+    display: -ms-grid;
+    display: grid;
+    row-gap: 1px;
+    background-color: #e0e0e0;
+  }
+  .business > .purify-one > .pack > .bottom > .mb-wrapper > .box > div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
+  .business > .purify-one > .pack > .bottom > .mb-wrapper > .box > .content {
+    background-color: white;
+    font-size: 13px;
+  }
+  .business > .purify-one > .pack > .bottom > .mb-wrapper > .box > .head {
+    background-color: #a7e8e6;
+    font-size: 14px;
+    color: var(--navy);
+    font-weight: bold;
+  }
+  .business > .purify-one > .pack > .bottom > .mb-wrapper > .box > .foot {
+    background-color: white;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -webkit-column-gap: 1px;
+            column-gap: 1px;
+  }
+  .business > .purify-one > .pack > .bottom > .mb-wrapper > .box > .foot > .left {
+    border-right: solid 1px  #e0e0e0;
+  }
+  .business > .purify-one > .pack > .bottom > .mb-wrapper > .box > .foot > div {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 35px 74px;
+        grid-template-rows: 35px 74px;
+  }
+  .business > .purify-one > .pack > .bottom > .mb-wrapper > .box > .foot > div > div {
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    line-height: 0.7;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 13px;
+  }
+  .business > .purify-one > .pack > .bottom > .mb-wrapper > .box .grey {
+    background-color: #e0e0e0;
+    color: var(--navy);
+    font-weight: bold;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 13px;
+  }
+  .business > .purify-one > .pack > .bottom > .mb-wrapper > .one {
+    -ms-grid-rows: 32px 57px 38px 129px 58px 40px 38px 110px;
+        grid-template-rows: 32px 57px 38px 129px 58px 40px 38px 110px;
+  }
+  .business > .purify-one > .pack > .bottom > .mb-wrapper > .two {
+    -ms-grid-rows: 32px 57px 38px 40px 58px 57px 61px 100px 38px 110px;
+        grid-template-rows: 32px 57px 38px 40px 58px 57px 61px 100px 38px 110px;
+  }
+  .business > .purify-one > .pack > .bottom > .mb-wrapper > .three {
+    -ms-grid-rows: 32px 57px 38px 110px;
+        grid-template-rows: 32px 57px 38px 110px;
+  }
+}
 /*# sourceMappingURL=index.css.map */

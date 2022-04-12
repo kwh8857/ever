@@ -332,6 +332,29 @@
   .birdcheck > .back {
     height: 580px;
   }
+  .bugcheck {
+    height: 730px;
+  }
+  .bugcheck > .back {
+    height: 580px;
+  }
+  .bugcheck > .pack > .check-box {
+    width: 390px;
+    height: 165px;
+  }
+  .airfiltercheck {
+    height: 591px;
+  }
+  .airfiltercheck > .back {
+    height: 100%;
+  }
+  .airfiltercheck > .pack > .content {
+    margin-top: 124px;
+  }
+  .airfiltercheck > .pack > .check-box {
+    width: 465px;
+    height: 191px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -399,19 +422,19 @@
   .washcheck > .pack > .check-box > .content {
     font-size: 14px;
   }
-  .hoodcheck, .aircheck, .filtercheck {
+  .hoodcheck, .aircheck, .filtercheck, .airfiltercheck {
     height: 615px;
   }
-  .hoodcheck > .pack > .content, .aircheck > .pack > .content, .filtercheck > .pack > .content {
+  .hoodcheck > .pack > .content, .aircheck > .pack > .content, .filtercheck > .pack > .content, .airfiltercheck > .pack > .content {
     margin-top: 91px;
   }
-  .hoodcheck > .pack > .check-box > .content, .aircheck > .pack > .check-box > .content, .filtercheck > .pack > .check-box > .content {
+  .hoodcheck > .pack > .check-box > .content, .aircheck > .pack > .check-box > .content, .filtercheck > .pack > .check-box > .content, .airfiltercheck > .pack > .check-box > .content {
     line-height: 1;
   }
-  .hoodcheck > .pack > .check-box > .content > b, .aircheck > .pack > .check-box > .content > b, .filtercheck > .pack > .check-box > .content > b {
+  .hoodcheck > .pack > .check-box > .content > b, .aircheck > .pack > .check-box > .content > b, .filtercheck > .pack > .check-box > .content > b, .airfiltercheck > .pack > .check-box > .content > b {
     line-height: 2.6;
   }
-  .hoodcheck > .pack > .check-box > .content > .filter-first, .aircheck > .pack > .check-box > .content > .filter-first, .filtercheck > .pack > .check-box > .content > .filter-first {
+  .hoodcheck > .pack > .check-box > .content > .filter-first, .aircheck > .pack > .check-box > .content > .filter-first, .filtercheck > .pack > .check-box > .content > .filter-first, .airfiltercheck > .pack > .check-box > .content > .filter-first {
     line-height: 1.6;
     background-color: #addde4;
   }
@@ -437,6 +460,31 @@
         grid-template-rows: 32px 21px 21px 21px 21px;
     row-gap: 18px;
   }
+  .bugcheck {
+    height: 780px;
+  }
+  .bugcheck > .back {
+    height: 631px;
+  }
+  .bugcheck > .pack > .title {
+    font-size: 23px;
+  }
+  .bugcheck > .pack > .circle-wrapper {
+    -webkit-column-gap: 16px;
+            column-gap: 16px;
+  }
+  .bugcheck > .pack > .circle-wrapper > .circle > .title {
+    white-space: pre-line;
+  }
+  .bugcheck > .pack > .check-box {
+    height: 170px;
+  }
+  .bugcheck > .pack > .check-box > .check {
+    margin-right: 7px;
+  }
+  .bugcheck > .pack > .check-box > .content {
+    font-size: 14px;
+  }
   .birdcheck {
     height: 930px;
   }
@@ -456,6 +504,15 @@
     margin-top: 42px;
     width: 284px;
     height: 157px;
+  }
+  .airfiltercheck {
+    height: 591px;
+  }
+  .airfiltercheck > .pack > .content {
+    margin-top: 130px;
+  }
+  .airfiltercheck > .pack > .check-box {
+    height: 192px;
   }
 }
 /*# sourceMappingURL=index.css.map */

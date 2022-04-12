@@ -35,6 +35,9 @@ function App() {
   }, [agent, change]);
   useEffect(() => {
     const size = window.innerWidth;
+    if (size < 1025 && size > 767) {
+      setAgent("tablet");
+    }
     if (size < 768) {
       setAgent("mb");
     }

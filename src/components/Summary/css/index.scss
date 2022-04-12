@@ -318,6 +318,45 @@
       }
     }
   }
+  .buildingsummary{
+    height: 644px;
+    &>.pack{
+      &>.back{
+        height: 389px;
+        top: 147px;
+      }
+      &>.backimg{
+        width: 404px;
+        top: 59px;
+
+      }
+      &>.content-wrapper{
+        padding-top: 186px;
+        &>.line{
+          width: 23.5px;
+          margin-top: 21px;
+          margin-bottom: 13px;
+        }
+        &>.category-wrapper{
+          margin-top: 23px;
+          &>div{
+            &>div{
+              height: 30px;
+              font-size: 13px;
+            }
+          }
+          &>.one{
+            grid-template-columns: repeat(3,83px);
+                      column-gap: 6px;
+          }
+          &>.two{
+            grid-template-columns: repeat(4,83px);
+                      column-gap: 6px;
+          }
+        }
+      }
+    }
+  }
   .filtersummary{
       height: 545px;
       &>.pack{
@@ -383,6 +422,17 @@
       }
     }
   }
+  .purifysummary{
+    height: 515px;
+    &>.pack{
+      &>.back{
+        height: 135px;
+        left: 230px;
+      }
+
+    }
+  }
+
 }
 @media screen and (max-width : 767px) {
   .summary{
@@ -515,4 +565,75 @@
       }
     }
   }
+    .buildingsummary{
+      height: 763px;
+      &>.pack{
+        &>.backimg{
+          width: 325px;
+          top: 69px;
+        }
+        &>.back{
+          height: 360px;
+          left: 0;
+        }
+        &>.content-wrapper{
+          &>.category-wrapper{
+            margin-top: 24px;
+            &>div{
+              column-gap: 8px;
+              &>div{
+                height: 27px;
+                font-size: 12px;
+              }
+            
+            }
+              &>.one{
+                grid-template-columns: repeat(3,71px);
+              }
+              &>.two{
+                grid-template-columns: repeat(4,71px);
+              }
+          }
+        }
+      }
+    }
+      .aircaresummary,.airfiltersummary{
+    &>.pack{
+      &>.backimg{
+        width: 325px;
+        top: 69px;
+        height: 217px;
+      }
+      &>.back{
+        height: 229px;
+        top: 286px;
+        left: 0;
+      }
+      &>.content-wrapper{
+        padding-top: 319px;
+      }
+    }
+  }
+  .purifysummary{
+    height: 603px;
+    &>.pack{
+      &>.back{
+      height: 126px;
+      left: 0;
+      top: 286px;
+    }
+    &>.backimg{
+      width: 325px;
+      top: 75px;
+    } 
+    &>.content-wrapper{
+      padding-top: 317px;
+      line-height: 1.5;
+      &>.title{
+        font-size: 20px;
+      }
+    }
+    }
+  }
+
 }

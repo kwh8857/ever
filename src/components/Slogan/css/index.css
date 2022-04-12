@@ -41,6 +41,7 @@
   margin-left: 25px;
   margin-right: 17px;
   color: white;
+  white-space: nowrap;
 }
 
 .slogan > .pack > .title > b {
@@ -150,7 +151,16 @@
     -ms-flex-item-align: end;
         align-self: flex-end;
   }
-  .washslogan > .pack > .title, .hoodslogan > .pack > .title, .airslogan > .pack > .title, .filterslogan > .pack > .title {
+  .businessslogan > .pack > img {
+    width: 35px;
+  }
+  .businessslogan > .pack > .title {
+    margin: 0;
+  }
+  .homecleanslogan > .pack > img {
+    width: 35px;
+  }
+  .washslogan > .pack > .title, .hoodslogan > .pack > .title, .airslogan > .pack > .title, .filterslogan > .pack > .title, .birdslogan > .pack > .title, .bugslogan > .pack > .title {
     margin: 0;
   }
 }

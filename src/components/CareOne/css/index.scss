@@ -120,8 +120,12 @@
        background-color: var(--shamrock);
      }
     &>.title{
-        &>.circle{
-          text-emphasis-color: rgb(121,218,170);
+        &>.circle-wrapper{
+          &>div{
+            &>div{
+              background-color: rgb(121,218,170);
+            }
+          }
         }
        &>b{
            color: var(--shamrock);
@@ -143,9 +147,13 @@
       background-color: #40ccc7;
     }
     &>.title{
-      &>.circle{
-        text-emphasis-color: #40ccc7;;
-      }
+       &>.circle-wrapper{
+          &>div{
+            &>div{
+              background-color: #40ccc7;
+            }
+          }
+        }
       &>b{
         color: #40ccc7;;
       }
@@ -250,7 +258,19 @@
      
     }
   }
-  .washclean,.hoodclean,.airclean,.filterclean{
+  .jointclean{
+    height: 824px;
+    &>.pack{
+      padding: 0 100px;
+      box-sizing: border-box;
+      &>.list{
+         &>.card{
+           width: 168px;
+         }
+      }
+    }
+  }
+  .washclean,.hoodclean,.airclean,.filterclean,.matclean{
     height: 773px;
           padding-top: 108px;
     &>.pack{
@@ -259,6 +279,25 @@
       &>.list{
         margin-top: 60px;
         grid-template-columns: repeat(3,168px);
+      }
+    }
+  }
+  .birdclean,.bugclean{
+    padding-top: 169px;
+    height: 766px;
+  }
+  .aircareclean{
+    height: 600px;
+  }
+  .airfilterclean{
+    height: 984px;
+    padding-top: 200px;
+    &>.pack{
+      &>.list{
+        gap: 9px;
+        &>.card{
+          height: 170px;
+        }
       }
     }
   }
@@ -312,7 +351,7 @@
       }
     }
   }
-  .washclean,.hoodclean,.airclean,.filterclean{
+  .washclean,.hoodclean,.airclean,.filterclean,.matclean{
     height: 819px;
     &>.pack{
       padding: 0;
@@ -321,6 +360,19 @@
       }
       &>.list{
         white-space: pre-wrap;
+      }
+    }
+  }
+  .matclean{
+    padding-top: 108px;
+    &>.pack{
+      &>.title{
+        &>.circle-wrapper{
+          left: 80px;
+        }
+      }
+      &>.list{
+        margin-top: 76px;
       }
     }
   }
@@ -366,6 +418,72 @@
          left: 58px;
        }
      }
+    }
+  }
+  .homecleancare{
+    &>.pack{
+      &>.title{
+        &>.circle-wrapper{
+          &>div{
+            &>div{
+              background-color: #00bb68;
+            }
+          }
+        }
+      }
+    }
+  }
+  .jointclean{
+    height: 707px;
+    &>.pack{
+      width: 100%;
+      padding: 0;
+      &>.title{
+        &>.circle-wrapper{
+          left: 68px;
+        }
+      }
+      &>.list{
+        &>.card{
+          width: 103px;
+        }
+      }
+    }
+  }
+  .birdclean,.bugclean{
+    height: 807px;
+    &>.pack{
+      &>.list{
+        grid-template-columns: repeat(2,120px);
+        &>.card{
+          &>.title{
+            white-space: pre-wrap;
+          }
+        }
+      }
+    }
+  }
+  .aircareclean{
+    height: 800px;
+    &>.pack{
+      &>.list{
+        grid-template-columns: repeat(2,152px);
+        gap: 33px 16px;
+      }
+    }
+  }
+  .airfilterclean{
+    height: 1162px;
+    padding-top: 173px;
+    &>.pack{
+
+      &>.list{
+        grid-template-columns: repeat(2,152px);
+        gap: 8px;
+        &>.card{
+          height: 152px;
+        }
+      }
     }
   }
 }

@@ -41,6 +41,14 @@ function CareTwo({ type, arr, nav, agent }) {
               "서비스의 효과"
             ) : type === "air" ? (
               <b> 케어의 중요성</b>
+            ) : type === "airfilter" ? (
+              agent === "mb" ? (
+                <>
+                  공기정화장치 <br /> 필터 교체의 효과
+                </>
+              ) : (
+                <>공기정화장치 필터 교체의 효과</>
+              )
             ) : agent === "mb" ? (
               <>
                 분해

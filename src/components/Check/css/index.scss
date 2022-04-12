@@ -322,6 +322,33 @@
      height: 580px;
    }
  }
+ .bugcheck{
+   height: 730px;
+  &>.back{
+    height: 580px;
+  } 
+  &>.pack{
+    &>.check-box{
+    width: 390px;
+  height: 165px;
+    }
+  }
+ }
+ .airfiltercheck{
+   height: 591px;
+   &>.back{
+     height: 100%;
+   }
+   &>.pack{
+     &>.content{
+       margin-top: 124px;
+     }
+     &>.check-box{
+         width: 465px;
+  height: 191px;
+     }
+   }
+ }
 }
 @media screen and (max-width : 767px) {
   .check-section{
@@ -393,7 +420,7 @@
       }
     }
   }
-  .hoodcheck,.aircheck,.filtercheck{
+  .hoodcheck,.aircheck,.filtercheck,.airfiltercheck{
     height: 615px;
     &>.pack{
       &>.content{
@@ -447,6 +474,34 @@
       }
     }
   }
+  .bugcheck{
+    height: 780px;
+    &>.back{
+      height: 631px;
+    }
+    &>.pack{
+      &>.title{
+        font-size: 23px;
+      }
+      &>.circle-wrapper{
+        column-gap: 16px;
+        &>.circle{
+          &>.title{
+            white-space: pre-line;
+          }
+        }
+      }
+      &>.check-box{
+        height: 170px;
+        &>.check{
+          margin-right: 7px;
+        }
+        &>.content{
+          font-size: 14px;
+        }
+      }
+    }
+  }
   .birdcheck{
     height: 930px;
     &>.back{
@@ -466,6 +521,17 @@
         margin-top: 42px;
           width: 284px;
   height: 157px;
+      }
+    }
+  }
+  .airfiltercheck{
+    height: 591px;
+    &>.pack{
+      &>.content{
+        margin-top: 130px;
+      }
+      &>.check-box{
+        height: 192px;
       }
     }
   }

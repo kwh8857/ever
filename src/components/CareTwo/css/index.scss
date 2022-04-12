@@ -234,7 +234,7 @@
       }
     }
   }
-  .hoodtwo{
+  .hoodtwo,.mattwo{
     height: 687px;
     &>.pack{
       &>.list{
@@ -265,6 +265,21 @@
       align-items: flex-start;
     }
   }
+  .mattwo{
+    height: 761px;
+
+  }
+  .jointtwo{
+    &>.pack{
+      &>.list{
+        grid-template-columns: repeat(2,225px);
+        &>.card{
+          height: 198px;
+        }
+      }
+    }
+  }
+
 }
 @media screen and (max-width : 767px) {
  .caretwo{
@@ -332,6 +347,29 @@
      }
    }
  }
+ .mattwo{
+   height: 1714px;
+   &>.pack{
+     &>.list{
+       grid-template-rows: 212px 203px 220px 175px;
+       &>.card{
+         padding-top: 55px;
+         &>.title{
+           font-size: 20px;
+         }
+         &>.sub{
+           font-size: 13px;
+         }
+       }
+        &>.card:nth-child(3){
+         &>.title{
+           white-space: pre-wrap;
+         }
+         
+       }
+     }
+   }
+ }
  .airtwo,.filtertwo{
    height: 1319px;
    &>.pack{
@@ -364,6 +402,84 @@
          &>.title{
            font-size: 20px;
          }
+       }
+     }
+   }
+ }
+ .jointtwo{
+   height: 1030px;
+   &>.pack{
+   padding-top: 179px;
+    &>.list{
+      grid-template-rows: 171px 189px;
+      margin-top: 82px;
+      &>.card{  padding-top: 49px;
+        
+        &>.line{
+          margin: 12.5px 0;
+        }
+        &>.sub{
+          text-align: center;
+        }
+      }
+    }
+   }
+ }
+ .birdtwo{
+   height: 1265px;
+   &>.pack{
+     &>.list{
+       grid-template-rows: 212px 215px 178px;
+
+       &>.card{
+         padding-top: 52px;
+
+       }
+     }
+   }
+ }
+ .bugtwo{
+   height: 1392px;
+   &>.pack{
+     &>.sub{
+       font-size: 15px;
+     }
+     &>.list{
+       justify-content: center;
+       box-sizing: border-box;
+       width: 100%;
+       grid-template-rows: 212px 213px 207px;
+        grid-template-columns: 294px;
+        &>.card{
+          padding-top: 46px;
+          &>.line{
+            margin: 11px 0;
+          }
+          &>.title{
+            white-space: pre-wrap;
+          }
+        }
+       
+     }
+   }
+ }
+ .airfiltertwo{
+   height: 1376px;
+   &>.pack{
+     &>.list{
+       grid-template-rows: 266px 221px 221px;
+       row-gap: 55px;
+       &>.card{
+         padding-top: 54px;
+         &>.sub{
+           text-align: center;
+         }
+       }
+           &>.card:nth-child(1){
+         &>.title{
+           white-space: pre-wrap;
+         }
+         
        }
      }
    }

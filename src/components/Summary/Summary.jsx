@@ -80,7 +80,7 @@ function Summary({ type, nav, agent }) {
               </>
             ) : type === "aircare" ? (
               <>
-                공기청정기
+                공기청정기{" "}
                 <b>
                   분해 청소 <br /> 왜 해야할까요?
                 </b>
@@ -248,28 +248,39 @@ function Summary({ type, nav, agent }) {
               <>
                 어느 곳 이던 생활하게 되는 공간은{" "}
                 <b>
-                  청결이 중요시 되어야 하는 공간인 만큼 <br /> 깨끗한 관리가
-                  이루어져야합니다.
+                  청결이 중요시 {agent === "mb" ? <br /> : undefined} 되어야
+                  하는
+                  {agent === "tablet" ? <br /> : undefined} 공간인 만큼{" "}
+                  {agent === "pc" ? <br /> : undefined} 깨끗한 관리가 이루어져야
+                  {agent === "mb" ? <br /> : undefined} 합니다.
+                  {agent === "tablet" ? <br /> : undefined}
                 </b>{" "}
-                생활공간을 오랫동안 깨끗하게 <br />{" "}
+                생활공간을 오랫동안 깨끗하게{" "}
+                {agent !== "tablet" ? <br /> : undefined}{" "}
                 <b>유지할 수 있는 전문 클리닝</b>입니다.
               </>
             ) : type === "aircare" ? (
               <>
-                공기 청정기 내부나 필터 등에 존재하는 세균과 곰팡이를 제거하는{" "}
-                <br />
-                서비스로 청결하고 위생적인 공기청정기 사용을 위해 꼭 해야하는
-                서비스입니다.
+                공기 청정기 내부나 필터 등에 존재하는{" "}
+                {agent === "mb" ? <br /> : undefined} 세균과 곰팡이를 제거하는{" "}
+                {agent !== "mb" ? <br /> : undefined}
+                서비스로 {agent === "mb" ? <br /> : undefined}청결하고 위생적인
+                공기청정기 사용을 위해 {agent === "mb" ? <br /> : undefined} 꼭
+                해야하는 {agent === "tablet" ? <br /> : undefined} 서비스입니다.
               </>
             ) : type === "airfilter" ? (
               <>
                 공기정화장치(전열교환기)의{" "}
                 <b>
-                  내장된 필터로 오염물질을 제거 후 깨끗한 <br /> 실외공기를
-                  실내공기로 유입을 시키는 역할
+                  내장된 필터로{agent === "mb" ? <br /> : undefined} 오염물질을
+                  제거 후 {agent === "tablet" ? <br /> : undefined} 깨끗한{" "}
+                  {agent === "pc" ? <br /> : undefined} 실외공기를 실내공기로
+                  {agent === "mb" ? <br /> : undefined}
+                  유입을 시키는 역할
                 </b>
-                을 합니다. <br />
-                필터교체를 통해 실내 <b>공기질 개선효과를 극대화시킵니다.</b>
+                을 합니다. {agent !== "mb" ? <br /> : undefined}
+                필터교체를 통해 실내{agent === "mb" ? <br /> : undefined}{" "}
+                <b>공기질 개선효과를 극대화시킵니다.</b>
               </>
             ) : (
               <></>

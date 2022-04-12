@@ -343,6 +343,44 @@
   .airsummary > .pack > .content-wrapper {
     padding-top: 248px;
   }
+  .buildingsummary {
+    height: 644px;
+  }
+  .buildingsummary > .pack > .back {
+    height: 389px;
+    top: 147px;
+  }
+  .buildingsummary > .pack > .backimg {
+    width: 404px;
+    top: 59px;
+  }
+  .buildingsummary > .pack > .content-wrapper {
+    padding-top: 186px;
+  }
+  .buildingsummary > .pack > .content-wrapper > .line {
+    width: 23.5px;
+    margin-top: 21px;
+    margin-bottom: 13px;
+  }
+  .buildingsummary > .pack > .content-wrapper > .category-wrapper {
+    margin-top: 23px;
+  }
+  .buildingsummary > .pack > .content-wrapper > .category-wrapper > div > div {
+    height: 30px;
+    font-size: 13px;
+  }
+  .buildingsummary > .pack > .content-wrapper > .category-wrapper > .one {
+    -ms-grid-columns: (83px)[3];
+        grid-template-columns: repeat(3, 83px);
+    -webkit-column-gap: 6px;
+            column-gap: 6px;
+  }
+  .buildingsummary > .pack > .content-wrapper > .category-wrapper > .two {
+    -ms-grid-columns: (83px)[4];
+        grid-template-columns: repeat(4, 83px);
+    -webkit-column-gap: 6px;
+            column-gap: 6px;
+  }
   .filtersummary {
     height: 545px;
   }
@@ -398,6 +436,13 @@
   }
   .birdsummary > .pack > .content-wrapper {
     padding-top: 286px;
+  }
+  .purifysummary {
+    height: 515px;
+  }
+  .purifysummary > .pack > .back {
+    height: 135px;
+    left: 230px;
   }
 }
 
@@ -509,6 +554,68 @@
   }
   .filtersummary > .pack > .backimg {
     top: 64px;
+  }
+  .buildingsummary {
+    height: 763px;
+  }
+  .buildingsummary > .pack > .backimg {
+    width: 325px;
+    top: 69px;
+  }
+  .buildingsummary > .pack > .back {
+    height: 360px;
+    left: 0;
+  }
+  .buildingsummary > .pack > .content-wrapper > .category-wrapper {
+    margin-top: 24px;
+  }
+  .buildingsummary > .pack > .content-wrapper > .category-wrapper > div {
+    -webkit-column-gap: 8px;
+            column-gap: 8px;
+  }
+  .buildingsummary > .pack > .content-wrapper > .category-wrapper > div > div {
+    height: 27px;
+    font-size: 12px;
+  }
+  .buildingsummary > .pack > .content-wrapper > .category-wrapper > .one {
+    -ms-grid-columns: (71px)[3];
+        grid-template-columns: repeat(3, 71px);
+  }
+  .buildingsummary > .pack > .content-wrapper > .category-wrapper > .two {
+    -ms-grid-columns: (71px)[4];
+        grid-template-columns: repeat(4, 71px);
+  }
+  .aircaresummary > .pack > .backimg, .airfiltersummary > .pack > .backimg {
+    width: 325px;
+    top: 69px;
+    height: 217px;
+  }
+  .aircaresummary > .pack > .back, .airfiltersummary > .pack > .back {
+    height: 229px;
+    top: 286px;
+    left: 0;
+  }
+  .aircaresummary > .pack > .content-wrapper, .airfiltersummary > .pack > .content-wrapper {
+    padding-top: 319px;
+  }
+  .purifysummary {
+    height: 603px;
+  }
+  .purifysummary > .pack > .back {
+    height: 126px;
+    left: 0;
+    top: 286px;
+  }
+  .purifysummary > .pack > .backimg {
+    width: 325px;
+    top: 75px;
+  }
+  .purifysummary > .pack > .content-wrapper {
+    padding-top: 317px;
+    line-height: 1.5;
+  }
+  .purifysummary > .pack > .content-wrapper > .title {
+    font-size: 20px;
   }
 }
 /*# sourceMappingURL=index.css.map */

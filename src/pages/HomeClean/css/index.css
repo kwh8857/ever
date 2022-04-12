@@ -602,6 +602,94 @@
   .homeclean > .homecare > .back {
     height: 513px;
   }
+  .homeclean > .matservice > .pack > .title-wrapper > .left > .title {
+    font-size: 25px;
+  }
+  .homeclean > .matservice > .pack > .title-wrapper > .right {
+    width: 141px;
+  }
+  .homeclean > .jointservice {
+    height: 1502px;
+    padding-top: 117px;
+  }
+  .homeclean > .jointservice > .pack > .title {
+    font-size: 30px;
+    margin-bottom: 36px;
+  }
+  .homeclean > .jointservice > .pack > .content-wrapper {
+    width: 100%;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    row-gap: 29px;
+  }
+  .homeclean > .jointservice > .pack > .content-wrapper > .card > .wrapper {
+    padding: 0 133px;
+  }
+  .homeclean > .jointservice > .pack > .content-wrapper > .card > .wrapper > .name {
+    margin-right: 33px;
+  }
+  .homeclean > .jointservice > .pack > .content-wrapper > .card > .wrapper > .content {
+    white-space: nowrap;
+  }
+  .homeclean > .jointservice > .pack > .content-wrapper > .one {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 81px 144px 97px;
+        grid-template-rows: 81px 144px 97px;
+    row-gap: 1px;
+    height: auto;
+  }
+  .homeclean > .jointservice > .pack > .content-wrapper > .one > .wrapper {
+    height: 100%;
+  }
+  .homeclean > .jointservice > .pack > .notice {
+    padding-left: 28px;
+    row-gap: 30px;
+  }
+  .homeclean > .jointservice > .pack > .notice > .wrapper > img {
+    margin-right: 22px;
+  }
+  .homeclean > .jointservice > .pack > .notice > .wrapper > .title {
+    font-size: 16px;
+  }
+  .homeclean > .birdservice {
+    height: 640px;
+  }
+  .homeclean > .birdservice > .pack > .title {
+    font-size: 30px;
+    margin-top: 15px;
+    margin-bottom: 74px;
+  }
+  .homeclean > .birdservice > .pack > .number-wrapper {
+    font-size: 45px;
+    top: 130px;
+    padding-left: 65px;
+  }
+  .homeclean > .birdservice > .pack > .number-wrapper > .one {
+    margin-right: 133px;
+  }
+  .homeclean > .birdservice > .pack > .number-wrapper > .two {
+    margin-right: 189px;
+  }
+  .homeclean > .birdservice > .pack > .wrapper {
+    -ms-grid-columns: 181px 181px 317px;
+        grid-template-columns: 181px 181px 317px;
+    -webkit-column-gap: 12px;
+            column-gap: 12px;
+  }
+  .homeclean > .birdservice > .pack > .wrapper > .card {
+    height: 233px;
+  }
+  .homeclean > .birdservice > .pack > .wrapper > .card > .card-head {
+    height: 51px;
+    font-size: 15px;
+  }
+  .homeclean > .birdservice > .pack > .wrapper > .card > .img-wrapper {
+    height: 182px;
+  }
+  .homeclean > .birdservice > .pack > .wrapper > .card > .img-wrapper > img {
+    height: 127px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -640,6 +728,161 @@
   }
   .homeclean > .homecare > .back {
     height: 1169px;
+  }
+  .homeclean > .matservice {
+    padding-top: 111px;
+    height: 1049px;
+  }
+  .homeclean > .matservice > .pack {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+  .homeclean > .matservice > .pack > .title-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+  }
+  .homeclean > .matservice > .pack > .title-wrapper > .left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .homeclean > .matservice > .pack > .title-wrapper > .right {
+    margin-top: 24px;
+  }
+  .homeclean > .matservice > .pack > .content {
+    width: 320px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .homeclean > .matservice > .pack > .content > .content-head {
+    font-size: 19px;
+    height: 87px;
+  }
+  .homeclean > .matservice > .pack > .content > .card {
+    padding-left: 22px;
+    height: 53px;
+  }
+  .homeclean > .matservice > .pack > .content > .card > .title {
+    width: 120px;
+    margin-right: 25.8px;
+  }
+  .homeclean > .jointservice {
+    height: 1545px;
+  }
+  .homeclean > .jointservice > .pack > .title {
+    font-size: 25px;
+  }
+  .homeclean > .jointservice > .pack > .content-wrapper > .card > .wrapper {
+    padding-left: 17px;
+    padding-right: 0;
+  }
+  .homeclean > .jointservice > .pack > .content-wrapper > .card > .wrapper > .name {
+    font-size: 15px;
+    width: 77px;
+    margin-right: 17px;
+  }
+  .homeclean > .jointservice > .pack > .content-wrapper > .card > .wrapper > .content {
+    font-size: 13px;
+  }
+  .homeclean > .jointservice > .pack > .content-wrapper > .one {
+    -ms-grid-rows: 81px 159px 71px;
+        grid-template-rows: 81px 159px 71px;
+    -ms-grid-columns: 320px;
+        grid-template-columns: 320px;
+  }
+  .homeclean > .jointservice > .pack > .notice {
+    margin-top: 37px;
+    height: 311px;
+    padding: 41px 0 0 19px;
+    -ms-grid-rows: 71px 121px;
+        grid-template-rows: 71px 121px;
+    row-gap: 42px;
+  }
+  .homeclean > .jointservice > .pack > .notice > .wrapper {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .homeclean > .jointservice > .pack > .notice > .wrapper > img {
+    width: 24px;
+    margin-right: 14px;
+    -webkit-transform: translateY(4px);
+            transform: translateY(4px);
+  }
+  .homeclean > .jointservice > .pack > .notice > .wrapper > .title {
+    font-size: 15px;
+    line-height: 1.67;
+  }
+  .homeclean > .birdservice {
+    height: 1205px;
+    padding-top: 127px;
+  }
+  .homeclean > .birdservice > .pack > .title {
+    font-size: 25px;
+    margin-top: 15px;
+    margin-bottom: 71px;
+  }
+  .homeclean > .birdservice > .pack > .number-wrapper {
+    top: 120px;
+    padding: unset;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .homeclean > .birdservice > .pack > .number-wrapper > .one {
+    margin-right: unset;
+    margin-bottom: 222px;
+  }
+  .homeclean > .birdservice > .pack > .number-wrapper > .two {
+    margin-right: unset;
+    margin-bottom: 222px;
+  }
+  .homeclean > .birdservice > .pack > .wrapper {
+    -ms-grid-columns: 320px;
+        grid-template-columns: 320px;
+    row-gap: 80px;
+    -webkit-column-gap: unset;
+            column-gap: unset;
+  }
+  .homeclean > .birdservice > .pack > .wrapper > .card {
+    height: 194px;
+  }
+  .homeclean > .birdservice > .pack > .wrapper > .card > .img-wrapper {
+    height: 143px;
+  }
+  .homeclean > .birdservice > .pack > .wrapper > .card > .img-wrapper > img {
+    height: 101px;
   }
 }
 /*# sourceMappingURL=index.css.map */

@@ -110,7 +110,10 @@ function HomeClean({ agent }) {
                   <b className="category">EVERPURI SERVICE</b>
                   <div className="title">
                     싱글사이즈부터 라지킹까지 <br />
-                    <b>다양한 형태의 매트리스 케어가 가능합니다</b>
+                    <b>
+                      다양한 형태의{agent === "mb" ? <br /> : undefined}{" "}
+                      매트리스 케어가 가능합니다
+                    </b>
                   </div>
                 </div>
                 <img
@@ -122,7 +125,8 @@ function HomeClean({ agent }) {
               </div>
               <div className="content">
                 <b className="content-head">
-                  매트리스 건식 케어 / 매트리스 습식 케어
+                  매트리스 건식 케어 {agent === "mb" ? <br /> : "/"} 매트리스
+                  습식 케어
                 </b>
                 {matService.map(({ title, size }, idx) => {
                   return (
@@ -136,7 +140,8 @@ function HomeClean({ agent }) {
             </div>
           </div>
           <Reviews
-            title="매트리스 청소는 에버퓨리에 믿고 맡기세요!"
+            title={`매트리스 청소는
+ 에버퓨리에 믿고 맡기세요!`}
             arr={[0, 0, 0, 0, 0, 0, 0, 0]}
             type="mat"
             nav="homeclean"
@@ -181,11 +186,12 @@ function HomeClean({ agent }) {
                     <span>입주 3개월 미만</span>
                   </div>
                   <div className="wrapper">
-                    <b className="name">구축 패키지</b>
+                    <b className="name">신축 패키지</b>
                     <div className="content">
-                      바닥 3개소 및 실리콘 오염방지 <br /> <br />{" "}
-                      현관·욕실2·바닥 줄눈시공 <br /> 욕실2 실리콘 오염방지
-                      줄눈코팅
+                      바닥 5개소 및 실리콘 오염방지 <br /> <br />
+                      현관·욕실2·베란다·다용도실 <br /> 바닥 줄눈시공 및 실리콘{" "}
+                      {agent === "mb" ? <br /> : undefined}
+                      오염방지 줄눈코팅
                     </div>
                   </div>
                   <div className="wrapper">
@@ -201,17 +207,18 @@ function HomeClean({ agent }) {
                     <span>입주 3개월 이상</span>
                   </div>
                   <div className="wrapper big">
-                    <b className="name">신축 패키지</b>
+                    <b className="name">구축 패키지</b>
                     <div className="content">
-                      바닥 5개소 및 실리콘 오염방지 <br /> <br />{" "}
-                      현관·욕실2·베란다·다용도실 <br /> 바닥 줄눈시공 및 실리콘
-                      오염방지 줄눈코팅
+                      바닥 3개소 및 실리콘 오염방지 <br /> <br />{" "}
+                      현관·욕실2·바닥 줄눈시공 <br /> 욕실2 실리콘 오염방지
+                      줄눈코팅
                     </div>
                   </div>
                   <div className="wrapper small">
                     <b className="name">구축 - 옵션A</b>
                     <div className="content">
-                      베란다·다용도실 등 1개소 바닥 줄눈시공
+                      베란다·다용도실 등 {agent === "mb" ? <br /> : undefined}
+                      1개소 바닥 줄눈시공
                     </div>
                   </div>
                   <div className="wrapper small">
@@ -231,6 +238,7 @@ function HomeClean({ agent }) {
                   <img src="/assets/homeclean/fillcheck-green.svg" alt="" />
                   <div className="title">
                     패키지 외 옵션은 <b className="red">단독진행이 불가</b>하며{" "}
+                    {agent === "mb" ? <br /> : undefined}
                     <b>패키지와 함께 구매해주셔야 합니다</b> <br /> 무상 A/S는
                     <b> 6개월간 유효</b>합니다
                   </div>
@@ -238,9 +246,15 @@ function HomeClean({ agent }) {
                 <div className="wrapper">
                   <img src="/assets/homeclean/fillcheck-green.svg" alt="" />
                   <div className="title">
-                    옵션가격은 <b>30*30 타일 기준이며</b> 30*30타일 미만일 시
-                    별도의 추가비용이 발생할 수 있으며, <br />
-                    <b>실외기실·대피실·현관팬트리</b> 등 별도 공간 시공시
+                    옵션가격은 <b>30*30 타일 기준이며</b>
+                    {agent === "mb" ? <br /> : undefined} 30*30타일 미만일 시
+                    별도의 추가비용이{agent === "mb" ? <br /> : undefined}{" "}
+                    발생할 수 있으며, {agent !== "mb" ? <br /> : undefined}
+                    <b>
+                      실외기실·대피실·{agent === "mb" ? <br /> : undefined}
+                      현관팬트리
+                    </b>{" "}
+                    등 별도 공간 시공시 {agent === "mb" ? <br /> : undefined}
                     추가금이 발생합니다
                   </div>
                 </div>
@@ -248,7 +262,8 @@ function HomeClean({ agent }) {
             </div>
           </div>
           <Reviews
-            title="줄눈시공은 에버퓨리에 믿고 맡기세요!"
+            title={`줄눈시공은
+에버퓨리에 믿고 맡기세요!`}
             arr={[0, 0, 0, 0, 0, 0, 0, 0]}
             type="joint"
             nav="homeclean"
@@ -325,7 +340,8 @@ function HomeClean({ agent }) {
             </div>
           </div>
           <Reviews
-            title="비둘기 퇴치는 에버퓨리에 믿고 맡기세요!"
+            title={`비둘기 퇴치는
+ 에버퓨리에 믿고 맡기세요!`}
             arr={[0, 0, 0, 0, 0, 0, 0, 0]}
             type="bird"
             nav="homeclean"
@@ -353,7 +369,8 @@ function HomeClean({ agent }) {
           <CareTwo type="bug" arr={bugCare02} nav="homeclean" agent={agent} />
           <Point type="hood" arr={bugpoint} agent={agent} />
           <Reviews
-            title="해충·방역 서비스는 에버퓨리에 믿고 맡기세요!"
+            title={`해충·방역 서비스는
+ 에버퓨리에 믿고 맡기세요!`}
             arr={[0, 0, 0, 0, 0, 0, 0, 0]}
             type="bird"
             nav="homeclean"
@@ -497,7 +514,11 @@ const birdCheck = [
 ];
 const bugCheck = [
   { img: "illness", title: "새집증후군 발생" },
-  { img: "head", title: "질병 및 전염병의 원인" },
+  {
+    img: "head",
+    title: `질병 및
+전염병의 원인`,
+  },
   { img: "fly", title: "해충 번식" },
 ];
 const matClean = [
@@ -555,7 +576,8 @@ const birdClean = [
   },
   {
     img: "bridclean2",
-    title: "친환경 세제 살포 및 세척",
+    title: `친환경 세제 살포 
+ 및 세척`,
   },
   {
     img: "bridclean3",
@@ -571,39 +593,50 @@ const matCare02 = [
     img: "/assets/homeclean/care2-1.svg",
     title: `피부질환
 예방`,
-    sub: `주방 후드의 외관은 깨끗해보여도
-손이 닿지 않는 내부의 오염물질 및
-기름때로 인해 악취 및 고장, 화재
-질병 등을 초래하게 됩니다..`,
+    sub: `침대는 하루 중 가장 많은
+시간을 보내는 공간으로
+피부와 가장 오래 맞닿아있기 때문에
+피부질환에 유의해야합니다.`,
+    mbsub: `침대는 하루 중 가장 많은 시간을 보내는 
+공간으로 피부와 가장 오래 맞닿아있기 
+때문에 피부질환에 유의해야합니다.`,
   },
   {
     img: "/assets/homeclean/care2-2.svg",
     title: `매트리스 노폐물 
 오염 제거`,
-    sub: `눈에 보이지 않는 오염물질까지
-꼼꼼하게 청소하여
-주방 내 악취를 제거합니다.
+    sub: `잠을 잘 때 우리 몸의 모공에서
+배출되는 노폐물은
+박테리아 및 집먼지진드기가
+번식하기 좋은 환경이 됩니다.
 .`,
+    mbsub: `잠을 잘 때 우리 몸의 모공에서 배출되는 
+노폐물은 박테리아 및 집먼지진드기가 
+번식하기 좋은 환경이 됩니다.`,
   },
   {
     img: "/assets/homeclean/care2-3.svg",
     title: `각종 세균 및 집먼지
 진드기 제거`,
-    sub: `주방후드를 청소하지 않으면
-동일 전력 사용량 대비 
-환기 효율이 떨어져 전기료 상승
-및 오염 환경에 노출됩니다.
+    sub: `집먼지진드기의 배설물과
+사체 잔해가 아토피, 천식, 비염과
+같은 각종 알레르기성 질환을
+유발하게 됩니다.
  `,
+    mbsub: `집먼지진드기의 배설물과 사체 잔해가 아토피, 
+천식, 비염과 같은 각종 알레르기성 질환을
+유발하게 됩니다.`,
   },
   {
     img: "/assets/homeclean/care2-4.svg",
 
     title: `집먼지
 진드기 사체 제거`,
-    sub: `눈에 보이지 않는 깊숙한
-부분인 만큼 세균과 해충이
-번식하기 쉬워, 꼼꼼한 분해 청소로
-세균과 해충 번식을 예방합니다.`,
+    sub: `해충박멸 스프레이로 죽인
+진드기의 사체 또한
+깨끗하게 제거하여야합니다.`,
+    mbsub: `해충박멸 스프레이로 죽인 진드기의 사체 
+또한 깨끗하게 제거하여야합니다.`,
   },
 ];
 const jointCare02 = [
@@ -628,6 +661,13 @@ const birdCare02 = [
     sub: `비둘기는 환경오염과 전염병의 원인이며,
 둥지의 나뭇가지 및 종이로 인하여 화재 발생의 
 가능성이 있습니다`,
+    tabletsub: `비둘기는 환경오염과 전염병의
+원인이며, 둥지의 나뭇가지 및 종이로 
+인하여 화재 발생의 
+가능성이 있습니다`,
+    mbsub: `비둘기는 환경오염과 전염병의 원인이며, 
+둥지의 나뭇가지 및 종이로 인하여 
+화재 발생의 가능성이 있습니다`,
   },
   {
     img: "/assets/homeclean/care2-8.svg",
@@ -636,12 +676,23 @@ const birdCare02 = [
 차단망 설치는 필수입니다. 비둘기 차단망은
 한번 설치 시 비둘기 퇴치에 반영구적으로
 사용이 가능합니다.`,
+    tabletsub: `비둘기는 귀소본능이 강해 청소 후
+차단망 설치는 필수입니다. 
+비둘기 차단망은 한번 설치 시 
+비둘기 퇴치에 반영구적으로
+사용이 가능합니다`,
+    mbsub: `비둘기는 귀소본능이 강해 청소 후 차단망 
+설치는 필수입니다. 비둘기 차단망은 한번 
+설치 시 비둘기 퇴치에 반영구적으로
+사용이 가능합니다`,
   },
   {
     img: "/assets/homeclean/care2-9.svg",
     title: `맞춤 제작 가능`,
     sub: `최고급 PE망으로 어떤 사이즈의
 실외기라도 맞춤 제작이 가능합니다.`,
+    mbsub: `최고급 PE망으로 어떤 사이즈의 실외기라도
+맞춤 제작이 가능합니다.`,
   },
 ];
 const bugCare02 = [
@@ -652,6 +703,13 @@ const bugCare02 = [
     sub: `99.9% 향균력을 가진 친환경 소독제를
 이용하여 주변 환경에 있는
 세균 및 바이러스 등 오염원을 근절시킵니다.`,
+    tabletsub: `99.9% 향균력을 가진 친환경
+소독제를 이용하여 주변 환경에 있는
+세균 및 바이러스 등 오염원을 
+근절시킵니다.`,
+    mbsub: `99.9% 향균력을 가진 친환경 소독제를 
+이용하여 주변 환경에 있는 세균 및 
+바이러스 등 오염원을 근절시킵니다.`,
   },
   {
     img: "/assets/homeclean/care2-4.svg",
@@ -660,6 +718,9 @@ const bugCare02 = [
     sub: `주변 환경의 오염원을 근절시켜
 해충이 서식할 환경을 차단하고
 보다 쾌적한 환경을 만듭니다.`,
+    mbsub: `주변 환경의 오염원을 근절시켜 해충이 
+서식할 환경을 차단하고 보다 쾌적한
+환경을 만듭니다.`,
   },
   {
     img: "/assets/homeclean/care2-3.svg",
@@ -668,6 +729,8 @@ const bugCare02 = [
     sub: `철저한 보건 위생 방역으로
 코로나 및 각종 질병 및 전염병을
 사전에 예방할 수 있습니다.`,
+    mbsub: `철저한 보건 위생 방역으로 코로나 및 각종 
+질병 및 전염병을 사전에 예방할 수 있습니다.`,
   },
 ];
 const pointArr = [
@@ -680,7 +743,8 @@ CS마스터 팀장이 직접 방문 및 케어`,
   },
   {
     img: "point-2",
-    title: "연구개발 전담부서 인증과",
+    title: `연구개발 전담부서 
+인증과`,
     bold: "다수의 특허",
     content: `연구개발 전담부서 인증을 획득하고 
 검증된 친환경세정제와 장비만을 사용`,
@@ -711,7 +775,8 @@ CS마스터 팀장이 직접 방문 및 케어`,
   },
   {
     img: "point-2",
-    title: "연구개발 전담부서 인증과",
+    title: `연구개발 전담부서
+ 인증과`,
     bold: "다수의 특허",
     content: `연구개발 전담부서 인증을 획득하고 
 검증된 친환경세정제와 장비만을 사용`,

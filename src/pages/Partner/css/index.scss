@@ -309,3 +309,353 @@
     }
   }
 }
+@media screen and (max-width : 1024px) {
+  .partner{
+    &>.banner{
+    height: 299px;
+    padding-top: 210px;
+    &>.title{
+      font-size: 30px;
+    }
+  }
+  &>.section1{
+    height: 840px;
+    &>.back{
+      height: 317px;
+
+    }
+    &>.pack{
+      padding-top: 106px;
+      &>.top{
+        &>.left{
+          padding-top: 56px;
+          margin-right: 59px;
+          &>.title{
+            font-size: 27px;
+          }
+          &>.sub{
+            font-size: 14px;
+          }
+        }
+        &>.right{
+          width: 340px;
+        }
+      }
+      &>.bottom{
+        margin-top: 93px;
+        grid-template-columns: repeat(4,169px);
+        column-gap: 10px;
+        &>.card{
+          height: 325px;
+          padding: 19px 0 0 15px;
+          &>img{
+            width: 37px;
+          }
+          &>.title{
+            font-size: 15px;
+            margin-top: 23px;
+          }
+          &>.sub{
+            height: 190px;
+            padding: 13px 0 0 15px;
+          }
+        }
+      }
+    }
+  }
+  &>.section2{
+    height: 1189px;
+    &>.pack{
+      padding-top: 176px;
+      &>.back{
+        &>div{
+          height: 200px;
+        }
+      }
+      &>.first{
+        top: 140px;
+        right: 350px;
+      }
+      &>.second{
+        right: 350px;
+        top: 584px;
+        &>div{
+          height: 250px;
+        }
+      }
+      &>div>.img-wrapper{
+       grid-template-columns: repeat(3,228px);
+       column-gap: 10px;
+      }
+      &>.one{
+        &>.title{
+          font-size: 27px;
+        }
+        &>.sub{
+          font-size: 14px;
+          margin-top: 5px;
+          margin-bottom: 31px;
+        }
+      }
+      &>.two{
+        margin-top: 170px;
+        &>.title{
+          font-size: 27px;
+          margin-bottom: 0;
+        }
+        &>.sub{
+          font-size: 14px;
+          margin-top: 8px;
+          margin-bottom: 26px;
+        }
+      }
+    }
+  }
+  &>.section3{
+    height: 1500px;
+    &>.pack{
+      padding-top: 120px;
+      &>.category{
+        width: 118px;
+        height: 30px;
+      }
+      &>.title{
+        font-size: 27px;
+        margin-top: 11px;
+      }
+      &>.list{
+        margin-top: 48px;
+        row-gap: 185px;
+        &>.card{
+          &>img{
+            width: 344px;
+          }
+          &>.content{
+            &>.title{
+              font-size: 23px;
+            }
+            &>.number{
+              font-size: 60px;
+            }
+          }
+        }
+        &>.first{
+          &>.content{
+            left: 320px;
+            &>.title{
+                width: 318px;
+  height: 61px;
+            }
+            &>.sub{
+              padding-top: 14px;
+              padding-left: 38px;
+            }
+          }
+        }
+        &>.second{
+          &>.content{
+            left: 50px;
+            &>.title{
+                width: 331px;
+  height: 61px;
+            }
+            &>.sub{
+              padding-top: 14px;
+              padding-left: 15px;
+            }
+          }
+        }
+        &>.third{
+          &>.content{
+            right: 35px;
+            top: 68px;
+            &>.title{
+                width: 406px;
+  height: 61px;
+            }
+            &>.sub{
+              padding-top: 15px;
+              padding-left: 110px;
+            }
+          }
+        }
+      }
+    }
+  }
+  }
+}
+@media screen and (max-width : 767px) {
+  .partner{
+    &>.banner{
+      height: 209px;
+      padding-top: 117px;
+      &>.title{
+        font-size: 23px;
+      }
+    }
+    &>.section1{
+      height: 1643px;
+      &>.back{
+        height: 1048px;
+      }
+      &>.pack{
+        padding-top: 94px;
+        &>.top{
+          flex-direction: column;
+          align-items: center;
+          &>.left{
+            padding: unset;
+            margin: unset;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            &>.title{
+              font-size: 23px;
+              margin-top: 13px;
+              margin-bottom: 5px;
+            }
+            &>.sub{
+              font-size: 13px;
+            }
+          }
+          &>.right{
+            width: 320px;
+            margin-top: 34px;
+          }
+        }
+        &>.bottom{
+          grid-template-columns: 320px;
+          grid-template-rows: 168px 220px 168px 175px;
+          row-gap: 25px;
+          &>.card{
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-left: unset;
+            padding-top: 17px;
+            &>.title{
+              white-space: nowrap;
+              font-size: 18px;
+              margin-top: 7px;
+            }
+            &>.sub{
+              height: auto;
+              text-align: center;
+              padding:  12px 0 19px 0;
+            }
+          }
+        }
+      }
+    }
+    &>.section2{
+      height: 1140px;
+      &>.pack{
+        padding-top: 185px;
+        &>.back{
+          &>div{
+            width: 150vw;
+            height: 300px;
+          }
+        }
+        &>.first{
+          top: 81px;
+          right: -15%;
+        }
+        &>.second{
+          right: -15%;
+          top: 596px;
+          &>div{
+            height: 246px;
+          }
+        }
+        &>div>.img-wrapper{
+          width: 110%;
+          overflow-x: scroll;
+        }
+        &>.one{
+          &>.title{
+            font-size: 25px;
+          }
+          &>.sub{
+            margin-top: 9px;
+            margin-bottom: 21px;
+          }
+        }
+        &>.two{
+          margin-top: 188px;
+          &>.title{
+            font-size: 25px;
+          }
+          &>.sub{
+            margin-top: 9px;
+            margin-bottom: 26px;
+          }
+        }
+      }
+    }
+    &>.section3{
+      height: 1650px;
+      &>.pack{
+        padding-top: 122px;
+        display: flex;
+        flex-direction: column;
+        align-items:  center;
+        &>.back{
+            right: -15%;
+          &>div{
+            width: 120vw;
+            height: 257px;
+          }
+        }
+        &>.category{
+          width: 123px;
+          height: 30px;
+        }
+        &>.title{
+          font-size: 25px;
+          margin-top: 13px;
+        }
+        &>.list{
+          margin-top: 23px;
+          row-gap: 79px;
+          &>.card{
+            flex-direction: column;
+            align-items: center;
+            &>.content{
+              width: 100%;
+              position: unset;
+              &>.title{
+                width: 100%;
+                height: 51px;
+                margin: 56px 0 14px 0;
+                font-size: 19px;
+                justify-content: flex-start;
+                padding-left: 23px;
+                box-sizing: border-box;
+                &>.number{
+                  font-size: 50px;
+                  top: -40px;
+                  left: 20px;
+                }
+              }
+              &>.sub{
+                font-size: 13px;
+                padding: 0 0 0 20px;
+              }
+              
+            }
+          }
+          &>.third{
+            &>.content{
+              &>.title{
+                font-size: 17px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -27,6 +27,7 @@
           margin-left: 25px;
           margin-right: 17px;
           color: white;
+          white-space: nowrap;
           &>b{
             color: var(--dark-sky-blue);
           }
@@ -145,7 +146,25 @@ background-color: var(--shamrock);
       }
     }
   }
-  .washslogan,.hoodslogan,.airslogan,.filterslogan{
+  .businessslogan{
+    &>.pack{
+      &>img{
+        width: 35px;
+      }
+      &>.title{
+        margin: 0;
+        
+      }
+    }
+  }
+  .homecleanslogan{
+    &>.pack{
+      &>img{
+        width: 35px;
+      }
+    }
+  }
+  .washslogan,.hoodslogan,.airslogan,.filterslogan,.birdslogan,.bugslogan{
     &>.pack{
       &>.title{
         margin: 0;

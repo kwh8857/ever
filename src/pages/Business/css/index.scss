@@ -343,3 +343,292 @@
     }
   }
 }
+@media screen and (max-width : 1024px) {
+  .business{
+    &>.banner{
+    height: 298px;
+    padding-top: 210px;
+    &>.title{
+      font-size: 30px;
+    }
+  }
+  &>.building-care{
+    height: 930px;
+    &>.pack{
+      padding-top: 109px;
+      &>.left{
+        &>.title{
+          font-size: 25px;
+          margin-top: 14px;
+        }
+      }
+      &>.right{
+        row-gap: 23px;
+        &>.card{
+            width: 401px;
+  height: 159px;
+  padding-left: 33px;
+  &>img{
+    width: 87px;
+    height: 87px;
+  }
+  &>.content{
+    margin-left: 22px;
+    &>.title{
+      font-size: 16px;
+      &>.back{
+        height: 14px;
+
+      }
+    }
+    &>.sub{
+      margin-top: 8px;
+    }
+    
+  }
+        }
+      }
+    }
+  }
+  &>.purify-one{
+    height: 1242px;
+    &>.pack{
+      &>.top{
+        width: 100%;
+        &>.left{
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+          &>.title{
+            font-size: 25px;
+          }
+          &>.sub{
+            font-size: 15px;
+          }
+        }
+      }
+      &>.bottom{
+        margin-top: 34px;
+        display: flex;
+        flex-direction: column;
+        &>.bottom-head{
+          grid-template-columns: 411px 293px;
+          height: 79px;
+          font-size: 14px;
+        }
+        &>.bottom-body{
+           height: 651px;
+           font-size: 13px;
+          &>div{
+            grid-template-columns: 411px 293px;
+          }
+         &>.body-first{
+           &>.left{
+             grid-template-rows: 37px 38px 111px 38px 38px;
+           }
+         }
+         &>.body-second{
+           &>.left{
+             grid-template-rows: 38px 38px 38px 39px 39px 39px 80px;
+           }
+         }
+         &>.body-last{
+           height: 66px;
+         }
+        }
+      }
+    }
+  }
+  &>.purify-two{
+    height: 1094px;
+    padding-top: 170px;
+    &>.pack{
+      &>.title{
+        font-size: 25px;
+        margin: 12px 0;
+      }
+      &>.sub{
+        font-size: 15px;
+      }
+      &>.system{
+        width: 302px;
+        margin-top: 48px;
+        margin-bottom: 60px;
+      }
+      &>.content-wrapper{
+        height: 456px;
+        grid-template-columns: 109px 247px 344px;
+        .col{
+          padding-left: 0;
+        }
+        .first{
+          font-size: 14px;
+        }
+        &>.category-wrapper{
+          &>.box{
+            font-size: 14px;
+          }
+        }
+        &>.water-wrapper{
+          &>.box{
+            font-size: 13px;
+            text-align: center;
+          }
+        }
+        &>.lax-wrapper{
+          &>.box{
+            font-size: 13px;
+            text-align: center;
+          }
+        }
+        &>div{
+                grid-template-rows: 49px 42px 130px 99px 130px;
+          
+          &>.head{
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+  }
+}
+@media screen and (max-width : 767px) {
+  .business{
+    &>.banner{
+      height: 209px;
+      padding-top: 117px;
+      &>.title{
+        font-size: 23px;
+      }
+    }
+    &>.building-care{
+      height: 1093px;
+      &>.pack{
+        padding-top: 87px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: unset;
+        &>.left{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          &>.title{
+            text-align: center;
+          }
+        }
+        &>.right{
+          margin-top: 54px;
+          row-gap: 20px;
+          width: 100%;
+          &>.card{
+            width: 100%;
+            height: 153px;
+            padding-left: 14px;
+            &>img{
+              width: 71px;
+              height: 71px;
+            }
+            &>.content{
+              margin-left: 15px;
+              &>.title{
+                font-size: 15px;
+              }
+              &>.sub{
+                font-size: 11px;
+                margin-top: 13px;
+              }
+            }
+          }
+        }
+      }
+    }
+    &>.purify-one{
+      height: 2053px;
+      padding-top: 149px;
+      &>.pack{
+        &>.top{
+          &>.left{
+            &>.title{
+              margin: 17px 0 ;
+            }
+            &>.sub{
+              font-size: 13px;
+              line-height: 1.62;
+            }
+          }
+        }
+        &>.bottom{
+          &>.mb-wrapper{
+            display: grid;
+            row-gap: 57px;
+            &>.box{
+              display: grid;
+              row-gap: 1px;
+              background-color: #e0e0e0;
+              &>div{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+              }
+              &>.content{
+                background-color: white;
+                font-size: 13px;
+              }
+              &>.head{
+                background-color: #a7e8e6;
+                font-size: 14px;
+                color: var(--navy);
+                font-weight: bold;
+              }
+              &>.foot{
+                background-color: white;
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                column-gap: 1px;
+                &>.left{
+                  border-right: solid 1px  #e0e0e0;
+                }
+                &>div{
+                  display: grid;
+                  grid-template-rows: 35px 74px;
+                  &>div{
+                    text-align: center;
+                    display: flex;
+                    flex-direction: column;
+                    line-height: 0.7;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 13px;
+                  }
+                }
+              }
+              .grey{
+                background-color: #e0e0e0;
+                color: var(--navy);
+                font-weight: bold;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 13px;
+              }
+            }
+            &>.one{
+              grid-template-rows: 32px 57px 38px 129px 58px 40px 38px 110px;
+            }
+            &>.two{
+              grid-template-rows: 32px 57px 38px 40px 58px 57px 61px 100px 38px 110px;
+            }
+            &>.three{
+              grid-template-rows: 32px 57px 38px 110px;
+            }
+          }
+        }
+      }
+    }
+
+  }
+}

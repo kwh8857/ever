@@ -105,7 +105,8 @@ function Check({ type, circleArr, checkArr, nav, agent }) {
           ) : type === "filter" || type === "airfilter" ? (
             <>
               <b>
-                공기정화장치 필터 교체의 <br /> 시기
+                공기정화장치 필터{agent !== "pc" ? <br /> : ""} 교체의{" "}
+                {agent === "pc" ? <br /> : ""} 시기
               </b>
               를 체크해 보세요!
             </>
@@ -126,12 +127,15 @@ function Check({ type, circleArr, checkArr, nav, agent }) {
             </>
           ) : type === "bug" ? (
             <>
-              <b>해충·방역 서비스의 적절한 시기</b>를
+              <b>
+                해충·방역 서비스의{agent === "mb" ? <br /> : ""} 적절한 시기
+              </b>
+              를
             </>
           ) : (
             <></>
           )}{" "}
-          <br />{" "}
+          {type === "bug" && agent === "mb" ? "" : <br />}{" "}
           {type === "bird" ? (
             <>
               <b>발견 초기에 이루어지는게</b>
@@ -409,8 +413,8 @@ function Check({ type, circleArr, checkArr, nav, agent }) {
               </>
             ) : type === "airfilter" ? (
               <>
-                <b>
-                  <span>6개월~1년에 한번씩 </span>
+                <b className="filter-first">
+                  <span>6개월~1년에 한번씩 {agent === "mb" ? <br /> : ""}</span>
                   <span className="back" />
                 </b>
                 교체해주는 것이 제일 좋습니다

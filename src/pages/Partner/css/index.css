@@ -400,4 +400,366 @@
   padding-left: 75px;
   padding-top: 22px;
 }
+
+@media screen and (max-width: 1024px) {
+  .partner > .banner {
+    height: 299px;
+    padding-top: 210px;
+  }
+  .partner > .banner > .title {
+    font-size: 30px;
+  }
+  .partner > .section1 {
+    height: 840px;
+  }
+  .partner > .section1 > .back {
+    height: 317px;
+  }
+  .partner > .section1 > .pack {
+    padding-top: 106px;
+  }
+  .partner > .section1 > .pack > .top > .left {
+    padding-top: 56px;
+    margin-right: 59px;
+  }
+  .partner > .section1 > .pack > .top > .left > .title {
+    font-size: 27px;
+  }
+  .partner > .section1 > .pack > .top > .left > .sub {
+    font-size: 14px;
+  }
+  .partner > .section1 > .pack > .top > .right {
+    width: 340px;
+  }
+  .partner > .section1 > .pack > .bottom {
+    margin-top: 93px;
+    -ms-grid-columns: (169px)[4];
+        grid-template-columns: repeat(4, 169px);
+    -webkit-column-gap: 10px;
+            column-gap: 10px;
+  }
+  .partner > .section1 > .pack > .bottom > .card {
+    height: 325px;
+    padding: 19px 0 0 15px;
+  }
+  .partner > .section1 > .pack > .bottom > .card > img {
+    width: 37px;
+  }
+  .partner > .section1 > .pack > .bottom > .card > .title {
+    font-size: 15px;
+    margin-top: 23px;
+  }
+  .partner > .section1 > .pack > .bottom > .card > .sub {
+    height: 190px;
+    padding: 13px 0 0 15px;
+  }
+  .partner > .section2 {
+    height: 1189px;
+  }
+  .partner > .section2 > .pack {
+    padding-top: 176px;
+  }
+  .partner > .section2 > .pack > .back > div {
+    height: 200px;
+  }
+  .partner > .section2 > .pack > .first {
+    top: 140px;
+    right: 350px;
+  }
+  .partner > .section2 > .pack > .second {
+    right: 350px;
+    top: 584px;
+  }
+  .partner > .section2 > .pack > .second > div {
+    height: 250px;
+  }
+  .partner > .section2 > .pack > div > .img-wrapper {
+    -ms-grid-columns: (228px)[3];
+        grid-template-columns: repeat(3, 228px);
+    -webkit-column-gap: 10px;
+            column-gap: 10px;
+  }
+  .partner > .section2 > .pack > .one > .title {
+    font-size: 27px;
+  }
+  .partner > .section2 > .pack > .one > .sub {
+    font-size: 14px;
+    margin-top: 5px;
+    margin-bottom: 31px;
+  }
+  .partner > .section2 > .pack > .two {
+    margin-top: 170px;
+  }
+  .partner > .section2 > .pack > .two > .title {
+    font-size: 27px;
+    margin-bottom: 0;
+  }
+  .partner > .section2 > .pack > .two > .sub {
+    font-size: 14px;
+    margin-top: 8px;
+    margin-bottom: 26px;
+  }
+  .partner > .section3 {
+    height: 1500px;
+  }
+  .partner > .section3 > .pack {
+    padding-top: 120px;
+  }
+  .partner > .section3 > .pack > .category {
+    width: 118px;
+    height: 30px;
+  }
+  .partner > .section3 > .pack > .title {
+    font-size: 27px;
+    margin-top: 11px;
+  }
+  .partner > .section3 > .pack > .list {
+    margin-top: 48px;
+    row-gap: 185px;
+  }
+  .partner > .section3 > .pack > .list > .card > img {
+    width: 344px;
+  }
+  .partner > .section3 > .pack > .list > .card > .content > .title {
+    font-size: 23px;
+  }
+  .partner > .section3 > .pack > .list > .card > .content > .number {
+    font-size: 60px;
+  }
+  .partner > .section3 > .pack > .list > .first > .content {
+    left: 320px;
+  }
+  .partner > .section3 > .pack > .list > .first > .content > .title {
+    width: 318px;
+    height: 61px;
+  }
+  .partner > .section3 > .pack > .list > .first > .content > .sub {
+    padding-top: 14px;
+    padding-left: 38px;
+  }
+  .partner > .section3 > .pack > .list > .second > .content {
+    left: 50px;
+  }
+  .partner > .section3 > .pack > .list > .second > .content > .title {
+    width: 331px;
+    height: 61px;
+  }
+  .partner > .section3 > .pack > .list > .second > .content > .sub {
+    padding-top: 14px;
+    padding-left: 15px;
+  }
+  .partner > .section3 > .pack > .list > .third > .content {
+    right: 35px;
+    top: 68px;
+  }
+  .partner > .section3 > .pack > .list > .third > .content > .title {
+    width: 406px;
+    height: 61px;
+  }
+  .partner > .section3 > .pack > .list > .third > .content > .sub {
+    padding-top: 15px;
+    padding-left: 110px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .partner > .banner {
+    height: 209px;
+    padding-top: 117px;
+  }
+  .partner > .banner > .title {
+    font-size: 23px;
+  }
+  .partner > .section1 {
+    height: 1643px;
+  }
+  .partner > .section1 > .back {
+    height: 1048px;
+  }
+  .partner > .section1 > .pack {
+    padding-top: 94px;
+  }
+  .partner > .section1 > .pack > .top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .partner > .section1 > .pack > .top > .left {
+    padding: unset;
+    margin: unset;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .partner > .section1 > .pack > .top > .left > .title {
+    font-size: 23px;
+    margin-top: 13px;
+    margin-bottom: 5px;
+  }
+  .partner > .section1 > .pack > .top > .left > .sub {
+    font-size: 13px;
+  }
+  .partner > .section1 > .pack > .top > .right {
+    width: 320px;
+    margin-top: 34px;
+  }
+  .partner > .section1 > .pack > .bottom {
+    -ms-grid-columns: 320px;
+        grid-template-columns: 320px;
+    -ms-grid-rows: 168px 220px 168px 175px;
+        grid-template-rows: 168px 220px 168px 175px;
+    row-gap: 25px;
+  }
+  .partner > .section1 > .pack > .bottom > .card {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-left: unset;
+    padding-top: 17px;
+  }
+  .partner > .section1 > .pack > .bottom > .card > .title {
+    white-space: nowrap;
+    font-size: 18px;
+    margin-top: 7px;
+  }
+  .partner > .section1 > .pack > .bottom > .card > .sub {
+    height: auto;
+    text-align: center;
+    padding: 12px 0 19px 0;
+  }
+  .partner > .section2 {
+    height: 1140px;
+  }
+  .partner > .section2 > .pack {
+    padding-top: 185px;
+  }
+  .partner > .section2 > .pack > .back > div {
+    width: 150vw;
+    height: 300px;
+  }
+  .partner > .section2 > .pack > .first {
+    top: 81px;
+    right: -15%;
+  }
+  .partner > .section2 > .pack > .second {
+    right: -15%;
+    top: 596px;
+  }
+  .partner > .section2 > .pack > .second > div {
+    height: 246px;
+  }
+  .partner > .section2 > .pack > div > .img-wrapper {
+    width: 110%;
+    overflow-x: scroll;
+  }
+  .partner > .section2 > .pack > .one > .title {
+    font-size: 25px;
+  }
+  .partner > .section2 > .pack > .one > .sub {
+    margin-top: 9px;
+    margin-bottom: 21px;
+  }
+  .partner > .section2 > .pack > .two {
+    margin-top: 188px;
+  }
+  .partner > .section2 > .pack > .two > .title {
+    font-size: 25px;
+  }
+  .partner > .section2 > .pack > .two > .sub {
+    margin-top: 9px;
+    margin-bottom: 26px;
+  }
+  .partner > .section3 {
+    height: 1650px;
+  }
+  .partner > .section3 > .pack {
+    padding-top: 122px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .partner > .section3 > .pack > .back {
+    right: -15%;
+  }
+  .partner > .section3 > .pack > .back > div {
+    width: 120vw;
+    height: 257px;
+  }
+  .partner > .section3 > .pack > .category {
+    width: 123px;
+    height: 30px;
+  }
+  .partner > .section3 > .pack > .title {
+    font-size: 25px;
+    margin-top: 13px;
+  }
+  .partner > .section3 > .pack > .list {
+    margin-top: 23px;
+    row-gap: 79px;
+  }
+  .partner > .section3 > .pack > .list > .card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .partner > .section3 > .pack > .list > .card > .content {
+    width: 100%;
+    position: unset;
+  }
+  .partner > .section3 > .pack > .list > .card > .content > .title {
+    width: 100%;
+    height: 51px;
+    margin: 56px 0 14px 0;
+    font-size: 19px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding-left: 23px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .partner > .section3 > .pack > .list > .card > .content > .title > .number {
+    font-size: 50px;
+    top: -40px;
+    left: 20px;
+  }
+  .partner > .section3 > .pack > .list > .card > .content > .sub {
+    font-size: 13px;
+    padding: 0 0 0 20px;
+  }
+  .partner > .section3 > .pack > .list > .third > .content > .title {
+    font-size: 17px;
+  }
+}
 /*# sourceMappingURL=index.css.map */
