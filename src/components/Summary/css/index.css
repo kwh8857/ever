@@ -1,6 +1,7 @@
 .summary {
   height: 741px;
   width: 100%;
+  background-color: white;
 }
 
 .summary > .pack {
@@ -300,6 +301,62 @@
   .summary > .pack > .content-wrapper > .sub {
     font-size: 14px;
   }
+  .washsummary {
+    height: 522px;
+  }
+  .washsummary > .pack > .back {
+    height: 246px;
+    top: 191px;
+  }
+  .washsummary > .pack > .backimg {
+    width: 384px;
+    top: 42px;
+  }
+  .washsummary > .pack > .content-wrapper {
+    padding-top: 226px;
+  }
+  .hoodsummary {
+    height: 545px;
+  }
+  .hoodsummary > .pack > .back {
+    height: 203px;
+    top: 191px;
+  }
+  .hoodsummary > .pack > .backimg {
+    width: 406px;
+    top: 41px;
+  }
+  .hoodsummary > .pack > .content-wrapper {
+    padding-top: 226px;
+  }
+  .airsummary {
+    height: 545px;
+  }
+  .airsummary > .pack > .back {
+    height: 203px;
+    top: 213px;
+  }
+  .airsummary > .pack > .backimg {
+    width: 406px;
+    top: 41px;
+  }
+  .airsummary > .pack > .content-wrapper {
+    padding-top: 248px;
+  }
+  .filtersummary {
+    height: 545px;
+  }
+  .filtersummary > .pack > .back {
+    height: 223px;
+    top: 213px;
+  }
+  .filtersummary > .pack > .backimg {
+    width: 406px;
+    top: 41px;
+  }
+  .filtersummary > .pack > .content-wrapper {
+    padding-top: 248px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -330,6 +387,52 @@
   }
   .summary > .pack > .content-wrapper > .sub {
     font-size: 13px;
+  }
+  .washsummary {
+    height: 652px;
+  }
+  .washsummary > .pack > .back {
+    height: 241px;
+    top: 231px;
+    left: 10px;
+  }
+  .washsummary > .pack > .backimg {
+    width: 319px;
+    top: 55px;
+  }
+  .hoodsummary {
+    height: 553px;
+  }
+  .hoodsummary > .pack > .back {
+    height: 200px;
+    left: 10px;
+  }
+  .hoodsummary > .pack > .backimg {
+    top: 64px;
+  }
+  .airsummary {
+    height: 553px;
+  }
+  .airsummary > .pack > .back {
+    height: 200px;
+    top: 231px;
+    left: 10px;
+  }
+  .airsummary > .pack > .backimg {
+    top: 64px;
+  }
+  .airsummary > .pack > .content-wrapper {
+    padding-top: 265px;
+  }
+  .filtersummary {
+    height: 553px;
+  }
+  .filtersummary > .pack > .back {
+    height: 216px;
+    left: 10px;
+  }
+  .filtersummary > .pack > .backimg {
+    top: 64px;
   }
 }
 /*# sourceMappingURL=index.css.map */

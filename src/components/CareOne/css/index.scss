@@ -250,6 +250,18 @@
      
     }
   }
+  .washclean,.hoodclean,.airclean,.filterclean{
+    height: 773px;
+          padding-top: 108px;
+    &>.pack{
+
+      padding: 0 90px;
+      &>.list{
+        margin-top: 60px;
+        grid-template-columns: repeat(3,168px);
+      }
+    }
+  }
 }
 @media screen and (max-width : 767px) {
   .careone{
@@ -270,8 +282,8 @@
         margin-top: 10px;
         line-height: 1.48;
         &>.circle-wrapper{
-          top: 36px;
-          left: 10px;
+           top: 38px;
+         left: 44px;
           column-gap: 25px;
           &>div{
             grid-template-columns: repeat(2,4px);
@@ -298,6 +310,62 @@
           }
         }
       }
+    }
+  }
+  .washclean,.hoodclean,.airclean,.filterclean{
+    height: 819px;
+    &>.pack{
+      padding: 0;
+      &>.sub{
+        white-space: nowrap;
+      }
+      &>.list{
+        white-space: pre-wrap;
+      }
+    }
+  }
+  .hoodclean{
+    height: 740px;
+    &>.pack{
+      &>.title{
+        &>.circle-wrapper{
+          left: 35px;
+          top: 38px;
+        }
+      }
+    }
+  }
+  .washclean{
+      &>.pack{
+     &>.title{
+       &>.circle-wrapper{
+         top: 38px;
+         left: 39px;
+       }
+     }
+    }
+  }
+  .airclean{
+    height: 740px;
+    &>.pack{
+     &>.title{
+       &>.circle-wrapper{
+         top: 38px;
+         left: 44px;
+       }
+     }
+    }
+  }
+    .filterclean{
+    height: 740px;
+    padding-top: 115px;
+    &>.pack{
+     &>.title{
+       &>.circle-wrapper{
+         top: 38px;
+         left: 58px;
+       }
+     }
     }
   }
 }

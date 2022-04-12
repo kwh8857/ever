@@ -17,13 +17,13 @@ function CareOne({ type, cleanArr, nav, agent }) {
               보이지 않는 곳까지
               {agent === "mb" ? <br /> : undefined}
               <b className="circle"> 완벽 케어</b>
-              하는 {agent !== "mb" ? <br /> : undefined}
+              하는 <br />
               {type === "aircon" ? (
-                <b> 16단계{agent === "mb" ? <br /> : undefined} 완전분해케어</b>
+                <b> 16단계 완전분해케어</b>
               ) : type === "wash" ? (
                 <b> 6단계 완전분해케어</b>
               ) : type === "hood" ? (
-                <b>주방후드 분해세척</b>
+                <b> 주방후드 분해세척</b>
               ) : type === "air" ? (
                 <b>공기청정기 분해케어</b>
               ) : type === "filter" || type === "airfilter" ? (
@@ -56,6 +56,8 @@ function CareOne({ type, cleanArr, nav, agent }) {
               16단계로 진행되는 완전 분해 케어로 새제품처럼 <br /> 깨끗하게
               보이지 않는 곳까지 아주 완벽하게 케어합니다
             </>
+          ) : type === "hood" ? (
+            <>에버퓨리는 주방후드 완전 분해 케어로 완벽하게 케어합니다</>
           ) : type === "wash" ? (
             <>6단계로 진행되는 완전 분해 케어로 완벽하게 케어합니다</>
           ) : type === "air" ? (

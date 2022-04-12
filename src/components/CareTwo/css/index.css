@@ -288,5 +288,51 @@
   .caretwo {
     height: 1376px;
   }
+  .caretwo > .pack {
+    padding-top: 218px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .caretwo > .pack > .title {
+    text-align: center;
+  }
+  .caretwo > .pack > .sub {
+    text-align: center;
+    font-size: 13px;
+  }
+  .caretwo > .pack > .list {
+    width: 295px;
+    -ms-grid-columns: unset;
+        grid-template-columns: unset;
+    -ms-grid-rows: 221px 201px 221px;
+        grid-template-rows: 221px 201px 221px;
+    row-gap: 62px;
+  }
+  .caretwo > .pack > .list > .card {
+    height: 100%;
+    width: 100%;
+  }
+  .caretwo > .pack > .list > .card > img {
+    width: 67px;
+    top: -35px;
+  }
+  .caretwo > .pack > .list > .card > .title {
+    font-size: 20px;
+    white-space: nowrap;
+  }
+  .caretwo > .pack > .list > .card > .line {
+    width: 239px;
+  }
+  .caretwo > .pack > .list > .card > .sub {
+    text-align: left;
+  }
 }
 /*# sourceMappingURL=index.css.map */

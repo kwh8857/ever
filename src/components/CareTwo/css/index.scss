@@ -238,6 +238,44 @@
 @media screen and (max-width : 767px) {
  .caretwo{
    height: 1376px;
+   &>.pack{
+     padding-top: 218px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     
+    &>.title{
+      text-align: center;
+    }
+    &>.sub{
+      text-align: center;
+      font-size: 13px;
+    }
+    &>.list{
+      width: 295px;
+      grid-template-columns: unset;
+      grid-template-rows: 221px 201px 221px;
+      row-gap: 62px;
+      &>.card{
+        height: 100%;
+        width: 100%;
+        &>img{
+          width: 67px;
+          top: -35px;
+        }
+        &>.title{
+          font-size: 20px;
+          white-space: nowrap;
+        }
+        &>.line{
+          width: 239px;
+        }
+        &>.sub{
+         text-align: left;
+        }
+      }
+    }
+   }
  }
 
 }

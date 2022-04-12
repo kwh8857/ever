@@ -1,6 +1,7 @@
 .summary{
       height: 741px;
       width: 100%;
+      background-color: white;
       &>.pack{
         height: 100%;
         position: relative;
@@ -236,6 +237,7 @@
       padding-top: 339px;
     }
   }
+
 }
 @media screen and (max-width : 1024px) {
   .summary{
@@ -268,6 +270,70 @@
       }
     }
   }
+  .washsummary{
+    height: 522px;
+    &>.pack{
+      &>.back{
+        height: 246px;
+        top: 191px;
+      }
+      &>.backimg{
+        width: 384px;
+        top: 42px;
+      }
+      &>.content-wrapper{
+        padding-top: 226px;
+      }
+    }
+  }
+  .hoodsummary{
+    height: 545px;
+    &>.pack{
+      &>.back{
+        height: 203px;
+        top: 191px;
+      }
+      &>.backimg{
+        width: 406px;
+        top: 41px;
+      }
+      &>.content-wrapper{
+        padding-top: 226px;
+      }
+    }
+  }
+    .airsummary{
+    height: 545px;
+    &>.pack{
+      &>.back{
+        height: 203px;
+        top: 213px;
+      }
+      &>.backimg{
+        width: 406px;
+        top: 41px;
+      }
+      &>.content-wrapper{
+        padding-top: 248px;
+      }
+    }
+  }
+  .filtersummary{
+      height: 545px;
+      &>.pack{
+        &>.back{
+          height: 223px;
+          top: 213px;
+        }
+        &>.backimg{
+          width: 406px;
+          top: 41px;
+        }
+        &>.content-wrapper{
+          padding-top: 248px;
+        }
+      }
+  }
 }
 @media screen and (max-width : 767px) {
   .summary{
@@ -297,6 +363,64 @@
         &>.sub{
           font-size: 13px;
         }
+      }
+    }
+  }
+  .washsummary{
+    height: 652px;
+    &>.pack{
+  
+        &>.back{
+          height: 241px;
+          top: 231px;
+          left: 10px;
+        }
+        &>.backimg{
+          width: 319px;
+          top: 55px;
+        }
+      
+    }
+  }
+  .hoodsummary{
+    height: 553px;
+    &>.pack{
+      &>.back{
+        height: 200px;
+        left: 10px;
+      }
+      &>.backimg{
+        top: 64px;
+      }
+    }
+  }
+  .airsummary{
+    height: 553px;
+    &>.pack{
+      &>.back{
+        height: 200px;
+        top: 231px;
+        left: 10px;
+      }
+      &>.backimg{
+        top: 64px;
+      }
+      &>.content-wrapper{
+        padding-top: 265px;
+      }
+
+    }
+
+  }
+  .filtersummary{
+    height: 553px;
+    &>.pack{
+      &>.back{
+        height: 216px;
+        left: 10px;
+      }
+      &>.backimg{
+        top: 64px;
       }
     }
   }

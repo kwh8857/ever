@@ -1,6 +1,6 @@
 import React from "react";
 import "./css/index.css";
-function Point({ type, arr }) {
+function Point({ type, arr, agent }) {
   return (
     <div className={`point ${type}point`}>
       <div className="back">
@@ -38,13 +38,17 @@ function Point({ type, arr }) {
                 >
                   {idx > 1 ? (
                     <b>
-                      {bold} {type === "wash" && idx === 2 ? undefined : <br />}
+                      {bold}{" "}
+                      {type === "wash" && idx === 2 ? undefined : agent ===
+                        "pc" ? (
+                        <br />
+                      ) : undefined}
                     </b>
                   ) : undefined}
-                  {title}
+                  {title} {""}
                   {idx < 2 ? (
                     <b>
-                      <br />
+                      {agent === "pc" ? <br /> : undefined}
                       {bold}
                     </b>
                   ) : undefined}

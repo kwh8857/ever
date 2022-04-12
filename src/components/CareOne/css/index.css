@@ -303,6 +303,18 @@
     font-size: 12px;
     margin-top: 5px;
   }
+  .washclean, .hoodclean, .airclean, .filterclean {
+    height: 773px;
+    padding-top: 108px;
+  }
+  .washclean > .pack, .hoodclean > .pack, .airclean > .pack, .filterclean > .pack {
+    padding: 0 90px;
+  }
+  .washclean > .pack > .list, .hoodclean > .pack > .list, .airclean > .pack > .list, .filterclean > .pack > .list {
+    margin-top: 60px;
+    -ms-grid-columns: (168px)[3];
+        grid-template-columns: repeat(3, 168px);
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -332,8 +344,8 @@
     line-height: 1.48;
   }
   .careone > .pack > .title > .circle-wrapper {
-    top: 36px;
-    left: 10px;
+    top: 38px;
+    left: 44px;
     -webkit-column-gap: 25px;
             column-gap: 25px;
   }
@@ -361,6 +373,44 @@
     width: 26px;
     height: 26px;
     top: -12px;
+  }
+  .washclean, .hoodclean, .airclean, .filterclean {
+    height: 819px;
+  }
+  .washclean > .pack, .hoodclean > .pack, .airclean > .pack, .filterclean > .pack {
+    padding: 0;
+  }
+  .washclean > .pack > .sub, .hoodclean > .pack > .sub, .airclean > .pack > .sub, .filterclean > .pack > .sub {
+    white-space: nowrap;
+  }
+  .washclean > .pack > .list, .hoodclean > .pack > .list, .airclean > .pack > .list, .filterclean > .pack > .list {
+    white-space: pre-wrap;
+  }
+  .hoodclean {
+    height: 740px;
+  }
+  .hoodclean > .pack > .title > .circle-wrapper {
+    left: 35px;
+    top: 38px;
+  }
+  .washclean > .pack > .title > .circle-wrapper {
+    top: 38px;
+    left: 39px;
+  }
+  .airclean {
+    height: 740px;
+  }
+  .airclean > .pack > .title > .circle-wrapper {
+    top: 38px;
+    left: 44px;
+  }
+  .filterclean {
+    height: 740px;
+    padding-top: 115px;
+  }
+  .filterclean > .pack > .title > .circle-wrapper {
+    top: 38px;
+    left: 58px;
   }
 }
 /*# sourceMappingURL=index.css.map */

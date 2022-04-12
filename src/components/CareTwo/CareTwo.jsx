@@ -22,15 +22,23 @@ function CareTwo({ type, arr, nav, agent }) {
             ? "해충·방역"
             : ""}{" "}
           <b>
-            {type === "filter"
-              ? "필터 교체의 중요성"
-              : type === "joint"
-              ? "시공의 중요성"
-              : type === "bird"
-              ? "퇴치의 효과"
-              : type === "bug"
-              ? "서비스의 효과"
-              : "분해세척의 중요성"}
+            {type === "filter" ? (
+              "필터 교체의 중요성"
+            ) : type === "joint" ? (
+              "시공의 중요성"
+            ) : type === "bird" ? (
+              "퇴치의 효과"
+            ) : type === "bug" ? (
+              "서비스의 효과"
+            ) : agent === "mb" ? (
+              <>
+                분해
+                <br />
+                세척의 중요성
+              </>
+            ) : (
+              "분해세척의 중요성"
+            )}
           </b>
         </div>
         <div className="sub">
@@ -63,14 +71,18 @@ function CareTwo({ type, arr, nav, agent }) {
           ) : undefined}
         </div>
         <div className="list">
-          {arr.map(({ img, title, sub, tabletsub }, idx) => {
+          {arr.map(({ img, title, sub, tabletsub, mbsub }, idx) => {
             return (
               <div key={idx} className="card">
                 <img src={img} alt="" />
                 <b className="title">{title}</b>
                 <div className="line" />
                 <div className="sub">
-                  {agent === "tablet" && tabletsub ? tabletsub : sub}
+                  {agent === "tablet" && tabletsub
+                    ? tabletsub
+                    : agent === "mb" && mbsub
+                    ? mbsub
+                    : sub}
                 </div>
               </div>
             );

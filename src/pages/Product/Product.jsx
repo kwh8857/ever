@@ -52,15 +52,18 @@ function Product({ agent }) {
             nav="product"
             agent={agent}
           />
-          <Slogan type="aircon" nav="product" />
+          <Slogan type="aircon" nav="product" agent={agent} />
           <CareTwo type="aircon" arr={care02Arr} nav="product" agent={agent} />
-          <Point type="aircon" arr={pointArr} />
-          <Service type="aircon" />
+          <Point type="aircon" arr={pointArr} agent={agent} />
+          <Service type="aircon" agent={agent} />
           <div className="section8">
             <div className="pack">
               <div className="title">
                 벽걸이부터 천장형까지 <br />
-                <b>모든 형태의 에어컨 케어가 가능합니다</b>
+                <b>
+                  모든 형태의 에어컨 케어가{agent === "mb" ? <br /> : undefined}{" "}
+                  가능합니다
+                </b>
               </div>
               <div className="list">
                 <div className="card">
@@ -95,13 +98,14 @@ function Product({ agent }) {
                         <b>일반형</b>
                         <span>10평 이하</span>
                       </div>
+
                       <div className="right">
                         <b>스마트</b>
                         <span>2012년 이후 무풍형 2구</span>
                       </div>
                     </div>
                     <div className="width-line" />
-                    <div className="subject one">
+                    <div className="subject one lux">
                       <b>고급형</b>
                       <span>
                         무풍형 3구ㆍ 삼성 무풍 갤러리ㆍ LG 듀얼 에어컨
@@ -140,14 +144,16 @@ function Product({ agent }) {
             </div>
           </div>
           <Reviews
-            title="에어컨 분해세척은 에버퓨리에 믿고 맡기세요!"
+            title={`에어컨 분해세척은
+에버퓨리에 믿고 맡기세요!`}
             sub={`완벽한 홈케어로 입소문 타고 평판만으로 
 여기까지 왔습니다.`}
             arr={[0, 0, 0, 0, 0, 0, 0, 0]}
             type="aircon"
             nav="product"
+            agent={agent}
           />
-          <Store />
+          <Store agent={agent} />
         </div>
       ) : now === 1 ? (
         <div className="washing">
@@ -165,10 +171,10 @@ function Product({ agent }) {
             nav="product"
             agent={agent}
           />
-          <Slogan type="wash" nav="product" />
+          <Slogan type="wash" nav="product" agent={agent} />
           <CareTwo type="wash" arr={washCare02} nav="product" agent={agent} />
-          <Point type="wash" arr={pointArr2} />
-          <Service type="wash" />
+          <Point type="wash" arr={pointArr2} agent={agent} />
+          <Service type="wash" agent={agent} />
           <Kind type="wash" arr={kindArr} />
           <Reviews
             title="세탁기 분해세척은 에버퓨리에 믿고 맡기세요!"
@@ -177,8 +183,9 @@ function Product({ agent }) {
             arr={[0, 0, 0, 0, 0, 0, 0, 0]}
             type="wash"
             nav="product"
+            agent={agent}
           />
-          <Store />
+          <Store agent={agent} />
         </div>
       ) : now === 2 ? (
         <div className="hood">
@@ -195,7 +202,7 @@ function Product({ agent }) {
             nav="product"
             agent={agent}
           />
-          <Slogan type="hood" nav="product" />
+          <Slogan type="hood" nav="product" agent={agent} />
           <CareTwo type="hood" arr={hoodCare02} nav="product" agent={agent} />
           <Point type="hood" arr={pointArr3} />
           <Kind type="hood" arr={["슬림형 후드", "디럭스형 후드"]} />
@@ -206,8 +213,9 @@ function Product({ agent }) {
             arr={[0, 0, 0, 0, 0, 0, 0, 0]}
             type="hood"
             nav="product"
+            agent={agent}
           />
-          <Store />
+          <Store agent={agent} />
         </div>
       ) : now === 3 ? (
         <div className="air">
@@ -224,9 +232,9 @@ function Product({ agent }) {
             nav="product"
             agent={agent}
           />
-          <Slogan type="air" nav="product" />
+          <Slogan type="air" nav="product" agent={agent} />
           <CareTwo type="air" arr={airCare02} nav="product" agent={agent} />
-          <Point type="hood" arr={pointArr3} />
+          <Point type="hood" arr={pointArr3} agent={agent} />
           <Reviews
             title="공기청정기 분해세척은 에버퓨리에 믿고 맡기세요!"
             sub={`완벽한 홈케어로 입소문 타고 평판만으로 
@@ -234,8 +242,9 @@ function Product({ agent }) {
             arr={[0, 0, 0, 0, 0, 0, 0, 0]}
             type="wash"
             nav="product"
+            agent={agent}
           />
-          <Store />
+          <Store agent={agent} />
         </div>
       ) : (
         <div className="filter">
@@ -252,14 +261,14 @@ function Product({ agent }) {
             nav="product"
             agent={agent}
           />
-          <Slogan type="filter" nav="product" />
+          <Slogan type="filter" nav="product" agent={agent} />
           <CareTwo
             type="filter"
             arr={filterCare02}
             nav="product"
             agent={agent}
           />
-          <Point type="hood" arr={pointArr3} />
+          <Point type="hood" arr={pointArr3} agent={agent} />
           <Kind type="filter" arr={["공기정화장치", "디퓨저"]} />
           <Reviews
             title="공기정화장치 필터 교체은 에버퓨리에 믿고 맡기세요!"
@@ -268,8 +277,9 @@ function Product({ agent }) {
             arr={[0, 0, 0, 0, 0, 0, 0, 0]}
             type="filter"
             nav="product"
+            agent={agent}
           />
-          <Store />
+          <Store agent={agent} />
         </div>
       )}
     </main>
@@ -377,7 +387,8 @@ const washClean = [
   },
   {
     img: "washclean4",
-    title: "고압 세척 확인 후 조립",
+    title: `고압 세척
+확인 후 조립`,
   },
   {
     img: "washclean5",
@@ -403,7 +414,8 @@ const hoodClean = [
   },
   {
     img: "hoodclean4",
-    title: "후드필터 및 환풍기 탈거",
+    title: `후드필터 및
+환풍기 탈거`,
   },
   {
     img: "hoodclean5",
@@ -417,11 +429,13 @@ const hoodClean = [
 const filterClean = [
   {
     img: "filterclean1",
-    title: "전열교환기 소자 해체",
+    title: `전열교환기
+소자 해체`,
   },
   {
     img: "filterclean2",
-    title: "소자 교환 및 청소",
+    title: `소자 교환
+및 청소`,
   },
   {
     img: "filterclean3",
@@ -455,6 +469,10 @@ const care02Arr = [
 스팀살균으로 인체에 해로운 균들을 
 박멸하여 공기의 품질을 향상시켜 
 쾌적하고 맑은 공기 제공`,
+    mbsub: `각종 세균들이 서식하고 있는 에어컨에 친환경 
+약품과 고압세척, 스팀살균으로 인체에 해로운 
+균들을 박멸하여 공기의 품질을 향상시켜 
+쾌적하고 맑은 공기 제공`,
   },
   {
     img: "/assets/product/care02-2.svg",
@@ -467,6 +485,9 @@ const care02Arr = [
     tabletsub: `미국 NU-CALGON의 실험 
 보고서에 따르면 세척을 한 
 에어컨의 경우 하지 않는 에어컨에 
+비해 약 27%의 전기요금 절감 가능`,
+    mbsub: `미국 NU-CALGON의 실험 보고서에 따르면 
+세척을 한 에어컨의 경우 하지 않는 에어컨에 
 비해 약 27%의 전기요금 절감 가능`,
   },
   {
@@ -483,6 +504,10 @@ const care02Arr = [
 이물질들과 세균을 제거함으로써 
 공기의 흐름이 원활하게 되고 가동시 
 기기에 무리를 주지않아 수명을 연장`,
+    mbsub: `고장과 기기의 부식을 초래하는 열교환기에 
+붙어 있던 먼지 및 이물질들과 세균을 
+제거함으로써 공기의 흐름이 원활하게 되고 
+가동시 기기에 무리를 주지않아 수명을 연장`,
   },
 ];
 const washCare02 = [
@@ -616,7 +641,8 @@ CS마스터 팀장이 직접 방문 및 케어`,
   },
   {
     img: "point-2",
-    title: "연구개발 전담부서 인증과",
+    title: `연구개발 전담부서
+인증과`,
     bold: "다수의 특허",
     content: `연구개발 전담부서 인증을 획득하고 
 검증된 친환경세정제와 장비만을 사용`,

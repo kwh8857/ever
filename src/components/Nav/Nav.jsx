@@ -56,6 +56,7 @@ function Nav({ now, setnow, navArr, type, agent }) {
                 className={`${now === idx ? "on" : ""}`}
                 onClick={() => {
                   setnow(idx);
+                  setisOpen(!isOpen);
                 }}
               >
                 {item}

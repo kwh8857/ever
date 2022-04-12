@@ -24,9 +24,20 @@ function Check({ type, circleArr, checkArr, nav, agent }) {
                 ? "실외기비둘기 퇴치를 하지 않으면"
                 : type === "bug"
                 ? "해충ㆍ방역 서비스를 하지 않으면"
+                : type === "wash"
+                ? "세탁기 케어를 하지 않을 경우"
                 : ""}
               <br />
-              <b>이런 문제가 발생합니다!</b>
+              {type !== "wash" ? (
+                <>
+                  <b>이런 문제가 발생합니다!</b>
+                </>
+              ) : (
+                <>
+                  <b>세균으로 오염된{agent === "mb" ? <br /> : undefined} 옷</b>
+                  을 입고 다니는 것입니다!
+                </>
+              )}
             </div>
             <div
               className="circle-wrapper"
@@ -37,7 +48,7 @@ function Check({ type, circleArr, checkArr, nav, agent }) {
                       ? 2
                       : circleArr.length
                     : circleArr.length
-                },${agent === "pc" ? 148 : 102}px)`,
+                },${agent === "pc" ? 148 : agent === "mb" ? 96 : 102}px)`,
               }}
             >
               {circleArr.map(({ img, title }, idx) => {
@@ -63,15 +74,24 @@ function Check({ type, circleArr, checkArr, nav, agent }) {
             </>
           ) : type === "wash" ? (
             <>
-              <b>집에서 관리해도 해결되지 않는 세탁기</b>
+              <b>
+                집에서 관리해도{agent === "mb" ? <br /> : ""} 해결되지 않는
+                세탁기
+              </b>
             </>
           ) : type === "hood" ? (
             <>
-              <b>집에서 관리해도 해결되지 않는 주방후드</b>
+              <b>
+                집에서 관리해도{agent === "mb" ? <br /> : ""} 해결되지 않는
+                주방후드
+              </b>
             </>
           ) : type === "air" ? (
             <>
-              <b>집에서 관리해도 해결되지 않는 공기청정기</b>
+              <b>
+                집에서 관리해도 {agent === "mb" ? <br /> : ""}해결되지 않는
+                공기청정기
+              </b>
             </>
           ) : type === "filter" || type === "airfilter" ? (
             <>
@@ -171,7 +191,7 @@ function Check({ type, circleArr, checkArr, nav, agent }) {
                   <span className="back" />
                 </b>
                 <br />
-                세탁기 내부 또는
+                세탁기 내부 {agent === "mb" ? "/" : "또는"}
                 <b>
                   <span> 세탁물에서 퀴퀴한 냄새가 날 때</span>
                   <span className="back" />
@@ -238,8 +258,11 @@ function Check({ type, circleArr, checkArr, nav, agent }) {
               </>
             ) : type === "filter" ? (
               <>
-                <b>
-                  <span>6개월~1년에 한번씩 교체해주는 것</span>
+                <b className="filter-first">
+                  <span>
+                    6개월~1년에 한번씩 {agent === "mb" ? <br /> : undefined}{" "}
+                    교체해주는 것
+                  </span>
                   <span className="back" />
                 </b>
                 이 제일 좋습니다

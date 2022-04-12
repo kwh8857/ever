@@ -138,4 +138,99 @@
 .aircarepoint {
   height: 1545px;
 }
+
+@media screen and (max-width: 1024px) {
+  .point {
+    height: 1012px;
+    padding-top: 114px;
+  }
+  .point > .back {
+    height: 300px;
+  }
+  .point > .back > .pack > img {
+    width: 335px;
+  }
+  .point > .pack {
+    padding: 0 84px;
+  }
+  .point > .pack > .category {
+    width: 133px;
+    height: 33px;
+  }
+  .point > .pack > .title {
+    font-size: 25px;
+    margin-bottom: 26px;
+  }
+  .point > .pack > .list {
+    -ms-grid-columns: (261px)[2];
+        grid-template-columns: repeat(2, 261px);
+    -webkit-column-gap: 9px;
+            column-gap: 9px;
+    row-gap: 34px;
+  }
+  .point > .pack > .list > .card {
+    height: 279px;
+  }
+  .point > .pack > .list > .card > .title {
+    font-size: 15px;
+    margin-top: 18px;
+    white-space: pre-wrap;
+  }
+  .point > .pack > .list > .card > .content {
+    font-size: 13px;
+    height: 39px;
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .point {
+    height: 1925px;
+    padding-top: 252px;
+  }
+  .point > .back {
+    height: 533px;
+  }
+  .point > .back > .pack > img {
+    width: 236px;
+  }
+  .point > .pack {
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .point > .pack > .category {
+    width: 142px;
+    height: 30px;
+  }
+  .point > .pack > .title {
+    text-align: center;
+    margin-top: 8px;
+    margin-bottom: 36px;
+  }
+  .point > .pack > .list {
+    -ms-grid-columns: unset;
+        grid-template-columns: unset;
+  }
+  .point > .pack > .list > .card {
+    width: 100%;
+    height: 313px;
+  }
+  .point > .pack > .list > .card > .title {
+    margin-top: 16px;
+    font-size: 18px;
+    line-height: 1.28;
+  }
+  .point > .pack > .list > .card > .sub {
+    margin-top: 8px;
+  }
+}
 /*# sourceMappingURL=index.css.map */

@@ -1,14 +1,15 @@
 import React from "react";
 import "./css/index.css";
-function Service({ type }) {
+function Service({ type, agent }) {
   return (
     <div className="service">
       <div className="pack">
         <div className="category">EVERPURI SERVICE</div>
         <div className="title">
-          서비스에 대해 인정받고
+          서비스에 대해 인정받고{agent === "mb" ? <br /> : undefined}
           <b>
-            끝까지 책임지는 <br /> 청소·시공전문업체
+            끝까지 책임지는 {agent !== "mb" ? <br /> : undefined} 청소·시공
+            {agent === "mb" ? <br /> : undefined}전문업체
           </b>
           는 에버퓨리
         </div>
@@ -25,7 +26,9 @@ function Service({ type }) {
             <span className="title">
               {type === "aircon" ? (
                 <>
-                  <b>검증된 핀세척제 웰존</b> (환경부 고시 안전검사 완료제품,
+                  <b>검증된 핀세척제 웰존</b>
+                  {agent !== "pc" ? <br /> : ""} (환경부 고시 안전검사 완료제품,
+                  {agent === "mb" ? <br /> : undefined}
                   냉동협회 공인약품)만을 사용합니다
                 </>
               ) : type === "wash" ? (
@@ -41,7 +44,11 @@ function Service({ type }) {
             <span className="title">
               {type === "aircon" ? (
                 <>
-                  핀코팅을 통해 <b>제품의 수명을 늘려줍니다</b>
+                  핀코팅을 통해{" "}
+                  <b>
+                    제품의{agent === "mb" ? <br /> : undefined} 수명을
+                    늘려줍니다
+                  </b>
                 </>
               ) : (
                 <>
@@ -71,8 +78,11 @@ function Service({ type }) {
               <div className="card">
                 <span className="number">05</span>
                 <span className="title">
-                  <b>고압세척·고온스팀1차 살균·UV자외선 2차 살균</b> 시스템으로
-                  진행됩니다.
+                  <b>
+                    고압세척·고온스팀1차 살균
+                    {agent === "mb" ? <br /> : undefined} ·UV자외선 2차 살균
+                  </b>{" "}
+                  시스템으로{agent === "mb" ? <br /> : undefined} 진행됩니다.
                 </span>
               </div>
             </>

@@ -110,6 +110,7 @@
   font-size: 18px;
   color: var(--dark-sky-blue);
   margin-right: 15px;
+  white-space: nowrap;
 }
 
 .product > .aircon > .section8 > .pack > .list > .card > .content > .two {
@@ -169,6 +170,135 @@
   }
   .product > .banner > .title {
     font-size: 30px;
+  }
+  .product > .aircon > .section8 {
+    height: 1029px;
+    padding-top: 124px;
+  }
+  .product > .aircon > .section8 > .pack > .title {
+    font-size: 25px;
+  }
+  .product > .aircon > .section8 > .pack > .list {
+    margin-top: 52px;
+    row-gap: 48px;
+  }
+  .product > .aircon > .section8 > .pack > .list > .card > img {
+    margin-right: 25px;
+    width: 169px;
+  }
+  .product > .aircon > .section8 > .pack > .list > .card > .content {
+    width: 486px;
+  }
+  .product > .aircon > .section8 > .pack > .list > .card > .content > .title {
+    height: 50px;
+    padding-left: 38px;
+    font-size: 18px;
+  }
+  .product > .aircon > .section8 > .pack > .list > .card > .content > .subject {
+    height: 50px;
+    padding-left: 40px;
+  }
+  .product > .aircon > .section8 > .pack > .list > .card > .content > .subject b {
+    font-size: 16px;
+    margin-right: 40px;
+  }
+  .product > .aircon > .section8 > .pack > .list > .card > .content > .subject span {
+    font-size: 16px;
+  }
+  .product > .aircon > .section8 > .pack > .list > .card > .content > .lux > b {
+    margin-right: 22px;
+  }
+  .product > .aircon > .section8 > .pack > .list > .card > .content > .two > .left {
+    width: 180px;
+  }
+  .product > .aircon > .section8 > .pack > .list > .card > .content > .two > .left > b {
+    margin-right: 19px;
+  }
+  .product > .aircon > .section8 > .pack > .list > .card > .content > .two > .right {
+    width: 270px;
+    padding-left: 23px;
+  }
+  .product > .aircon > .section8 > .pack > .list > .card > .content > .two > .right > b {
+    margin-right: 19px;
+  }
+  .product > .aircon > .section8 > .pack > .list > .card > .content > .third {
+    padding-left: 0;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .product > .aircon > .section8 {
+    height: 1789px;
+    padding-top: 155px;
+  }
+  .product > .aircon > .section8 > .pack > .list {
+    margin-top: 56px;
+    row-gap: 70px;
+  }
+  .product > .aircon > .section8 > .pack > .list > .card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 320px;
+  }
+  .product > .aircon > .section8 > .pack > .list > .card > img {
+    width: 156px;
+    margin-right: unset;
+    margin-bottom: 30px;
+  }
+  .product > .aircon > .section8 > .pack > .list > .card > .content {
+    width: 100%;
+  }
+  .product > .aircon > .section8 > .pack > .list > .card > .content > .title {
+    padding: unset;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .product > .aircon > .section8 > .pack > .list > .card > .content > .subject {
+    height: 53px;
+    padding-left: 24px;
+  }
+  .product > .aircon > .section8 > .pack > .list > .card > .content > .two {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 107px;
+    display: -ms-grid;
+    display: grid;
+    row-gap: 1px;
+    background-color: #e0e0e0;
+    padding: 0;
+    -ms-grid-rows: 53px 53px;
+        grid-template-rows: 53px 53px;
+  }
+  .product > .aircon > .section8 > .pack > .list > .card > .content > .two > .left {
+    width: 100%;
+    background-color: white;
+    padding-left: 22.5px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    border-right: unset;
+  }
+  .product > .aircon > .section8 > .pack > .list > .card > .content > .two > .right {
+    padding-left: 22.5px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .product > .aircon > .section8 > .pack > .list > .card > .content > .third {
+    padding: unset;
   }
 }
 /*# sourceMappingURL=index.css.map */

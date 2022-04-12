@@ -1,6 +1,7 @@
 import React from "react";
 import "./css/index.css";
-function Reviews({ title, sub, arr, type, nav }) {
+function Reviews({ title, sub, arr, type, nav, agent }) {
+  console.log(agent);
   return (
     <div className={`review ${nav}nv ${type}re`}>
       <div className="back" />
@@ -23,7 +24,7 @@ function Reviews({ title, sub, arr, type, nav }) {
           />
         </div>
         <div className="sub">
-          {type === "product" ? (
+          {nav === "product" ? (
             <>
               {sub}
               <b>에버퓨리가 하면 다릅니다!</b>
@@ -40,7 +41,12 @@ function Reviews({ title, sub, arr, type, nav }) {
             </>
           ) : undefined}
         </div>
-        <div className="list" style={{ gridTemplateColumns: `repeat(4,1fr)` }}>
+        <div
+          className="list"
+          style={{
+            gridTemplateColumns: `repeat(${agent === "mb" ? 2 : 4},1fr)`,
+          }}
+        >
           {arr.map((item, idx) => {
             return (
               <img

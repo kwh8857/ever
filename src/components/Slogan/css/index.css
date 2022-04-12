@@ -118,6 +118,9 @@
     font-size: 25px;
     margin: 0 27px;
   }
+  .washslogan > .pack > .title {
+    margin: 0 20px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -146,6 +149,9 @@
   .slogan > .pack > .right {
     -ms-flex-item-align: end;
         align-self: flex-end;
+  }
+  .washslogan > .pack > .title, .hoodslogan > .pack > .title, .airslogan > .pack > .title, .filterslogan > .pack > .title {
+    margin: 0;
   }
 }
 /*# sourceMappingURL=index.css.map */

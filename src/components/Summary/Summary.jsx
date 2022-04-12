@@ -40,7 +40,7 @@ function Summary({ type, nav, agent }) {
               </>
             ) : type === "air" ? (
               <>
-                우리집
+                우리집{" "}
                 <b>
                   공기청정기 케어 <br /> 어떻게
                 </b>{" "}
@@ -120,10 +120,14 @@ function Summary({ type, nav, agent }) {
               <>
                 세탁기 구입 후 2~3년의 지나면{" "}
                 <b>
-                  내부에 이물질(섬유, 먼지, 유분 등) 및 <br /> 세제 찌꺼기가
-                  점점 쌓입니다.
+                  내부에 이물질{agent === "mb" ? <br /> : undefined}(섬유, 먼지,
+                  유분 등) 및 {agent !== "mb" ? <br /> : undefined} 세제
+                  찌꺼기가 점점 쌓입니다.
+                  {agent === "mb" ? <br /> : undefined}
                 </b>
-                이런 잔여물들로 인해 세탁기 내부에 <br /> 세균 및 곰팡이가
+                이런 잔여물들로 인해 세탁기 내부에{" "}
+                {agent !== "mb" ? <br /> : undefined} 세균 및 곰팡이가
+                {agent === "mb" ? <br /> : undefined}
                 번식하여
                 <b>
                   {" "}
@@ -135,23 +139,41 @@ function Summary({ type, nav, agent }) {
             ) : type === "hood" ? (
               <>
                 후드에 누적된 기름 및 음식찌꺼기를
-                <b> 청소해줌으로써 악취를 제거</b>하고, <br /> 해충의 서식지가
-                되는 것을 방지하며 <b>환기능력을 향상시키는 서비스</b>입니다
+                <b>
+                  {" "}
+                  청소해줌으로써 {agent === "mb" ? <br /> : undefined} 악취를
+                  제거
+                </b>
+                하고, {agent !== "mb" ? <br /> : undefined} 해충의 서식지가 되는
+                것을 {agent === "mb" ? <br /> : undefined} 방지하며{" "}
+                <b>환기능력을 향상시키는 서비스</b>입니다
               </>
             ) : type === "air" ? (
               <>
                 공기청정기{" "}
-                <b>내부에 존재하는 세균과 곰팡이를 제거하는 서비스</b>로 <br />
-                청결하고 위생적인 공기청정기 사용을 위해 꼭 해야하는
+                <b>
+                  내부에 존재하는 세균과 곰팡이를{" "}
+                  {agent === "mb" ? <br /> : undefined} 제거하는 서비스
+                </b>
+                로 {agent !== "mb" ? <br /> : undefined}
+                청결하고 위생적인 공기청정기
+                {agent === "mb" ? <br /> : undefined} 사용을 위해 꼭 해야하는
                 서비스입니다.
               </>
             ) : type === "filter" ? (
               <>
-                전열교환기(공기정화장치)의 내장된 필터로 오염물질을 제거 후{" "}
-                <br />
-                깨끗한 실외공기를 실내공기로 유입을 시키는 역할을 합니다. <br />
-                <b> 필터교체를 통해 실내 공기질 개선효과를 극대화</b>시켜주는
-                서비스입니다.
+                전열교환기(공기정화장치)의 내장된 필터로
+                {agent === "mb" ? <br /> : undefined} 오염물질을 제거 후
+                {agent !== "mb" ? <br /> : undefined}
+                깨끗한 실외공기를 실내공기로
+                {agent === "mb" ? <br /> : undefined} 유입을 시키는 역할을
+                합니다. {agent !== "mb" ? <br /> : undefined}
+                <b>
+                  {" "}
+                  필터교체를 통해{agent === "mb" ? <br /> : undefined} 실내
+                  공기질 개선효과를 극대화
+                </b>
+                시켜주는 서비스입니다.
               </>
             ) : type === "mat" ? (
               <>

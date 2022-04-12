@@ -112,4 +112,70 @@
   height: 920px;
   padding-top: 0;
 }
+
+@media screen and (max-width: 1024px) {
+  .review {
+    height: 804px;
+    padding-top: 134px;
+  }
+  .review > .pack > .title > b {
+    font-size: 25px;
+    margin: 0 18px;
+  }
+  .review > .pack > .title > img {
+    width: 32px;
+  }
+  .review > .pack > .title > .left {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  .review > .pack > .sub {
+    margin-top: 19px;
+    font-size: 14px;
+  }
+  .review > .pack > .list {
+    margin-top: 37px;
+    gap: 10px 9px;
+  }
+  .review > .back {
+    height: 319px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .review {
+    height: 1074px;
+    padding-top: 112px;
+  }
+  .review > .pack > .title {
+    position: relative;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .review > .pack > .title > img {
+    width: 29.5px;
+    position: absolute;
+  }
+  .review > .pack > .title > .right {
+    right: -20px;
+    top: -5px;
+  }
+  .review > .pack > .title > .left {
+    left: -10px;
+  }
+  .review > .pack > .title > b {
+    text-align: center;
+    margin: 0;
+    font-size: 25px;
+    white-space: pre-wrap;
+  }
+  .review > .pack > .list {
+    margin-top: 31px;
+    gap: 8px;
+  }
+  .review > .back {
+    height: 429px;
+  }
+}
 /*# sourceMappingURL=index.css.map */
