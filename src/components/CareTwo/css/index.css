@@ -147,7 +147,7 @@
   line-height: 1.4;
 }
 
-.filtertwo > .pack, .jointtwo > .pack {
+.filtertwo > .pack, .jointtwo > .pack, .airtwo > .pack {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -282,6 +282,38 @@
   .caretwo > .pack > .list > .card > .sub {
     font-size: 13px;
   }
+  .hoodtwo {
+    height: 687px;
+  }
+  .hoodtwo > .pack > .list {
+    -ms-grid-columns: (167px)[4];
+        grid-template-columns: repeat(4, 167px);
+  }
+  .hoodtwo > .pack > .list > .card {
+    height: 208px;
+    padding-top: 45px;
+  }
+  .hoodtwo > .pack > .list > .card > img {
+    width: 53px;
+  }
+  .hoodtwo > .pack > .list > .card > .title {
+    font-size: 14px;
+  }
+  .hoodtwo > .pack > .list > .card > .line {
+    width: 125.5px;
+    margin: 10px 0;
+  }
+  .hoodtwo > .pack > .list > .card > .sub {
+    font-size: 9px;
+  }
+  .airtwo, .filtertwo {
+    height: 761px;
+  }
+  .airtwo > .pack, .filtertwo > .pack {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -333,6 +365,48 @@
   }
   .caretwo > .pack > .list > .card > .sub {
     text-align: left;
+  }
+  .hoodtwo {
+    height: 1602px;
+  }
+  .hoodtwo > .pack > .list {
+    row-gap: 72px;
+    -ms-grid-rows: 212px 169px 195px 195px;
+        grid-template-rows: 212px 169px 195px 195px;
+  }
+  .hoodtwo > .pack > .list > .card > .title {
+    font-size: 18px;
+  }
+  .hoodtwo > .pack > .list > .card > .sub {
+    font-size: 13px;
+  }
+  .hoodtwo > .pack > .list > .card:nth-child(1) > .title {
+    white-space: pre-wrap;
+  }
+  .airtwo, .filtertwo {
+    height: 1319px;
+  }
+  .airtwo > .pack > .list, .filtertwo > .pack > .list {
+    -ms-grid-rows: 225px 190px 175px;
+        grid-template-rows: 225px 190px 175px;
+  }
+  .airtwo > .pack > .list > .card, .filtertwo > .pack > .list > .card {
+    padding-top: 52px;
+  }
+  .airtwo > .pack > .list > .card > .line, .filtertwo > .pack > .list > .card > .line {
+    margin: 10px 0;
+  }
+  .airtwo > .pack > .list > .card > .title, .filtertwo > .pack > .list > .card > .title {
+    font-size: 18px;
+  }
+  .airtwo > .pack > .list > .card:nth-child(1), .filtertwo > .pack > .list > .card:nth-child(1) {
+    padding-top: 47.4px;
+  }
+  .airtwo > .pack > .list > .card:nth-child(1) > .title, .filtertwo > .pack > .list > .card:nth-child(1) > .title {
+    white-space: pre-wrap;
+  }
+  .filtertwo > .pack > .list > .card > .title {
+    font-size: 20px;
   }
 }
 /*# sourceMappingURL=index.css.map */

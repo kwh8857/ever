@@ -127,6 +127,9 @@
     color: #46bad1;
     font-weight: bold;
   }
+  .nav > .nav-wrapper > .homemenu {
+    color: #00bb68;
+  }
   .nav > .open {
     height: 324px;
     padding-top: 34px;

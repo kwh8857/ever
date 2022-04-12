@@ -18,7 +18,7 @@ function Point({ type, arr, agent }) {
           에버퓨리만의 <br /> <b>차별성은 무엇일까요?</b>
         </div>
         <div className="list">
-          {arr.map(({ title, bold, content, img }, idx) => {
+          {arr.map(({ title, bold, content, img, tabletcontent }, idx) => {
             return (
               <div key={idx} className="card">
                 <img
@@ -53,7 +53,11 @@ function Point({ type, arr, agent }) {
                     </b>
                   ) : undefined}
                 </div>
-                <div className="content">{content}</div>
+                <div className="content">
+                  {agent === "tablet" && tabletcontent
+                    ? tabletcontent
+                    : content}
+                </div>
               </div>
             );
           })}

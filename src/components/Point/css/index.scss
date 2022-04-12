@@ -148,7 +148,33 @@
         }
       }
     }
-
+   .hoodpoint,.homepoint{
+     height: 713px;
+     &>.pack{
+       padding: 0;
+       &>.list{
+         grid-template-columns: repeat(3,224px);
+         column-gap: 16px;
+         &>.card{
+           height: 300px;
+           &>.title{
+             margin-top: 20px;
+           }
+           &>.content{
+             margin-top: 14px;
+           }
+         }
+         &>.card:nth-child(odd){
+           &>.title{
+             margin-top: 30px;
+           }
+           &>.content{
+             margin-top: 24px;
+           }
+         }
+       }
+     }
+   }
 }
 @media screen and (max-width : 767px) {
   .point{
@@ -190,6 +216,29 @@
             margin-top: 8px;
           }
         }
+      }
+    }
+  }
+  .hoodpoint,.homepoint{
+    height: 1616px;
+    &>.pack{
+      &>.list{
+        &>.card{
+          &>.title{
+            margin-top: 16px;
+          }
+          &>.content{
+            margin-top: 8px;
+          }
+        }
+           &>.card:nth-child(odd){
+           &>.title{
+             margin-top: 22px;
+           }
+           &>.content{
+             margin-top: 9px;
+           }
+         }
       }
     }
   }

@@ -1,6 +1,6 @@
 import React from "react";
 import "./css/index.css";
-function Kind({ type, arr, nav }) {
+function Kind({ type, arr, nav, agent }) {
   return (
     <div className={`kind ${type}kind ${nav}kind`}>
       <div className="pack">
@@ -10,7 +10,11 @@ function Kind({ type, arr, nav }) {
         <div className="title">
           {type === "hood" ? (
             <>
-              <b>다양한 형태의 주방후드 분해세척</b>이 가능하며 <br />
+              <b>
+                다양한 형태의 주방후드{agent === "mb" ? <br /> : undefined}{" "}
+                분해세척
+              </b>
+              이 가능하며 <br />
               <b>완전분해를 원칙</b>으로 합니다
             </>
           ) : type === "filter" || type === "airfilter" ? (
@@ -18,7 +22,11 @@ function Kind({ type, arr, nav }) {
           ) : (
             <>
               {" "}
-              <b>다양한 형태의 세탁기 분해세척</b>이 가능합니다
+              <b>
+                다양한 형태의 세탁기{agent === "mb" ? <br /> : undefined}{" "}
+                분해세척
+              </b>
+              이 가능합니다
             </>
           )}
         </div>
@@ -36,7 +44,12 @@ function Kind({ type, arr, nav }) {
                   }@3x.png 3x`}
                   alt=""
                 />
-                <div className="title">{item}</div>
+                <div className="title">
+                  {item}
+                  {type === "wash" && idx === 3 ? (
+                    <span>통돌이/드럼</span>
+                  ) : undefined}
+                </div>
               </div>
             );
           })}

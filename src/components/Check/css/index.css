@@ -318,6 +318,20 @@
     width: 436px;
     height: 246px;
   }
+  .birdcheck {
+    height: 730px;
+  }
+  .birdcheck > .pack > .circle-wrapper {
+    -webkit-column-gap: 21px;
+            column-gap: 21px;
+  }
+  .birdcheck > .pack > .check-box {
+    width: 289px;
+    height: 130px;
+  }
+  .birdcheck > .back {
+    height: 580px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -401,10 +415,47 @@
     line-height: 1.6;
     background-color: #addde4;
   }
+  .jointcheck > .pack > .circle-wrapper {
+    -webkit-column-gap: 16px;
+            column-gap: 16px;
+  }
+  .jointcheck > .pack > .title {
+    font-size: 23px;
+  }
+  .jointcheck > .pack > .content {
+    font-size: 23px;
+    white-space: nowrap;
+  }
+  .matcheck > .pack > .title {
+    font-size: 23px;
+  }
+  .matcheck > .pack > .check-box {
+    height: 311px;
+  }
   .filtercheck > .pack > .check-box > .check {
     -ms-grid-rows: 32px 21px 21px 21px 21px;
         grid-template-rows: 32px 21px 21px 21px 21px;
     row-gap: 18px;
+  }
+  .birdcheck {
+    height: 930px;
+  }
+  .birdcheck > .back {
+    height: 782px;
+  }
+  .birdcheck > .pack > .title {
+    font-size: 23px;
+  }
+  .birdcheck > .pack > .circle-wrapper {
+    gap: 16px 38px;
+  }
+  .birdcheck > .pack > .content {
+    margin-top: 94px;
+  }
+  .birdcheck > .pack > .check-box {
+    margin-top: 42px;
+    width: 284px;
+    height: 157px;
   }
 }
 /*# sourceMappingURL=index.css.map */

@@ -113,11 +113,20 @@ left: 48%;
             margin: 12px 0;
            }
        }
+       &>.washservice{
+           width: 620px;
+  height: 299px;
+       }
      }
   }
        .service::after{
 left: 45%;
-}
+}   
+
+
+    .washspack{
+      height: 745px;
+    }
 }
 
 @media screen and (max-width : 767px) {
@@ -174,6 +183,20 @@ z-index: 1;
 bottom: -50px;
 left: 40%;
 }
-
+  .washspack{
+    height: 812px;
+    &>.pack{
+      &>.list{
+        height: 395px;
+        &>.card{
+          width: 272px;
+          align-items: center;
+        }
+        &>.line{
+          margin: 15px 0;
+        }
+      }
+    }
+  }
 
 }

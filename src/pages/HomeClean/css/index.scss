@@ -369,3 +369,108 @@
     }
   }
 }
+
+@media screen and (max-width : 1024px) {
+.homeclean{
+  &>.banner{
+    height: 299px;
+    padding-top: 210px;
+    &>.title{
+      font-size: 30px;
+    }
+  }
+  &>.homecare{
+    height: 881px;
+    &>.pack{
+      padding-top: 105px;
+      &>.title{
+        font-size: 25px;
+      }
+      &>.list{
+        margin-top: 62px;
+        grid-template-columns: repeat(2,344px);
+        grid-template-rows: 190px 201px;
+        gap: 70px 16px;
+        &>.card{
+          height: 100%;
+          padding-top: 60px;
+          &>img{
+            width: 85px;
+            height: 85px;
+            top: -40px;
+          }
+          &>.title{
+            font-size: 18px;
+          }
+          &>.content{
+            text-align: center;
+          }
+          
+        }
+        &>.card:nth-child(2){
+          &>.line{
+            width: 259px;
+          }
+        }
+                &>.card:nth-child(3){
+          &>.line{
+            width: 259px;
+          }
+        }
+              &>.card:nth-child(1){
+          &>.line{
+            width: 196px;
+          }
+        }
+                   &>.card:nth-child(4){
+          &>.line{
+            width: 196px;
+          }
+        }
+      }
+    }
+    &>.back{
+      height: 513px;
+    }
+  }
+}
+
+}
+@media screen and (max-width : 767px) {
+  .homeclean{
+    &>.banner{
+      height: 209px;
+      padding-top: 117px;
+      &>.title{
+        font-size: 23px;
+      }
+    }
+    &>.homecare{
+      height: 1422px;
+      &>.pack{
+        padding-top: 106px;
+       &>.list{
+         grid-template-columns: 320px;
+         grid-template-rows: 164px 192px 192px 228px;
+         row-gap: 66px;
+         &>.card{
+           padding-top: 49px;
+           &>img{
+             width: 73px;
+             height: 73px;
+           }
+           &>.title{
+             font-size: 20px;
+           }
+           &>.line{
+             width: 280px;
+           }
+         }
+       }
+      }
+      &>.back{
+        height: 1169px;
+      }
+    }
+  }
+}

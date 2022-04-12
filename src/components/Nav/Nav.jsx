@@ -53,7 +53,7 @@ function Nav({ now, setnow, navArr, type, agent }) {
             return (
               <button
                 key={idx}
-                className={`${now === idx ? "on" : ""}`}
+                className={`${now === idx ? `on ${type}menu` : ""} menu`}
                 onClick={() => {
                   setnow(idx);
                   setisOpen(!isOpen);

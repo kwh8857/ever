@@ -546,4 +546,100 @@
   width: -moz-fit-content;
   width: fit-content;
 }
+
+@media screen and (max-width: 1024px) {
+  .homeclean > .banner {
+    height: 299px;
+    padding-top: 210px;
+  }
+  .homeclean > .banner > .title {
+    font-size: 30px;
+  }
+  .homeclean > .homecare {
+    height: 881px;
+  }
+  .homeclean > .homecare > .pack {
+    padding-top: 105px;
+  }
+  .homeclean > .homecare > .pack > .title {
+    font-size: 25px;
+  }
+  .homeclean > .homecare > .pack > .list {
+    margin-top: 62px;
+    -ms-grid-columns: (344px)[2];
+        grid-template-columns: repeat(2, 344px);
+    -ms-grid-rows: 190px 201px;
+        grid-template-rows: 190px 201px;
+    gap: 70px 16px;
+  }
+  .homeclean > .homecare > .pack > .list > .card {
+    height: 100%;
+    padding-top: 60px;
+  }
+  .homeclean > .homecare > .pack > .list > .card > img {
+    width: 85px;
+    height: 85px;
+    top: -40px;
+  }
+  .homeclean > .homecare > .pack > .list > .card > .title {
+    font-size: 18px;
+  }
+  .homeclean > .homecare > .pack > .list > .card > .content {
+    text-align: center;
+  }
+  .homeclean > .homecare > .pack > .list > .card:nth-child(2) > .line {
+    width: 259px;
+  }
+  .homeclean > .homecare > .pack > .list > .card:nth-child(3) > .line {
+    width: 259px;
+  }
+  .homeclean > .homecare > .pack > .list > .card:nth-child(1) > .line {
+    width: 196px;
+  }
+  .homeclean > .homecare > .pack > .list > .card:nth-child(4) > .line {
+    width: 196px;
+  }
+  .homeclean > .homecare > .back {
+    height: 513px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .homeclean > .banner {
+    height: 209px;
+    padding-top: 117px;
+  }
+  .homeclean > .banner > .title {
+    font-size: 23px;
+  }
+  .homeclean > .homecare {
+    height: 1422px;
+  }
+  .homeclean > .homecare > .pack {
+    padding-top: 106px;
+  }
+  .homeclean > .homecare > .pack > .list {
+    -ms-grid-columns: 320px;
+        grid-template-columns: 320px;
+    -ms-grid-rows: 164px 192px 192px 228px;
+        grid-template-rows: 164px 192px 192px 228px;
+    row-gap: 66px;
+  }
+  .homeclean > .homecare > .pack > .list > .card {
+    padding-top: 49px;
+  }
+  .homeclean > .homecare > .pack > .list > .card > img {
+    width: 73px;
+    height: 73px;
+  }
+  .homeclean > .homecare > .pack > .list > .card > .title {
+    font-size: 20px;
+  }
+  .homeclean > .homecare > .pack > .list > .card > .line {
+    width: 280px;
+  }
+  .homeclean > .homecare > .back {
+    height: 1169px;
+  }
+}
 /*# sourceMappingURL=index.css.map */

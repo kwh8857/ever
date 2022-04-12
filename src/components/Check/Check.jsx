@@ -44,7 +44,7 @@ function Check({ type, circleArr, checkArr, nav, agent }) {
               style={{
                 gridTemplateColumns: `repeat(${
                   agent === "mb"
-                    ? type === "aircon"
+                    ? type === "aircon" || type === "bird"
                       ? 2
                       : circleArr.length
                     : circleArr.length
@@ -59,7 +59,16 @@ function Check({ type, circleArr, checkArr, nav, agent }) {
                       srcSet={`/assets/product/${img}@2x.png 2x,/assets/product/${img}@3x.png 3x`}
                       alt=""
                     />
-                    <div className="title">{title}</div>
+                    <div
+                      className="title"
+                      style={
+                        title.includes("알레르기") && agent === "mb"
+                          ? { whiteSpace: "pre-wrap" }
+                          : undefined
+                      }
+                    >
+                      {title}
+                    </div>
                   </div>
                 );
               })}
@@ -102,14 +111,19 @@ function Check({ type, circleArr, checkArr, nav, agent }) {
             </>
           ) : type === "mat" ? (
             <>
-              <b>청소 스프레이로만 해결되지 않는 </b> 매트리스
+              <b>
+                청소 스프레이로만 {agent === "mb" ? <br /> : ""}해결되지 않는{" "}
+              </b>{" "}
+              매트리스
             </>
           ) : type === "joint" ? (
             <>
               <b>청소로만 해결되지 않는</b> 줄눈 곰팡이
             </>
           ) : type === "bird" ? (
-            "실외기 비둘기 퇴치의 적절한 시기는"
+            <>
+              실외기 비둘기 퇴치의{agent === "mb" ? <br /> : ""} 적절한 시기는
+            </>
           ) : type === "bug" ? (
             <>
               <b>해충·방역 서비스의 적절한 시기</b>를
@@ -120,7 +134,8 @@ function Check({ type, circleArr, checkArr, nav, agent }) {
           <br />{" "}
           {type === "bird" ? (
             <>
-              <b>발견 초기에 이루어지는게</b> 제일 좋습니다!
+              <b>발견 초기에 이루어지는게</b>
+              {agent === "mb" ? <br /> : ""} 제일 좋습니다!
             </>
           ) : type === "bug" ? (
             "체크해 보세요!"

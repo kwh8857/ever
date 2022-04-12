@@ -143,8 +143,15 @@
   .service > .pack > .list > .line {
     margin: 12px 0;
   }
+  .service > .pack > .washservice {
+    width: 620px;
+    height: 299px;
+  }
   .service::after {
     left: 45%;
+  }
+  .washspack {
+    height: 745px;
   }
 }
 
@@ -206,6 +213,21 @@
     z-index: 1;
     bottom: -50px;
     left: 40%;
+  }
+  .washspack {
+    height: 812px;
+  }
+  .washspack > .pack > .list {
+    height: 395px;
+  }
+  .washspack > .pack > .list > .card {
+    width: 272px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .washspack > .pack > .list > .line {
+    margin: 15px 0;
   }
 }
 /*# sourceMappingURL=index.css.map */

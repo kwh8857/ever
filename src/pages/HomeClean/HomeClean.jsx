@@ -10,7 +10,7 @@ import Slogan from "../../components/Slogan/Slogan";
 import Store from "../../components/Store/Store";
 import Summary from "../../components/Summary/Summary";
 import "./css/index.css";
-function HomeClean() {
+function HomeClean({ agent }) {
   const location = useLocation();
   const [now, setNow] = useState(0);
   useEffect(() => {
@@ -26,7 +26,13 @@ function HomeClean() {
       <div className="banner">
         <div className="title">홈클리닝</div>
       </div>
-      <Nav now={now} setnow={setNow} navArr={navArr} type="home" />
+      <Nav
+        now={now}
+        setnow={setNow}
+        navArr={navArr}
+        type="home"
+        agent={agent}
+      />
       {now === 0 ? (
         <>
           <div className="homecare">
@@ -36,47 +42,67 @@ function HomeClean() {
                 <b>주거공간의 청소</b>는 <br /> 에버퓨리에게 맡겨주세요!
               </div>
               <div className="list">
-                {homeList.map(({ title, content }, idx) => {
-                  return (
-                    <div key={idx} className="card">
-                      <img
-                        src={`/assets/homeclean/homecare${idx + 1}.svg`}
-                        alt=""
-                      />
-                      <b className="title">{title}</b>
-                      <div className="line" />
-                      <div className="content">{content}</div>
-                    </div>
-                  );
-                })}
+                {homeList.map(
+                  ({ title, content, tabletcontent, mbcontent }, idx) => {
+                    return (
+                      <div key={idx} className="card">
+                        <img
+                          src={`/assets/homeclean/homecare${idx + 1}${
+                            agent === "mb" && (idx === 2 || idx === 3)
+                              ? "mb"
+                              : ""
+                          }.svg`}
+                          alt=""
+                        />
+                        <b className="title">{title}</b>
+                        <div className="line" />
+                        <div className="content">
+                          {agent === "tablet" && tabletcontent
+                            ? tabletcontent
+                            : agent === "mb" && mbcontent
+                            ? mbcontent
+                            : content}
+                        </div>
+                      </div>
+                    );
+                  }
+                )}
               </div>
             </div>
             <div className="back" />
           </div>
-          <Point type="home" arr={homePoint} />
+          <Point type="home" arr={homePoint} agent={agent} />
           <Reviews
-            title="주거공간 청소는 에버퓨리에 믿고 맡기세요!"
+            title={`주거공간 청소는
+에버퓨리에 믿고 맡기세요!`}
             sub={`신축입주청소·이사청소·인테리어 청소·외창/외벽청소 등
 오랫동안 깨끗하게 유지할 수 있는 전문 클리닝입니다.`}
-            arr={[0, 0, 0, 0, 0, 0, 0, 0]}
+            arr={[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]}
             type="home"
             nav="homeclean"
+            agent={agent}
           />
-          <Store />
+          <Store agent={agent} />
         </>
       ) : now === 1 ? (
         <>
-          <Summary type="mat" nav="homeclean" />
+          <Summary type="mat" nav="homeclean" agent={agent} />
           <Check
             type="mat"
             circleArr={homeCheck}
             checkArr={[0, 0, 0, 0, 0, 0]}
             nav="homeclean"
+            agent={agent}
           />
-          <CareOne type="mat" cleanArr={matClean} nav="homeclean" />
-          <Slogan type="mat" nav="homeclean" />
-          <CareTwo type="mat" arr={matCare02} nav="homeclean" />
-          <Point type="aircon" arr={pointArr} />
+          <CareOne
+            type="mat"
+            cleanArr={matClean}
+            nav="homeclean"
+            agent={agent}
+          />
+          <Slogan type="mat" nav="homeclean" agent={agent} />
+          <CareTwo type="mat" arr={matCare02} nav="homeclean" agent={agent} />
+          <Point type="aircon" arr={pointArr} agent={agent} />
           <div className="matservice">
             <div className="pack">
               <div className="title-wrapper">
@@ -114,22 +140,34 @@ function HomeClean() {
             arr={[0, 0, 0, 0, 0, 0, 0, 0]}
             type="mat"
             nav="homeclean"
+            agent={agent}
           />
-          <Store />
+          <Store agent={agent} />
         </>
       ) : now === 2 ? (
         <>
-          <Summary type="joint" nav="homeclean" />
+          <Summary type="joint" nav="homeclean" agent={agent} />
           <Check
             type="joint"
             circleArr={jointCheck}
             checkArr={[0, 0, 0, 0, 0]}
             nav="homeclean"
+            agent={agent}
           />
-          <CareOne type="joint" cleanArr={jointClean} nav="homeclean" />
-          <Slogan type="joint" nav="homeclean" />
-          <CareTwo type="joint" arr={jointCare02} nav="homeclean" />
-          <Point type="joint" arr={jointpointArr} />
+          <CareOne
+            type="joint"
+            cleanArr={jointClean}
+            nav="homeclean"
+            agent={agent}
+          />
+          <Slogan type="joint" nav="homeclean" agent={agent} />
+          <CareTwo
+            type="joint"
+            arr={jointCare02}
+            nav="homeclean"
+            agent={agent}
+          />
+          <Point type="joint" arr={jointpointArr} agent={agent} />
           <div className="jointservice">
             <div className="pack">
               <b className="category">EVERPURI SERVICE</b>
@@ -214,22 +252,29 @@ function HomeClean() {
             arr={[0, 0, 0, 0, 0, 0, 0, 0]}
             type="joint"
             nav="homeclean"
+            agent={agent}
           />
-          <Store />
+          <Store agent={agent} />
         </>
       ) : now === 3 ? (
         <>
-          <Summary type="bird" nav="homeclean" />
+          <Summary type="bird" nav="homeclean" agent={agent} />
           <Check
             type="bird"
             circleArr={birdCheck}
             checkArr={[0, 0]}
             nav="homeclean"
+            agent={agent}
           />
-          <CareOne type="bird" cleanArr={birdClean} nav="homeclean" />
-          <Slogan type="bird" nav="homeclean" />
-          <CareTwo type="bird" arr={birdCare02} nav="homeclean" />
-          <Point type="bird" arr={birdpointArr} />
+          <CareOne
+            type="bird"
+            cleanArr={birdClean}
+            nav="homeclean"
+            agent={agent}
+          />
+          <Slogan type="bird" nav="homeclean" agent={agent} />
+          <CareTwo type="bird" arr={birdCare02} nav="homeclean" agent={agent} />
+          <Point type="bird" arr={birdpointArr} agent={agent} />
           <div className="birdservice">
             <div className="pack">
               <b className="category">EVERPURI SERVICE</b>
@@ -284,29 +329,37 @@ function HomeClean() {
             arr={[0, 0, 0, 0, 0, 0, 0, 0]}
             type="bird"
             nav="homeclean"
+            agent={agent}
           />
-          <Store />
+          <Store agent={agent} />
         </>
       ) : (
         <>
-          <Summary type="bug" nav="homeclean" />
+          <Summary type="bug" nav="homeclean" agent={agent} />
           <Check
             type="bug"
             circleArr={bugCheck}
             checkArr={[0, 0, 0]}
             nav="homeclean"
+            agent={agent}
           />
-          <CareOne type="bug" cleanArr={birdClean} nav="homeclean" />
-          <Slogan type="bug" nav="homeclean" />
-          <CareTwo type="bug" arr={bugCare02} nav="homeclean" />
-          <Point type="hood" arr={bugpoint} />
+          <CareOne
+            type="bug"
+            cleanArr={birdClean}
+            nav="homeclean"
+            agent={agent}
+          />
+          <Slogan type="bug" nav="homeclean" agent={agent} />
+          <CareTwo type="bug" arr={bugCare02} nav="homeclean" agent={agent} />
+          <Point type="hood" arr={bugpoint} agent={agent} />
           <Reviews
             title="해충·방역 서비스는 에버퓨리에 믿고 맡기세요!"
             arr={[0, 0, 0, 0, 0, 0, 0, 0]}
             type="bird"
             nav="homeclean"
+            agent={agent}
           />
-          <Store />
+          <Store agent={agent} />
         </>
       )}
     </main>
@@ -328,13 +381,20 @@ const homePoint = [
     bold: "CS마스터 운영",
     content: `전문 교육을 이수받은 에버퓨리
 CS마스터 팀장이 직접 방문 및 케어`,
+    tabletcontent: `전문 교육을 이수받은 
+에버퓨리 CS마스터 팀장이 
+직접 방문 및 케어`,
   },
   {
     img: "point-2",
-    title: "연구개발 전담부서 인증과",
+    title: `연구개발 전담부서
+인증과`,
     bold: "다수의 특허",
     content: `연구개발 전담부서 인증을 획득하고 검증된
     친환경세정제와 장비만을 사용`,
+    tabletcontent: `연구개발 전담부서 인증을 
+획득하고 검증된 친환경세정제와 
+장비만을 사용`,
   },
   {
     img: "point-4",
@@ -342,6 +402,9 @@ CS마스터 팀장이 직접 방문 및 케어`,
     bold: "혼을 담은",
     content: `매월 1회 CS교육과 친절한 교육을 통한 
 양질의 CS마스터 팀장을 양성`,
+    tabletcontent: `매월 1회 CS교육과 친절한
+교육을 통한 양질의 CS마스터 
+팀장을 양성`,
   },
 ];
 const bugpoint = [
@@ -384,6 +447,9 @@ const homeList = [
     content: `아파트나 빌라 등 인테리어 공사 후의 실내 청소를 말하며, 
 공사시 발생한 먼지, 오염, 시멘트가루 등의 제거를 위해 
 구석구석 세밀하게 청소하는 서비스`,
+    mbcontent: `아파트나 빌라 등 인테리어 공사 후의 실내청소를 
+말하며, 공사시 발생한 먼지, 오염, 시멘트가루 등의 
+제거를 위해 구석구석 세밀하게 청소하는 서비스`,
   },
   {
     title: "외창ㆍ외벽 청소",
@@ -391,21 +457,41 @@ const homeList = [
 대리석·화강석·알루미늄·황동·목재 등으로 분류하여 오염원을 
 분석 후, 각 재질의 특성에 적합한 약품 및 세제를 이용하여 
 세척하는 전문적인 서비스`,
+    tabletcontent: `건축물의 외벽을 유리·석재·금속·목조타일·벽돌
+콘크리트·대리석·화강석·알루미늄·황동·목재 등으로 
+분류하여 오염원을 분석 후, 각 재질의 특성에 적합한 
+약품 및 세제를 이용하여 세척하는 전문적인 서비스`,
+    mbcontent: `건축물의 외벽을 유리·석재·금속·목조타일·벽돌
+콘크리트·대리석·화강석·알루미늄·황동·목재 등으로 
+분류하여 오염원을 분석 후, 각 재질의 특성에 적합한 
+약품 및 세제를 이용하여 세척하는 전문적인 서비스`,
   },
 ];
 const homeCheck = [
   { img: "germ", title: "각종 세균 번식" },
-  { img: "itching", title: "알레르기성 질환 유발" },
+  {
+    img: "itching",
+    title: `알레르기성
+질환 유발`,
+  },
   { img: "kid", title: "호흡기 질환 영향" },
 ];
 const jointCheck = [
   { img: "germ", title: "각종 세균 번식" },
-  { img: "cold", title: "알레르기성 질환 유발" },
+  {
+    img: "itching",
+    title: `알레르기성
+질환 유발`,
+  },
   { img: "illness", title: "호흡기 질환 영향" },
 ];
 const birdCheck = [
   { img: "germ", title: "각종 세균 번식" },
-  { img: "cold", title: "알레르기성 질환 유발" },
+  {
+    img: "cold",
+    title: `알레르기성
+질환 유발`,
+  },
   { img: "illness", title: "호흡기 질환 영향" },
   { img: "bird", title: "실외기 부식" },
 ];
@@ -511,6 +597,7 @@ const matCare02 = [
   },
   {
     img: "/assets/homeclean/care2-4.svg",
+
     title: `집먼지
 진드기 사체 제거`,
     sub: `눈에 보이지 않는 깊숙한

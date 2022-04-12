@@ -140,6 +140,13 @@
   .review > .back {
     height: 319px;
   }
+  .homere {
+    height: 838px;
+    padding-top: 50px;
+  }
+  .homere > .back {
+    height: 400px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -176,6 +183,22 @@
   }
   .review > .back {
     height: 429px;
+  }
+  .homere {
+    height: 1400px;
+  }
+  .homere > .pack > .sub {
+    font-size: 13px;
+  }
+  .homere > .back {
+    height: 560px;
+  }
+  .washre > .pack > .title > .right, .filterre > .pack > .title > .right {
+    top: -25px;
+  }
+  .washre > .pack > .title > .left, .filterre > .pack > .title > .left {
+    top: -20px;
+    left: -20px;
   }
 }
 /*# sourceMappingURL=index.css.map */

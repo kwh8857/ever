@@ -20,16 +20,27 @@ function CareTwo({ type, arr, nav, agent }) {
             ? "비둘기"
             : type === "bug"
             ? "해충·방역"
+            : type === "air"
+            ? "공기청정기"
             : ""}{" "}
           <b>
             {type === "filter" ? (
-              "필터 교체의 중요성"
+              agent === "mb" ? (
+                <>
+                  <br />
+                  필터 교체 중요성
+                </>
+              ) : (
+                <> 필터 교체의 중요성</>
+              )
             ) : type === "joint" ? (
               "시공의 중요성"
             ) : type === "bird" ? (
               "퇴치의 효과"
             ) : type === "bug" ? (
               "서비스의 효과"
+            ) : type === "air" ? (
+              <b> 케어의 중요성</b>
             ) : agent === "mb" ? (
               <>
                 분해
@@ -49,9 +60,11 @@ function CareTwo({ type, arr, nav, agent }) {
             </>
           ) : type === "wash" ? (
             <>
-              영유아가 있는 집에서는 주기적으로 1년에 1~2회 케어를 받는 것이{" "}
-              <br />
-              알레르기나 아토피로부터 아이를 보호할 수 있는 방법입니다
+              영유아가 있는 집에서는 주기적으로 1년에
+              {agent === "mb" ? <br /> : undefined} 1~2회 케어를 받는 것이{" "}
+              {agent !== "mb" ? <br /> : undefined}
+              알레르기나 아토피로부터 {agent === "mb" ? <br /> : undefined}{" "}
+              아이를 보호할 수 있는 방법입니다
             </>
           ) : type === "mat" ? (
             <>

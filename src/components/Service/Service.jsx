@@ -2,7 +2,7 @@ import React from "react";
 import "./css/index.css";
 function Service({ type, agent }) {
   return (
-    <div className="service">
+    <div className={`service ${type}spack`}>
       <div className="pack">
         <div className="category">EVERPURI SERVICE</div>
         <div className="title">
@@ -67,7 +67,8 @@ function Service({ type, agent }) {
                 </>
               ) : (
                 <>
-                  <b>고압세척·고온스팀 살균</b> 시스템으로 진행됩니다.
+                  <b>고압세척·고온스팀 살균</b>
+                  {agent === "mb" ? <br /> : undefined} 시스템으로 진행됩니다.
                 </>
               )}
             </span>

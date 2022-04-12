@@ -1,7 +1,6 @@
 import React from "react";
 import "./css/index.css";
 function Reviews({ title, sub, arr, type, nav, agent }) {
-  console.log(agent);
   return (
     <div className={`review ${nav}nv ${type}re`}>
       <div className="back" />
@@ -50,10 +49,14 @@ function Reviews({ title, sub, arr, type, nav, agent }) {
           {arr.map((item, idx) => {
             return (
               <img
-                src={`/assets/${nav}/${type}-review${idx + 1}.png`}
+                src={`/assets/${nav}/${type}-review${
+                  type !== "home" ? idx + 1 : 1
+                }.png`}
                 srcSet={`/assets/${nav}/${type}-review${
-                  idx + 1
-                }@2x.png 2x,/assets/${nav}/${type}-review${idx + 1}@3x.png 3x`}
+                  type !== "home" ? idx + 1 : 1
+                }@2x.png 2x,/assets/${nav}/${type}-review${
+                  type !== "home" ? idx + 1 : 1
+                }@3x.png 3x`}
                 key={idx}
                 alt=""
               />
