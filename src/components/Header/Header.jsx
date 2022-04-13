@@ -9,7 +9,7 @@ function Header({ agent }) {
   useEffect(() => {
     const root = document.getElementById("root");
     function change() {
-      if (root.scrollTop > 110) {
+      if (root.scrollTop > 50) {
         if (!isback) {
           setIsback(true);
         }

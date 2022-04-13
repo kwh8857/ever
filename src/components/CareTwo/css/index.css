@@ -494,6 +494,9 @@
   .bugtwo > .pack > .list > .card > .title {
     white-space: pre-wrap;
   }
+  .bugtwo > .pack > .list > .card > .sub {
+    text-align: center;
+  }
   .airfiltertwo {
     height: 1376px;
   }

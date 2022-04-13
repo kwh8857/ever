@@ -671,6 +671,29 @@
   .partner > .section2 > .pack > div > .img-wrapper {
     width: 110%;
     overflow-x: scroll;
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+  }
+  .partner > .section2 > .pack > div > .img-wrapper::-webkit-scrollbar {
+    display: none;
+  }
+  .partner > .section2 > .pack > div > .scroll-wrapper {
+    overflow: hidden;
+    width: 320px;
+    height: 3px;
+    background-color: #e0e0e0;
+    margin-top: 23px;
+    position: relative;
+  }
+  .partner > .section2 > .pack > div > .scroll-wrapper > .bar {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 112px;
+    height: 100%;
+    background-color: black;
   }
   .partner > .section2 > .pack > .one > .title {
     font-size: 25px;

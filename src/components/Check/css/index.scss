@@ -272,6 +272,11 @@
   &>.content{
     font-size: 16px;
     line-height: 2.56;
+    &>b{
+      &>.back{
+        height: 10px;
+      }
+    }
   }
      }
    }
@@ -435,7 +440,10 @@
           }
           &>.filter-first{
             line-height: 1.6;
-                  background-color: rgb(173, 221, 228);
+            &>.two{
+              width: 130px;
+              top: 12px;
+            }
           }
         }
       }

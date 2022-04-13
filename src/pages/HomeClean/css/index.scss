@@ -72,6 +72,7 @@
           &>.title{
             font-size: 23px;
           }
+
           &>.line{
             width: 256px;
             height: 1px;
@@ -80,9 +81,16 @@
             margin-bottom: 14px;
           }
           &>.content{
+            text-align: center;
             font-size: 13px;
             line-height: 1.46;
             white-space: pre-line;
+          }
+        }
+        &>.card:nth-child(4){
+          padding-top: 87px;
+          &>.line{
+            margin:8px 0;
           }
         }
       }
@@ -200,6 +208,7 @@
         column-gap: 15px;
         &>.card{
           height: 400px;
+          background-color: #e0e0e0;
           &>.card-head{
             width: 100%;
             height: 81px;
@@ -356,6 +365,7 @@
             
           }
           &>.img-wrapper{
+            background-color: white;
             height: 253px;
             display: flex;
             align-items: center;
@@ -405,27 +415,14 @@
           &>.content{
             text-align: center;
           }
-          
-        }
-        &>.card:nth-child(2){
           &>.line{
             width: 259px;
-          }
-        }
-                &>.card:nth-child(3){
-          &>.line{
-            width: 259px;
-          }
-        }
-              &>.card:nth-child(1){
-          &>.line{
-            width: 196px;
           }
         }
                    &>.card:nth-child(4){
-          &>.line{
-            width: 196px;
-          }
+          
+          padding-top: 60px;
+
         }
       }
     }
@@ -526,6 +523,7 @@
           &>.img-wrapper{
             height: 182px;
             &>img{
+              width: fit-content;
               height: 127px;
             }
           }
@@ -563,8 +561,32 @@
              font-size: 20px;
            }
            &>.line{
+             margin: 12px 0;
              width: 280px;
            }
+         }
+         &>.card:nth-child(1){
+          &>.line{
+             margin: 12px 0;
+          }
+         }
+                  &>.card:nth-child(2){
+             &>.line{
+                      margin: 11px 0 9.5px 0;
+             }
+           
+         }
+                  &>.card:nth-child(3){
+                &>.line{
+                      margin: 13px 0 9.5px 0;
+                }
+           
+         }
+          &>.card:nth-child(4){
+                &>.line{
+                      margin: 11px 0 15px 0;
+                }
+           
          }
        }
       }
@@ -691,8 +713,31 @@
              height: 194px;
              &>.img-wrapper{
                height: 143px;
+               
                &>img{
                  height: 101px;
+                 
+               }
+             }
+           }
+           &>.card:nth-child(1){
+             &>.img-wrapper{
+               &>img{
+                 width: 101px;
+               }
+             }
+           }
+               &>.card:nth-child(2){
+             &>.img-wrapper{
+               &>img{
+                 width: 101px;
+               }
+             }
+           }
+                    &>.card:nth-child(3){
+             &>.img-wrapper{
+               &>img{
+                 width: 262px;
                }
              }
            }

@@ -34,16 +34,20 @@ function Kind({ type, arr, nav, agent }) {
           {arr.map((item, idx) => {
             return (
               <div key={idx} className="card">
-                <img
-                  className="circle"
-                  src={`/assets/product/kind-${type}${idx + 1}.png`}
-                  srcSet={`/assets/product/kind-${type}${
-                    idx + 1
-                  }@2x.png 2x , /assets/product/kind-${type}${
-                    idx + 1
-                  }@3x.png 3x`}
-                  alt=""
-                />
+                {type !== "wash" ? (
+                  <img
+                    className="circle"
+                    src={`/assets/product/kind-${type}${idx + 1}.png`}
+                    srcSet={`/assets/product/kind-${type}${
+                      idx + 1
+                    }@2x.png 2x , /assets/product/kind-${type}${
+                      idx + 1
+                    }@3x.png 3x`}
+                    alt=""
+                  />
+                ) : (
+                  <div className="circle" />
+                )}
                 <div className="title">
                   {item}
                   {type === "wash" && idx === 3 ? (

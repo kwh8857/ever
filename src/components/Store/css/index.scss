@@ -15,7 +15,8 @@
         margin-top: 37px;
         display: grid;
         row-gap: 17px;
-        &>button{
+        &>a{
+          color: black;
           cursor: pointer;
             width: 436px;
   height: 63px;
@@ -30,6 +31,9 @@
     &>.left{
       display: flex;
       align-items: center;
+      &>.naver{
+       height: 40px;
+      }
        &>.img-wrapper{
      width: 48px;
      text-align: center;
@@ -51,7 +55,7 @@
     &>.pack{
       font-size: 30px;
       &>.button-wrapper{
-        &>button{
+        &>a{
            width: 391px;
   height: 55px;
          font-size: 20px;
@@ -86,13 +90,14 @@
         &>.button-wrapper{
           margin-top: 33px;
           row-gap: 25px;
-          &>button{
+          &>a{
             width: 100%;
             height: 55px;
             font-size: 18px;
             white-space: nowrap;
             &>.left{
               &>.img-wrapper{
+                height: 36px;
                 width: 36px;
                 margin-right: 13px;
               }

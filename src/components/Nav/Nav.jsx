@@ -1,10 +1,11 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import "./css/index.css";
 function Nav({ now, setnow, navArr, type, agent }) {
+  const barRef = useRef(null);
   const [isOpen, setisOpen] = useState(false);
   return (
-    <div className="nav">
-      <div className="wrapper">
+    <div className={`nav`}>
+      <div className={`wrapper ${type}grid`}>
         {agent !== "mb" ? (
           <>
             {navArr.map((item, idx) => {
@@ -12,8 +13,10 @@ function Nav({ now, setnow, navArr, type, agent }) {
                 <button
                   key={idx}
                   className={`${now === idx ? "on" : ""}`}
-                  onClick={() => {
+                  onClick={(e) => {
                     setnow(idx);
+                    barRef.current.style.width = `${e.target.offsetWidth}px`;
+                    barRef.current.style.left = `${e.target.offsetLeft}px`;
                   }}
                 >
                   {item}
@@ -21,8 +24,9 @@ function Nav({ now, setnow, navArr, type, agent }) {
               );
             })}
             <div
+              ref={barRef}
               className={`bar ${type}color`}
-              style={{ left: `${now * 140}px` }}
+              // style={{ left: `${now * 140}px` }}
             />
           </>
         ) : (
@@ -48,13 +52,13 @@ function Nav({ now, setnow, navArr, type, agent }) {
         )}
       </div>
       {agent === "mb" ? (
-        <div className={`nav-wrapper ${isOpen ? "open" : ""}`}>
+        <div className={`nav-wrapper ${isOpen ? `open ${type}op` : ""} `}>
           {navArr.map((item, idx) => {
             return (
               <button
                 key={idx}
                 className={`${now === idx ? `on ${type}menu` : ""} menu`}
-                onClick={() => {
+                onClick={(e) => {
                   setnow(idx);
                   setisOpen(!isOpen);
                 }}

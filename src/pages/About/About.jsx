@@ -17,7 +17,13 @@ function About({ agent }) {
 
   return (
     <main className="about">
-      <Nav now={now} setnow={setnow} navArr={navArr} agent={agent} />
+      <Nav
+        now={now}
+        setnow={setnow}
+        navArr={navArr}
+        agent={agent}
+        type="about"
+      />
       {now === 0 ? (
         <div className="ceo">
           <div className="section1">

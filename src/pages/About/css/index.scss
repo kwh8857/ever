@@ -543,6 +543,7 @@
   .about{
     &>.ceo{
       &>.section1{
+        background-color: white;
         height: 395px;
         display: flex;
         flex-direction: column;
@@ -567,6 +568,7 @@
         }
       }
       &>.section2{
+        background-color: white;
         height: 1831px;
         &>.pack{
           &>.list{

@@ -7,7 +7,9 @@ function Map({ agent }) {
       .then(() => {
         alert("주소가 복사되었습니다");
       })
-      .catch(() => {});
+      .catch((e) => {
+        console.log(e);
+      });
   }, []);
   return (
     <div className="map">

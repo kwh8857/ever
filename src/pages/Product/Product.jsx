@@ -94,26 +94,27 @@ function Product({ agent }) {
                   <div className="content">
                     <div className="title">스탠드 에어컨</div>
                     <div className="subject two">
-                      <div className="left">
+                      <div className="left short">
                         <b>일반형</b>
                         <span>10평 이하</span>
                       </div>
 
-                      <div className="right">
+                      <div className="right short">
                         <b>스마트</b>
                         <span>2012년 이후 무풍형 2구</span>
                       </div>
                     </div>
                     <div className="width-line" />
-                    <div className="subject one lux">
+                    <div className="subject one lux short">
                       <b>고급형</b>
                       <span>
-                        무풍형 3구ㆍ 삼성 무풍 갤러리ㆍ LG 듀얼 에어컨
+                        무풍형 3구ㆍ 삼성 무풍 갤러리
+                        {agent !== "mb" ? "ㆍ" : ""} LG 듀얼 에어컨
                       </span>
                     </div>
                     <div className="width-line" />
                     <div className="subject two">
-                      <div className="left">
+                      <div className="left ">
                         <b>업소일반</b>
                         <span>50평 이하</span>
                       </div>
@@ -742,7 +743,8 @@ CS마스터 팀장이 직접 방문 및 케어`,
   },
   {
     img: "point-2",
-    title: "연구개발 전담부서 인증과",
+    title: `연구개발 전담부서
+인증과`,
     bold: "다수의 특허",
     content: `연구개발 전담부서 인증을 획득하고 
 검증된 친환경세정제와 장비만을 사용`,

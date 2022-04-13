@@ -261,6 +261,9 @@
     height: 53px;
     padding-left: 24px;
   }
+  .product > .aircon > .section8 > .pack > .list > .card > .content .short > b, .product > .aircon > .section8 > .pack > .list > .card > .content .lux > b {
+    margin-right: 33px !important;
+  }
   .product > .aircon > .section8 > .pack > .list > .card > .content > .two {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

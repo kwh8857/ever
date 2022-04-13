@@ -295,6 +295,9 @@
     font-size: 16px;
     line-height: 2.56;
   }
+  .check-section > .pack > .check-box > .content > b > .back {
+    height: 10px;
+  }
   .washcheck > .pack > .check-box {
     width: 407px;
     height: 170px;
@@ -436,7 +439,10 @@
   }
   .hoodcheck > .pack > .check-box > .content > .filter-first, .aircheck > .pack > .check-box > .content > .filter-first, .filtercheck > .pack > .check-box > .content > .filter-first, .airfiltercheck > .pack > .check-box > .content > .filter-first {
     line-height: 1.6;
-    background-color: #addde4;
+  }
+  .hoodcheck > .pack > .check-box > .content > .filter-first > .two, .aircheck > .pack > .check-box > .content > .filter-first > .two, .filtercheck > .pack > .check-box > .content > .filter-first > .two, .airfiltercheck > .pack > .check-box > .content > .filter-first > .two {
+    width: 130px;
+    top: 12px;
   }
   .jointcheck > .pack > .circle-wrapper {
     -webkit-column-gap: 16px;

@@ -18,6 +18,7 @@
 }
 
 .main .section2 {
+  background-color: white;
   width: 100%;
   height: 864px;
   padding-top: 206px;
@@ -35,6 +36,9 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  opacity: 0;
+  -webkit-transform: translate3d(0, 5%, 0);
+          transform: translate3d(0, 5%, 0);
 }
 
 .main .section2 > .pack > .left {
@@ -116,6 +120,9 @@
 }
 
 .main .section3 > .pack > .wrapper > .card {
+  opacity: 0;
+  -webkit-transform: translate3d(0, 6%, 0);
+          transform: translate3d(0, 6%, 0);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -186,9 +193,6 @@
 
 .main .section3 > .pack > .wrapper > .card > .content > .category > div > img {
   height: 31px;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
   margin-bottom: 6px;
 }
 
@@ -279,6 +283,7 @@
   font-weight: 500;
   margin-top: 7px;
   margin-bottom: 24px;
+  white-space: nowrap;
 }
 
 .main .section4 > .pack > .nav-wrapper > .card > .btn-wrapper {
@@ -671,7 +676,7 @@
     height: 38.6px;
   }
   .main > .section4 {
-    height: 1430px;
+    height: 1600px;
     padding-top: 82px;
   }
   .main > .section4 > .pack > .title {
@@ -689,6 +694,7 @@
   }
   .main > .section4 > .pack > .nav-wrapper > .card > .sub {
     font-size: 13px;
+    white-space: pre-wrap;
   }
   .main > .section4 > .pack > .nav-wrapper > .card > .btn-wrapper {
     width: 100%;

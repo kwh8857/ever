@@ -283,6 +283,7 @@ function Check({ type, circleArr, checkArr, nav, agent }) {
                     교체해주는 것
                   </span>
                   <span className="back" />
+                  <span className="back two"></span>
                 </b>
                 이 제일 좋습니다
                 <br />
@@ -414,8 +415,9 @@ function Check({ type, circleArr, checkArr, nav, agent }) {
             ) : type === "airfilter" ? (
               <>
                 <b className="filter-first">
-                  <span>6개월~1년에 한번씩 {agent === "mb" ? <br /> : ""}</span>
+                  <span>6개월~1년에 한번씩 </span>
                   <span className="back" />
+                  {agent === "mb" ? <br /> : ""}
                 </b>
                 교체해주는 것이 제일 좋습니다
                 <br />

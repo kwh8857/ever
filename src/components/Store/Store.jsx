@@ -14,7 +14,7 @@ function Store({ agent }) {
           만나보세요
         </div>
         <div className="button-wrapper">
-          <button>
+          <a href="https://smartstore.naver.com/everpuri" target={"_blank"}>
             <div className="left">
               <div className="img-wrapper naver">
                 <img src="/assets/common/smartstore.svg" alt="" />
@@ -24,8 +24,11 @@ function Store({ agent }) {
               </span>
             </div>
             <img src="/assets/common/greyarrow.svg" alt="" />
-          </button>
-          <button>
+          </a>
+          <a
+            href="https://store.coupang.com/vp/vendors/A00479925/products?vendorName=%EC%A3%BC%EC%8B%9D%ED%9A%8C%EC%82%AC+%EC%97%90%EB%B2%84%ED%93%A8%EB%A6%AC&productId=5985589977&outboundShippingPlaceId=4563061"
+            target={"_blank"}
+          >
             <div className="left">
               <div className="img-wrapper">
                 <img src="/assets/common/coupang.svg" alt="" />
@@ -35,7 +38,7 @@ function Store({ agent }) {
               </span>
             </div>
             <img src="/assets/common/greyarrow.svg" alt="" />
-          </button>
+          </a>
         </div>
       </div>
     </div>

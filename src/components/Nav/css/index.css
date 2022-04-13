@@ -64,6 +64,23 @@
   font-weight: bold;
 }
 
+.nav > .businessgrid {
+  display: -ms-grid;
+  display: grid;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+  -ms-grid-columns: 81px 92px 171px 135px;
+      grid-template-columns: 81px 92px 171px 135px;
+}
+
+.nav > .businessgrid > button {
+  width: 100%;
+}
+
+.nav > .businessgrid > .bar {
+  width: 81px;
+}
+
 @media screen and (max-width: 1024px) {
   .nav {
     height: 50px;
@@ -98,6 +115,15 @@
     position: absolute;
     right: 21px;
     width: 18px;
+  }
+  .nav > .businessgrid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-column-gap: unset;
+            column-gap: unset;
+    -ms-grid-columns: unset;
+        grid-template-columns: unset;
   }
   .nav > .nav-wrapper {
     -webkit-transition: 0.3s ease-in-out;
@@ -134,6 +160,12 @@
     height: 324px;
     padding-top: 34px;
     padding-bottom: 46px;
+  }
+  .nav > .businessop {
+    height: 270px;
+  }
+  .nav > .aboutop, .nav .partnerop {
+    height: 150px;
   }
 }
 /*# sourceMappingURL=index.css.map */

@@ -31,7 +31,12 @@ function Point({ type, arr, agent }) {
                   style={
                     type === "wash" && idx === 2
                       ? {
-                          marginTop: "44px",
+                          marginTop:
+                            agent === "pc"
+                              ? "44px"
+                              : agent === "tablet"
+                              ? "35px"
+                              : "30px",
                         }
                       : undefined
                   }

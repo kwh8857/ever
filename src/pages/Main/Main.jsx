@@ -1,12 +1,25 @@
-import React from "react";
+import React, { useCallback } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import Floating from "../../components/Floating/Floating";
 import Sponsor from "../../components/Sponsor/Sponsor";
 import Store from "../../components/Store/Store";
 import Tel from "../../components/Tel/Tel";
 import "./css/index.css";
+import Card from "./transition/Card";
+import Section2 from "./transition/Section2";
 function Main({ agent }) {
   const navigate = useNavigate();
+  const handleScroll = useCallback(([entry], dom) => {
+    const { current } = dom;
+    if (current && entry.isIntersecting) {
+      current.style.transitionProperty = "opacity ,transform";
+      current.style.transitionDuration = "0.7s";
+      current.style.transitionTimingFunction = "ease";
+      current.style.transitionDelay = `0.3s`;
+      current.style.opacity = "1";
+      current.style.transform = "translate3d(0, 0, 0)";
+    }
+  }, []);
   return (
     <main className="main">
       <Floating agent={agent} />
@@ -17,47 +30,7 @@ function Main({ agent }) {
           <b> 에버퓨리</b>
         </div>
       </div>
-      <div className="section2">
-        <div className="pack">
-          {agent === "mb" ? (
-            <img
-              className="right"
-              src="/assets/main/section2.png"
-              srcSet="/assets/main/section2@2x.png 2x , /assets/main/section2@3x.png 3x"
-              alt=""
-            />
-          ) : undefined}
-          <div className="left">
-            <span className="title">
-              <b>
-                EVER PURI <br /> CARE SERVICE
-              </b>
-            </span>
-            <span className="sub">
-              <b>관공서·기업·학교·의료복지시설 건물관리</b>와 <br />
-              <b>에어컨 유지 보수 관리</b>를 책임지고 맡고 있으며, <br />
-              <b>가정집 홈케어 서비스를 전문</b>으로 <br /> 고객감동을 실현할
-              것을 약속드립니다.
-            </span>
-            <button
-              onClick={() => {
-                navigate("/about", { state: 2 });
-              }}
-            >
-              <span>회사소개</span>
-              <img src="/assets/common/rightarrow.svg" alt="바로가기" />
-            </button>
-          </div>
-          {agent !== "mb" ? (
-            <img
-              className="right"
-              src="/assets/main/section2.png"
-              srcSet="/assets/main/section2@2x.png 2x , /assets/main/section2@3x.png 3x"
-              alt=""
-            />
-          ) : undefined}
-        </div>
-      </div>
+      <Section2 agent={agent} handleScroll={handleScroll} />
       <div className="section3">
         <div className="pack">
           <span className="title">
@@ -65,89 +38,15 @@ function Main({ agent }) {
             에버퓨리를 만나보세요
           </span>
           <section className="wrapper">
-            {section3_layout.map(({ title, sub, img, link, category }, idx) => {
+            {section3_layout.map((item, idx) => {
               return (
-                <div key={idx} className="card">
-                  <img
-                    src={`/assets/main/${img}.png`}
-                    srcSet={`/assets/main/${img}@2x.png 2x , /assets/main/${img}@3x.png 3x`}
-                    alt=""
-                  />
-                  <div className="content">
-                    <span className="title">
-                      <b>{title}</b>
-                    </span>
-                    <span className="sub">{sub}</span>
-                    <div
-                      className="category"
-                      style={{
-                        gridTemplateColumns: `repeat(${category.length},${
-                          agent === "pc" ? 60 : 32
-                        }px)`,
-                      }}
-                    >
-                      {agent === "mb" && idx === 1 ? (
-                        <>
-                          <div className="top">
-                            <div>
-                              <img
-                                src={`/assets/main/${category[0].type}.svg`}
-                                alt={category[0].type}
-                              />
-                              <div>{category[0].title}</div>
-                            </div>
-                            <div>
-                              <img
-                                src={`/assets/main/${category[1].type}.svg`}
-                                alt={category[1].type}
-                              />
-                              <div>{category[1].title}</div>
-                            </div>
-                          </div>
-                          <div className="bottom">
-                            <div>
-                              <img
-                                src={`/assets/main/${category[2].type}.svg`}
-                                alt={category[2].type}
-                              />
-                              <div>{category[2].title}</div>
-                            </div>{" "}
-                            <div>
-                              <img
-                                src={`/assets/main/${category[3].type}.svg`}
-                                alt={category[3].type}
-                              />
-                              <div>{category[3].title}</div>
-                            </div>{" "}
-                            <div>
-                              <img
-                                src={`/assets/main/${category[4].type}.svg`}
-                                alt={category[4].type}
-                              />
-                              <div>{category[4].title}</div>
-                            </div>
-                          </div>
-                        </>
-                      ) : (
-                        category.map(({ type, title }, idx) => {
-                          return (
-                            <div key={idx}>
-                              <img
-                                src={`/assets/main/${type}.svg`}
-                                alt={type}
-                              />
-                              <span>{title}</span>
-                            </div>
-                          );
-                        })
-                      )}
-                    </div>
-                    <a href={link} className="btn">
-                      <span>자세히보기</span>
-                      <img src="/assets/common/rightarrow.svg" alt="이동" />
-                    </a>
-                  </div>
-                </div>
+                <Card
+                  key={idx}
+                  data={item}
+                  agent={agent}
+                  idx={idx}
+                  handleScroll={handleScroll}
+                />
               );
             })}
           </section>
@@ -378,10 +277,11 @@ const section4_layout = [
   },
   {
     title: "홈클리닝",
-    sub: "방 뿐만 아니라 매트리스, 실외기 등 세심한 케어가 필요하다면",
+    sub: `방 뿐만 아니라 매트리스, 실외기 등
+세심한 케어가 필요하다면`,
     btn: [
       {
-        title: "거주공간청소",
+        title: "주거공간청소",
         link: "/homeclean",
         type: "house",
         width: "179px",
@@ -419,7 +319,8 @@ const section4_layout = [
   },
   {
     title: "비즈니스케어",
-    sub: "관공서, 학교, 기업 등의 사무공간 및 건물 관리가 필요하다면",
+    sub: `관공서, 학교, 기업 등의
+사무공간 및 건물 관리가 필요하다면`,
     btn: [
       {
         title: "건물관리",

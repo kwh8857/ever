@@ -223,6 +223,11 @@
                   height: 53px;
                   padding-left: 24px;
                 }
+                                  .short,.lux{
+                    &>b{
+                      margin-right: 33px !important;
+                    }
+                  }
                 &>.two{
                   flex-direction: column;
                   height: 107px;
@@ -239,6 +244,7 @@
                     border-right: unset;
                 
                   }
+
                   &>.right{
                     padding-left: 22.5px;
                     box-sizing: border-box;

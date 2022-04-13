@@ -122,9 +122,18 @@
 }
 
 .homeclean > .homecare > .pack > .list > .card > .content {
+  text-align: center;
   font-size: 13px;
   line-height: 1.46;
   white-space: pre-line;
+}
+
+.homeclean > .homecare > .pack > .list > .card:nth-child(4) {
+  padding-top: 87px;
+}
+
+.homeclean > .homecare > .pack > .list > .card:nth-child(4) > .line {
+  margin: 8px 0;
 }
 
 .homeclean > .homecare > .back {
@@ -299,6 +308,7 @@
 
 .homeclean > .jointservice > .pack > .content-wrapper > .card {
   height: 400px;
+  background-color: #e0e0e0;
 }
 
 .homeclean > .jointservice > .pack > .content-wrapper > .card > .card-head {
@@ -529,6 +539,7 @@
 }
 
 .homeclean > .birdservice > .pack > .wrapper > .card > .img-wrapper {
+  background-color: white;
   height: 253px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -587,17 +598,11 @@
   .homeclean > .homecare > .pack > .list > .card > .content {
     text-align: center;
   }
-  .homeclean > .homecare > .pack > .list > .card:nth-child(2) > .line {
+  .homeclean > .homecare > .pack > .list > .card > .line {
     width: 259px;
   }
-  .homeclean > .homecare > .pack > .list > .card:nth-child(3) > .line {
-    width: 259px;
-  }
-  .homeclean > .homecare > .pack > .list > .card:nth-child(1) > .line {
-    width: 196px;
-  }
-  .homeclean > .homecare > .pack > .list > .card:nth-child(4) > .line {
-    width: 196px;
+  .homeclean > .homecare > .pack > .list > .card:nth-child(4) {
+    padding-top: 60px;
   }
   .homeclean > .homecare > .back {
     height: 513px;
@@ -688,6 +693,9 @@
     height: 182px;
   }
   .homeclean > .birdservice > .pack > .wrapper > .card > .img-wrapper > img {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
     height: 127px;
   }
 }
@@ -724,7 +732,20 @@
     font-size: 20px;
   }
   .homeclean > .homecare > .pack > .list > .card > .line {
+    margin: 12px 0;
     width: 280px;
+  }
+  .homeclean > .homecare > .pack > .list > .card:nth-child(1) > .line {
+    margin: 12px 0;
+  }
+  .homeclean > .homecare > .pack > .list > .card:nth-child(2) > .line {
+    margin: 11px 0 9.5px 0;
+  }
+  .homeclean > .homecare > .pack > .list > .card:nth-child(3) > .line {
+    margin: 13px 0 9.5px 0;
+  }
+  .homeclean > .homecare > .pack > .list > .card:nth-child(4) > .line {
+    margin: 11px 0 15px 0;
   }
   .homeclean > .homecare > .back {
     height: 1169px;
@@ -883,6 +904,15 @@
   }
   .homeclean > .birdservice > .pack > .wrapper > .card > .img-wrapper > img {
     height: 101px;
+  }
+  .homeclean > .birdservice > .pack > .wrapper > .card:nth-child(1) > .img-wrapper > img {
+    width: 101px;
+  }
+  .homeclean > .birdservice > .pack > .wrapper > .card:nth-child(2) > .img-wrapper > img {
+    width: 101px;
+  }
+  .homeclean > .birdservice > .pack > .wrapper > .card:nth-child(3) > .img-wrapper > img {
+    width: 262px;
   }
 }
 /*# sourceMappingURL=index.css.map */

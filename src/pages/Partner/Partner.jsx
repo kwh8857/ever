@@ -3,6 +3,7 @@ import { useLocation } from "react-router-dom";
 import Nav from "../../components/Nav/Nav";
 import Tel from "../../components/Tel/Tel";
 import "./css/index.css";
+import ScrollImg from "./transition/ScrollImg";
 function Partner({ agent }) {
   const location = useLocation();
   const [now, setNow] = useState(0);
@@ -23,7 +24,7 @@ function Partner({ agent }) {
         now={now}
         setnow={setNow}
         navArr={navArr}
-        type="business"
+        type="partner"
         agent={agent}
       />
       {now === 0 ? (
@@ -147,18 +148,7 @@ function Partner({ agent }) {
                 <div className="sub">
                   넓고 쾌적한 환경으로 교육에 더욱 집중할 수 있습니다.
                 </div>
-                <div className="img-wrapper">
-                  {section2Img1.map((item, idx) => {
-                    return (
-                      <img
-                        alt=""
-                        src={`/asssets/partner/${item}.png`}
-                        srcSet={`/assets/partner/${item}@2x.png 2x , /assets/partner/${item}@3x.png 3x`}
-                        key={idx}
-                      />
-                    );
-                  })}
-                </div>
+                <ScrollImg arr={section2Img1} agent={agent} />
               </div>
               <div className="two">
                 <div className="title">
@@ -169,18 +159,7 @@ function Partner({ agent }) {
                   여러 기종의 제품 보유로 {agent !== "pc" ? <br /> : undefined}{" "}
                   다양한 경험을 쌓으실 수 있습니다
                 </div>
-                <div className="img-wrapper">
-                  {section2Img2.map((item, idx) => {
-                    return (
-                      <img
-                        alt=""
-                        src={`/asssets/partner/${item}.png`}
-                        srcSet={`/assets/partner/${item}@2x.png 2x , /assets/partner/${item}@3x.png 3x`}
-                        key={idx}
-                      />
-                    );
-                  })}
-                </div>
+                <ScrollImg arr={section2Img2} agent={agent} />
               </div>
             </div>
           </div>
@@ -284,7 +263,7 @@ function Partner({ agent }) {
               </div>
             </div>
           </div>
-          <Tel />
+          <Tel agent={agent} />
         </>
       ) : (
         <></>

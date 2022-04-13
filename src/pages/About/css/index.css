@@ -636,6 +636,7 @@
 
 @media screen and (max-width: 767px) {
   .about > .ceo > .section1 {
+    background-color: white;
     height: 395px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -667,6 +668,7 @@
     right: unset;
   }
   .about > .ceo > .section2 {
+    background-color: white;
     height: 1831px;
   }
   .about > .ceo > .section2 > .pack > .list > .line {

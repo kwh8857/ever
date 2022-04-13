@@ -19,6 +19,7 @@ height: 72px;
      color: var(--brownish-grey);
      align-items: center;
    }
+
    &>.bar{
      width: 140px;
      height: 3px;
@@ -41,6 +42,17 @@ height: 72px;
    .on{
      color: black;
      font-weight: bold;
+   }
+ }
+ &>.businessgrid{
+   display: grid;
+   column-gap: 10px;
+   grid-template-columns: 81px 92px 171px 135px;
+   &>button{
+     width: 100%;
+   }
+   &>.bar{
+     width: 81px;
    }
  }
 }
@@ -71,6 +83,12 @@ height: 72px;
     }
      }
    }
+           &>.businessgrid{
+   display: flex;
+   column-gap: unset;
+   grid-template-columns: unset;
+
+ }
    &>.nav-wrapper{
      transition: 0.3s ease-in-out;
      top: 52px;
@@ -99,10 +117,18 @@ height: 72px;
      }
     
    }
+
    &>.open{
      height: 324px;
                padding-top: 34px;
      padding-bottom: 46px;
    }
+   &>.businessop{
+     height: 270px;
+   }
+   &>.aboutop,.partnerop{
+     height: 150px;
+   }
   }
+
 }

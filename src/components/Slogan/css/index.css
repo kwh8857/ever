@@ -160,6 +160,9 @@
   .homecleanslogan > .pack > img {
     width: 35px;
   }
+  .purifyslogan {
+    height: 289px;
+  }
   .washslogan > .pack > .title, .hoodslogan > .pack > .title, .airslogan > .pack > .title, .filterslogan > .pack > .title, .birdslogan > .pack > .title, .bugslogan > .pack > .title {
     margin: 0;
   }

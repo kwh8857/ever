@@ -79,13 +79,33 @@
            }
          }
        }
+       &>.card:nth-child(1){
+           &>.content-wrapper{
+    &>img{
+      margin-top: 20px;
+    }
+  }
+       }
        &>.card:nth-child(2){
           &>.title{
             width: 190px;
-          }
+          }  &>.content-wrapper{
+    &>img{
+      margin-top: 10px;
+    }
+  }
+        }
+               &>.card:nth-child(4){
+  &>.content-wrapper{
+    &>img{
+      margin-top: 20px;
+    }
+  }
+  
         }
        &>.first{
   height: 290.5px;
+
        }
        &>.two{
          height: 203.7px;
@@ -198,12 +218,22 @@
                                  }
           &>.content-wrapper{
             height: 245px;
+            &>img{
+              margin-top: 25px;
+              width: 270px;
+            }
           }
         }
                 &>.card:nth-child(2){
                   height: 204px;
           &>.title{
              width: 172px;
+          }
+          &>.content-wrapper{
+            &>img{
+              width: 270px;
+              margin-top: 15px;
+            }
           }
         }
                         &>.card:nth-child(3){
