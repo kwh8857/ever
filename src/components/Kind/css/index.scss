@@ -50,6 +50,19 @@
           }
         }
 }
+.washkind{
+  &>.pack{
+    &>.list{
+       display: flex;
+       justify-content: center;
+       flex-wrap: wrap-reverse;
+       gap: 48px 44px;
+       &>.card{
+         width: 215px;
+       }
+    }
+  }
+}
 .hoodkind,.filterkind{
   height: 748px;
   padding-top: 120px;
@@ -118,6 +131,28 @@
       }
     }
   }
+  .washkind{
+    padding-top: 220px;
+    &>.pack{
+      &>.list{
+        width: 725px;
+        &>.card{
+          width: 153px;
+          &>.circle{
+            height: 153px;
+          }
+          &>.title{
+            margin-top: 13px;
+            height: 38px;
+            font-size: 13px;
+            &>span{
+              transform: translateY(0);
+            }
+          }
+        }
+      }
+    }
+  }
   .hoodkind,.filterkind{
     height: 745px;
     &>.pack{
@@ -163,6 +198,32 @@
        }
      }
    }
+  }
+  .washkind{
+    padding-top: 238px;
+    height: 1673px;
+    &>.pack{
+      &>.list{
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 54px 16px;
+        &>.card{
+width: 152px;
+&>.circle{
+  height: 152px;
+  
+}
+&>.title{
+  margin-top: 23px;
+  font-size: 18px;
+  height: 48px;
+  &>span{
+    font-size: 12px;
+  }
+}
+        }
+      }
+    }
   }
   .hoodkind,.filterkind{
     height: 1090px;

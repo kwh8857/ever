@@ -25,9 +25,13 @@ function Main({ agent }) {
       <Floating agent={agent} />
       <div className="section1">
         <div className="pack">
-          <b>고객의 환경과 건강을</b> <br /> 생각하는 마음으로 <br />
-          최선을 다하는 기업 <br />
-          <b> 에버퓨리</b>
+          <b>
+            고객의 환경과 건강을 <br /> 생각하는 마음으로 <br />
+            최선을 다하는 기업 <br />
+            에버퓨리
+          </b>
+          <div className="line one" />
+          <div className="line two" />
         </div>
       </div>
       <Section2 agent={agent} handleScroll={handleScroll} />

@@ -71,6 +71,22 @@
           transform: translateY(3px);
 }
 
+.washkind > .pack > .list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap-reverse;
+      flex-wrap: wrap-reverse;
+  gap: 48px 44px;
+}
+
+.washkind > .pack > .list > .card {
+  width: 215px;
+}
+
 .hoodkind, .filterkind {
   height: 748px;
   padding-top: 120px;
@@ -140,6 +156,27 @@
   .kind > .pack > .list > .card > .title > span {
     font-size: 11px;
   }
+  .washkind {
+    padding-top: 220px;
+  }
+  .washkind > .pack > .list {
+    width: 725px;
+  }
+  .washkind > .pack > .list > .card {
+    width: 153px;
+  }
+  .washkind > .pack > .list > .card > .circle {
+    height: 153px;
+  }
+  .washkind > .pack > .list > .card > .title {
+    margin-top: 13px;
+    height: 38px;
+    font-size: 13px;
+  }
+  .washkind > .pack > .list > .card > .title > span {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
   .hoodkind, .filterkind {
     height: 745px;
   }
@@ -194,6 +231,30 @@
     margin-left: 0;
     -webkit-transform: translateY(-3px);
             transform: translateY(-3px);
+  }
+  .washkind {
+    padding-top: 238px;
+    height: 1673px;
+  }
+  .washkind > .pack > .list {
+    width: 100%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 54px 16px;
+  }
+  .washkind > .pack > .list > .card {
+    width: 152px;
+  }
+  .washkind > .pack > .list > .card > .circle {
+    height: 152px;
+  }
+  .washkind > .pack > .list > .card > .title {
+    margin-top: 23px;
+    font-size: 18px;
+    height: 48px;
+  }
+  .washkind > .pack > .list > .card > .title > span {
+    font-size: 12px;
   }
   .hoodkind, .filterkind {
     height: 1090px;

@@ -9,12 +9,37 @@
 }
 
 .main .section1 > .pack {
-  font-size: 39px;
+  font-size: 45px;
   color: var(--navy);
   padding-top: 244px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   line-height: 1.31;
+  position: relative;
+}
+
+.main .section1 > .pack > b {
+  position: relative;
+  z-index: 10;
+}
+
+.main .section1 > .pack > .line {
+  height: 23px;
+  background-color: #46bad1;
+  opacity: 0.4;
+  position: absolute;
+}
+
+.main .section1 > .pack > .one {
+  width: 400px;
+  top: 278px;
+  left: 0;
+}
+
+.main .section1 > .pack > .two {
+  top: 339px;
+  left: 0;
+  width: 258px;
 }
 
 .main .section2 {
@@ -29,8 +54,8 @@
 .main .section2 > .pack {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 388px 663px;
-      grid-template-columns: 388px 663px;
+  -ms-grid-columns: 388px 654px;
+      grid-template-columns: 388px 654px;
   -webkit-column-gap: 139px;
           column-gap: 139px;
   -webkit-box-align: center;
@@ -93,8 +118,8 @@
 }
 
 .main .section2 > .pack > .right {
-  width: 653px;
-  height: 410px;
+  width: 654px;
+  height: 367px;
 }
 
 .main .section3 {
@@ -394,6 +419,17 @@
     font-size: 28px;
     padding-top: 137px;
   }
+  .main > .section1 > .pack > .line {
+    height: 16px;
+  }
+  .main > .section1 > .pack > .one {
+    width: 246px;
+    top: 160px;
+  }
+  .main > .section1 > .pack > .two {
+    width: 162px;
+    top: 196px;
+  }
   .main > .section2 {
     height: 466px;
     padding-top: 91px;
@@ -418,7 +454,7 @@
   }
   .main > .section2 > .pack > .right {
     width: 100%;
-    height: 243px;
+    height: 219px;
   }
   .main > .section3 {
     height: 856px;
@@ -539,9 +575,17 @@
     font-size: 30px;
     padding-top: 116px;
   }
+  .main > .section1 > .pack > .one {
+    top: 140px;
+    width: 267px;
+  }
+  .main > .section1 > .pack > .two {
+    width: 175px;
+    top: 178px;
+  }
   .main > .section2 {
     height: 690px;
-    padding-top: 86px;
+    padding-top: 116px;
   }
   .main > .section2 > .pack {
     display: -webkit-box;
@@ -554,10 +598,11 @@
   }
   .main > .section2 > .pack > .right {
     width: 100%;
+    height: 179px;
   }
   .main > .section2 > .pack > .left {
     text-align: center;
-    margin-top: 31px;
+    margin-top: 27px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;

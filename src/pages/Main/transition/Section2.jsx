@@ -27,12 +27,14 @@ function Section2({ agent, handleScroll }) {
     <div className="section2">
       <div className="pack" ref={dom}>
         {agent === "mb" ? (
-          <img
+          <iframe
             className="right"
-            src="/assets/main/section2.png"
-            srcSet="/assets/main/section2@2x.png 2x , /assets/main/section2@3x.png 3x"
-            alt=""
-          />
+            src="https://www.youtube.com/embed/9oJ50_AcqdI"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
         ) : undefined}
         <div className="left">
           <span className="title">
@@ -56,12 +58,14 @@ function Section2({ agent, handleScroll }) {
           </button>
         </div>
         {agent !== "mb" ? (
-          <img
+          <iframe
             className="right"
-            src="/assets/main/section2.png"
-            srcSet="/assets/main/section2@2x.png 2x , /assets/main/section2@3x.png 3x"
-            alt=""
-          />
+            src="https://www.youtube.com/embed/9oJ50_AcqdI"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
         ) : undefined}
       </div>
     </div>

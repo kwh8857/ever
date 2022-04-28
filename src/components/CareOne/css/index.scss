@@ -111,6 +111,12 @@
     padding: 0 125px;
     &>.list{
             grid-template-columns: repeat(3,237px);
+            &>.card{
+              &>img{
+                height: 158px;
+                background-color: #8d8d8d;
+              }
+            }
     }
   }
 }
@@ -288,6 +294,7 @@
   }
   .aircareclean{
     height: 600px;
+
   }
   .airfilterclean{
     height: 984px;
@@ -301,6 +308,20 @@
       }
     }
   }
+  .airclean{
+    
+  &>.pack{
+    &>.list{
+          &>.card{
+              &>img{
+                height: 111px;
+               
+              }
+            }
+    }
+  }
+  }
+  
 }
 @media screen and (max-width : 767px) {
   .careone{
@@ -485,5 +506,18 @@
         }
       }
     }
+  }
+    .airclean{
+    
+  &>.pack{
+    &>.list{
+          &>.card{
+              &>img{
+                height: 68.2px;
+         
+              }
+            }
+    }
+  }
   }
 }

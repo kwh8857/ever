@@ -301,7 +301,18 @@
 }
 
 .about > .company > .section2 > .pack > .list > .wrapper > .content > b {
-  color: var(--dark-sky-blue);
+  position: relative;
+}
+
+.about > .company > .section2 > .pack > .list > .wrapper > .content > b > div {
+  position: absolute;
+  width: 100%;
+  height: 19px;
+  background-color: #47bad2;
+  opacity: 0.3;
+  bottom: -5px;
+  left: 0;
+  z-index: -1;
 }
 
 .about > .company > .section3 {
@@ -572,6 +583,12 @@
     font-size: 16px;
     white-space: nowrap;
   }
+  .about > .company > .section2 > .pack > .list > .wrapper > .content > b > div {
+    width: 103%;
+    height: 13px;
+    bottom: -2px;
+    left: -3px;
+  }
   .about > .company > .section3 {
     height: 1416px;
     padding-top: 158px;
@@ -783,6 +800,9 @@
   }
   .about > .company > .section2 > .pack > .list > .wrapper > .content {
     font-size: 15px;
+  }
+  .about > .company > .section2 > .pack > .list > .wrapper > .content > b > div {
+    width: 101%;
   }
   .about > .company > .section3 {
     height: 1807px;

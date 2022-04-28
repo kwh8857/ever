@@ -167,6 +167,11 @@
       grid-template-columns: repeat(3, 237px);
 }
 
+.airclean > .pack > .list > .card > img {
+  height: 158px;
+  background-color: #8d8d8d;
+}
+
 .homecleancare > .pack > .category {
   background-color: var(--shamrock);
 }
@@ -341,6 +346,9 @@
   .airfilterclean > .pack > .list > .card {
     height: 170px;
   }
+  .airclean > .pack > .list > .card > img {
+    height: 111px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -492,6 +500,9 @@
   }
   .airfilterclean > .pack > .list > .card {
     height: 152px;
+  }
+  .airclean > .pack > .list > .card > img {
+    height: 68.2px;
   }
 }
 /*# sourceMappingURL=index.css.map */

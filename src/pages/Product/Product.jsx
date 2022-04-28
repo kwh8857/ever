@@ -135,7 +135,8 @@ function Product({ agent }) {
                   <div className="content">
                     <div className="title">시스템 에어컨</div>
                     <div className="subject third">
-                      <div>1/2 WAY</div>
+                      <div>1WAY</div>
+                      <div>2WAY</div>
                       <div>4WAY</div>
                       <div>360°</div>
                     </div>
@@ -233,12 +234,7 @@ function Product({ agent }) {
             nav="product"
             agent={agent}
           />
-          <CareOne
-            type="air"
-            cleanArr={hoodClean}
-            nav="product"
-            agent={agent}
-          />
+          <CareOne type="air" cleanArr={airClean} nav="product" agent={agent} />
           <Slogan type="air" nav="product" agent={agent} />
           <CareTwo type="air" arr={airCare02} nav="product" agent={agent} />
           <Point type="hood" arr={pointArr3} agent={agent} />
@@ -433,6 +429,32 @@ const hoodClean = [
   {
     img: "hoodclean6",
     title: "건조 후 부착",
+  },
+];
+const airClean = [
+  {
+    img: "",
+    title: "전원 차단",
+  },
+  {
+    img: "",
+    title: "완전 분해",
+  },
+  {
+    img: "",
+    title: "부품 고압 세척",
+  },
+  {
+    img: "",
+    title: `고압 세척 확인 후 조립`,
+  },
+  {
+    img: "",
+    title: "고온 스팀 살균",
+  },
+  {
+    img: "",
+    title: "작동 테스트",
   },
 ];
 const filterClean = [
@@ -798,10 +820,11 @@ CS마스터 팀장이 직접 방문 및 케어`,
   },
 ];
 const kindArr = [
+  "아기사랑",
+  "트윈워시 세탁기",
+  "플렉스워시",
+  "LG 꼬망스",
   "통돌이 세탁기",
   "드럼세탁기",
   "빌트인 세탁기",
-  "아기용 세탁기",
-  "트윈워시 세탁기",
-  "플렉스워시",
 ];

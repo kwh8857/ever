@@ -96,7 +96,8 @@
              &>.third{
                display: grid;
                width: 100%;
-               grid-template-columns: repeat(3,1fr);
+               font-size: 18px;
+               grid-template-columns: repeat(4,1fr);
                padding: unset;
                &>div{
                  display: flex;

@@ -251,7 +251,10 @@ function About({ agent }) {
                     <div key={idx} className="wrapper">
                       <div className="number">{number}</div>
                       <span className="content">
-                        <b>{bold}</b>
+                        <b>
+                          {bold}
+                          <div className="line" />
+                        </b>
                         {sub}
                       </span>
                     </div>
