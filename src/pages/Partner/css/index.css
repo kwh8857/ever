@@ -173,12 +173,12 @@
 
 .partner > .section2 > .pack > .first {
   top: 246px;
-  right: 550px;
+  right: 420px;
 }
 
 .partner > .section2 > .pack > .second {
-  right: 450px;
-  top: 995px;
+  right: 340px;
+  top: 1000px;
 }
 
 .partner > .section2 > .pack > .second > div {
@@ -189,39 +189,66 @@
 .partner > .section2 > .pack > div > .img-wrapper {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (382px)[3];
-      grid-template-columns: repeat(3, 382px);
-  -webkit-column-gap: 17px;
-          column-gap: 17px;
+  -ms-grid-columns: (334px)[2];
+      grid-template-columns: repeat(2, 334px);
+  -ms-grid-rows: (223px)[2];
+      grid-template-rows: repeat(2, 223px);
+  gap: 14px 16px;
+  -webkit-transform: translateX(250px);
+          transform: translateX(250px);
 }
 
 .partner > .section2 > .pack > .one > .title {
-  font-size: 35px;
-  line-height: 1.17;
+  font-size: 40px;
+  line-height: 1.28;
   color: var(--navy);
+  position: relative;
+}
+
+.partner > .section2 > .pack > .one > .title > .line {
+  width: 338px;
+  height: 29px;
+  position: absolute;
+  background-color: #46bad1;
+  opacity: 0.57;
+  bottom: -8px;
+  left: -8px;
+  z-index: -1;
 }
 
 .partner > .section2 > .pack > .one > .sub {
   margin-top: 13px;
-  font-size: 17px;
-  margin-bottom: 33px;
+  font-size: 20px;
+  margin-bottom: 25px;
 }
 
 .partner > .section2 > .pack > .two {
-  margin-top: 336px;
+  margin-top: 157px;
 }
 
 .partner > .section2 > .pack > .two > .title {
-  font-size: 35px;
+  font-size: 40px;
   font-weight: 500;
   line-height: 1.29;
   color: var(--navy);
   margin-bottom: 19px;
+  position: relative;
+}
+
+.partner > .section2 > .pack > .two > .title > .line {
+  width: 251px;
+  height: 29px;
+  position: absolute;
+  background-color: #8d8d8d;
+  opacity: 0.25;
+  bottom: -8px;
+  left: -8px;
+  z-index: -1;
 }
 
 .partner > .section2 > .pack > .two > .sub {
-  margin-bottom: 66px;
-  font-size: 17px;
+  margin-bottom: 29px;
+  font-size: 20px;
   line-height: 1.53;
 }
 
@@ -467,20 +494,32 @@
     right: 350px;
   }
   .partner > .section2 > .pack > .second {
-    right: 350px;
+    right: 270px;
     top: 584px;
   }
   .partner > .section2 > .pack > .second > div {
     height: 250px;
   }
   .partner > .section2 > .pack > div > .img-wrapper {
-    -ms-grid-columns: (228px)[3];
-        grid-template-columns: repeat(3, 228px);
+    width: 800px;
+    -webkit-transform: unset;
+            transform: unset;
+    -ms-grid-columns: (228px)[4];
+        grid-template-columns: repeat(4, 228px);
+    -ms-grid-rows: unset;
+        grid-template-rows: unset;
     -webkit-column-gap: 10px;
             column-gap: 10px;
+    overflow-x: scroll;
   }
   .partner > .section2 > .pack > .one > .title {
     font-size: 27px;
+  }
+  .partner > .section2 > .pack > .one > .title > .line {
+    width: 216px;
+    height: 16px;
+    bottom: -2px;
+    left: -3px;
   }
   .partner > .section2 > .pack > .one > .sub {
     font-size: 14px;
@@ -493,6 +532,12 @@
   .partner > .section2 > .pack > .two > .title {
     font-size: 27px;
     margin-bottom: 0;
+  }
+  .partner > .section2 > .pack > .two > .title > .line {
+    width: 157px;
+    height: 16px;
+    bottom: -2px;
+    left: -2px;
   }
   .partner > .section2 > .pack > .two > .sub {
     font-size: 14px;
@@ -698,6 +743,9 @@
   .partner > .section2 > .pack > .one > .title {
     font-size: 25px;
   }
+  .partner > .section2 > .pack > .one > .title > .line {
+    width: 201px;
+  }
   .partner > .section2 > .pack > .one > .sub {
     margin-top: 9px;
     margin-bottom: 21px;
@@ -707,6 +755,9 @@
   }
   .partner > .section2 > .pack > .two > .title {
     font-size: 25px;
+  }
+  .partner > .section2 > .pack > .two > .title > .line {
+    width: 153px;
   }
   .partner > .section2 > .pack > .two > .sub {
     margin-top: 9px;

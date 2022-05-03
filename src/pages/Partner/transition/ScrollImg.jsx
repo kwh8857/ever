@@ -10,7 +10,7 @@ function ScrollImg({ arr, agent }) {
         ref={imgRef}
         onScroll={() => {
           const left = imgRef.current.scrollLeft;
-          setScroll((left / 352) * 70);
+          setScroll((left / 234) * 26);
         }}
       >
         {arr.map((item, idx) => {

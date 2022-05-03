@@ -144,6 +144,7 @@ function Partner({ agent }) {
               <div className="one">
                 <div className="title">
                   대구·경북 <br /> <b>최대 규모의 교육장</b>
+                  <div className="line" />
                 </div>
                 <div className="sub">
                   넓고 쾌적한 환경으로 교육에 더욱 집중할 수 있습니다.
@@ -153,10 +154,11 @@ function Partner({ agent }) {
               <div className="two">
                 <div className="title">
                   다양한 기종 보유로 <br /> <b>다양한 경험을</b>
+                  <div className="line" />
                 </div>
                 <div className="sub">
                   같은 품목이라도 기종마다 구조가 다릅니다. <br /> 에버퓨리는
-                  여러 기종의 제품 보유로 {agent !== "pc" ? <br /> : undefined}{" "}
+                  여러 기종의 제품 보유로 {agent === "mb" ? <br /> : undefined}{" "}
                   다양한 경험을 쌓으실 수 있습니다
                 </div>
                 <ScrollImg arr={section2Img2} agent={agent} />
@@ -297,8 +299,8 @@ const section1Arr = [
     img: "/assets/partner/section1-4.svg",
   },
 ];
-const section2Img1 = ["section2-1", "section2-2", "section2-3"];
-const section2Img2 = ["section2-3", "section2-4", "section2-5"];
+const section2Img1 = ["section2-6", "section2-1", "section2-2", "section2-3"];
+const section2Img2 = ["section2-3", "section2-4", "section2-5", "section2-7"];
 const section3Arr = [
   {
     title: "최신 기술 및 CS 무상 교육",

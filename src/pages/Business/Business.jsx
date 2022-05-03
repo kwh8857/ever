@@ -600,19 +600,19 @@ CS마스터 팀장이 직접 방문 및 케어`,
 ];
 const aircareClean = [
   {
-    img: "aircareclean1",
+    img: "grey",
     title: "백시멘트 제거",
   },
   {
-    img: "aircareclean2",
+    img: "grey",
     title: "백시멘트 가루 제거",
   },
   {
-    img: "aircareclean3",
+    img: "grey",
     title: "마스킹테이프 부착",
   },
   {
-    img: "aircareclean4",
+    img: "grey",
     title: "친환경 줄눈제 시공",
   },
 ];

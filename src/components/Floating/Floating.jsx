@@ -5,7 +5,7 @@ function Floating({ agent }) {
     <div className="floating">
       {arr.map(({ img, title, link }, idx) => {
         return (
-          <a href={link} key={idx} target="_blank">
+          <a href={link} key={idx} target="_blank" rel="noreferrer">
             {img === "coupang" || img === "bot" ? (
               <img
                 className={img}
@@ -30,7 +30,8 @@ const arr = [
   {
     img: "coupang",
     title: "구매하기",
-    link: "https://store.coupang.com/vp/vendors/A00479925/products?vendorName=%EC%A3%BC%EC%8B%9D%ED%9A%8C%EC%82%AC+%EC%97%90%EB%B2%84%ED%93%A8%EB%A6%AC&productId=5985589977&outboundShippingPlaceId=4563061",
+    link:
+      "https://store.coupang.com/vp/vendors/A00479925/products?vendorName=%EC%A3%BC%EC%8B%9D%ED%9A%8C%EC%82%AC+%EC%97%90%EB%B2%84%ED%93%A8%EB%A6%AC&productId=5985589977&outboundShippingPlaceId=4563061",
   },
   {
     img: "naver",

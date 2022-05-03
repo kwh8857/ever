@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useCallback } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
@@ -11,21 +11,24 @@ import Partner from "./pages/Partner/Partner";
 import Product from "./pages/Product/Product";
 function App() {
   const [agent, setAgent] = useState("pc");
-  function change(e) {
-    if (
-      e.target.innerWidth < 1025 &&
-      e.target.innerWidth > 767 &&
-      agent !== "tablet"
-    ) {
-      setAgent("tablet");
-    }
-    if (e.target.innerWidth < 768 && agent !== "mb") {
-      setAgent("mb");
-    }
-    if (e.target.innerWidth > 1025 && agent !== "pc") {
-      setAgent("pc");
-    }
-  }
+  const change = useCallback(
+    (e) => {
+      if (
+        e.target.innerWidth < 1025 &&
+        e.target.innerWidth > 767 &&
+        agent !== "tablet"
+      ) {
+        setAgent("tablet");
+      }
+      if (e.target.innerWidth < 768 && agent !== "mb") {
+        setAgent("mb");
+      }
+      if (e.target.innerWidth > 1025 && agent !== "pc") {
+        setAgent("pc");
+      }
+    },
+    [agent]
+  );
   useEffect(() => {
     window.addEventListener("resize", change);
 

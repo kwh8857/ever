@@ -1,369 +1,448 @@
-.careone{
-      height: 1482px;
-      width: 100%;
-      padding-top: 140px;
-      box-sizing: border-box;
-      &>.pack{
-        &>.category{
-          background-color: var(--navy);
-            width: 162px;
-  height: 33px;
-         font-family: 'gmarket';
-         font-size: 11px;
-         font-weight: bold;
-         color: white;
-         border-radius: 25px;
-         display: flex;
-         align-items: center;
-         justify-content: center;
-        }
-        &>.title{
-          font-size: 30px;
-          font-weight: 500;
-          white-space: nowrap;
-          line-height: 1.33;
-          color: var(--navy);
-        margin-top: 13px;
-        position: relative;
-        &>.circle-wrapper{
-          position: absolute;
-          display: flex;
-          column-gap: 28px;
-          top: -7px;
-          left: 250px;
-          &>div{
-            display: grid;
-            grid-template-columns: repeat(2,7px);
-            column-gap: 21px;
-            &>div{
-  height: 7px;
-              background-color: #76c7d3;
-              border-radius: 7px;
-            }
-          }
-        }
-        }
-        &>.sub{
-          font-size: 20px;
-          margin-top: 17px;
-        }
-        &>.list{
+.careone {
+  height: 1482px;
+  width: 100%;
+  padding-top: 140px;
+  box-sizing: border-box;
+
+  &>.pack {
+    &>.category {
+      background-color: var(--navy);
+      width: 162px;
+      height: 33px;
+      font-family: 'gmarket';
+      font-size: 11px;
+      font-weight: bold;
+      color: white;
+      border-radius: 25px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &>.title {
+      font-size: 30px;
+      font-weight: 500;
+      white-space: nowrap;
+      line-height: 1.33;
+      color: var(--navy);
+      margin-top: 13px;
+      position: relative;
+
+      &>.circle-wrapper {
+        position: absolute;
+        display: flex;
+        column-gap: 28px;
+        top: -7px;
+        left: 250px;
+
+        &>div {
           display: grid;
-          grid-template-columns: repeat(4,237px);
-          column-gap: 15px;
-          margin-top: 47px;
-          row-gap: 53px;
-          &>.card{
-            position: relative;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            &>.number{
-              position: absolute;
-              top: -19px;
-              width: 38px;
-              height: 38px;
-              border-radius: 38px;
-              background-color: var(--navy);
-              color: white;
-              font-family: 'gmarket';
-              font-weight: bold;
-              font-size: 16px;
-              display: flex;
-              justify-content: center;
-              align-items: center;
-            }
-            &>.title{
-              margin-top: 8.2px;
-              font-size: 18px;
-              font-weight: 500;
-            }
+          grid-template-columns: repeat(2, 7px);
+          column-gap: 21px;
+
+          &>div {
+            height: 7px;
+            background-color: #76c7d3;
+            border-radius: 7px;
           }
         }
       }
-}
-.washclean{
-  height: 1153px;
-  &>.pack{
-    padding: 0 125px;
-    box-sizing: border-box;
-    &>.list{
-      grid-template-columns: repeat(3,237px);
+    }
+
+    &>.sub {
+      font-size: 20px;
+      margin-top: 17px;
+    }
+
+    &>.list {
+      display: grid;
+      grid-template-columns: repeat(4, 237px);
+      column-gap: 15px;
+      margin-top: 47px;
+      row-gap: 53px;
+
+      &>.card {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &>.number {
+          position: absolute;
+          top: -19px;
+          width: 38px;
+          height: 38px;
+          border-radius: 38px;
+          background-color: var(--navy);
+          color: white;
+          font-family: 'gmarket';
+          font-weight: bold;
+          font-size: 16px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        &>.title {
+          margin-top: 8.2px;
+          font-size: 18px;
+          font-weight: 500;
+        }
+      }
     }
   }
 }
-.hoodclean,.filterclean,.matclean{
+
+.washclean {
+  height: 1153px;
+
+  &>.pack {
+    padding: 0 125px;
+    box-sizing: border-box;
+
+    &>.list {
+      grid-template-columns: repeat(3, 237px);
+    }
+  }
+}
+
+.hoodclean,
+.filterclean,
+.matclean {
   height: 1072px;
   padding-top: 183px;
-  &>.pack{
+
+  &>.pack {
     padding: 0 125px;
     box-sizing: border-box;
-    &>.list{
-      grid-template-columns: repeat(3,237px);
+
+    &>.list {
+      grid-template-columns: repeat(3, 237px);
     }
   }
 }
-.airclean{
+
+.airclean {
   height: 1195px;
   padding-top: 177px;
-  &>.pack{
+
+  &>.pack {
     box-sizing: border-box;
     padding: 0 125px;
-    &>.list{
-            grid-template-columns: repeat(3,237px);
-            &>.card{
-              &>img{
-                height: 158px;
-                background-color: #8d8d8d;
-              }
-            }
-    }
-  }
-}
-.homecleancare{
-  &>.pack{
-     &>.category{
-       background-color: var(--shamrock);
-     }
-    &>.title{
-        &>.circle-wrapper{
-          &>div{
-            &>div{
-              background-color: rgb(121,218,170);
-            }
-          }
-        }
-       &>b{
-           color: var(--shamrock);
-          
-       }
-    }
-    &>.list{
-      &>.card{
-        &>.number{
-           background-color: var(--shamrock);
+
+    &>.list {
+      grid-template-columns: repeat(3, 237px);
+
+      &>.card {
+        &>img {
+          height: 158px;
+          background-color: #8d8d8d;
         }
       }
     }
   }
 }
-.businesscare{
-  &>.pack{
-    &>.category{
+
+.homecleancare {
+  &>.pack {
+    &>.category {
+      background-color: var(--shamrock);
+    }
+
+    &>.title {
+      &>.circle-wrapper {
+        &>div {
+          &>div {
+            background-color: rgb(121, 218, 170);
+          }
+        }
+      }
+
+      &>b {
+        color: var(--shamrock);
+
+      }
+    }
+
+    &>.list {
+      &>.card {
+        &>.number {
+          background-color: var(--shamrock);
+        }
+      }
+    }
+  }
+}
+
+.businesscare {
+  &>.pack {
+    &>.category {
       background-color: #40ccc7;
     }
-    &>.title{
-       &>.circle-wrapper{
-          &>div{
-            &>div{
-              background-color: #40ccc7;
-            }
+
+    &>.title {
+      &>.circle-wrapper {
+        &>div {
+          &>div {
+            background-color: #40ccc7;
           }
         }
-      &>b{
-        color: #40ccc7;;
+      }
+
+      &>b {
+        color: #40ccc7;
+        ;
       }
     }
-    &>.list{
-      &>.card{
-        &>.number{
-          background-color: #40ccc7;;
+
+    &>.list {
+      &>.card {
+        &>.number {
+          background-color: #40ccc7;
+          ;
         }
       }
     }
   }
 }
-.aircareclean{
+
+.aircareclean {
   padding-top: 0;
   height: 661px;
 }
-.jointclean{
+
+.jointclean {
   height: 1100px;
-  &>.pack{
+
+  &>.pack {
     width: 771px;
-    &>.sub{
-     white-space: nowrap;
+
+    &>.sub {
+      white-space: nowrap;
     }
-    &>.list{
+
+    &>.list {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
     }
   }
 }
-.birdclean,.bugclean{
+
+.birdclean,
+.bugclean {
   height: 804px;
-  &>.pack{
-    &>.title{
+
+  &>.pack {
+    &>.title {
       margin-top: 13px;
     }
-    &>.list{
+
+    &>.list {
       margin-top: 62px;
     }
   }
 }
-.airfilterclean{
+
+.airfilterclean {
   height: 1073px;
   padding-top: 190px;
-  &>.pack{
-    &>.list{
+
+  &>.pack {
+    &>.list {
       row-gap: 14px;
-      &>.card{
+
+      &>.card {
         height: 238px;
       }
     }
   }
 }
+
 @media screen and (max-width : 1024px) {
-  .careone{
+  .careone {
     height: 1204px;
     padding-top: 125px;
-    &>.pack{
-      &>.category{
+
+    &>.pack {
+      &>.category {
         width: 155px;
       }
-      &>.title{
+
+      &>.title {
         font-size: 25px;
         margin-top: 13px;
-        &>.circle-wrapper{
+
+        &>.circle-wrapper {
           left: 210px;
           top: -3px;
           column-gap: 22px;
-          &>div{
-            grid-template-columns: repeat(2,5px);
+
+          &>div {
+            grid-template-columns: repeat(2, 5px);
             column-gap: 19px;
-            &>div{
+
+            &>div {
               height: 5px;
-              
+
             }
           }
         }
       }
-      &>.sub{
+
+      &>.sub {
         font-size: 15px;
         margin-top: 11px;
       }
-     &>.list{
-       grid-template-columns: repeat(4,168px);
-       column-gap: 10px;
-       margin-top: 45px;  
-       row-gap: 39px;
-       &>.card{
-         &>.number{
-           width: 27px;
-           height: 27px;
-           font-size: 11px;
-           top: -15px;
-         }
-         &>.title{
-           font-size: 12px;
-           margin-top: 5px;
-         }
-       }
-     }
-     
+
+      &>.list {
+        grid-template-columns: repeat(4, 168px);
+        column-gap: 10px;
+        margin-top: 45px;
+        row-gap: 39px;
+
+        &>.card {
+          &>.number {
+            width: 27px;
+            height: 27px;
+            font-size: 11px;
+            top: -15px;
+          }
+
+          &>.title {
+            font-size: 12px;
+            margin-top: 5px;
+          }
+        }
+      }
+
     }
   }
-  .jointclean{
+
+  .jointclean {
     height: 824px;
-    &>.pack{
+
+    &>.pack {
       padding: 0 100px;
       box-sizing: border-box;
-      &>.list{
-         &>.card{
-           width: 168px;
-         }
+
+      &>.list {
+        &>.card {
+          width: 168px;
+        }
       }
     }
   }
-  .washclean,.hoodclean,.airclean,.filterclean,.matclean{
+
+  .washclean,
+  .hoodclean,
+  .airclean,
+  .filterclean,
+  .matclean {
     height: 773px;
-          padding-top: 108px;
-    &>.pack{
+    padding-top: 108px;
+
+    &>.pack {
 
       padding: 0 90px;
-      &>.list{
+
+      &>.list {
         margin-top: 60px;
-        grid-template-columns: repeat(3,168px);
+        grid-template-columns: repeat(3, 168px);
       }
     }
   }
-  .birdclean,.bugclean{
+
+  .birdclean,
+  .bugclean {
     padding-top: 169px;
     height: 766px;
   }
-  .aircareclean{
+
+  .aircareclean {
     height: 600px;
 
   }
-  .airfilterclean{
+
+  .airfilterclean {
     height: 984px;
     padding-top: 200px;
-    &>.pack{
-      &>.list{
+
+    &>.pack {
+      &>.list {
         gap: 9px;
-        &>.card{
+
+        &>.card {
           height: 170px;
         }
       }
     }
   }
-  .airclean{
-    
-  &>.pack{
-    &>.list{
-          &>.card{
-              &>img{
-                height: 111px;
-               
-              }
-            }
+
+  .airclean {
+
+    &>.pack {
+      &>.list {
+        &>.card {
+          &>img {
+            height: 111px;
+
+          }
+        }
+      }
     }
   }
-  }
-  
+
 }
+
 @media screen and (max-width : 767px) {
-  .careone{
+  .careone {
     height: 1272px;
     padding-top: 76px;
-    &>.pack{
+
+    &>.pack {
       display: flex;
       flex-direction: column;
       align-items: center;
       text-align: center;
 
-      &>.category{
+      &>.category {
         height: 30px;
         width: 154px;
       }
 
-      &>.title{
+      &>.title {
         margin-top: 10px;
         line-height: 1.48;
-        &>.circle-wrapper{
-           top: 38px;
-         left: 44px;
+
+        &>.circle-wrapper {
+          top: 38px;
+          left: 44px;
           column-gap: 25px;
-          &>div{
-            grid-template-columns: repeat(2,4px);
+
+          &>div {
+            grid-template-columns: repeat(2, 4px);
             column-gap: 19px;
-            &>div{
+
+            &>div {
               height: 4px;
             }
           }
         }
       }
-      &>.sub{
+
+      &>.sub {
         margin-top: 14px;
         font-size: 13px;
       }
-      &>.list{
-        grid-template-columns: repeat(3,102px);
+
+      &>.list {
+        grid-template-columns: repeat(3, 102px);
         column-gap: 7px;
         row-gap: 47px;
-        &>.card{
-          &>.number{
+
+        &>.card {
+          &>.number {
             width: 26px;
             height: 26px;
             top: -12px;
@@ -372,81 +451,100 @@
       }
     }
   }
-  .washclean,.hoodclean,.airclean,.filterclean,.matclean{
+
+  .washclean,
+  .hoodclean,
+  .airclean,
+  .filterclean,
+  .matclean {
     height: 819px;
-    &>.pack{
+
+    &>.pack {
       padding: 0;
-      &>.sub{
+
+      &>.sub {
         white-space: nowrap;
       }
-      &>.list{
+
+      &>.list {
         white-space: pre-wrap;
       }
     }
   }
-  .matclean{
+
+  .matclean {
     padding-top: 108px;
-    &>.pack{
-      &>.title{
-        &>.circle-wrapper{
+
+    &>.pack {
+      &>.title {
+        &>.circle-wrapper {
           left: 80px;
         }
       }
-      &>.list{
+
+      &>.list {
         margin-top: 76px;
       }
     }
   }
-  .hoodclean{
+
+  .hoodclean {
     height: 740px;
-    &>.pack{
-      &>.title{
-        &>.circle-wrapper{
+
+    &>.pack {
+      &>.title {
+        &>.circle-wrapper {
           left: 35px;
           top: 38px;
         }
       }
     }
   }
-  .washclean{
-      &>.pack{
-     &>.title{
-       &>.circle-wrapper{
-         top: 38px;
-         left: 39px;
-       }
-     }
+
+  .washclean {
+    &>.pack {
+      &>.title {
+        &>.circle-wrapper {
+          top: 38px;
+          left: 39px;
+        }
+      }
     }
   }
-  .airclean{
+
+  .airclean {
     height: 740px;
-    &>.pack{
-     &>.title{
-       &>.circle-wrapper{
-         top: 38px;
-         left: 44px;
-       }
-     }
+
+    &>.pack {
+      &>.title {
+        &>.circle-wrapper {
+          top: 38px;
+          left: 44px;
+        }
+      }
     }
   }
-    .filterclean{
+
+  .filterclean {
     height: 740px;
     padding-top: 115px;
-    &>.pack{
-     &>.title{
-       &>.circle-wrapper{
-         top: 38px;
-         left: 58px;
-       }
-     }
+
+    &>.pack {
+      &>.title {
+        &>.circle-wrapper {
+          top: 38px;
+          left: 58px;
+        }
+      }
     }
   }
-  .homecleancare{
-    &>.pack{
-      &>.title{
-        &>.circle-wrapper{
-          &>div{
-            &>div{
+
+  .homecleancare {
+    &>.pack {
+      &>.title {
+        &>.circle-wrapper {
+          &>div {
+            &>div {
               background-color: #00bb68;
             }
           }
@@ -454,70 +552,84 @@
       }
     }
   }
-  .jointclean{
+
+  .jointclean {
     height: 707px;
-    &>.pack{
+
+    &>.pack {
       width: 100%;
       padding: 0;
-      &>.title{
-        &>.circle-wrapper{
+
+      &>.title {
+        &>.circle-wrapper {
           left: 68px;
         }
       }
-      &>.list{
-        &>.card{
+
+      &>.list {
+        &>.card {
           width: 103px;
         }
       }
     }
   }
-  .birdclean,.bugclean{
+
+  .birdclean,
+  .bugclean {
     height: 807px;
-    &>.pack{
-      &>.list{
-        grid-template-columns: repeat(2,120px);
-        &>.card{
-          &>.title{
+
+    &>.pack {
+      &>.list {
+        grid-template-columns: repeat(2, 120px);
+
+        &>.card {
+          &>.title {
             white-space: pre-wrap;
           }
         }
       }
     }
   }
-  .aircareclean{
+
+  .aircareclean {
     height: 800px;
-    &>.pack{
-      &>.list{
-        grid-template-columns: repeat(2,152px);
+
+    &>.pack {
+      &>.list {
+        grid-template-columns: repeat(2, 152px);
         gap: 33px 16px;
       }
     }
   }
-  .airfilterclean{
+
+  .airfilterclean {
     height: 1162px;
     padding-top: 173px;
-    &>.pack{
 
-      &>.list{
-        grid-template-columns: repeat(2,152px);
+    &>.pack {
+
+      &>.list {
+        grid-template-columns: repeat(2, 152px);
         gap: 8px;
-        &>.card{
+
+        &>.card {
           height: 152px;
         }
       }
     }
   }
-    .airclean{
-    
-  &>.pack{
-    &>.list{
-          &>.card{
-              &>img{
-                height: 68.2px;
-         
-              }
-            }
+
+  .airclean {
+
+    &>.pack {
+      &>.list {
+        &>.card {
+          &>img {
+            height: 68.2px;
+
+          }
+        }
+      }
     }
-  }
   }
 }

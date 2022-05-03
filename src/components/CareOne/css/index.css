@@ -135,18 +135,24 @@
       grid-template-columns: repeat(3, 237px);
 }
 
-.hoodclean, .filterclean, .matclean {
+.hoodclean,
+.filterclean,
+.matclean {
   height: 1072px;
   padding-top: 183px;
 }
 
-.hoodclean > .pack, .filterclean > .pack, .matclean > .pack {
+.hoodclean > .pack,
+.filterclean > .pack,
+.matclean > .pack {
   padding: 0 125px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
-.hoodclean > .pack > .list, .filterclean > .pack > .list, .matclean > .pack > .list {
+.hoodclean > .pack > .list,
+.filterclean > .pack > .list,
+.matclean > .pack > .list {
   -ms-grid-columns: (237px)[3];
       grid-template-columns: repeat(3, 237px);
 }
@@ -232,15 +238,18 @@
           justify-content: center;
 }
 
-.birdclean, .bugclean {
+.birdclean,
+.bugclean {
   height: 804px;
 }
 
-.birdclean > .pack > .title, .bugclean > .pack > .title {
+.birdclean > .pack > .title,
+.bugclean > .pack > .title {
   margin-top: 13px;
 }
 
-.birdclean > .pack > .list, .bugclean > .pack > .list {
+.birdclean > .pack > .list,
+.bugclean > .pack > .list {
   margin-top: 62px;
 }
 
@@ -317,19 +326,32 @@
   .jointclean > .pack > .list > .card {
     width: 168px;
   }
-  .washclean, .hoodclean, .airclean, .filterclean, .matclean {
+  .washclean,
+  .hoodclean,
+  .airclean,
+  .filterclean,
+  .matclean {
     height: 773px;
     padding-top: 108px;
   }
-  .washclean > .pack, .hoodclean > .pack, .airclean > .pack, .filterclean > .pack, .matclean > .pack {
+  .washclean > .pack,
+  .hoodclean > .pack,
+  .airclean > .pack,
+  .filterclean > .pack,
+  .matclean > .pack {
     padding: 0 90px;
   }
-  .washclean > .pack > .list, .hoodclean > .pack > .list, .airclean > .pack > .list, .filterclean > .pack > .list, .matclean > .pack > .list {
+  .washclean > .pack > .list,
+  .hoodclean > .pack > .list,
+  .airclean > .pack > .list,
+  .filterclean > .pack > .list,
+  .matclean > .pack > .list {
     margin-top: 60px;
     -ms-grid-columns: (168px)[3];
         grid-template-columns: repeat(3, 168px);
   }
-  .birdclean, .bugclean {
+  .birdclean,
+  .bugclean {
     padding-top: 169px;
     height: 766px;
   }
@@ -408,16 +430,32 @@
     height: 26px;
     top: -12px;
   }
-  .washclean, .hoodclean, .airclean, .filterclean, .matclean {
+  .washclean,
+  .hoodclean,
+  .airclean,
+  .filterclean,
+  .matclean {
     height: 819px;
   }
-  .washclean > .pack, .hoodclean > .pack, .airclean > .pack, .filterclean > .pack, .matclean > .pack {
+  .washclean > .pack,
+  .hoodclean > .pack,
+  .airclean > .pack,
+  .filterclean > .pack,
+  .matclean > .pack {
     padding: 0;
   }
-  .washclean > .pack > .sub, .hoodclean > .pack > .sub, .airclean > .pack > .sub, .filterclean > .pack > .sub, .matclean > .pack > .sub {
+  .washclean > .pack > .sub,
+  .hoodclean > .pack > .sub,
+  .airclean > .pack > .sub,
+  .filterclean > .pack > .sub,
+  .matclean > .pack > .sub {
     white-space: nowrap;
   }
-  .washclean > .pack > .list, .hoodclean > .pack > .list, .airclean > .pack > .list, .filterclean > .pack > .list, .matclean > .pack > .list {
+  .washclean > .pack > .list,
+  .hoodclean > .pack > .list,
+  .airclean > .pack > .list,
+  .filterclean > .pack > .list,
+  .matclean > .pack > .list {
     white-space: pre-wrap;
   }
   .matclean {
@@ -471,14 +509,17 @@
   .jointclean > .pack > .list > .card {
     width: 103px;
   }
-  .birdclean, .bugclean {
+  .birdclean,
+  .bugclean {
     height: 807px;
   }
-  .birdclean > .pack > .list, .bugclean > .pack > .list {
+  .birdclean > .pack > .list,
+  .bugclean > .pack > .list {
     -ms-grid-columns: (120px)[2];
         grid-template-columns: repeat(2, 120px);
   }
-  .birdclean > .pack > .list > .card > .title, .bugclean > .pack > .list > .card > .title {
+  .birdclean > .pack > .list > .card > .title,
+  .bugclean > .pack > .list > .card > .title {
     white-space: pre-wrap;
   }
   .aircareclean {
