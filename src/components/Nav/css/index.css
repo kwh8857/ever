@@ -19,13 +19,15 @@
 }
 
 .nav > .wrapper > button {
+  white-space: nowrap;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 140px;
+  min-width: 140px;
+  padding: 0 10px;
   background-color: unset;
   font-size: 15px;
   font-weight: 500;
@@ -74,6 +76,7 @@
 }
 
 .nav > .businessgrid > button {
+  min-width: unset;
   width: 100%;
 }
 
@@ -164,7 +167,8 @@
   .nav > .businessop {
     height: 270px;
   }
-  .nav > .aboutop, .nav .partnerop {
+  .nav > .aboutop,
+  .nav .partnerop {
     height: 150px;
   }
 }

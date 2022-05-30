@@ -77,7 +77,7 @@ function HomeClean({ agent }) {
 에버퓨리에 믿고 맡기세요!`}
             sub={`신축입주청소·이사청소·인테리어 청소·외창/외벽청소 등
 오랫동안 깨끗하게 유지할 수 있는 전문 클리닝입니다.`}
-            arr={[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]}
+            arr={[]}
             type="home"
             nav="homeclean"
             agent={agent}

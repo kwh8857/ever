@@ -4,7 +4,7 @@ a {
 }
 
 #root {
-  font-family: 'Noto Sans KR',sans-serif;
+  font-family: 'Noto Sans KR', sans-serif;
   width: 100%;
   height: 100%;
   overflow-x: hidden;
@@ -23,6 +23,8 @@ a {
 }
 
 * {
+  font-family: 'Noto Sans KR',
+    sans-serif;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -31,19 +33,22 @@ a {
   scrollbar-width: none;
   -webkit-font-smoothing: antialiased;
   -ms-overflow-style: none;
-  [contenteditable=true]:empty:before{
-  content: attr(placeholder);
-  color: #bfbfbf;  
-}
-[placeholder]:empty:focus::before {
+
+  [contenteditable=true]:empty:before {
+    content: attr(placeholder);
+    color: #bfbfbf;
+  }
+
+  [placeholder]:empty:focus::before {
     content: "";
 
-}
+  }
 }
 
-u{
+u {
   text-decoration: underline;
 }
+
 html,
 body {
   width: 100%;
@@ -59,9 +64,11 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
+
 img {
   width: 100%;
 }
+
 input[type=number] {
   -moz-appearance: textfield;
 }
@@ -77,6 +84,7 @@ textarea:focus {
 .none {
   display: none !important;
 }
+
 input,
 p,
 textarea {
@@ -95,21 +103,25 @@ textarea {
     color: #c6c6c6;
 
   }
+
   &:focus {
     outline: none;
   }
 }
-.pack{
+
+.pack {
   width: 993px;
   margin: 0 auto;
 }
+
 @media screen and (max-width : 1024px) {
-  .pack{
+  .pack {
     width: 704px;
   }
 }
+
 @media screen and (max-width : 767px) {
-  .pack{
+  .pack {
     width: 320px;
   }
 }
