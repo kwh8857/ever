@@ -31,9 +31,8 @@ function Section2({ agent, handleScroll }) {
             className="right"
             src="https://www.youtube.com/embed/9oJ50_AcqdI"
             title="YouTube video player"
-            frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
+            allowFullScreen
           ></iframe>
         ) : undefined}
         <div className="left">
@@ -62,9 +61,8 @@ function Section2({ agent, handleScroll }) {
             className="right"
             src="https://www.youtube.com/embed/9oJ50_AcqdI"
             title="YouTube video player"
-            frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
+            allowFullScreen
           ></iframe>
         ) : undefined}
       </div>

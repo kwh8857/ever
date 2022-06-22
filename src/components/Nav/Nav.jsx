@@ -1,8 +1,15 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./css/index.css";
 function Nav({ now, setnow, navArr, type, agent }) {
   const barRef = useRef(null);
   const [isOpen, setisOpen] = useState(false);
+  useEffect(() => {
+    const btn = document.getElementById(`btn-${now}`);
+    barRef.current.style.width = `${btn.offsetWidth}px`;
+    barRef.current.style.left = `${btn.offsetLeft}px`;
+    return () => {};
+  }, [now]);
+
   return (
     <div className={`nav`}>
       <div className={`wrapper ${type}grid`}>
@@ -11,12 +18,13 @@ function Nav({ now, setnow, navArr, type, agent }) {
             {navArr.map((item, idx) => {
               return (
                 <button
+                  id={`btn-${idx}`}
                   key={idx}
                   className={`${now === idx ? "on" : ""}`}
                   onClick={(e) => {
                     setnow(idx);
-                    barRef.current.style.width = `${e.target.offsetWidth}px`;
-                    barRef.current.style.left = `${e.target.offsetLeft}px`;
+                    // barRef.current.style.width = `${e.target.offsetWidth}px`;
+                    // barRef.current.style.left = `${e.target.offsetLeft}px`;
                   }}
                 >
                   {item}
