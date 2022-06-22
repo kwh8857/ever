@@ -79,9 +79,14 @@ function Product({ agent }) {
                       <span>10평 이하</span>
                     </div>
                     <div className="width-line" />
-                    <div className="subject one">
-                      <b>고급형</b>
-                      <span>10평 이상 무풍형</span>
+                    <div className="subject fix">
+                      <div className="left">
+                        <b>고급형</b>
+                        <span>10평 이상</span>
+                      </div>
+                      <div className="right">
+                        <span>무풍형</span>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -93,15 +98,18 @@ function Product({ agent }) {
                   />
                   <div className="content">
                     <div className="title">스탠드 에어컨</div>
-                    <div className="subject two">
+                    <div className="subject three">
                       <div className="left short">
                         <b>일반형</b>
-                        <span>10평 이하</span>
+                        <span>2012년 이전</span>
                       </div>
 
                       <div className="right short">
                         <b>스마트</b>
-                        <span>2012년 이후 무풍형 2구</span>
+                        <span>2012년 이후</span>
+                      </div>
+                      <div className="pax">
+                        <span> 무풍형 2구</span>
                       </div>
                     </div>
                     <div className="width-line" />
@@ -150,7 +158,7 @@ function Product({ agent }) {
 에버퓨리에 믿고 맡기세요!`}
             sub={`완벽한 홈케어로 입소문 타고 평판만으로 
 여기까지 왔습니다.`}
-            arr={[0, 0, 0, 0, 0, 0, 0, 0]}
+            arr={[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]}
             type="aircon"
             nav="product"
             agent={agent}
@@ -744,8 +752,8 @@ CS마스터 팀장이 직접 방문 및 케어`,
   {
     img: "point-3",
     title: "소독ㆍ살균 서비스",
-    bold: "2중 완벽",
-    content: `고온스팀살균, UV자외선살균`,
+    bold: "완벽",
+    content: `고온스팀살균`,
   },
   {
     img: "point-4",

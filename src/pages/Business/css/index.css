@@ -62,6 +62,12 @@
   font-weight: 500;
   line-height: 1.26;
   color: var(--navy);
+  font-family: "score";
+}
+
+.business > .building-care > .pack > .left > .title > b {
+  font-family: "score";
+  font-weight: bold;
 }
 
 .business > .building-care > .pack > .right {
@@ -167,7 +173,13 @@
 .business > .purify-one > .pack > .top > .left > .title {
   font-size: 36px;
   color: var(--navy);
-  margin: 9px 0;
+  margin: 13px 0;
+  font-family: "score";
+}
+
+.business > .purify-one > .pack > .top > .left > .title > b {
+  font-family: "score";
+  font-weight: bold;
 }
 
 .business > .purify-one > .pack > .top > .left > .sub {
@@ -379,6 +391,12 @@
   color: var(--navy);
   margin-top: 19px;
   margin-bottom: 9px;
+  font-family: "score";
+}
+
+.business > .purify-two > .pack > .title > b {
+  font-family: "score";
+  font-weight: bold;
 }
 
 .business > .purify-two > .pack > .sub {
@@ -454,6 +472,14 @@
   line-height: 1.39;
   font-weight: 500;
   background-color: #e3f8f7;
+}
+
+.business > .purify-two > .pack > .content-wrapper > .water-wrapper > .box > b {
+  color: #40ccc7;
+}
+
+.business > .purify-two > .pack > .content-wrapper > .water-wrapper > .box > div > b {
+  color: #40ccc7;
 }
 
 .business > .purify-two > .pack > .content-wrapper > .water-wrapper .mint {
@@ -758,7 +784,7 @@
             column-gap: 1px;
   }
   .business > .purify-one > .pack > .bottom > .mb-wrapper > .box > .foot > .left {
-    border-right: solid 1px  #e0e0e0;
+    border-right: solid 1px #e0e0e0;
   }
   .business > .purify-one > .pack > .bottom > .mb-wrapper > .box > .foot > div {
     display: -ms-grid;

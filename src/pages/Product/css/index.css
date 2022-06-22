@@ -119,6 +119,74 @@
   white-space: nowrap;
 }
 
+.product > .aircon > .section8 > .pack > .list > .card > .content > .three {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: unset;
+}
+
+.product > .aircon > .section8 > .pack > .list > .card > .content > .three > .left {
+  width: 249px;
+  padding-left: 30.5px;
+}
+
+.product > .aircon > .section8 > .pack > .list > .card > .content > .three > .right {
+  width: 198px;
+  padding-left: 23.1px;
+}
+
+.product > .aircon > .section8 > .pack > .list > .card > .content > .three > .pax {
+  width: 114px;
+  padding-left: 14.9px;
+}
+
+.product > .aircon > .section8 > .pack > .list > .card > .content > .three > div {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.product > .aircon > .section8 > .pack > .list > .card > .content > .three > .left,
+.product > .aircon > .section8 > .pack > .list > .card > .content > .three .right {
+  border-right: solid 1px #e0e0e0;
+}
+
+.product > .aircon > .section8 > .pack > .list > .card > .content > .fix {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  padding: unset;
+}
+
+.product > .aircon > .section8 > .pack > .list > .card > .content > .fix > div {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.product > .aircon > .section8 > .pack > .list > .card > .content > .fix > .left {
+  padding-left: 31px;
+  border-right: solid 1px #e0e0e0;
+}
+
+.product > .aircon > .section8 > .pack > .list > .card > .content > .fix > .right {
+  padding-left: 15px;
+}
+
 .product > .aircon > .section8 > .pack > .list > .card > .content > .two {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -212,6 +280,33 @@
   .product > .aircon > .section8 > .pack > .list > .card > .content > .subject span {
     font-size: 16px;
   }
+  .product > .aircon > .section8 > .pack > .list > .card > .content > .fix {
+    padding: unset;
+  }
+  .product > .aircon > .section8 > .pack > .list > .card > .content > .fix > .left {
+    padding-left: 40px;
+  }
+  .product > .aircon > .section8 > .pack > .list > .card > .content > .three {
+    padding: unset;
+  }
+  .product > .aircon > .section8 > .pack > .list > .card > .content > .three > .left {
+    width: 206.7px;
+    padding-left: 42px;
+  }
+  .product > .aircon > .section8 > .pack > .list > .card > .content > .three > .left > b {
+    margin-right: 19.2px;
+  }
+  .product > .aircon > .section8 > .pack > .list > .card > .content > .three > .right {
+    width: 176.8px;
+    padding-left: 16.8px;
+  }
+  .product > .aircon > .section8 > .pack > .list > .card > .content > .three > .right > b {
+    margin-right: 8.2px;
+  }
+  .product > .aircon > .section8 > .pack > .list > .card > .content > .three > .pax {
+    width: 102.5px;
+    padding-left: 11.2px;
+  }
   .product > .aircon > .section8 > .pack > .list > .card > .content > .lux > b {
     margin-right: 22px;
   }
@@ -268,9 +363,52 @@
     height: 53px;
     padding-left: 24px;
   }
+  .product > .aircon > .section8 > .pack > .list > .card > .content > .one {
+    padding-left: 32px;
+  }
+  .product > .aircon > .section8 > .pack > .list > .card > .content > .fix {
+    padding: unset;
+    -ms-grid-columns: 204.5px 115.5px;
+        grid-template-columns: 204.5px 115.5px;
+  }
+  .product > .aircon > .section8 > .pack > .list > .card > .content > .fix > .left {
+    padding-left: 32px;
+  }
+  .product > .aircon > .section8 > .pack > .list > .card > .content > .fix > .right {
+    padding-left: 33.5px;
+  }
+  .product > .aircon > .section8 > .pack > .list > .card > .content > .three {
+    padding: unset;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    height: 106px;
+  }
+  .product > .aircon > .section8 > .pack > .list > .card > .content > .three > div {
+    height: 53px;
+  }
+  .product > .aircon > .section8 > .pack > .list > .card > .content > .three > .left {
+    width: 320px;
+    border-right: unset;
+    border-bottom: solid 1px #e0e0e0;
+    padding-left: 22.5px;
+  }
+  .product > .aircon > .section8 > .pack > .list > .card > .content > .three > .right {
+    padding-left: 22.5px;
+    width: 204.5px;
+  }
+  .product > .aircon > .section8 > .pack > .list > .card > .content > .three > .pax {
+    width: 115.5px;
+    padding-left: 18px;
+  }
+  .product > .aircon > .section8 > .pack > .list > .card > .content .lux {
+    height: 78px;
+    padding-left: 22.5px;
+  }
   .product > .aircon > .section8 > .pack > .list > .card > .content .short > b,
   .product > .aircon > .section8 > .pack > .list > .card > .content .lux > b {
-    margin-right: 33px !important;
+    margin-right: 31px !important;
   }
   .product > .aircon > .section8 > .pack > .list > .card > .content > .two {
     -webkit-box-orient: vertical;

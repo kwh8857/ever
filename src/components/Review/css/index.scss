@@ -85,6 +85,14 @@
   }
 }
 
+.airconre {
+  height: 1900px;
+
+  &>.back {
+    height: 970px;
+  }
+}
+
 .matre {
   height: 935px;
   padding-top: 134px;
@@ -153,6 +161,14 @@
     }
   }
 
+  .airconre {
+    height: 1500px;
+
+    &>.back {
+      height: 830px;
+    }
+  }
+
   .homere {
     height: 838px;
     padding-top: 50px;
@@ -208,6 +224,14 @@
 
     &>.back {
       height: 429px;
+    }
+  }
+
+  .airconre {
+    height: 2140px;
+
+    &>.back {
+      height: 1180px;
     }
   }
 

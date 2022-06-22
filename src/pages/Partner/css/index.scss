@@ -63,7 +63,13 @@
             line-height: 1.26;
             color: var(--navy);
             white-space: nowrap;
-            margin: 12px 0;
+            margin: 14px 0;
+            font-family: "score";
+
+            &>b {
+              font-family: "score";
+              font-weight: bold;
+            }
           }
 
           &>.sub {
@@ -183,6 +189,12 @@
           line-height: 1.28;
           color: var(--navy);
           position: relative;
+          font-family: "score";
+
+          &>b {
+            font-family: "score";
+            font-weight: bold;
+          }
 
           &>.line {
             width: 338px;
@@ -213,6 +225,12 @@
           color: var(--navy);
           margin-bottom: 19px;
           position: relative;
+          font-family: "score";
+
+          &>b {
+            font-family: "score";
+            font-weight: bold;
+          }
 
           &>.line {
             width: 251px;
@@ -274,7 +292,13 @@
         color: white;
         font-size: 35px;
         font-weight: 500;
-        margin-top: 6px;
+        margin-top: 12px;
+        font-family: "score";
+
+        &>b {
+          font-family: "score";
+          font-weight: bold;
+        }
       }
 
       &>.list {
@@ -317,6 +341,10 @@
               box-sizing: border-box;
               font-size: 14px;
               line-height: 1.71;
+
+              &>b {
+                color: var(--dark-sky-blue);
+              }
             }
           }
         }
