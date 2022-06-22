@@ -1,6 +1,8 @@
 import React, { useCallback } from "react";
 import "./css/index.css";
+import { NaverMap, Marker } from "react-naver-maps";
 function Map({ agent }) {
+  const navermaps = window.naver.maps;
   const __clipboard = useCallback(() => {
     navigator.clipboard
       .writeText("대구광역시 동구 동내로 76 한국메디벤처센터 210호, 211호")
@@ -18,12 +20,20 @@ function Map({ agent }) {
         <div className="content">
           <div className="category">MAP</div>
           <div className="title">찾아오시는 길</div>
-          <img
-            src="/assets/map/map.png"
-            srcSet="/assets/map/map@2x.png 2x, /assets/map/map@3x.png 3x"
-            alt=""
-            className="main"
-          />
+          <NaverMap
+            className="naver-map"
+            style={
+              agent === "pc"
+                ? { width: "766px", height: "470.4px" }
+                : agent === "tablet"
+                ? { width: "512.9px", height: "315px" }
+                : { width: "320px", height: "196.3px" }
+            }
+            defaultCenter={{ lat: 35.8776262, lng: 128.7359423 }}
+            defaultZoom={17}
+          >
+            <Marker position={new navermaps.LatLng(35.8776262, 128.7359423)} />
+          </NaverMap>
           <div className="list">
             {layout.map(({ img, category, content }, idx) => {
               return (
