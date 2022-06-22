@@ -1,129 +1,157 @@
-.kind{
+.kind {
 
-      background-color: #f8f8f8;
-      width: 100%;
-        height: 1086px;
-        padding-top: 154.5px;
-        box-sizing: border-box;
-        &>.pack{
+  background-color: #f8f8f8;
+  width: 100%;
+  height: 1086px;
+  padding-top: 154.5px;
+  box-sizing: border-box;
+
+  &>.pack {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &>.title {
+      text-align: center;
+      color: var(--navy);
+      font-size: 35px;
+      font-family: "score";
+      line-height: 1.3;
+
+      &>b {
+        font-family: "score";
+        font-weight: bold;
+        color: #46BAD1;
+      }
+    }
+
+    &>.list {
+      margin-top: 53px;
+      display: grid;
+      grid-template-columns: repeat(3, 223px);
+      column-gap: 78px;
+      row-gap: 57px;
+
+      &>.card {
+        &>.circle {
+          width: 215px;
+          height: 215px;
+          border-radius: 215px;
+          background-color: white;
+        }
+
+        &>.title {
+          width: 100%;
+          height: 53px;
           display: flex;
-          flex-direction: column;
           align-items: center;
-          &>.title{
-             text-align: center;
-             color: var(--navy);
-             font-size: 35px;
-          }
-          &>.list{
-            margin-top: 53px;
-            display: grid;
-            grid-template-columns: repeat(3,223px);
-            column-gap: 78px;
-            row-gap: 57px;
-            &>.card{
-              &>.circle{
-                width: 215px;
-                height: 215px;
-                border-radius: 215px;
-                background-color: white;
-              }
-              &>.title{
-                width: 100%;
-                height: 53px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                color: white;
-                background-color:var(--dark-sky-blue) ;
-                font-size: 22px;
-                font-weight: bold;
-                margin-top: 18px;
-                &>span{
-                  margin-left: 5px;
-                  font-size: 14px;
-                  font-weight: 500;
-                  transform: translateY(3px);
+          justify-content: center;
+          color: white;
+          background-color: var(--dark-sky-blue);
+          font-size: 22px;
+          font-weight: bold;
+          margin-top: 18px;
 
-                }
-              }
-            }
+          &>span {
+            margin-left: 5px;
+            font-size: 14px;
+            font-weight: 500;
+            transform: translateY(3px);
+
           }
         }
-}
-.washkind{
-  &>.pack{
-    &>.list{
-       display: flex;
-       justify-content: center;
-       flex-wrap: wrap-reverse;
-       gap: 48px 44px;
-       &>.card{
-         width: 215px;
-       }
+      }
     }
   }
 }
-.hoodkind,.filterkind{
+
+.washkind {
+  &>.pack {
+    &>.list {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap-reverse;
+      gap: 48px 44px;
+
+      &>.card {
+        width: 215px;
+      }
+    }
+  }
+}
+
+.hoodkind,
+.filterkind {
   height: 748px;
   padding-top: 120px;
-  &>.pack{
-    &>.category{
+
+  &>.pack {
+    &>.category {
       margin-bottom: 20px;
-        width: 155px;
-  height: 33px;
-  background-color: var(--navy);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-size: 11px;
-  font-family: 'gmarket';
-  border-radius: 16.5px;
+      width: 155px;
+      height: 33px;
+      background-color: var(--navy);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 11px;
+      font-family: 'gmarket';
+      border-radius: 16.5px;
     }
-    &>.list{
-      grid-template-columns: repeat(2,215px);
+
+    &>.list {
+      grid-template-columns: repeat(2, 215px);
       column-gap: 99px;
       margin-top: 45px;
     }
   }
 }
-.businesskind{
-  &>.pack{
-    &>.category{
+
+.businesskind {
+  &>.pack {
+    &>.category {
       background-color: #40ccc7;
     }
-    &>.list{
-      &>.card{
-        &>.title{
+
+    &>.list {
+      &>.card {
+        &>.title {
           background-color: #40ccc7;
         }
       }
     }
   }
 }
+
 @media screen and (max-width : 1024px) {
-  .kind{
+  .kind {
     height: 1030px;
     padding-top: 161px;
-    &>.pack{
-      &>.title{
+
+    &>.pack {
+      &>.title {
         font-size: 25px;
       }
-      &>.list{
+
+      &>.list {
         margin-top: 48px;
-        grid-template-columns: repeat(3,190px);
+        grid-template-columns: repeat(3, 190px);
         column-gap: 37px;
         row-gap: 49px;
-        &>.card{
-          &>.circle{
+
+        &>.card {
+          &>.circle {
             width: 100%;
             height: 190px;
           }
-          &>.title{
+
+          &>.title {
             height: 45px;
             margin-top: 16px;
             font-size: 18px;
-            &>span{
+
+            &>span {
               font-size: 11px;
             }
           }
@@ -131,21 +159,27 @@
       }
     }
   }
-  .washkind{
+
+  .washkind {
     padding-top: 220px;
-    &>.pack{
-      &>.list{
+
+    &>.pack {
+      &>.list {
         width: 725px;
-        &>.card{
+
+        &>.card {
           width: 153px;
-          &>.circle{
+
+          &>.circle {
             height: 153px;
           }
-          &>.title{
+
+          &>.title {
             margin-top: 13px;
             height: 38px;
             font-size: 13px;
-            &>span{
+
+            &>span {
               transform: translateY(0);
             }
           }
@@ -153,20 +187,26 @@
       }
     }
   }
-  .hoodkind,.filterkind{
+
+  .hoodkind,
+  .filterkind {
     height: 745px;
-    &>.pack{
-      &>.list{
-        grid-template-columns: repeat(2,215px);
+
+    &>.pack {
+      &>.list {
+        grid-template-columns: repeat(2, 215px);
         column-gap: 99px;
-        &>.card{
+
+        &>.card {
           display: flex;
           flex-direction: column;
           align-items: center;
-          &>.circle{
+
+          &>.circle {
             height: 215px;
           }
-          &>.title{
+
+          &>.title {
             width: 162px;
           }
         }
@@ -174,69 +214,85 @@
     }
   }
 }
+
 @media screen and (max-width : 767px) {
-  .kind{
-   height: 1390px;
-   padding-top: 223px;
-   &>.pack{
-     &>.list{
-       margin-top: 91px;
-       grid-template-columns: repeat(2,152px);
-       gap: 67px 16px;
-       &>.card{
-         &>.circle{
+  .kind {
+    height: 1390px;
+    padding-top: 223px;
+
+    &>.pack {
+      &>.list {
+        margin-top: 91px;
+        grid-template-columns: repeat(2, 152px);
+        gap: 67px 16px;
+
+        &>.card {
+          &>.circle {
             height: 152px;
-         }
-         &>.title{
-           margin-top: 33px;
-           flex-direction: column;
-           &>span{
-             margin-left: 0;
-             transform: translateY(-3px);
-           }
-         }
-       }
-     }
-   }
-  }
-  .washkind{
-    padding-top: 238px;
-    height: 1673px;
-    &>.pack{
-      &>.list{
-        width: 100%;
-        flex-wrap: wrap;
-        gap: 54px 16px;
-        &>.card{
-width: 152px;
-&>.circle{
-  height: 152px;
-  
-}
-&>.title{
-  margin-top: 23px;
-  font-size: 18px;
-  height: 48px;
-  &>span{
-    font-size: 12px;
-  }
-}
+          }
+
+          &>.title {
+            margin-top: 33px;
+            flex-direction: column;
+
+            &>span {
+              margin-left: 0;
+              transform: translateY(-3px);
+            }
+          }
         }
       }
     }
   }
-  .hoodkind,.filterkind{
+
+  .washkind {
+    padding-top: 238px;
+    height: 1673px;
+
+    &>.pack {
+      &>.list {
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 54px 16px;
+
+        &>.card {
+          width: 152px;
+
+          &>.circle {
+            height: 152px;
+
+          }
+
+          &>.title {
+            margin-top: 23px;
+            font-size: 18px;
+            height: 48px;
+
+            &>span {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .hoodkind,
+  .filterkind {
     height: 1090px;
     padding-top: 113px;
-    &>.pack{
-      &>.list{
+
+    &>.pack {
+      &>.list {
         margin-top: 37px;
         grid-template-columns: 215px;
-        &>.card{
-          &>.circle{
+
+        &>.card {
+          &>.circle {
             height: 215px;
           }
-          &>.title{
+
+          &>.title {
             margin-top: 21px;
             width: 138px;
             height: 37px;

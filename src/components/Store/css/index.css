@@ -17,6 +17,15 @@
   font-size: 35px;
 }
 
+.store > .pack > .title {
+  font-family: "score";
+}
+
+.store > .pack > .title > b {
+  font-family: "score";
+  font-weight: bold;
+}
+
 .store > .pack > .button-wrapper {
   margin-top: 37px;
   display: -ms-grid;

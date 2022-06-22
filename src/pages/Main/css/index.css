@@ -21,6 +21,8 @@
 .main .section1 > .pack > b {
   position: relative;
   z-index: 10;
+  font-family: 'score';
+  font-weight: bold;
 }
 
 .main .section1 > .pack > .line {
@@ -80,15 +82,22 @@
 .main .section2 > .pack > .left > .title {
   color: var(--navy);
   font-size: 45px;
-  font-family: 'gmarket';
-  font-weight: bold;
   line-height: 1.33;
+}
+
+.main .section2 > .pack > .left > .title > b {
+  font-family: 'score';
+  font-weight: bold;
 }
 
 .main .section2 > .pack > .left > .sub {
   font-size: 16px;
   line-height: 1.63;
   margin: 37px 0;
+}
+
+.main .section2 > .pack > .left > .sub > b {
+  color: #46BAD1;
 }
 
 .main .section2 > .pack > .left > button {
@@ -135,6 +144,12 @@
   color: var(--navy);
   font-size: 34px;
   line-height: 1.29;
+  font-family: 'score';
+  font-weight: 400;
+}
+
+.main .section3 > .pack > .title > b {
+  font-family: 'score';
 }
 
 .main .section3 > .pack > .wrapper {
@@ -275,6 +290,12 @@
   font-size: 37px;
   line-height: 1.24;
   color: var(--navy);
+  font-family: 'score';
+}
+
+.main .section4 > .pack > .title > b {
+  font-family: 'score';
+  font-weight: bold;
 }
 
 .main .section4 > .pack > .sub {
@@ -376,6 +397,12 @@
   font-size: 34px;
   line-height: 1.35;
   color: var(--navy);
+  font-family: 'score';
+}
+
+.main .section5 > .pack > .content > .title > b {
+  font-family: 'score';
+  font-weight: bold;
 }
 
 .main .section5 > .pack > .content > .sub {
@@ -445,7 +472,7 @@
   }
   .main > .section2 > .pack > .left > .sub {
     font-size: 13px;
-    margin: 13px 0  39px 0;
+    margin: 13px 0 39px 0;
   }
   .main > .section2 > .pack > .left > button {
     width: 168px;

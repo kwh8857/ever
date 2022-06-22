@@ -42,10 +42,13 @@
   margin-right: 17px;
   color: white;
   white-space: nowrap;
+  font-family: "score";
 }
 
 .slogan > .pack > .title > b {
   color: var(--dark-sky-blue);
+  font-family: "score";
+  font-weight: bold;
 }
 
 .slogan > .pack > .right {
@@ -163,7 +166,12 @@
   .purifyslogan {
     height: 289px;
   }
-  .washslogan > .pack > .title, .hoodslogan > .pack > .title, .airslogan > .pack > .title, .filterslogan > .pack > .title, .birdslogan > .pack > .title, .bugslogan > .pack > .title {
+  .washslogan > .pack > .title,
+  .hoodslogan > .pack > .title,
+  .airslogan > .pack > .title,
+  .filterslogan > .pack > .title,
+  .birdslogan > .pack > .title,
+  .bugslogan > .pack > .title {
     margin: 0;
   }
 }

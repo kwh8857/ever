@@ -1,431 +1,535 @@
-.summary{
-      height: 741px;
-      width: 100%;
-      background-color: white;
-      &>.pack{
-        height: 100%;
-        position: relative;
-         transform: scaleX(-1);
-         &>.back{
-           left: 400px;
-           top: 305px;
-           position: absolute;
-           height: 306px;
-           width: 100vw;
-           background-color: var(--navy);
-           z-index: -1;
-         }
-         &>.backimg{
-                    transform: scaleX(-1);
-           position: absolute;
-           width: fit-content;
-           top: 93px;
-           z-index: -2;
-           left: -200px;
-         }
-         &>.content-wrapper{
-           color: white;
-          transform: scaleX(-1);
-          padding-left: 52.8px;
-          padding-top: 346px;
-          &>.title{
-            font-size: 35px;
-            font-weight: 500;
-              line-height: 1.26;
-              
-          }
-          &>.line{
-            width: 24px;
-            height: 4px;
-            background-color: white;
-            margin-top: 18px;
-            margin-bottom: 9px;
-          }
-          &>.sub{
-              line-height: 1.59;
-              font-size: 17px;
-          }
-         }
+.summary {
+  height: 741px;
+  width: 100%;
+  background-color: white;
+
+  &>.pack {
+    height: 100%;
+    position: relative;
+    transform: scaleX(-1);
+
+    &>.back {
+      left: 400px;
+      top: 305px;
+      position: absolute;
+      height: 306px;
+      width: 100vw;
+      background-color: var(--navy);
+      z-index: -1;
+    }
+
+    &>.backimg {
+      transform: scaleX(-1);
+      position: absolute;
+      width: fit-content;
+      top: 93px;
+      z-index: -2;
+      left: -200px;
+    }
+
+    &>.content-wrapper {
+      color: white;
+      transform: scaleX(-1);
+      padding-left: 52.8px;
+      padding-top: 346px;
+
+      &>.title {
+        font-size: 35px;
+        font-weight: 500;
+        line-height: 1.26;
+        font-family: "score";
+
+        &>b {
+          font-family: "score";
+          font-weight: bold;
+        }
       }
+
+      &>.line {
+        width: 24px;
+        height: 4px;
+        background-color: white;
+        margin-top: 18px;
+        margin-bottom: 9px;
+      }
+
+      &>.sub {
+        line-height: 1.59;
+        font-size: 17px;
+
+
+      }
+    }
+  }
 }
-.hoodsummary{
+
+.hoodsummary {
   height: 747px;
-  &>.pack{
-    &>.back{
+
+  &>.pack {
+    &>.back {
       height: 267px;
       top: 328px;
     }
-    &>.backimg{
+
+    &>.backimg {
       top: 73px;
     }
-    &>.content-wrapper{
+
+    &>.content-wrapper {
       padding-top: 369px;
     }
   }
 }
-.airsummary{
+
+.airsummary {
   height: 715px;
-  &>.pack{
-    &>.back{
+
+  &>.pack {
+    &>.back {
       height: 270px;
     }
-    &>.backimg{
+
+    &>.backimg {
       top: 83px;
     }
   }
 }
-.filtersummary{
+
+.filtersummary {
   height: 715px;
-  &>.pack{
-    &>.back{
+
+  &>.pack {
+    &>.back {
       height: 287px;
     }
-    &>.backimg{
+
+    &>.backimg {
       top: 88px;
     }
   }
 }
-.matsummary{
+
+.matsummary {
   height: 741px;
-  &>.pack{
-    &>.back{
+
+  &>.pack {
+    &>.back {
       height: 342px;
     }
   }
 }
 
-.homecleansummary{
-   &>.pack{
-     &>.back{
-        background-color: var(--shamrock);
-     }
-   }
+.homecleansummary {
+  &>.pack {
+    &>.back {
+      background-color: var(--shamrock);
+    }
+  }
 }
-.businesssummary{
-  &>.pack{
-    &>.back{
+
+.businesssummary {
+  &>.pack {
+    &>.back {
       background-color: #40ccc7;
     }
-    &>.content-wrapper{
-            color: var(--navy);
-                  &>.line{
+
+    &>.content-wrapper {
+      color: var(--navy);
+
+      &>.line {
         background-color: var(--navy);
       }
     }
   }
 }
-.birdsummary{
-  &>.pack{
-    &>.back{
+
+.birdsummary {
+  &>.pack {
+    &>.back {
       height: 319px;
     }
-    &>.backimg{
+
+    &>.backimg {
       top: 106px;
     }
   }
 }
-.bugsummary{
+
+.bugsummary {
   height: 879px;
-   &>.pack{
-     &>.back{
-       height: 328px;
-     }
-     &>.backimg{
-       top: 91px;
-     }
-     &>.content-wrapper{
-       padding-top: 365px;
-     }
-   }
+
+  &>.pack {
+    &>.back {
+      height: 328px;
+    }
+
+    &>.backimg {
+      top: 91px;
+    }
+
+    &>.content-wrapper {
+      padding-top: 365px;
+    }
+  }
 }
-.buildingsummary{
-  &>.pack{
-    &>.back{
+
+.buildingsummary {
+  &>.pack {
+    &>.back {
       height: 495px;
       top: 172px;
     }
-    &>.backimg{
+
+    &>.backimg {
       top: 66px;
     }
-    &>.content-wrapper{
+
+    &>.content-wrapper {
       padding-top: 231px;
-          &>.category-wrapper{
-            margin-top: 38px;
-      &>div{
-        column-gap: 12px;
-        &>div{
-          height: 41px;
-          background-color: white;
-          border-radius: 20.5px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          font-size: 16px;
-          font-weight: bold;
-          color: var(--navy);
+
+      &>.category-wrapper {
+        margin-top: 38px;
+
+        &>div {
+          column-gap: 12px;
+
+          &>div {
+            height: 41px;
+            background-color: white;
+            border-radius: 20.5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            font-weight: bold;
+            color: var(--navy);
+          }
+        }
+
+        &>.one {
+          display: grid;
+          grid-template-columns: repeat(3, 102px);
+          margin-bottom: 12px;
+        }
+
+        &>.two {
+          display: grid;
+          grid-template-columns: repeat(4, 102px);
         }
       }
-      &>.one{
-        display: grid;
-        grid-template-columns: repeat(3,102px);
-        margin-bottom: 12px;
-      }
-           &>.two{
-        display: grid;
-        grid-template-columns: repeat(4,102px);
-      }
-    }
     }
 
   }
 }
-.aircaresummary{
+
+.aircaresummary {
   height: 706px;
-  &>.pack{
-    &>.back{
+
+  &>.pack {
+    &>.back {
       top: 204px;
       height: 287px;
     }
-    &>.content-wrapper{
+
+    &>.content-wrapper {
       padding-top: 263px;
       padding-left: 0;
-      &>.sub{
+
+      &>.sub {
         font-size: 16px;
       }
-      &>.line{
+
+      &>.line {
         margin-top: 20.5px;
         margin-bottom: 17.5px;
       }
     }
-    &>.backimg{
+
+    &>.backimg {
       top: 83px;
     }
   }
 }
-.airfiltersummary{
+
+.airfiltersummary {
   height: 763px;
-  &>.pack{
-    &>.back{
+
+  &>.pack {
+    &>.back {
       height: 299px;
       top: 188px;
     }
-    &>.backimg{
+
+    &>.backimg {
       top: 69px;
     }
-    &>.content-wrapper{
+
+    &>.content-wrapper {
       padding-top: 236px;
       padding-left: 0;
-      &>.line{
+
+      &>.line {
         margin-top: 17.5px;
         margin-bottom: 20.5px;
       }
     }
   }
 }
-.purifysummary{
+
+.purifysummary {
   height: 744px;
-  &>.pack{
-    &>.back{
+
+  &>.pack {
+    &>.back {
       height: 187px;
       top: 291px;
     }
-    &>.backimg{
+
+    &>.backimg {
       top: 83px;
     }
-    &>.content-wrapper{
+
+    &>.content-wrapper {
       padding-left: 0;
       padding-top: 339px;
     }
   }
 
 }
+
 @media screen and (max-width : 1024px) {
-  .summary{
+  .summary {
     height: 471px;
-    &>.pack{
-      &>.back{
+
+    &>.pack {
+      &>.back {
         height: 216px;
         left: 200px;
         top: 175px;
       }
-      &>.backimg{
+
+      &>.backimg {
         width: 384px;
-  height: 255px;
-      top: 28px;
-       left: -63px;
+        height: 255px;
+        top: 28px;
+        left: -63px;
       }
-      &>.content-wrapper{
+
+      &>.content-wrapper {
         padding-top: 209px;
         padding-left: 20px;
-        &>.title{
+
+        &>.title {
           font-size: 23px;
         }
-        &>.line{
+
+        &>.line {
           width: 13.2px;
-          margin: 9px 0 ;
+          margin: 9px 0;
         }
-        &>.sub{
+
+        &>.sub {
           font-size: 14px;
         }
       }
     }
   }
-  .washsummary{
+
+  .washsummary {
     height: 522px;
-    &>.pack{
-      &>.back{
+
+    &>.pack {
+      &>.back {
         height: 246px;
         top: 191px;
       }
-      &>.backimg{
+
+      &>.backimg {
         width: 384px;
         top: 42px;
       }
-      &>.content-wrapper{
+
+      &>.content-wrapper {
         padding-top: 226px;
       }
     }
   }
-  .hoodsummary{
+
+  .hoodsummary {
     height: 545px;
-    &>.pack{
-      &>.back{
+
+    &>.pack {
+      &>.back {
         height: 203px;
         top: 191px;
       }
-      &>.backimg{
+
+      &>.backimg {
         width: 406px;
         top: 41px;
       }
-      &>.content-wrapper{
+
+      &>.content-wrapper {
         padding-top: 226px;
       }
     }
   }
-    .airsummary{
+
+  .airsummary {
     height: 545px;
-    &>.pack{
-      &>.back{
+
+    &>.pack {
+      &>.back {
         height: 203px;
         top: 213px;
       }
-      &>.backimg{
+
+      &>.backimg {
         width: 406px;
         top: 41px;
       }
-      &>.content-wrapper{
+
+      &>.content-wrapper {
         padding-top: 248px;
       }
     }
   }
-  .buildingsummary{
+
+  .buildingsummary {
     height: 644px;
-    &>.pack{
-      &>.back{
+
+    &>.pack {
+      &>.back {
         height: 389px;
         top: 147px;
       }
-      &>.backimg{
+
+      &>.backimg {
         width: 404px;
         top: 59px;
 
       }
-      &>.content-wrapper{
+
+      &>.content-wrapper {
         padding-top: 186px;
-        &>.line{
+
+        &>.line {
           width: 23.5px;
           margin-top: 21px;
           margin-bottom: 13px;
         }
-        &>.category-wrapper{
+
+        &>.category-wrapper {
           margin-top: 23px;
-          &>div{
-            &>div{
+
+          &>div {
+            &>div {
               height: 30px;
               font-size: 13px;
             }
           }
-          &>.one{
-            grid-template-columns: repeat(3,83px);
-                      column-gap: 6px;
+
+          &>.one {
+            grid-template-columns: repeat(3, 83px);
+            column-gap: 6px;
           }
-          &>.two{
-            grid-template-columns: repeat(4,83px);
-                      column-gap: 6px;
+
+          &>.two {
+            grid-template-columns: repeat(4, 83px);
+            column-gap: 6px;
           }
         }
       }
     }
   }
-  .filtersummary{
-      height: 545px;
-      &>.pack{
-        &>.back{
-          height: 223px;
-          top: 213px;
-        }
-        &>.backimg{
-          width: 406px;
-          top: 41px;
-        }
-        &>.content-wrapper{
-          padding-top: 248px;
-        }
+
+  .filtersummary {
+    height: 545px;
+
+    &>.pack {
+      &>.back {
+        height: 223px;
+        top: 213px;
       }
+
+      &>.backimg {
+        width: 406px;
+        top: 41px;
+      }
+
+      &>.content-wrapper {
+        padding-top: 248px;
+      }
+    }
   }
-  .matsummary{
+
+  .matsummary {
     height: 593px;
-    &>.pack{
-      &>.back{
+
+    &>.pack {
+      &>.back {
         height: 258px;
         top: 252px;
       }
-      &>.backimg{
+
+      &>.backimg {
         width: 482px;
         top: 80px;
 
       }
-      &>.content-wrapper{
+
+      &>.content-wrapper {
         padding-top: 286px;
       }
     }
   }
-  .bugsummary{
+
+  .bugsummary {
     height: 593px;
-    &>.pack{
-      &>.back{
+
+    &>.pack {
+      &>.back {
         top: 252px;
         height: 248px;
       }
-      &>.backimg{
+
+      &>.backimg {
         width: 487px;
         top: 74px;
       }
-      &>.content-wrapper{
+
+      &>.content-wrapper {
         padding-top: 285px;
       }
     }
   }
-  .birdsummary{
+
+  .birdsummary {
     height: 593px;
-    &>.pack{
-      &>.back{
+
+    &>.pack {
+      &>.back {
         height: 238px;
         top: 252px;
       }
-      &>.backimg{
+
+      &>.backimg {
         width: 478px;
         top: 80px;
       }
-      &>.content-wrapper{
+
+      &>.content-wrapper {
         padding-top: 286px;
       }
     }
   }
-  .purifysummary{
+
+  .purifysummary {
     height: 515px;
-    &>.pack{
-      &>.back{
+
+    &>.pack {
+      &>.back {
         height: 135px;
         left: 230px;
       }
@@ -434,205 +538,251 @@
   }
 
 }
+
 @media screen and (max-width : 767px) {
-  .summary{
+  .summary {
     height: 613px;
-    &>.pack{
-      &>.backimg{
-          width: 319px;
-  height: 212px;
-  top: 55px;
-  left: -40px;
+
+    &>.pack {
+      &>.backimg {
+        width: 319px;
+        height: 212px;
+        top: 55px;
+        left: -40px;
       }
-      &>.back{
+
+      &>.back {
         top: 231px;
         height: 241px;
         left: 35px;
       }
-      &>.content-wrapper{
+
+      &>.content-wrapper {
         padding-top: 267px;
         padding-left: 0;
-        &>.title{
+
+        &>.title {
           font-size: 18px;
         }
-        &>.line{
+
+        &>.line {
           width: 12.5px;
           margin: 11px 0;
         }
-        &>.sub{
+
+        &>.sub {
           font-size: 13px;
         }
       }
     }
   }
-  .matsummary{
+
+  .matsummary {
     height: 652px;
-    &>.pack{
-      &>.back{
+
+    &>.pack {
+      &>.back {
         height: 247px;
         top: 241px;
         left: 10px;
       }
     }
   }
-  .bugsummary{
+
+  .bugsummary {
     height: 662px;
-    &>.pack{
-      &>.back{
+
+    &>.pack {
+      &>.back {
         height: 225px;
         top: 241px;
         left: 10px;
       }
     }
   }
-  .jointsummary{
+
+  .jointsummary {
     height: 652px;
-    &>.pack{
-      &>.back{
+
+    &>.pack {
+      &>.back {
         height: 188px;
         left: 10px;
       }
-      &>.backimg{
+
+      &>.backimg {
         width: 327px;
       }
     }
   }
-  .washsummary{
+
+  .washsummary {
     height: 652px;
-    &>.pack{
-  
-        &>.back{
-          height: 241px;
-          top: 231px;
-          left: 10px;
-        }
-        &>.backimg{
-          width: 319px;
-          top: 55px;
-        }
-      
+
+    &>.pack {
+
+      &>.back {
+        height: 241px;
+        top: 231px;
+        left: 10px;
+      }
+
+      &>.backimg {
+        width: 319px;
+        top: 55px;
+      }
+
     }
   }
-  .hoodsummary{
+
+  .hoodsummary {
     height: 553px;
-    &>.pack{
-      &>.back{
+
+    &>.pack {
+      &>.back {
         height: 200px;
         left: 10px;
       }
-      &>.backimg{
+
+      &>.backimg {
         top: 64px;
       }
     }
   }
-  .airsummary{
+
+  .airsummary {
     height: 553px;
-    &>.pack{
-      &>.back{
+
+    &>.pack {
+      &>.back {
         height: 200px;
         top: 231px;
         left: 10px;
       }
-      &>.backimg{
+
+      &>.backimg {
         top: 64px;
       }
-      &>.content-wrapper{
+
+      &>.content-wrapper {
         padding-top: 265px;
       }
 
     }
 
   }
-  .birdsummary{
+
+  .birdsummary {
     height: 652px;
-    &>.pack{
-      &>.back{
+
+    &>.pack {
+      &>.back {
         height: 225px;
         top: 241px;
         left: 10px;
       }
     }
   }
-  .filtersummary{
+
+  .filtersummary {
     height: 553px;
-    &>.pack{
-      &>.back{
+
+    &>.pack {
+      &>.back {
         height: 216px;
         left: 10px;
       }
-      &>.backimg{
+
+      &>.backimg {
         top: 64px;
       }
     }
   }
-    .buildingsummary{
-      height: 763px;
-      &>.pack{
-        &>.backimg{
-          width: 325px;
-          top: 69px;
-        }
-        &>.back{
-          height: 360px;
-          left: 0;
-        }
-        &>.content-wrapper{
-          &>.category-wrapper{
-            margin-top: 24px;
-            &>div{
-              column-gap: 8px;
-              &>div{
-                height: 27px;
-                font-size: 12px;
-              }
-            
+
+  .buildingsummary {
+    height: 763px;
+
+    &>.pack {
+      &>.backimg {
+        width: 325px;
+        top: 69px;
+      }
+
+      &>.back {
+        height: 360px;
+        left: 0;
+      }
+
+      &>.content-wrapper {
+        &>.category-wrapper {
+          margin-top: 24px;
+
+          &>div {
+            column-gap: 8px;
+
+            &>div {
+              height: 27px;
+              font-size: 12px;
             }
-              &>.one{
-                grid-template-columns: repeat(3,71px);
-              }
-              &>.two{
-                grid-template-columns: repeat(4,71px);
-              }
+
+          }
+
+          &>.one {
+            grid-template-columns: repeat(3, 71px);
+          }
+
+          &>.two {
+            grid-template-columns: repeat(4, 71px);
           }
         }
       }
     }
-      .aircaresummary,.airfiltersummary{
-    &>.pack{
-      &>.backimg{
+  }
+
+  .aircaresummary,
+  .airfiltersummary {
+    &>.pack {
+      &>.backimg {
         width: 325px;
         top: 69px;
         height: 217px;
       }
-      &>.back{
+
+      &>.back {
         height: 229px;
         top: 286px;
         left: 0;
       }
-      &>.content-wrapper{
+
+      &>.content-wrapper {
         padding-top: 319px;
       }
     }
   }
-  .purifysummary{
+
+  .purifysummary {
     height: 603px;
-    &>.pack{
-      &>.back{
-      height: 126px;
-      left: 0;
-      top: 286px;
-    }
-    &>.backimg{
-      width: 325px;
-      top: 75px;
-    } 
-    &>.content-wrapper{
-      padding-top: 317px;
-      line-height: 1.5;
-      &>.title{
-        font-size: 20px;
+
+    &>.pack {
+      &>.back {
+        height: 126px;
+        left: 0;
+        top: 286px;
       }
-    }
+
+      &>.backimg {
+        width: 325px;
+        top: 75px;
+      }
+
+      &>.content-wrapper {
+        padding-top: 317px;
+        line-height: 1.5;
+
+        &>.title {
+          font-size: 20px;
+        }
+      }
     }
   }
 

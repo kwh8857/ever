@@ -97,7 +97,7 @@ function Business({ agent }) {
           <Reviews
             title={`공기질케어는
 에버퓨리에 믿고 맡기세요!`}
-            arr={[0, 0, 0, 0, 0, 0, 0, 0]}
+            arr={[]}
             type="aircare"
             nav="business"
             agent={agent}

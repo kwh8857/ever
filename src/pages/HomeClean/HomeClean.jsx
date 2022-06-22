@@ -281,12 +281,12 @@ function HomeClean({ agent }) {
             nav="homeclean"
             agent={agent}
           />
-          <CareOne
+          {/* <CareOne
             type="bird"
             cleanArr={birdClean}
             nav="homeclean"
             agent={agent}
-          />
+          /> */}
           <Slogan type="bird" nav="homeclean" agent={agent} />
           <CareTwo type="bird" arr={birdCare02} nav="homeclean" agent={agent} />
           <Point type="bird" arr={birdpointArr} agent={agent} />
@@ -295,9 +295,9 @@ function HomeClean({ agent }) {
               <b className="category">EVERPURI SERVICE</b>
               <b className="title">비둘기 퇴치 서비스 종류</b>
               <div className="number-wrapper">
-                <div className="one">01</div>
-                <div className="two">02</div>
-                <div className="three">03</div>
+                <div className="one">Service 01</div>
+                <div className="two">Service 02</div>
+                <div className="three">Service 03</div>
               </div>
               <div className="wrapper">
                 <div className="card">
@@ -371,7 +371,7 @@ function HomeClean({ agent }) {
           <Reviews
             title={`해충·방역 서비스는
  에버퓨리에 믿고 맡기세요!`}
-            arr={[0, 0, 0, 0, 0, 0, 0, 0]}
+            arr={[]}
             type="bird"
             nav="homeclean"
             agent={agent}

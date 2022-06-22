@@ -57,6 +57,12 @@
   font-size: 35px;
   margin-top: 10px;
   margin-bottom: 53px;
+  font-family: "score";
+}
+
+.point > .pack > .title > b {
+  font-family: "score";
+  font-weight: bold;
 }
 
 .point > .pack > .list {
@@ -96,29 +102,35 @@
   margin-top: 9px;
 }
 
-.hoodpoint, .homepoint {
+.hoodpoint,
+.homepoint {
   height: 1032px;
 }
 
-.hoodpoint > .pack, .homepoint > .pack {
+.hoodpoint > .pack,
+.homepoint > .pack {
   padding: unset;
 }
 
-.hoodpoint > .pack > .list, .homepoint > .pack > .list {
+.hoodpoint > .pack > .list,
+.homepoint > .pack > .list {
   -ms-grid-columns: (321px)[3];
       grid-template-columns: repeat(3, 321px);
 }
 
-.hoodpoint > .pack > .list > .card, .homepoint > .pack > .list > .card {
+.hoodpoint > .pack > .list > .card,
+.homepoint > .pack > .list > .card {
   height: 360px;
 }
 
-.hoodpoint > .pack > .list > .card > .title, .homepoint > .pack > .list > .card > .title {
+.hoodpoint > .pack > .list > .card > .title,
+.homepoint > .pack > .list > .card > .title {
   font-size: 19px;
   margin-top: 25px;
 }
 
-.hoodpoint > .pack > .list > .card > .content, .homepoint > .pack > .list > .card > .content {
+.hoodpoint > .pack > .list > .card > .content,
+.homepoint > .pack > .list > .card > .content {
   font-size: 13px;
   margin-top: 13px;
 }
@@ -181,31 +193,39 @@
     height: 39px;
     margin-top: 10px;
   }
-  .hoodpoint, .homepoint {
+  .hoodpoint,
+  .homepoint {
     height: 713px;
   }
-  .hoodpoint > .pack, .homepoint > .pack {
+  .hoodpoint > .pack,
+  .homepoint > .pack {
     padding: 0;
   }
-  .hoodpoint > .pack > .list, .homepoint > .pack > .list {
+  .hoodpoint > .pack > .list,
+  .homepoint > .pack > .list {
     -ms-grid-columns: (224px)[3];
         grid-template-columns: repeat(3, 224px);
     -webkit-column-gap: 16px;
             column-gap: 16px;
   }
-  .hoodpoint > .pack > .list > .card, .homepoint > .pack > .list > .card {
+  .hoodpoint > .pack > .list > .card,
+  .homepoint > .pack > .list > .card {
     height: 300px;
   }
-  .hoodpoint > .pack > .list > .card > .title, .homepoint > .pack > .list > .card > .title {
+  .hoodpoint > .pack > .list > .card > .title,
+  .homepoint > .pack > .list > .card > .title {
     margin-top: 20px;
   }
-  .hoodpoint > .pack > .list > .card > .content, .homepoint > .pack > .list > .card > .content {
+  .hoodpoint > .pack > .list > .card > .content,
+  .homepoint > .pack > .list > .card > .content {
     margin-top: 14px;
   }
-  .hoodpoint > .pack > .list > .card:nth-child(odd) > .title, .homepoint > .pack > .list > .card:nth-child(odd) > .title {
+  .hoodpoint > .pack > .list > .card:nth-child(odd) > .title,
+  .homepoint > .pack > .list > .card:nth-child(odd) > .title {
     margin-top: 30px;
   }
-  .hoodpoint > .pack > .list > .card:nth-child(odd) > .content, .homepoint > .pack > .list > .card:nth-child(odd) > .content {
+  .hoodpoint > .pack > .list > .card:nth-child(odd) > .content,
+  .homepoint > .pack > .list > .card:nth-child(odd) > .content {
     margin-top: 24px;
   }
 }
@@ -259,19 +279,24 @@
   .point > .pack > .list > .card > .sub {
     margin-top: 8px;
   }
-  .hoodpoint, .homepoint {
+  .hoodpoint,
+  .homepoint {
     height: 1616px;
   }
-  .hoodpoint > .pack > .list > .card > .title, .homepoint > .pack > .list > .card > .title {
+  .hoodpoint > .pack > .list > .card > .title,
+  .homepoint > .pack > .list > .card > .title {
     margin-top: 16px;
   }
-  .hoodpoint > .pack > .list > .card > .content, .homepoint > .pack > .list > .card > .content {
+  .hoodpoint > .pack > .list > .card > .content,
+  .homepoint > .pack > .list > .card > .content {
     margin-top: 8px;
   }
-  .hoodpoint > .pack > .list > .card:nth-child(odd) > .title, .homepoint > .pack > .list > .card:nth-child(odd) > .title {
+  .hoodpoint > .pack > .list > .card:nth-child(odd) > .title,
+  .homepoint > .pack > .list > .card:nth-child(odd) > .title {
     margin-top: 22px;
   }
-  .hoodpoint > .pack > .list > .card:nth-child(odd) > .content, .homepoint > .pack > .list > .card:nth-child(odd) > .content {
+  .hoodpoint > .pack > .list > .card:nth-child(odd) > .content,
+  .homepoint > .pack > .list > .card:nth-child(odd) > .content {
     margin-top: 9px;
   }
 }

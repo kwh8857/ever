@@ -17,6 +17,12 @@
   font-size: 34px;
   line-height: 1.38;
   color: var(--navy);
+  font-family: "score";
+}
+
+.sponsor > .pack > .title > b {
+  font-family: "score";
+  font-weight: bold;
 }
 
 .sponsor > .pack > .content {

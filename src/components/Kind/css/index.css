@@ -24,6 +24,14 @@
   text-align: center;
   color: var(--navy);
   font-size: 35px;
+  font-family: "score";
+  line-height: 1.3;
+}
+
+.kind > .pack > .title > b {
+  font-family: "score";
+  font-weight: bold;
+  color: #46BAD1;
 }
 
 .kind > .pack > .list {
@@ -87,12 +95,14 @@
   width: 215px;
 }
 
-.hoodkind, .filterkind {
+.hoodkind,
+.filterkind {
   height: 748px;
   padding-top: 120px;
 }
 
-.hoodkind > .pack > .category, .filterkind > .pack > .category {
+.hoodkind > .pack > .category,
+.filterkind > .pack > .category {
   margin-bottom: 20px;
   width: 155px;
   height: 33px;
@@ -112,7 +122,8 @@
   border-radius: 16.5px;
 }
 
-.hoodkind > .pack > .list, .filterkind > .pack > .list {
+.hoodkind > .pack > .list,
+.filterkind > .pack > .list {
   -ms-grid-columns: (215px)[2];
       grid-template-columns: repeat(2, 215px);
   -webkit-column-gap: 99px;
@@ -177,16 +188,19 @@
     -webkit-transform: translateY(0);
             transform: translateY(0);
   }
-  .hoodkind, .filterkind {
+  .hoodkind,
+  .filterkind {
     height: 745px;
   }
-  .hoodkind > .pack > .list, .filterkind > .pack > .list {
+  .hoodkind > .pack > .list,
+  .filterkind > .pack > .list {
     -ms-grid-columns: (215px)[2];
         grid-template-columns: repeat(2, 215px);
     -webkit-column-gap: 99px;
             column-gap: 99px;
   }
-  .hoodkind > .pack > .list > .card, .filterkind > .pack > .list > .card {
+  .hoodkind > .pack > .list > .card,
+  .filterkind > .pack > .list > .card {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -198,10 +212,12 @@
         -ms-flex-align: center;
             align-items: center;
   }
-  .hoodkind > .pack > .list > .card > .circle, .filterkind > .pack > .list > .card > .circle {
+  .hoodkind > .pack > .list > .card > .circle,
+  .filterkind > .pack > .list > .card > .circle {
     height: 215px;
   }
-  .hoodkind > .pack > .list > .card > .title, .filterkind > .pack > .list > .card > .title {
+  .hoodkind > .pack > .list > .card > .title,
+  .filterkind > .pack > .list > .card > .title {
     width: 162px;
   }
 }
@@ -256,19 +272,23 @@
   .washkind > .pack > .list > .card > .title > span {
     font-size: 12px;
   }
-  .hoodkind, .filterkind {
+  .hoodkind,
+  .filterkind {
     height: 1090px;
     padding-top: 113px;
   }
-  .hoodkind > .pack > .list, .filterkind > .pack > .list {
+  .hoodkind > .pack > .list,
+  .filterkind > .pack > .list {
     margin-top: 37px;
     -ms-grid-columns: 215px;
         grid-template-columns: 215px;
   }
-  .hoodkind > .pack > .list > .card > .circle, .filterkind > .pack > .list > .card > .circle {
+  .hoodkind > .pack > .list > .card > .circle,
+  .filterkind > .pack > .list > .card > .circle {
     height: 215px;
   }
-  .hoodkind > .pack > .list > .card > .title, .filterkind > .pack > .list > .card > .title {
+  .hoodkind > .pack > .list > .card > .title,
+  .filterkind > .pack > .list > .card > .title {
     margin-top: 21px;
     width: 138px;
     height: 37px;

@@ -1,91 +1,115 @@
-.point{
+.point {
 
-      height: 1430px;
-      width: 100%;
-      position: relative;
-      padding-top: 182px;
-      box-sizing: border-box;
-      &>.back{
-      width: 100%;
-      height: 533px;
-      background-color: var(--navy);
-      position: absolute;
-      z-index: -1;
-      top: 0;
-      left: 0;
-      &>.pack{
-        text-align: right;
-         &>img{
+  height: 1430px;
+  width: 100%;
+  position: relative;
+  padding-top: 182px;
+  box-sizing: border-box;
+
+  &>.back {
+    width: 100%;
+    height: 533px;
+    background-color: var(--navy);
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+
+    &>.pack {
+      text-align: right;
+
+      &>img {
         width: 513px;
       }
+    }
+  }
+
+  &>.pack {
+    padding: 0 82.8px;
+    box-sizing: border-box;
+
+    &>.category {
+      width: 142px;
+      height: 33px;
+      background-color: #76c7d3;
+      border-radius: 16.5px;
+      color: #08174a;
+      font-family: 'gmarket';
+      font-weight: bold;
+      font-size: 11px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &>.title {
+      color: white;
+      line-height: 1.31;
+      font-size: 35px;
+      margin-top: 10px;
+      margin-bottom: 53px;
+      font-family: "score";
+
+      &>b {
+        font-family: "score";
+        font-weight: bold;
       }
+    }
+
+    &>.list {
+      display: grid;
+      grid-template-columns: repeat(2, 405px);
+      column-gap: 15px;
+      row-gap: 40px;
+
+      &>.card {
+        height: 392px;
+        border-radius: 13px;
+        background-color: white;
+        box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.13);
+        text-align: center;
+
+        &>.title {
+          margin-top: 20px;
+          font-size: 20px;
+          font-weight: bold;
+
+          &>b {
+            color: var(--dark-sky-blue);
+          }
+        }
+
+        &>.content {
+          white-space: pre-line;
+          height: 46px;
+          font-size: 16px;
+          line-height: 1.38;
+          margin-top: 9px;
+        }
       }
-      &>.pack{
-        padding: 0 82.8px;
-        box-sizing: border-box;
-         &>.category{
-             width: 142px;
-  height: 33px;
-  background-color: #76c7d3;
-    border-radius: 16.5px;
-    color: #08174a;
-    font-family: 'gmarket';
-    font-weight: bold;
-    font-size: 11px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-         }
-         &>.title{
-           color: white;
-           line-height: 1.31;
-           font-size: 35px;
-           margin-top: 10px;
-           margin-bottom: 53px;
-         }
-         &>.list{
-           display: grid;
-           grid-template-columns: repeat(2,405px);
-           column-gap: 15px;
-           row-gap: 40px;
-           &>.card{
-             height:392px;
-              border-radius: 13px;
-              background-color: white;
-                box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.13);
-              text-align: center;
-              &>.title{
-                margin-top: 20px;
-                font-size: 20px;
-                font-weight: bold;
-                &>b{
-                  color: var(--dark-sky-blue);
-                }
-              }
-              &>.content{
-                white-space: pre-line;
-                height: 46px;
-                font-size: 16px;
-                line-height: 1.38;
-                margin-top: 9px;
-              }
-            }
-         }
-      }
+    }
+  }
 }
-.hoodpoint,.homepoint{
+
+.hoodpoint,
+.homepoint {
   height: 1032px;
-  &>.pack{
+
+  &>.pack {
     padding: unset;
-    &>.list{
-      grid-template-columns: repeat(3,321px);
-      &>.card{
+
+    &>.list {
+      grid-template-columns: repeat(3, 321px);
+
+      &>.card {
         height: 360px;
-        &>.title{
+
+        &>.title {
           font-size: 19px;
           margin-top: 25px;
         }
-        &>.content{
+
+        &>.content {
           font-size: 13px;
           margin-top: 13px;
         }
@@ -93,152 +117,191 @@
     }
   }
 }
-.homepoint{
+
+.homepoint {
   height: 897px;
 }
-.jointpoint{
+
+.jointpoint {
   height: 1518px;
 }
-.birdpoint{
+
+.birdpoint {
   height: 1436px;
 }
-.aircarepoint{
+
+.aircarepoint {
   height: 1545px;
 }
+
 @media screen and (max-width : 1024px) {
-    .point{
-      height: 1012px;
-      padding-top: 114px;
-      &>.back{
-        height: 300px;
-        &>.pack{
-          &>img{
-            width: 335px;
-          }
+  .point {
+    height: 1012px;
+    padding-top: 114px;
+
+    &>.back {
+      height: 300px;
+
+      &>.pack {
+        &>img {
+          width: 335px;
         }
       }
-      &>.pack{
-        padding: 0 84px;
-        &>.category{
-          width: 133px;
-          height: 33px;
-   
-        }
-        &>.title{
-          font-size: 25px;
-          margin-bottom: 26px;
-        }
-        &>.list{
-          grid-template-columns: repeat(2,261px);
-          column-gap: 9px;
-          row-gap: 34px;
-          &>.card{
-            height: 279px;
-            &>.title{
-              font-size: 15px;
-              margin-top: 18px;
-              white-space: pre-wrap;
-            }
-            &>.content{
-              font-size: 13px;
-              height: 39px;
-              margin-top: 10px;
-            }
+    }
+
+    &>.pack {
+      padding: 0 84px;
+
+      &>.category {
+        width: 133px;
+        height: 33px;
+
+      }
+
+      &>.title {
+        font-size: 25px;
+        margin-bottom: 26px;
+      }
+
+      &>.list {
+        grid-template-columns: repeat(2, 261px);
+        column-gap: 9px;
+        row-gap: 34px;
+
+        &>.card {
+          height: 279px;
+
+          &>.title {
+            font-size: 15px;
+            margin-top: 18px;
+            white-space: pre-wrap;
+          }
+
+          &>.content {
+            font-size: 13px;
+            height: 39px;
+            margin-top: 10px;
           }
         }
       }
     }
-   .hoodpoint,.homepoint{
-     height: 713px;
-     &>.pack{
-       padding: 0;
-       &>.list{
-         grid-template-columns: repeat(3,224px);
-         column-gap: 16px;
-         &>.card{
-           height: 300px;
-           &>.title{
-             margin-top: 20px;
-           }
-           &>.content{
-             margin-top: 14px;
-           }
-         }
-         &>.card:nth-child(odd){
-           &>.title{
-             margin-top: 30px;
-           }
-           &>.content{
-             margin-top: 24px;
-           }
-         }
-       }
-     }
-   }
+  }
+
+  .hoodpoint,
+  .homepoint {
+    height: 713px;
+
+    &>.pack {
+      padding: 0;
+
+      &>.list {
+        grid-template-columns: repeat(3, 224px);
+        column-gap: 16px;
+
+        &>.card {
+          height: 300px;
+
+          &>.title {
+            margin-top: 20px;
+          }
+
+          &>.content {
+            margin-top: 14px;
+          }
+        }
+
+        &>.card:nth-child(odd) {
+          &>.title {
+            margin-top: 30px;
+          }
+
+          &>.content {
+            margin-top: 24px;
+          }
+        }
+      }
+    }
+  }
 }
+
 @media screen and (max-width : 767px) {
-  .point{
+  .point {
     height: 1925px;
     padding-top: 252px;
-    &>.back{
+
+    &>.back {
       height: 533px;
-      &>.pack{
-        &>img{
+
+      &>.pack {
+        &>img {
           width: 236px;
         }
       }
     }
-    &>.pack{
+
+    &>.pack {
       padding: 0;
       display: flex;
       flex-direction: column;
       align-items: center;
-      &>.category{
+
+      &>.category {
         width: 142px;
         height: 30px;
       }
-      &>.title{
+
+      &>.title {
         text-align: center;
         margin-top: 8px;
         margin-bottom: 36px;
       }
-      &>.list{
+
+      &>.list {
         grid-template-columns: unset;
-        &>.card{
+
+        &>.card {
           width: 100%;
           height: 313px;
-          &>.title{
+
+          &>.title {
             margin-top: 16px;
             font-size: 18px;
             line-height: 1.28;
           }
-          &>.sub{
+
+          &>.sub {
             margin-top: 8px;
           }
         }
       }
     }
   }
-  .hoodpoint,.homepoint{
+
+  .hoodpoint,
+  .homepoint {
     height: 1616px;
-    &>.pack{
-      &>.list{
-        &>.card{
-          &>.title{
+
+    &>.pack {
+      &>.list {
+        &>.card {
+          &>.title {
             margin-top: 16px;
           }
-          &>.content{
+
+          &>.content {
             margin-top: 8px;
           }
         }
-           &>.card:nth-child(odd){
-           &>.title{
-             margin-top: 22px;
-           }
-           &>.content{
-             margin-top: 9px;
-           }
-         }
+
+        &>.card:nth-child(odd) {
+          &>.title {
+            margin-top: 22px;
+          }
+
+          &>.content {
+            margin-top: 9px;
+          }
+        }
       }
     }
   }

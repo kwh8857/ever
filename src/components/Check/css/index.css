@@ -32,6 +32,13 @@
   line-height: 1.43;
   font-size: 30px;
   color: var(--navy);
+  font-family: "score";
+}
+
+.check-section > .pack > .title > b {
+  font-family: "score";
+  font-weight: bold;
+  color: #46BAD1;
 }
 
 .check-section > .pack > .circle-wrapper {
@@ -61,6 +68,13 @@
   margin-top: 192px;
   text-align: center;
   line-height: 1.34;
+  font-family: "score";
+}
+
+.check-section > .pack > .content > b {
+  font-family: "score";
+  font-weight: bold;
+  color: #46BAD1;
 }
 
 .check-section > .pack > .check-box {
@@ -148,15 +162,18 @@
   height: 230px;
 }
 
-.hoodcheck, .aircheck {
+.hoodcheck,
+.aircheck {
   height: 651px;
 }
 
-.hoodcheck > .back, .aircheck > .back {
+.hoodcheck > .back,
+.aircheck > .back {
   height: 100%;
 }
 
-.hoodcheck > .pack > .content, .aircheck > .pack > .content {
+.hoodcheck > .pack > .content,
+.aircheck > .pack > .content {
   margin-top: 92px;
 }
 
@@ -175,6 +192,14 @@
 .filtercheck > .pack > .check-box {
   width: 640px;
   height: 329px;
+}
+
+.homecleancheck > .pack > .title > b {
+  color: var(--shamrock);
+}
+
+.homecleancheck > .pack > .content > b {
+  color: var(--shamrock);
 }
 
 .homecleancheck > .pack > .check-box > .title {
@@ -302,13 +327,16 @@
     width: 407px;
     height: 170px;
   }
-  .hoodcheck, .aircheck {
+  .hoodcheck,
+  .aircheck {
     height: 527px;
   }
-  .hoodcheck > .back, .aircheck > .back {
+  .hoodcheck > .back,
+  .aircheck > .back {
     height: 100%;
   }
-  .hoodcheck > .pack > .content, .aircheck > .pack > .content {
+  .hoodcheck > .pack > .content,
+  .aircheck > .pack > .content {
     margin-top: 73px;
   }
   .filtercheck {
@@ -425,22 +453,40 @@
   .washcheck > .pack > .check-box > .content {
     font-size: 14px;
   }
-  .hoodcheck, .aircheck, .filtercheck, .airfiltercheck {
+  .hoodcheck,
+  .aircheck,
+  .filtercheck,
+  .airfiltercheck {
     height: 615px;
   }
-  .hoodcheck > .pack > .content, .aircheck > .pack > .content, .filtercheck > .pack > .content, .airfiltercheck > .pack > .content {
+  .hoodcheck > .pack > .content,
+  .aircheck > .pack > .content,
+  .filtercheck > .pack > .content,
+  .airfiltercheck > .pack > .content {
     margin-top: 91px;
   }
-  .hoodcheck > .pack > .check-box > .content, .aircheck > .pack > .check-box > .content, .filtercheck > .pack > .check-box > .content, .airfiltercheck > .pack > .check-box > .content {
+  .hoodcheck > .pack > .check-box > .content,
+  .aircheck > .pack > .check-box > .content,
+  .filtercheck > .pack > .check-box > .content,
+  .airfiltercheck > .pack > .check-box > .content {
     line-height: 1;
   }
-  .hoodcheck > .pack > .check-box > .content > b, .aircheck > .pack > .check-box > .content > b, .filtercheck > .pack > .check-box > .content > b, .airfiltercheck > .pack > .check-box > .content > b {
+  .hoodcheck > .pack > .check-box > .content > b,
+  .aircheck > .pack > .check-box > .content > b,
+  .filtercheck > .pack > .check-box > .content > b,
+  .airfiltercheck > .pack > .check-box > .content > b {
     line-height: 2.6;
   }
-  .hoodcheck > .pack > .check-box > .content > .filter-first, .aircheck > .pack > .check-box > .content > .filter-first, .filtercheck > .pack > .check-box > .content > .filter-first, .airfiltercheck > .pack > .check-box > .content > .filter-first {
+  .hoodcheck > .pack > .check-box > .content > .filter-first,
+  .aircheck > .pack > .check-box > .content > .filter-first,
+  .filtercheck > .pack > .check-box > .content > .filter-first,
+  .airfiltercheck > .pack > .check-box > .content > .filter-first {
     line-height: 1.6;
   }
-  .hoodcheck > .pack > .check-box > .content > .filter-first > .two, .aircheck > .pack > .check-box > .content > .filter-first > .two, .filtercheck > .pack > .check-box > .content > .filter-first > .two, .airfiltercheck > .pack > .check-box > .content > .filter-first > .two {
+  .hoodcheck > .pack > .check-box > .content > .filter-first > .two,
+  .aircheck > .pack > .check-box > .content > .filter-first > .two,
+  .filtercheck > .pack > .check-box > .content > .filter-first > .two,
+  .airfiltercheck > .pack > .check-box > .content > .filter-first > .two {
     width: 130px;
     top: 12px;
   }

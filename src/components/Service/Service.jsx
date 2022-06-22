@@ -8,6 +8,7 @@ function Service({ type, agent }) {
         <div className="title">
           서비스에 대해 인정받고{agent === "mb" ? <br /> : undefined}
           <b>
+            {" "}
             끝까지 책임지는 {agent !== "mb" ? <br /> : undefined} 청소·시공
             {agent === "mb" ? <br /> : undefined}전문업체
           </b>

@@ -34,11 +34,21 @@
   font-size: 36px;
   color: var(--navy);
   font-weight: 500;
-  margin: 6px 0;
+  margin: 10px 0;
+  font-family: "score";
+}
+
+.caretwo > .pack > .title > b {
+  font-family: "score";
+  font-weight: bold;
 }
 
 .caretwo > .pack > .sub {
   font-size: 20px;
+}
+
+.caretwo > .pack > .sub > b {
+  color: #46BAD1;
 }
 
 .caretwo > .pack > .list {
@@ -133,21 +143,26 @@
   width: 158px;
 }
 
-.airtwo > .pack > .list, .filtertwo > .pack > .list {
+.airtwo > .pack > .list,
+.filtertwo > .pack > .list {
   -ms-grid-columns: (318px)[3];
       grid-template-columns: repeat(3, 318px);
 }
 
-.airtwo > .pack > .list > .card, .filtertwo > .pack > .list > .card {
+.airtwo > .pack > .list > .card,
+.filtertwo > .pack > .list > .card {
   height: 343px;
 }
 
-.airtwo > .pack > .list > .card > .title, .filtertwo > .pack > .list > .card > .title {
+.airtwo > .pack > .list > .card > .title,
+.filtertwo > .pack > .list > .card > .title {
   font-size: 25px;
   line-height: 1.4;
 }
 
-.filtertwo > .pack, .jointtwo > .pack, .airtwo > .pack {
+.filtertwo > .pack,
+.jointtwo > .pack,
+.airtwo > .pack {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -162,6 +177,10 @@
 
 .homecleantwo {
   background-color: #d8f6e8;
+}
+
+.homecleantwo > .pack > .sub > b {
+  color: var(--shamrock);
 }
 
 .homecleantwo > .pack > .category {
@@ -206,7 +225,7 @@
 }
 
 .jointtwo > .pack > .title {
-  margin: 6px 0 19px 0;
+  margin: 10px 0 19px 0;
 }
 
 .jointtwo > .pack > .list {
@@ -282,34 +301,43 @@
   .caretwo > .pack > .list > .card > .sub {
     font-size: 13px;
   }
-  .hoodtwo, .mattwo {
+  .hoodtwo,
+  .mattwo {
     height: 687px;
   }
-  .hoodtwo > .pack > .list, .mattwo > .pack > .list {
+  .hoodtwo > .pack > .list,
+  .mattwo > .pack > .list {
     -ms-grid-columns: (167px)[4];
         grid-template-columns: repeat(4, 167px);
   }
-  .hoodtwo > .pack > .list > .card, .mattwo > .pack > .list > .card {
+  .hoodtwo > .pack > .list > .card,
+  .mattwo > .pack > .list > .card {
     height: 208px;
     padding-top: 45px;
   }
-  .hoodtwo > .pack > .list > .card > img, .mattwo > .pack > .list > .card > img {
+  .hoodtwo > .pack > .list > .card > img,
+  .mattwo > .pack > .list > .card > img {
     width: 53px;
   }
-  .hoodtwo > .pack > .list > .card > .title, .mattwo > .pack > .list > .card > .title {
+  .hoodtwo > .pack > .list > .card > .title,
+  .mattwo > .pack > .list > .card > .title {
     font-size: 14px;
   }
-  .hoodtwo > .pack > .list > .card > .line, .mattwo > .pack > .list > .card > .line {
+  .hoodtwo > .pack > .list > .card > .line,
+  .mattwo > .pack > .list > .card > .line {
     width: 125.5px;
     margin: 10px 0;
   }
-  .hoodtwo > .pack > .list > .card > .sub, .mattwo > .pack > .list > .card > .sub {
+  .hoodtwo > .pack > .list > .card > .sub,
+  .mattwo > .pack > .list > .card > .sub {
     font-size: 9px;
   }
-  .airtwo, .filtertwo {
+  .airtwo,
+  .filtertwo {
     height: 761px;
   }
-  .airtwo > .pack, .filtertwo > .pack {
+  .airtwo > .pack,
+  .filtertwo > .pack {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
@@ -412,26 +440,33 @@
   .mattwo > .pack > .list > .card:nth-child(3) > .title {
     white-space: pre-wrap;
   }
-  .airtwo, .filtertwo {
+  .airtwo,
+  .filtertwo {
     height: 1319px;
   }
-  .airtwo > .pack > .list, .filtertwo > .pack > .list {
+  .airtwo > .pack > .list,
+  .filtertwo > .pack > .list {
     -ms-grid-rows: 225px 190px 175px;
         grid-template-rows: 225px 190px 175px;
   }
-  .airtwo > .pack > .list > .card, .filtertwo > .pack > .list > .card {
+  .airtwo > .pack > .list > .card,
+  .filtertwo > .pack > .list > .card {
     padding-top: 52px;
   }
-  .airtwo > .pack > .list > .card > .line, .filtertwo > .pack > .list > .card > .line {
+  .airtwo > .pack > .list > .card > .line,
+  .filtertwo > .pack > .list > .card > .line {
     margin: 10px 0;
   }
-  .airtwo > .pack > .list > .card > .title, .filtertwo > .pack > .list > .card > .title {
+  .airtwo > .pack > .list > .card > .title,
+  .filtertwo > .pack > .list > .card > .title {
     font-size: 18px;
   }
-  .airtwo > .pack > .list > .card:nth-child(1), .filtertwo > .pack > .list > .card:nth-child(1) {
+  .airtwo > .pack > .list > .card:nth-child(1),
+  .filtertwo > .pack > .list > .card:nth-child(1) {
     padding-top: 47.4px;
   }
-  .airtwo > .pack > .list > .card:nth-child(1) > .title, .filtertwo > .pack > .list > .card:nth-child(1) > .title {
+  .airtwo > .pack > .list > .card:nth-child(1) > .title,
+  .filtertwo > .pack > .list > .card:nth-child(1) > .title {
     white-space: pre-wrap;
   }
   .filtertwo > .pack > .list > .card > .title {

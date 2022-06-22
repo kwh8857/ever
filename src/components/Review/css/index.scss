@@ -13,6 +13,7 @@
     &>.title {
       display: flex;
       align-items: center;
+      font-family: "score";
 
       &>img {
         width: 35.2px;
@@ -23,6 +24,8 @@
       }
 
       &>b {
+        font-family: "score";
+        font-weight: bold;
         font-size: 30px;
         color: var(--navy);
         margin: 0 25.6px;
@@ -34,6 +37,10 @@
       font-size: 20px;
       text-align: center;
       white-space: pre-line;
+
+      &>b {
+        color: #46BAD1;
+      }
     }
 
     &>.list {
@@ -65,6 +72,13 @@
   }
 
   &>.pack {
+
+    &>.sub {
+      &>b {
+        color: var(--shamrock);
+      }
+    }
+
     &>.list {
       margin-top: 52px;
     }

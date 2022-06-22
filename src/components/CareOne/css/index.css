@@ -34,6 +34,12 @@
   color: var(--navy);
   margin-top: 13px;
   position: relative;
+  font-family: "score";
+}
+
+.careone > .pack > .title > b {
+  font-family: "score";
+  font-weight: bold;
 }
 
 .careone > .pack > .title > .circle-wrapper {
@@ -43,8 +49,8 @@
   display: flex;
   -webkit-column-gap: 28px;
           column-gap: 28px;
-  top: -7px;
-  left: 250px;
+  top: -9px;
+  left: 266px;
 }
 
 .careone > .pack > .title > .circle-wrapper > div {
@@ -52,8 +58,8 @@
   display: grid;
   -ms-grid-columns: (7px)[2];
       grid-template-columns: repeat(2, 7px);
-  -webkit-column-gap: 21px;
-          column-gap: 21px;
+  -webkit-column-gap: 23px;
+          column-gap: 23px;
 }
 
 .careone > .pack > .title > .circle-wrapper > div > div {

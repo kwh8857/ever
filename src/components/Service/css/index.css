@@ -49,6 +49,12 @@
   margin-top: 14px;
   margin-bottom: 25px;
   color: var(--navy);
+  font-family: "score";
+}
+
+.service > .pack > .title > b {
+  font-family: "score";
+  font-weight: bold;
 }
 
 .service > .pack > .list {

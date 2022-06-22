@@ -48,6 +48,12 @@
 
 .tel > .bottom > .pack > .title {
   font-size: 35px;
+  font-family: "score";
+}
+
+.tel > .bottom > .pack > .title > b {
+  font-family: "score";
+  font-weight: bold;
 }
 
 .tel > .bottom > .pack > .call-wrapper {

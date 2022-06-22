@@ -1,152 +1,208 @@
-.check-section{
-    height: 1145px;
+.check-section {
+  height: 1145px;
+  width: 100%;
+  position: relative;
+
+  &>.back {
+    position: absolute;
+    z-index: -1;
+    height: 942px;
     width: 100%;
-    position: relative;
-     &>.back{
-       position: absolute;
-       z-index: -1;
-         height: 942px;
-         width: 100%;
-         background-color: #f8f8f8;
-         bottom: 0;
-         left: 0;
-     }
-     &>.pack{
-       display: flex;
-       flex-direction: column;
-       align-items: center;
-       &>.title{
-         text-align: center;
-          line-height: 1.43;
-          font-size: 30px;
+    background-color: #f8f8f8;
+    bottom: 0;
+    left: 0;
+  }
+
+  &>.pack {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &>.title {
+      text-align: center;
+      line-height: 1.43;
+      font-size: 30px;
+      color: var(--navy);
+      font-family: "score";
+
+      &>b {
+        font-family: "score";
+        font-weight: bold;
+        color: #46BAD1;
+      }
+    }
+
+    &>.circle-wrapper {
+      margin-top: 41px;
+      display: grid;
+      column-gap: 31px;
+
+      &>.circle {
+        text-align: center;
+
+        &>.title {
+
+          margin-top: 28px;
+          font-size: 18px;
+          font-weight: bold;
           color: var(--navy);
-       }
-       &>.circle-wrapper{
-         margin-top: 41px;
-         display: grid;
-         column-gap: 31px;
-         &>.circle{
-           text-align: center;
-           &>.title{
-             
-             margin-top: 28px;
-             font-size: 18px;
-             font-weight: bold;
-             color: var(--navy);
-             white-space: nowrap;
-           }
-         }
-       }
-       &>.content{
-         font-size: 32px;
-         font-weight: 500;
-         color: var(--navy);
-         margin-top: 192px;
-         text-align: center;
-           line-height: 1.34;
-       
-       }
-       &>.check-box{
-         margin-top: 48px;
-           width: 522px;
-  height: 335px;
-         background-color: white;
-         position: relative;
-         display: flex;
-         align-items: center;
-           box-shadow: 0 3px 6px 0 rgba(0, 26, 61, 0.13);
-           border-radius: 11px;
-            justify-content: center;
-         &>.title{
-              
-             width: 180px;
-  height: 45px;
-           background-color: var(--navy);
-           font-size: 18px;
-           font-family: 'gmarket';
-           font-weight: bold;
-           color: var(--dark-sky-blue);
-           display: flex;
-           align-items: center;
-           justify-content: center;
-           border-radius: 23px;
-           align-self: center;
-           top: -22px;
-           position: absolute;
-         }
-         &>.check{
-           margin-right: 14.2px;
-           display: grid;
-           row-gap: 20px;
-           &>img{
-               width: 34px;
-           }
-         }
-         &>.content{
-           line-height: 2.2;
-           font-size: 23px;
-           &>b{
-             position: relative;
-             z-index: 1;
-             &>span{
-               z-index: 10;
-               position: relative;
-             }
-             &>.back{
-               left: 0;
-               bottom: 0;
-               width: 100%;
-               position: absolute;
-               height: 17px;
-             z-index: 1;
-                   background-color: rgb(173, 221, 228);
-             }
-           }
-         }
-       }
-       &>.wash{
-           width: 596px;
-  height: 230px;
-       }
-     }
+          white-space: nowrap;
+        }
+      }
+    }
+
+    &>.content {
+      font-size: 32px;
+      font-weight: 500;
+      color: var(--navy);
+      margin-top: 192px;
+      text-align: center;
+      line-height: 1.34;
+      font-family: "score";
+
+      &>b {
+        font-family: "score";
+        font-weight: bold;
+        color: #46BAD1;
+      }
+
+    }
+
+    &>.check-box {
+      margin-top: 48px;
+      width: 522px;
+      height: 335px;
+      background-color: white;
+      position: relative;
+      display: flex;
+      align-items: center;
+      box-shadow: 0 3px 6px 0 rgba(0, 26, 61, 0.13);
+      border-radius: 11px;
+      justify-content: center;
+
+      &>.title {
+
+        width: 180px;
+        height: 45px;
+        background-color: var(--navy);
+        font-size: 18px;
+        font-family: 'gmarket';
+        font-weight: bold;
+        color: var(--dark-sky-blue);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 23px;
+        align-self: center;
+        top: -22px;
+        position: absolute;
+      }
+
+      &>.check {
+        margin-right: 14.2px;
+        display: grid;
+        row-gap: 20px;
+
+        &>img {
+          width: 34px;
+        }
+      }
+
+      &>.content {
+        line-height: 2.2;
+        font-size: 23px;
+
+        &>b {
+          position: relative;
+          z-index: 1;
+
+          &>span {
+            z-index: 10;
+            position: relative;
+          }
+
+          &>.back {
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            position: absolute;
+            height: 17px;
+            z-index: 1;
+            background-color: rgb(173, 221, 228);
+          }
+        }
+      }
+    }
+
+    &>.wash {
+      width: 596px;
+      height: 230px;
+    }
+  }
 }
-.hoodcheck,.aircheck{
+
+.hoodcheck,
+.aircheck {
   height: 651px;
-  &>.back{
+
+  &>.back {
     height: 100%;
   }
-  &>.pack{
-    &>.content{
+
+  &>.pack {
+    &>.content {
       margin-top: 92px;
     }
   }
 }
-.filtercheck{
+
+.filtercheck {
   height: 697px;
-  &>.back{
+
+  &>.back {
     height: 100%;
 
   }
-  &>.pack{
-    &>.content{
+
+  &>.pack {
+    &>.content {
       margin-top: 120px;
     }
-    &>.check-box{
-        width: 640px;
-  height: 329px;
+
+    &>.check-box {
+      width: 640px;
+      height: 329px;
     }
   }
 }
-.homecleancheck{
-  &>.pack{
-    &>.check-box{
-      &>.title{
-   background-color: var(--shamrock);
-   color: white;
+
+.homecleancheck {
+  &>.pack {
+    &>.title {
+      &>b {
+        color: var(--shamrock);
       }
-      &>.content{
-        &>b{
-          &>.back{
+    }
+
+    &>.content {
+      &>b {
+        color: var(--shamrock);
+      }
+    }
+
+    &>.check-box {
+
+      &>.title {
+        background-color: var(--shamrock);
+        color: white;
+
+
+      }
+
+      &>.content {
+        &>b {
+
+          &>.back {
             background-color: rgb(205, 243, 224);
           }
         }
@@ -154,16 +210,18 @@
     }
   }
 }
-.businesscheck{
-  &>.pack{
-    &>.check-box{
-      &>.title{
+
+.businesscheck {
+  &>.pack {
+    &>.check-box {
+      &>.title {
         background-color: #40ccc7;
         color: white;
       }
-      &>.content{
-        &>b{
-          &>.back{
+
+      &>.content {
+        &>b {
+          &>.back {
             background-color: rgb(193, 239, 245);
           }
         }
@@ -171,276 +229,345 @@
     }
   }
 }
-.matcheck{
-  &>.pack{
-    &>.check-box{
+
+.matcheck {
+  &>.pack {
+    &>.check-box {
       width: 553px;
       height: 380px;
     }
   }
 }
-.jointcheck{
-  &>.pack{
-    &>.check-box{
-        width: 553px;
-  height: 337px;
+
+.jointcheck {
+  &>.pack {
+    &>.check-box {
+      width: 553px;
+      height: 337px;
     }
   }
 }
-.birdcheck{
-  &>.pack{
-    &>.check-box{
-        width: 437px;
-  height: 185px;
+
+.birdcheck {
+  &>.pack {
+    &>.check-box {
+      width: 437px;
+      height: 185px;
     }
   }
 }
-.bugcheck{
+
+.bugcheck {
   height: 958px;
-  &>.back{
+
+  &>.back {
     height: 755px;
   }
-  &>.pack{
+
+  &>.pack {
     padding-bottom: 118px;
     box-sizing: border-box;
-    &>.content{
+
+    &>.content {
       margin-top: 148px;
     }
-    &>.check-box{
-        width: 563px;
-  height: 229px;
+
+    &>.check-box {
+      width: 563px;
+      height: 229px;
     }
   }
 }
-.airfiltercheck{
+
+.airfiltercheck {
   height: 618px;
-  &>.back{
+
+  &>.back {
     height: 100%;
   }
-  &>.pack{
-    &>.content{
+
+  &>.pack {
+    &>.content {
       margin-top: 114px;
     }
-    &>.check-box{
-        width: 634px;
-  height: 234px;
+
+    &>.check-box {
+      width: 634px;
+      height: 234px;
     }
   }
 }
-@media screen and (max-width : 1024px) {
- .check-section{
-   height: 900px;
-   &>.back{
-     height: 745px;
-   }
-   &>.pack{
-     &>.title{
-       font-size: 25px;
-     }
-     &>.circle-wrapper{
-       margin-top: 28px;
-       column-gap: 14px;
-       &>.circle{
-         &>.title{
-           margin-top: 15px;
-           font-size: 13px;
-         }
-       }
-     }
-     &>.content{
-       font-size: 25px;
-       margin-top: 132px;
-     }
-     &>.check-box{
-       margin-top: 59px;
-         width: 385px;
-  height: 273px;
-  &>.title{
-      width: 150px;
-  height: 38px;
-  font-size: 15px;
-  }
-  &>.check{
 
-    margin-right: 11.2px;
-    row-gap: 19px;
-    &>img{
-    width: 23px;
-    height: 22px;
+@media screen and (max-width : 1024px) {
+  .check-section {
+    height: 900px;
+
+    &>.back {
+      height: 745px;
     }
-  }
-  &>.content{
-    font-size: 16px;
-    line-height: 2.56;
-    &>b{
-      &>.back{
-        height: 10px;
+
+    &>.pack {
+      &>.title {
+        font-size: 25px;
+      }
+
+      &>.circle-wrapper {
+        margin-top: 28px;
+        column-gap: 14px;
+
+        &>.circle {
+          &>.title {
+            margin-top: 15px;
+            font-size: 13px;
+          }
+        }
+      }
+
+      &>.content {
+        font-size: 25px;
+        margin-top: 132px;
+      }
+
+      &>.check-box {
+        margin-top: 59px;
+        width: 385px;
+        height: 273px;
+
+        &>.title {
+          width: 150px;
+          height: 38px;
+          font-size: 15px;
+        }
+
+        &>.check {
+
+          margin-right: 11.2px;
+          row-gap: 19px;
+
+          &>img {
+            width: 23px;
+            height: 22px;
+          }
+        }
+
+        &>.content {
+          font-size: 16px;
+          line-height: 2.56;
+
+          &>b {
+            &>.back {
+              height: 10px;
+            }
+          }
+        }
       }
     }
   }
-     }
-   }
- }
- .washcheck{
-   &>.pack{
-     &>.check-box{
-         width: 407px;
-  height: 170px;
-     }
-   }
- }
- .hoodcheck,.aircheck{
-   height: 527px;
-   &>.back{
-     height: 100%;
-   }
-   &>.pack{
-     &>.content{
-       margin-top: 73px;
-     }
-   }
- }
- .filtercheck{
-   height: 527px;
-   &>.pack{
-     &>.content{
-       margin-top: 73px;
-     }
-     &>.check-box{
-  width: 436px;
-  height: 246px;
-     }
-   }
- }
- .birdcheck{
-   height: 730px;
-   &>.pack{
-     &>.circle-wrapper{
-       column-gap: 21px;
-     }
-     &>.check-box{
-         width: 289px;
-  height: 130px;
-     }
-   }
-   &>.back{
-     height: 580px;
-   }
- }
- .bugcheck{
-   height: 730px;
-  &>.back{
-    height: 580px;
-  } 
-  &>.pack{
-    &>.check-box{
-    width: 390px;
-  height: 165px;
+
+  .washcheck {
+    &>.pack {
+      &>.check-box {
+        width: 407px;
+        height: 170px;
+      }
     }
   }
- }
- .airfiltercheck{
-   height: 591px;
-   &>.back{
-     height: 100%;
-   }
-   &>.pack{
-     &>.content{
-       margin-top: 124px;
-     }
-     &>.check-box{
-         width: 465px;
-  height: 191px;
-     }
-   }
- }
+
+  .hoodcheck,
+  .aircheck {
+    height: 527px;
+
+    &>.back {
+      height: 100%;
+    }
+
+    &>.pack {
+      &>.content {
+        margin-top: 73px;
+      }
+    }
+  }
+
+  .filtercheck {
+    height: 527px;
+
+    &>.pack {
+      &>.content {
+        margin-top: 73px;
+      }
+
+      &>.check-box {
+        width: 436px;
+        height: 246px;
+      }
+    }
+  }
+
+  .birdcheck {
+    height: 730px;
+
+    &>.pack {
+      &>.circle-wrapper {
+        column-gap: 21px;
+      }
+
+      &>.check-box {
+        width: 289px;
+        height: 130px;
+      }
+    }
+
+    &>.back {
+      height: 580px;
+    }
+  }
+
+  .bugcheck {
+    height: 730px;
+
+    &>.back {
+      height: 580px;
+    }
+
+    &>.pack {
+      &>.check-box {
+        width: 390px;
+        height: 165px;
+      }
+    }
+  }
+
+  .airfiltercheck {
+    height: 591px;
+
+    &>.back {
+      height: 100%;
+    }
+
+    &>.pack {
+      &>.content {
+        margin-top: 124px;
+      }
+
+      &>.check-box {
+        width: 465px;
+        height: 191px;
+      }
+    }
+  }
 }
+
 @media screen and (max-width : 767px) {
-  .check-section{
+  .check-section {
     height: 1100px;
-    &>.back{
+
+    &>.back {
       height: 942px;
     }
-    &>.pack{
-      &>.circle-wrapper{
+
+    &>.pack {
+      &>.circle-wrapper {
         margin-top: 36px;
         row-gap: 27px;
         column-gap: 32px;
-        &>.circle{
-          &>.title{
+
+        &>.circle {
+          &>.title {
             font-size: 14px;
           }
         }
       }
-      &>.content{
-      margin-top: 153px;
+
+      &>.content {
+        margin-top: 153px;
       }
-      &>.check-box{
+
+      &>.check-box {
         margin-top: 63px;
         width: 100%;
         height: 265px;
-        &>.title{
-            width: 161px;
-  height: 40px;
-  font-size: 16px;
+
+        &>.title {
+          width: 161px;
+          height: 40px;
+          font-size: 16px;
         }
-        &>.check{
+
+        &>.check {
           margin-right: 9px;
           row-gap: 18px;
-          &>img{
+
+          &>img {
             width: 22px;
             height: 22px;
           }
         }
-        &>.content{
+
+        &>.content {
           font-size: 15px;
           line-height: 2.67;
         }
       }
-    } 
+    }
   }
-  .washcheck{
+
+  .washcheck {
     height: 920px;
-    &>.back{
+
+    &>.back {
       height: 735px;
     }
-    &>.pack{
-      &>.title{
+
+    &>.pack {
+      &>.title {
         font-size: 23px;
       }
-      &>.circle-wrapper{
+
+      &>.circle-wrapper {
         column-gap: 16px;
-      
+
       }
-      &>.check-box{
+
+      &>.check-box {
         width: 100%;
         height: 192px;
-        &>.check{
+
+        &>.check {
           row-gap: 17px;
           margin-right: 6px;
         }
-        &>.content{
+
+        &>.content {
           font-size: 14px;
         }
       }
     }
   }
-  .hoodcheck,.aircheck,.filtercheck,.airfiltercheck{
+
+  .hoodcheck,
+  .aircheck,
+  .filtercheck,
+  .airfiltercheck {
     height: 615px;
-    &>.pack{
-      &>.content{
+
+    &>.pack {
+      &>.content {
         margin-top: 91px;
       }
-      &>.check-box{
 
-        &>.content{
+      &>.check-box {
+
+        &>.content {
           line-height: 1;
-          &>b{
+
+          &>b {
             line-height: 2.6;
           }
-          &>.filter-first{
+
+          &>.filter-first {
             line-height: 1.6;
-            &>.two{
+
+            &>.two {
               width: 130px;
               top: 12px;
             }
@@ -449,96 +576,120 @@
       }
     }
   }
-  .jointcheck{
-    &>.pack{
-      &>.circle-wrapper{
+
+  .jointcheck {
+    &>.pack {
+      &>.circle-wrapper {
         column-gap: 16px;
       }
-      &>.title{
+
+      &>.title {
         font-size: 23px;
       }
-      &>.content{
+
+      &>.content {
         font-size: 23px;
         white-space: nowrap;
       }
     }
   }
-   .matcheck{
-   &>.pack{
-     &>.title{
-       font-size: 23px;
-     }
-     &>.check-box{ height: 311px;
-     }
-   }
- }
-  .filtercheck{
-    &>.pack{
-      &>.check-box{
-        &>.check{
-   grid-template-rows: 32px 21px 21px 21px 21px;
+
+  .matcheck {
+    &>.pack {
+      &>.title {
+        font-size: 23px;
+      }
+
+      &>.check-box {
+        height: 311px;
+      }
+    }
+  }
+
+  .filtercheck {
+    &>.pack {
+      &>.check-box {
+        &>.check {
+          grid-template-rows: 32px 21px 21px 21px 21px;
           row-gap: 18px;
         }
       }
     }
   }
-  .bugcheck{
+
+  .bugcheck {
     height: 780px;
-    &>.back{
+
+    &>.back {
       height: 631px;
     }
-    &>.pack{
-      &>.title{
+
+    &>.pack {
+      &>.title {
         font-size: 23px;
       }
-      &>.circle-wrapper{
+
+      &>.circle-wrapper {
         column-gap: 16px;
-        &>.circle{
-          &>.title{
+
+        &>.circle {
+          &>.title {
             white-space: pre-line;
           }
         }
       }
-      &>.check-box{
+
+      &>.check-box {
         height: 170px;
-        &>.check{
+
+        &>.check {
           margin-right: 7px;
         }
-        &>.content{
+
+        &>.content {
           font-size: 14px;
         }
       }
     }
   }
-  .birdcheck{
+
+  .birdcheck {
     height: 930px;
-    &>.back{
+
+    &>.back {
       height: 782px;
     }
-    &>.pack{
-      &>.title{
+
+    &>.pack {
+      &>.title {
         font-size: 23px;
       }
-      &>.circle-wrapper{
-       gap: 16px 38px;
+
+      &>.circle-wrapper {
+        gap: 16px 38px;
       }
-      &>.content{
+
+      &>.content {
         margin-top: 94px;
       }
-      &>.check-box{
+
+      &>.check-box {
         margin-top: 42px;
-          width: 284px;
-  height: 157px;
+        width: 284px;
+        height: 157px;
       }
     }
   }
-  .airfiltercheck{
+
+  .airfiltercheck {
     height: 591px;
-    &>.pack{
-      &>.content{
+
+    &>.pack {
+      &>.content {
         margin-top: 130px;
       }
-      &>.check-box{
+
+      &>.check-box {
         height: 192px;
       }
     }

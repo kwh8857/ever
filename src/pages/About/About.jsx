@@ -33,7 +33,7 @@ function About({ agent }) {
                   안녕하십니까 <br />
                   <b>
                     고객의 환경과 건강을 <br /> 생각하는
-                  </b>
+                  </b>{" "}
                   에버퓨리입니다
                 </div>
               </div>
@@ -47,8 +47,9 @@ function About({ agent }) {
                       <div className="title">
                         안녕하십니까
                         <b>
+                          {" "}
                           고객의 환경과 <br /> 건강을 생각하는
-                        </b>
+                        </b>{" "}
                         에버퓨리입니다
                       </div>
                     </>
@@ -239,6 +240,7 @@ function About({ agent }) {
                 <div className="title">
                   에버퓨리는 고객님의 {agent === "mb" ? <br /> : undefined}
                   <b>
+                    {" "}
                     삶의 질을 {agent !== "mb" ? <br /> : undefined} 높이기 위해
                     {agent === "mb" ? <br /> : undefined} 존재
                   </b>

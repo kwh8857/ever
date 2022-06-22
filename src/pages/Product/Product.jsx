@@ -243,7 +243,7 @@ function Product({ agent }) {
 에버퓨리에 믿고 맡기세요!`}
             sub={`완벽한 홈케어로 입소문 타고 평판만으로 
 여기까지 왔습니다.`}
-            arr={[0, 0, 0, 0, 0, 0, 0, 0]}
+            arr={[]}
             type="wash"
             nav="product"
             agent={agent}

@@ -27,6 +27,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-family: "score";
 }
 
 .review > .pack > .title > img {
@@ -39,6 +40,8 @@
 }
 
 .review > .pack > .title > b {
+  font-family: "score";
+  font-weight: bold;
   font-size: 30px;
   color: var(--navy);
   margin: 0 25.6px;
@@ -49,6 +52,10 @@
   font-size: 20px;
   text-align: center;
   white-space: pre-line;
+}
+
+.review > .pack > .sub > b {
+  color: #46BAD1;
 }
 
 .review > .pack > .list {
@@ -77,6 +84,10 @@
 
 .homecleannv > .back {
   background-color: #e6f9ef;
+}
+
+.homecleannv > .pack > .sub > b {
+  color: var(--shamrock);
 }
 
 .homecleannv > .pack > .list {

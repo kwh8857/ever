@@ -37,6 +37,12 @@
   line-height: 1.37;
   color: var(--navy);
   text-align: center;
+  font-family: "score";
+}
+
+.product > .aircon > .section8 > .pack > .title > b {
+  font-family: "score";
+  font-weight: bold;
 }
 
 .product > .aircon > .section8 > .pack > .list {
@@ -262,7 +268,8 @@
     height: 53px;
     padding-left: 24px;
   }
-  .product > .aircon > .section8 > .pack > .list > .card > .content .short > b, .product > .aircon > .section8 > .pack > .list > .card > .content .lux > b {
+  .product > .aircon > .section8 > .pack > .list > .card > .content .short > b,
+  .product > .aircon > .section8 > .pack > .list > .card > .content .lux > b {
     margin-right: 33px !important;
   }
   .product > .aircon > .section8 > .pack > .list > .card > .content > .two {

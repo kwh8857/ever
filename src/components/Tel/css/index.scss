@@ -1,152 +1,186 @@
-.tel{
+.tel {
 
-    width: 100%;
-    height: 709px;
-    position: relative;
-    
-     &>.pack{
-       display: flex;
-       justify-content: flex-end;
-       padding-top: 139px;
-       box-sizing: border-box;
-       & > img{
+  width: 100%;
+  height: 709px;
+  position: relative;
+
+  &>.pack {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 139px;
+    box-sizing: border-box;
+
+    &>img {
       width: 463px;
 
     }
-     }
-    &>.bottom{
-      overflow: hidden;
-      width: 100%;
-      height: 493px;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      background-color: rgb(164, 221, 230);
-      color: var(--navy);
-      &>.pack{
-        height: 100%;
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        padding-top: 93px;
-        box-sizing: border-box;
-        &>.title{
-          font-size: 35px;
-        }
-        &>.call-wrapper{
-          margin-top: 96px;
-           align-self: flex-end;
-          &>.tel-wrapper{
-            display: flex;
-            align-items: center;
-            &>img{
-              width: 85px;
-              margin-right: 18px;
-            }
-            &>.tel-content{
-              font-weight: 500;
-              font-size: 74px;
-              font-family: 'gmarket';
-            }
-          }
-          &>.address{
-            font-size: 21px;
-            font-weight: 500;
-            margin-top: 14px;
-          }
-        }
-        &>.background{
-          width: 554px;
-          position: absolute;
-          bottom: -50px;
-          left: -250px;
+  }
+
+  &>.bottom {
+    overflow: hidden;
+    width: 100%;
+    height: 493px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(164, 221, 230);
+    color: var(--navy);
+
+    &>.pack {
+      height: 100%;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      padding-top: 93px;
+      box-sizing: border-box;
+
+      &>.title {
+        font-size: 35px;
+        font-family: "score";
+
+        &>b {
+          font-family: "score";
+          font-weight: bold;
         }
       }
+
+      &>.call-wrapper {
+        margin-top: 96px;
+        align-self: flex-end;
+
+        &>.tel-wrapper {
+          display: flex;
+          align-items: center;
+
+          &>img {
+            width: 85px;
+            margin-right: 18px;
+          }
+
+          &>.tel-content {
+            font-weight: 500;
+            font-size: 74px;
+            font-family: 'gmarket';
+          }
+        }
+
+        &>.address {
+          font-size: 21px;
+          font-weight: 500;
+          margin-top: 14px;
+        }
+      }
+
+      &>.background {
+        width: 554px;
+        position: absolute;
+        bottom: -50px;
+        left: -250px;
+      }
     }
+  }
 }
 
 @media screen and (max-width : 1024px) {
-   .tel{
-     &>.pack{
-       padding-top: 155px;
-    &>img{
-      width: 344px;
+  .tel {
+    &>.pack {
+      padding-top: 155px;
+
+      &>img {
+        width: 344px;
+      }
     }
-  }
-   &>.bottom{
-     &>.pack{
-      &>.title{
-        font-size: 30px;
-      } 
-      &>.background{
-        left: -330px;
-      } 
-      &>.call-wrapper{
-        &>.tel-wrapper{
-          &>img{
-            width: 69px;
-            margin-right: 12px;
-          }
-          &>.tel-content{
-            font-size: 60px;
-          }
+
+    &>.bottom {
+      &>.pack {
+        &>.title {
+          font-size: 30px;
         }
-        &>.address{
-          font-size: 20px;
-          line-height: 1.45;
-          padding-left: 80px;
+
+        &>.background {
+          left: -330px;
+        }
+
+        &>.call-wrapper {
+          &>.tel-wrapper {
+            &>img {
+              width: 69px;
+              margin-right: 12px;
+            }
+
+            &>.tel-content {
+              font-size: 60px;
+            }
+          }
+
+          &>.address {
+            font-size: 20px;
+            line-height: 1.45;
+            padding-left: 80px;
+          }
         }
       }
-     }
-   }
-   }
+    }
+  }
 }
+
 @media screen and (max-width : 767px) {
-  .tel{
+  .tel {
     height: 661px;
     background-color: white;
-    &>.pack{
-     padding-top: 167px;
-     &>img{
-       width: 178px;
-     }
+
+    &>.pack {
+      padding-top: 167px;
+
+      &>img {
+        width: 178px;
+      }
     }
-    &>.bottom{
-     height: 463px;
-     &>.pack{
-       padding-top: 99px;
-       &>.title{
-         font-size: 23px;
-         text-align: center;
-         position: relative;
-         z-index: 100;
-       }
-       &>.background{
-         width: 300px;
-         top: -40px;
-         left: -100px;
-       }
-       &>.call-wrapper{
-         margin-top: 58px;
-         width: 100%;
-         &>.tel-wrapper{
-           flex-direction: column;
-           &>img{
-             width: 55px;
-             margin-right: unset;
-             margin-bottom: 13px;
-           }
-           &>.tel-content{
-             font-size: 44px;
-           }
-         }
-         &>.address{
-           font-size: 14px;
-           text-align: center;
-           padding: unset;
-         }
-       }
-     }
+
+    &>.bottom {
+      height: 463px;
+
+      &>.pack {
+        padding-top: 99px;
+
+        &>.title {
+          font-size: 23px;
+          text-align: center;
+          position: relative;
+          z-index: 100;
+        }
+
+        &>.background {
+          width: 300px;
+          top: -40px;
+          left: -100px;
+        }
+
+        &>.call-wrapper {
+          margin-top: 58px;
+          width: 100%;
+
+          &>.tel-wrapper {
+            flex-direction: column;
+
+            &>img {
+              width: 55px;
+              margin-right: unset;
+              margin-bottom: 13px;
+            }
+
+            &>.tel-content {
+              font-size: 44px;
+            }
+          }
+
+          &>.address {
+            font-size: 14px;
+            text-align: center;
+            padding: unset;
+          }
+        }
+      }
     }
   }
 }

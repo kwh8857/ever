@@ -66,6 +66,13 @@
   line-height: 1.31;
   color: var(--navy);
   margin-top: 11px;
+  font-family: "score";
+}
+
+.homeclean > .homecare > .pack > .title > b {
+  font-family: "score";
+  font-weight: bold;
+  color: var(--shamrock);
 }
 
 .homeclean > .homecare > .pack > .list {
@@ -201,6 +208,10 @@
   color: var(--navy);
 }
 
+.homeclean > .matservice > .pack > .title-wrapper > .left > .title > b {
+  color: var(--shamrock);
+}
+
 .homeclean > .matservice > .pack > .content {
   margin-top: 48px;
   width: 100%;
@@ -295,6 +306,12 @@
   color: var(--navy);
   margin-top: 14px;
   margin-bottom: 52px;
+  font-family: "score";
+}
+
+.homeclean > .jointservice > .pack > .title > b {
+  font-family: "score";
+  font-weight: bold;
 }
 
 .homeclean > .jointservice > .pack > .content-wrapper {
@@ -428,6 +445,10 @@
   line-height: 1.45;
 }
 
+.homeclean > .jointservice > .pack > .notice > .wrapper > .title > b {
+  color: var(--shamrock);
+}
+
 .homeclean > .jointservice > .pack > .notice > .wrapper > .title > .red {
   color: #ff5555;
 }
@@ -487,21 +508,25 @@
   display: flex;
   width: 100%;
   position: absolute;
-  font-size: 60px;
-  font-family: 'nexon';
+  font-size: 22px;
+  font-weight: bold;
   color: var(--shamrock);
   top: 145px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding-left: 90px;
+  padding-left: 75px;
+}
+
+.homeclean > .birdservice > .pack > .number-wrapper > div {
+  font-family: 'score';
 }
 
 .homeclean > .birdservice > .pack > .number-wrapper > .one {
-  margin-right: 198px;
+  margin-right: 162px;
 }
 
 .homeclean > .birdservice > .pack > .number-wrapper > .two {
-  margin-right: 299px;
+  margin-right: 255px;
 }
 
 .homeclean > .birdservice > .pack > .wrapper {
@@ -666,15 +691,15 @@
     margin-bottom: 74px;
   }
   .homeclean > .birdservice > .pack > .number-wrapper {
-    font-size: 45px;
+    font-size: 17px;
     top: 130px;
-    padding-left: 65px;
+    padding-left: 55px;
   }
   .homeclean > .birdservice > .pack > .number-wrapper > .one {
-    margin-right: 133px;
+    margin-right: 98px;
   }
   .homeclean > .birdservice > .pack > .number-wrapper > .two {
-    margin-right: 189px;
+    margin-right: 171px;
   }
   .homeclean > .birdservice > .pack > .wrapper {
     -ms-grid-columns: 181px 181px 317px;
@@ -883,11 +908,11 @@
   }
   .homeclean > .birdservice > .pack > .number-wrapper > .one {
     margin-right: unset;
-    margin-bottom: 222px;
+    margin-bottom: 255px;
   }
   .homeclean > .birdservice > .pack > .number-wrapper > .two {
     margin-right: unset;
-    margin-bottom: 222px;
+    margin-bottom: 255px;
   }
   .homeclean > .birdservice > .pack > .wrapper {
     -ms-grid-columns: 320px;

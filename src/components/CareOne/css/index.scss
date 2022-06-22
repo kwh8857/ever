@@ -27,18 +27,24 @@
       color: var(--navy);
       margin-top: 13px;
       position: relative;
+      font-family: "score";
+
+      &>b {
+        font-family: "score";
+        font-weight: bold;
+      }
 
       &>.circle-wrapper {
         position: absolute;
         display: flex;
         column-gap: 28px;
-        top: -7px;
-        left: 250px;
+        top: -9px;
+        left: 266px;
 
         &>div {
           display: grid;
           grid-template-columns: repeat(2, 7px);
-          column-gap: 21px;
+          column-gap: 23px;
 
           &>div {
             height: 7px;

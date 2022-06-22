@@ -45,6 +45,12 @@
   font-size: 35px;
   font-weight: 500;
   line-height: 1.26;
+  font-family: "score";
+}
+
+.summary > .pack > .content-wrapper > .title > b {
+  font-family: "score";
+  font-weight: bold;
 }
 
 .summary > .pack > .content-wrapper > .line {
@@ -585,17 +591,20 @@
     -ms-grid-columns: (71px)[4];
         grid-template-columns: repeat(4, 71px);
   }
-  .aircaresummary > .pack > .backimg, .airfiltersummary > .pack > .backimg {
+  .aircaresummary > .pack > .backimg,
+  .airfiltersummary > .pack > .backimg {
     width: 325px;
     top: 69px;
     height: 217px;
   }
-  .aircaresummary > .pack > .back, .airfiltersummary > .pack > .back {
+  .aircaresummary > .pack > .back,
+  .airfiltersummary > .pack > .back {
     height: 229px;
     top: 286px;
     left: 0;
   }
-  .aircaresummary > .pack > .content-wrapper, .airfiltersummary > .pack > .content-wrapper {
+  .aircaresummary > .pack > .content-wrapper,
+  .airfiltersummary > .pack > .content-wrapper {
     padding-top: 319px;
   }
   .purifysummary {
