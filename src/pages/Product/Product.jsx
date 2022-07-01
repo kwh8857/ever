@@ -441,27 +441,27 @@ const hoodClean = [
 ];
 const airClean = [
   {
-    img: "",
+    img: "grey",
     title: "전원 차단",
   },
   {
-    img: "",
+    img: "grey",
     title: "완전 분해",
   },
   {
-    img: "",
+    img: "grey",
     title: "부품 고압 세척",
   },
   {
-    img: "",
+    img: "grey",
     title: `고압 세척 확인 후 조립`,
   },
   {
-    img: "",
+    img: "grey",
     title: "고온 스팀 살균",
   },
   {
-    img: "",
+    img: "grey",
     title: "작동 테스트",
   },
 ];
