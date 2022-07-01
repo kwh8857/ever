@@ -34,25 +34,25 @@
         font-weight: bold;
       }
 
-      &>.circle-wrapper {
-        position: absolute;
-        display: flex;
-        column-gap: 28px;
-        top: -9px;
-        left: 266px;
+      // &>.circle-wrapper {
+      //   position: absolute;
+      //   display: flex;
+      //   column-gap: 28px;
+      //   top: -9px;
+      //   left: 266px;
 
-        &>div {
-          display: grid;
-          grid-template-columns: repeat(2, 7px);
-          column-gap: 23px;
+      //   &>div {
+      //     display: grid;
+      //     grid-template-columns: repeat(2, 7px);
+      //     column-gap: 23px;
 
-          &>div {
-            height: 7px;
-            background-color: #76c7d3;
-            border-radius: 7px;
-          }
-        }
-      }
+      //     &>div {
+      //       height: 7px;
+      //       background-color: #76c7d3;
+      //       border-radius: 7px;
+      //     }
+      //   }
+      // }
     }
 
     &>.sub {
@@ -129,8 +129,8 @@
 }
 
 .airclean {
-  height: 1195px;
-  padding-top: 177px;
+  height: 400px;
+  padding-top: 100px;
 
   &>.pack {
     box-sizing: border-box;
@@ -156,13 +156,13 @@
     }
 
     &>.title {
-      &>.circle-wrapper {
-        &>div {
-          &>div {
-            background-color: rgb(121, 218, 170);
-          }
-        }
-      }
+      // &>.circle-wrapper {
+      //   &>div {
+      //     &>div {
+      //       background-color: rgb(121, 218, 170);
+      //     }
+      //   }
+      // }
 
       &>b {
         color: var(--shamrock);
@@ -187,13 +187,13 @@
     }
 
     &>.title {
-      &>.circle-wrapper {
-        &>div {
-          &>div {
-            background-color: #40ccc7;
-          }
-        }
-      }
+      // &>.circle-wrapper {
+      //   &>div {
+      //     &>div {
+      //       background-color: #40ccc7;
+      //     }
+      //   }
+      // }
 
       &>b {
         color: #40ccc7;
@@ -214,7 +214,7 @@
 
 .aircareclean {
   padding-top: 0;
-  height: 661px;
+  height: 250px;
 }
 
 .jointclean {
@@ -235,8 +235,7 @@
   }
 }
 
-.birdclean,
-.bugclean {
+.birdclean {
   height: 804px;
 
   &>.pack {
@@ -248,6 +247,10 @@
       margin-top: 62px;
     }
   }
+}
+
+.bugclean {
+  height: 500px;
 }
 
 .airfilterclean {
@@ -279,21 +282,21 @@
         font-size: 25px;
         margin-top: 13px;
 
-        &>.circle-wrapper {
-          left: 210px;
-          top: -3px;
-          column-gap: 22px;
+        // &>.circle-wrapper {
+        //   left: 210px;
+        //   top: -3px;
+        //   column-gap: 22px;
 
-          &>div {
-            grid-template-columns: repeat(2, 5px);
-            column-gap: 19px;
+        //   &>div {
+        //     grid-template-columns: repeat(2, 5px);
+        //     column-gap: 19px;
 
-            &>div {
-              height: 5px;
+        //     &>div {
+        //       height: 5px;
 
-            }
-          }
-        }
+        //     }
+        //   }
+        // }
       }
 
       &>.sub {
@@ -359,14 +362,17 @@
     }
   }
 
-  .birdclean,
-  .bugclean {
+  .birdclean {
     padding-top: 169px;
     height: 766px;
   }
 
+  .bugclean {
+    height: 440px;
+  }
+
   .aircareclean {
-    height: 600px;
+    height: 300px;
 
   }
 
@@ -421,20 +427,20 @@
         margin-top: 10px;
         line-height: 1.48;
 
-        &>.circle-wrapper {
-          top: 38px;
-          left: 44px;
-          column-gap: 25px;
+        // &>.circle-wrapper {
+        //   top: 38px;
+        //   left: 44px;
+        //   column-gap: 25px;
 
-          &>div {
-            grid-template-columns: repeat(2, 4px);
-            column-gap: 19px;
+        //   &>div {
+        //     grid-template-columns: repeat(2, 4px);
+        //     column-gap: 19px;
 
-            &>div {
-              height: 4px;
-            }
-          }
-        }
+        //     &>div {
+        //       height: 4px;
+        //     }
+        //   }
+        // }
       }
 
       &>.sub {
@@ -483,9 +489,9 @@
 
     &>.pack {
       &>.title {
-        &>.circle-wrapper {
-          left: 80px;
-        }
+        // &>.circle-wrapper {
+        //   left: 80px;
+        // }
       }
 
       &>.list {
@@ -499,10 +505,10 @@
 
     &>.pack {
       &>.title {
-        &>.circle-wrapper {
-          left: 35px;
-          top: 38px;
-        }
+        // &>.circle-wrapper {
+        //   left: 35px;
+        //   top: 38px;
+        // }
       }
     }
   }
@@ -510,10 +516,10 @@
   .washclean {
     &>.pack {
       &>.title {
-        &>.circle-wrapper {
-          top: 38px;
-          left: 39px;
-        }
+        // &>.circle-wrapper {
+        //   top: 38px;
+        //   left: 39px;
+        // }
       }
     }
   }
@@ -523,10 +529,10 @@
 
     &>.pack {
       &>.title {
-        &>.circle-wrapper {
-          top: 38px;
-          left: 44px;
-        }
+        // &>.circle-wrapper {
+        //   top: 38px;
+        //   left: 44px;
+        // }
       }
     }
   }
@@ -535,29 +541,29 @@
     height: 740px;
     padding-top: 115px;
 
-    &>.pack {
-      &>.title {
-        &>.circle-wrapper {
-          top: 38px;
-          left: 58px;
-        }
-      }
-    }
+    // &>.pack {
+    //   &>.title {
+    //     &>.circle-wrapper {
+    //       top: 38px;
+    //       left: 58px;
+    //     }
+    //   }
+    // }
   }
 
-  .homecleancare {
-    &>.pack {
-      &>.title {
-        &>.circle-wrapper {
-          &>div {
-            &>div {
-              background-color: #00bb68;
-            }
-          }
-        }
-      }
-    }
-  }
+  // .homecleancare {
+  //   &>.pack {
+  //     &>.title {
+  //       &>.circle-wrapper {
+  //         &>div {
+  //           &>div {
+  //             background-color: #00bb68;
+  //           }
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
 
   .jointclean {
     height: 707px;
@@ -566,11 +572,11 @@
       width: 100%;
       padding: 0;
 
-      &>.title {
-        &>.circle-wrapper {
-          left: 68px;
-        }
-      }
+      // &>.title {
+      //   &>.circle-wrapper {
+      //     left: 68px;
+      //   }
+      // }
 
       &>.list {
         &>.card {
@@ -580,8 +586,7 @@
     }
   }
 
-  .birdclean,
-  .bugclean {
+  .birdclean {
     height: 807px;
 
     &>.pack {
@@ -597,15 +602,14 @@
     }
   }
 
-  .aircareclean {
-    height: 800px;
+  .bugclean {
+    height: 400px;
+  }
 
-    &>.pack {
-      &>.list {
-        grid-template-columns: repeat(2, 152px);
-        gap: 33px 16px;
-      }
-    }
+  .aircareclean {
+    height: 320px;
+
+
   }
 
   .airfilterclean {

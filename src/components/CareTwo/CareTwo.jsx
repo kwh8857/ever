@@ -87,7 +87,7 @@ function CareTwo({ type, arr, nav, agent }) {
           ) : type === "bug" ? (
             <>
               친환경 전용세제과 최첨단 전문 장비로 <br /> 바이러스, 곰팡이 등
-              <b>유해물질을 99.9% 제거합니다</b>
+              <b> 유해물질을 99.9% 제거합니다</b>
             </>
           ) : undefined}
         </div>

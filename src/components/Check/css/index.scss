@@ -213,6 +213,12 @@
 
 .businesscheck {
   &>.pack {
+    &>.content {
+      &>b {
+        color: #40ccc7;
+      }
+    }
+
     &>.check-box {
       &>.title {
         background-color: #40ccc7;

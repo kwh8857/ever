@@ -372,7 +372,7 @@ function HomeClean({ agent }) {
             title={`해충·방역 서비스는
  에버퓨리에 믿고 맡기세요!`}
             arr={[]}
-            type="bird"
+            type="bug"
             nav="homeclean"
             agent={agent}
           />
@@ -579,25 +579,7 @@ const jointClean = [
     title: "시공 완료",
   },
 ];
-const birdClean = [
-  {
-    img: "bridclean1",
-    title: "배설물 제거",
-  },
-  {
-    img: "bridclean2",
-    title: `친환경 세제 살포 
- 및 세척`,
-  },
-  {
-    img: "bridclean3",
-    title: "고온 스팀 살균",
-  },
-  {
-    img: "bridclean4",
-    title: "차단망 시공",
-  },
-];
+const birdClean = [];
 const matCare02 = [
   {
     img: "/assets/homeclean/care2-1.svg",

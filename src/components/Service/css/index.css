@@ -79,11 +79,12 @@
 }
 
 .service > .pack > .list > .card > .number {
-  font-family: 'nexon';
+  font-family: 'score';
   font-size: 40px;
   color: var(--dark-sky-blue);
   width: 52px;
   margin-right: 19px;
+  font-weight: 500;
 }
 
 .service > .pack > .list > .card > .title {

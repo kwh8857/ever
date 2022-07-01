@@ -252,7 +252,7 @@ function Product({ agent }) {
             sub={`완벽한 홈케어로 입소문 타고 평판만으로 
 여기까지 왔습니다.`}
             arr={[]}
-            type="wash"
+            type="air"
             nav="product"
             agent={agent}
           />
@@ -439,32 +439,7 @@ const hoodClean = [
     title: "건조 후 부착",
   },
 ];
-const airClean = [
-  {
-    img: "grey",
-    title: "전원 차단",
-  },
-  {
-    img: "grey",
-    title: "완전 분해",
-  },
-  {
-    img: "grey",
-    title: "부품 고압 세척",
-  },
-  {
-    img: "grey",
-    title: `고압 세척 확인 후 조립`,
-  },
-  {
-    img: "grey",
-    title: "고온 스팀 살균",
-  },
-  {
-    img: "grey",
-    title: "작동 테스트",
-  },
-];
+const airClean = [];
 const filterClean = [
   {
     img: "filterclean1",

@@ -211,6 +211,10 @@
   background-color: #cdf3e0;
 }
 
+.businesscheck > .pack > .content > b {
+  color: #40ccc7;
+}
+
 .businesscheck > .pack > .check-box > .title {
   background-color: #40ccc7;
   color: white;

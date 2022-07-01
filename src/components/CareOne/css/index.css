@@ -42,32 +42,6 @@
   font-weight: bold;
 }
 
-.careone > .pack > .title > .circle-wrapper {
-  position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-column-gap: 28px;
-          column-gap: 28px;
-  top: -9px;
-  left: 266px;
-}
-
-.careone > .pack > .title > .circle-wrapper > div {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (7px)[2];
-      grid-template-columns: repeat(2, 7px);
-  -webkit-column-gap: 23px;
-          column-gap: 23px;
-}
-
-.careone > .pack > .title > .circle-wrapper > div > div {
-  height: 7px;
-  background-color: #76c7d3;
-  border-radius: 7px;
-}
-
 .careone > .pack > .sub {
   font-size: 20px;
   margin-top: 17px;
@@ -164,8 +138,8 @@
 }
 
 .airclean {
-  height: 1195px;
-  padding-top: 177px;
+  height: 400px;
+  padding-top: 100px;
 }
 
 .airclean > .pack {
@@ -188,10 +162,6 @@
   background-color: var(--shamrock);
 }
 
-.homecleancare > .pack > .title > .circle-wrapper > div > div {
-  background-color: #79daaa;
-}
-
 .homecleancare > .pack > .title > b {
   color: var(--shamrock);
 }
@@ -201,10 +171,6 @@
 }
 
 .businesscare > .pack > .category {
-  background-color: #40ccc7;
-}
-
-.businesscare > .pack > .title > .circle-wrapper > div > div {
   background-color: #40ccc7;
 }
 
@@ -218,7 +184,7 @@
 
 .aircareclean {
   padding-top: 0;
-  height: 661px;
+  height: 250px;
 }
 
 .jointclean {
@@ -244,19 +210,20 @@
           justify-content: center;
 }
 
-.birdclean,
-.bugclean {
+.birdclean {
   height: 804px;
 }
 
-.birdclean > .pack > .title,
-.bugclean > .pack > .title {
+.birdclean > .pack > .title {
   margin-top: 13px;
 }
 
-.birdclean > .pack > .list,
-.bugclean > .pack > .list {
+.birdclean > .pack > .list {
   margin-top: 62px;
+}
+
+.bugclean {
+  height: 500px;
 }
 
 .airfilterclean {
@@ -283,21 +250,6 @@
   .careone > .pack > .title {
     font-size: 25px;
     margin-top: 13px;
-  }
-  .careone > .pack > .title > .circle-wrapper {
-    left: 210px;
-    top: -3px;
-    -webkit-column-gap: 22px;
-            column-gap: 22px;
-  }
-  .careone > .pack > .title > .circle-wrapper > div {
-    -ms-grid-columns: (5px)[2];
-        grid-template-columns: repeat(2, 5px);
-    -webkit-column-gap: 19px;
-            column-gap: 19px;
-  }
-  .careone > .pack > .title > .circle-wrapper > div > div {
-    height: 5px;
   }
   .careone > .pack > .sub {
     font-size: 15px;
@@ -356,13 +308,15 @@
     -ms-grid-columns: (168px)[3];
         grid-template-columns: repeat(3, 168px);
   }
-  .birdclean,
-  .bugclean {
+  .birdclean {
     padding-top: 169px;
     height: 766px;
   }
+  .bugclean {
+    height: 440px;
+  }
   .aircareclean {
-    height: 600px;
+    height: 300px;
   }
   .airfilterclean {
     height: 984px;
@@ -404,21 +358,6 @@
   .careone > .pack > .title {
     margin-top: 10px;
     line-height: 1.48;
-  }
-  .careone > .pack > .title > .circle-wrapper {
-    top: 38px;
-    left: 44px;
-    -webkit-column-gap: 25px;
-            column-gap: 25px;
-  }
-  .careone > .pack > .title > .circle-wrapper > div {
-    -ms-grid-columns: (4px)[2];
-        grid-template-columns: repeat(2, 4px);
-    -webkit-column-gap: 19px;
-            column-gap: 19px;
-  }
-  .careone > .pack > .title > .circle-wrapper > div > div {
-    height: 4px;
   }
   .careone > .pack > .sub {
     margin-top: 14px;
@@ -467,40 +406,18 @@
   .matclean {
     padding-top: 108px;
   }
-  .matclean > .pack > .title > .circle-wrapper {
-    left: 80px;
-  }
   .matclean > .pack > .list {
     margin-top: 76px;
   }
   .hoodclean {
     height: 740px;
   }
-  .hoodclean > .pack > .title > .circle-wrapper {
-    left: 35px;
-    top: 38px;
-  }
-  .washclean > .pack > .title > .circle-wrapper {
-    top: 38px;
-    left: 39px;
-  }
   .airclean {
     height: 740px;
-  }
-  .airclean > .pack > .title > .circle-wrapper {
-    top: 38px;
-    left: 44px;
   }
   .filterclean {
     height: 740px;
     padding-top: 115px;
-  }
-  .filterclean > .pack > .title > .circle-wrapper {
-    top: 38px;
-    left: 58px;
-  }
-  .homecleancare > .pack > .title > .circle-wrapper > div > div {
-    background-color: #00bb68;
   }
   .jointclean {
     height: 707px;
@@ -509,32 +426,24 @@
     width: 100%;
     padding: 0;
   }
-  .jointclean > .pack > .title > .circle-wrapper {
-    left: 68px;
-  }
   .jointclean > .pack > .list > .card {
     width: 103px;
   }
-  .birdclean,
-  .bugclean {
+  .birdclean {
     height: 807px;
   }
-  .birdclean > .pack > .list,
-  .bugclean > .pack > .list {
+  .birdclean > .pack > .list {
     -ms-grid-columns: (120px)[2];
         grid-template-columns: repeat(2, 120px);
   }
-  .birdclean > .pack > .list > .card > .title,
-  .bugclean > .pack > .list > .card > .title {
+  .birdclean > .pack > .list > .card > .title {
     white-space: pre-wrap;
   }
-  .aircareclean {
-    height: 800px;
+  .bugclean {
+    height: 400px;
   }
-  .aircareclean > .pack > .list {
-    -ms-grid-columns: (152px)[2];
-        grid-template-columns: repeat(2, 152px);
-    gap: 33px 16px;
+  .aircareclean {
+    height: 320px;
   }
   .airfilterclean {
     height: 1162px;

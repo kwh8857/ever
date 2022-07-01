@@ -36,9 +36,14 @@
 }
 
 .about > .ceo > .section1 > .bottom > .pack > .content > .title {
+  font-family: 'score';
   margin-top: 10px;
   font-size: 35px;
   line-height: 1.37;
+}
+
+.about > .ceo > .section1 > .bottom > .pack > .content > .title > b {
+  font-family: 'score';
 }
 
 .about > .ceo > .section1 > .bottom > .pack > img {
@@ -97,6 +102,11 @@
   color: var(--dark-sky-blue);
   font-size: 21px;
   margin-bottom: 12px;
+  font-family: 'score';
+}
+
+.about > .ceo > .section2 > .pack > .list > .box > .content > .title > b {
+  font-family: 'score';
 }
 
 .about > .ceo > .section2 > .pack > .list > .box > .content > .subject {
@@ -300,9 +310,9 @@
 
 .about > .company > .section2 > .pack > .list > .wrapper > .number {
   font-size: 50px;
-  font-family: 'gmarket';
+  font-family: 'score';
   margin-right: 15px;
-  font-weight: 300;
+  font-weight: 500;
   width: 67px;
   height: 50px;
 }

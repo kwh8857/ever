@@ -555,7 +555,7 @@ CS마스터 팀장이 직접 방문 및 케어`,
   },
 
   {
-    img: "point-8",
+    img: "point-3",
     title: "약품과 장비",
     bold: "인체에 무해한 친환경",
     content: `오직 고객의 건강만을 생각하며 인체에
@@ -601,24 +601,7 @@ CS마스터 팀장이 직접 방문 및 케어`,
 양질의 CS마스터 팀장을 양성`,
   },
 ];
-const aircareClean = [
-  {
-    img: "grey",
-    title: "",
-  },
-  {
-    img: "grey",
-    title: "",
-  },
-  {
-    img: "grey",
-    title: "",
-  },
-  {
-    img: "grey",
-    title: "",
-  },
-];
+const aircareClean = [];
 const airfilterClean = [
   {
     img: "airfilterclean1",

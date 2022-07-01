@@ -44,7 +44,7 @@ function CareOne({ type, cleanArr, nav, agent }) {
               )}
             </>
           )}
-          {type !== "bird" && type !== "bug" ? (
+          {/* {type !== "bird" && type !== "bug" ? (
             <div className="circle-wrapper">
               <div className="left">
                 <div />
@@ -55,7 +55,7 @@ function CareOne({ type, cleanArr, nav, agent }) {
                 <div />
               </div>
             </div>
-          ) : undefined}
+          ) : undefined} */}
         </div>
         <div className="sub">
           {type === "aircon" ? (

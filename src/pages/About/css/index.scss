@@ -22,14 +22,20 @@
           position: relative;
 
           &>.content {
+
             &>.subject {
               color: var(--dark-sky-blue);
             }
 
             &>.title {
+              font-family: 'score';
               margin-top: 10px;
               font-size: 35px;
               line-height: 1.37;
+
+              &>b {
+                font-family: 'score';
+              }
             }
           }
 
@@ -79,6 +85,11 @@
                 color: var(--dark-sky-blue);
                 font-size: 21px;
                 margin-bottom: 12px;
+                font-family: 'score';
+
+                &>b {
+                  font-family: 'score';
+                }
               }
 
               &>.subject {
@@ -254,9 +265,9 @@
 
             &>.number {
               font-size: 50px;
-              font-family: 'gmarket';
+              font-family: 'score';
               margin-right: 15px;
-              font-weight: 300;
+              font-weight: 500;
               width: 67px;
               height: 50px;
             }
