@@ -108,11 +108,15 @@ function CareOne({ type, cleanArr, nav, agent }) {
                 {type !== "airfilter" ? (
                   <div className="number">{idx + 1}</div>
                 ) : undefined}
-                <img
-                  src={`/assets/${nav}/${img}.png`}
-                  srcSet={`/assets/${nav}/${img}@2x.png 2x, /assets/${nav}/${img}@3x.png 3x`}
-                  alt=""
-                />
+                {img ? (
+                  <img
+                    src={`/assets/${nav}/${img}.png`}
+                    srcSet={`/assets/${nav}/${img}@2x.png 2x, /assets/${nav}/${img}@3x.png 3x`}
+                    alt=""
+                  />
+                ) : (
+                  <img />
+                )}
                 <div className="title">{title}</div>
               </div>
             );
