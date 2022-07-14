@@ -31,57 +31,28 @@ function Kind({ type, arr, nav, agent }) {
           )}
         </div>
         <div className="list">
-          {type === "wash" && agent === "mb"
-            ? washmbarr.map((item, idx) => {
-                return (
-                  <div key={idx} className="card">
-                    {type !== "wash" ? (
-                      <img
-                        className="circle"
-                        src={`/assets/product/kind-${type}${idx + 1}.png`}
-                        srcSet={`/assets/product/kind-${type}${
-                          idx + 1
-                        }@2x.png 2x , /assets/product/kind-${type}${
-                          idx + 1
-                        }@3x.png 3x`}
-                        alt=""
-                      />
-                    ) : (
-                      <div className="circle" />
-                    )}
-                    <div className="title">
-                      {item}
-                      {idx === 3 ? <span>통돌이/드럼</span> : undefined}
-                    </div>
-                  </div>
-                );
-              })
-            : arr.map((item, idx) => {
-                return (
-                  <div key={idx} className="card">
-                    {type !== "wash" ? (
-                      <img
-                        className="circle"
-                        src={`/assets/product/kind-${type}${idx + 1}.png`}
-                        srcSet={`/assets/product/kind-${type}${
-                          idx + 1
-                        }@2x.png 2x , /assets/product/kind-${type}${
-                          idx + 1
-                        }@3x.png 3x`}
-                        alt=""
-                      />
-                    ) : (
-                      <div className="circle" />
-                    )}
-                    <div className="title">
-                      {item}
-                      {type === "wash" && idx === 0 ? (
-                        <span>통돌이/드럼</span>
-                      ) : undefined}
-                    </div>
-                  </div>
-                );
-              })}
+          {arr.map((item, idx) => {
+            return (
+              <div key={idx} className="card">
+                <img
+                  className="circle"
+                  src={`/assets/product/kind-${type}${idx + 1}.png`}
+                  srcSet={`/assets/product/kind-${type}${
+                    idx + 1
+                  }@2x.png 2x , /assets/product/kind-${type}${
+                    idx + 1
+                  }@3x.png 3x`}
+                  alt=""
+                />
+                <div className="title">
+                  {item}
+                  {type === "wash" && idx === 0 ? (
+                    <span>통돌이/드럼</span>
+                  ) : undefined}
+                </div>
+              </div>
+            );
+          })}
         </div>
       </div>
     </div>
@@ -89,13 +60,3 @@ function Kind({ type, arr, nav, agent }) {
 }
 
 export default Kind;
-
-const washmbarr = [
-  "통돌이 세탁기",
-  "드럼세탁기",
-  "빌트인 세탁기",
-  "아기사랑",
-  "트윈워시 세탁기",
-  "플렉스워시",
-  "LG 꼬망스",
-];

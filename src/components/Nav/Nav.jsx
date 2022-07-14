@@ -4,11 +4,13 @@ function Nav({ now, setnow, navArr, type, agent }) {
   const barRef = useRef(null);
   const [isOpen, setisOpen] = useState(false);
   useEffect(() => {
-    const btn = document.getElementById(`btn-${now}`);
-    barRef.current.style.width = `${btn.offsetWidth}px`;
-    barRef.current.style.left = `${btn.offsetLeft}px`;
+    if (agent !== "mb") {
+      const btn = document.getElementById(`btn-${now}`);
+      barRef.current.style.width = `${btn.offsetWidth}px`;
+      barRef.current.style.left = `${btn.offsetLeft}px`;
+    }
     return () => {};
-  }, [now]);
+  }, [now, agent]);
 
   return (
     <div className={`nav`}>
