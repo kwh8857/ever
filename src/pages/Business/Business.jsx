@@ -126,7 +126,7 @@ function Business({ agent }) {
             nav="business"
             agent={agent}
           />
-          <Point type="airfilter" arr={pointArr2} agent={agent} />
+          <Point type="airfilter" arr={pointArr} agent={agent} />
           <Kind
             type="filter"
             arr={["공기정화장치", "디퓨저"]}
@@ -464,7 +464,7 @@ function Business({ agent }) {
               </div>
             </div>
           ) : undefined}
-          <Point type="airfilter" arr={pointArr} agent={agent} />
+          <Point type="airfilter" arr={pointArr2} agent={agent} />
           <Reviews
             title={`방역·소독 서비스는
 에버퓨리에 믿고 맡기세요!`}
@@ -555,7 +555,7 @@ CS마스터 팀장이 직접 방문 및 케어`,
   },
 
   {
-    img: "point-3",
+    img: "point-7",
     title: "약품과 장비",
     bold: "인체에 무해한 친환경",
     content: `오직 고객의 건강만을 생각하며 인체에
@@ -587,7 +587,7 @@ CS마스터 팀장이 직접 방문 및 케어`,
   },
 
   {
-    img: "point-3",
+    img: "point-9",
     title: "약품과 장비",
     bold: "인체에 무해한 친환경",
     content: `오직 고객의 건강만을 생각하며 인체에
